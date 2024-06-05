@@ -1,12 +1,5 @@
 import links from "../../content/links";
-import HeroImg1 from "../../assets/imgs/hero/heroImg1.webp";
-import HeroImg2 from "../../assets/imgs/hero/heroImg2.png";
-import HeroImg3 from "../../assets/imgs/hero/heroImg3.png";
-import HeroImg4 from "../../assets/imgs/hero/heroImg4.png";
-import HeroImg5 from "../../assets/imgs/hero/heroImg5.png";
 import ButtonWithIcon from "../interactives/ButtonWithIcon";
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import ImagesGallerySlides from "../sectionElements/Gallery";
 import MotionDivLeftToRight from "../animation/MotionDivLeftToRight";
 import content from "../../content/content";
 
@@ -14,28 +7,28 @@ const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
 export default function HeroSection() {
   return (
-    <div className="font-mainFont" id="home">
+    <div className="bg-black font-mainFont" id="home">
       <div className="w-full">
         <div className="flex items-center">
           <div className="w-full text-white justify-evenly pb-[30px]">
             <div className="h-[120px] phone2:h-[132px] tablet1:h-[145px] desktop3:h-[190px]" />
-            <div className="flex phone1:flex-col desktop1:flex-row mx-auto mb-[38px] phone3:mb-[52px] w-[90%] max-w-[1215px] items-center gap-[20px] tablet2:gap-14 desktop3:gap-20">
-              <div className="desktop1:w-[580px] flex flex-col">
+            <div className=" flex phone1:flex-col desktop1:flex-row mx-auto mb-[38px] phone3:mb-[52px] w-[90%] max-w-[1215px] items-center gap-[20px] tablet2:gap-14 desktop3:gap-20">
+              <div className="flex flex-col w-full pt-[120px] pb-[80px]">
                 <MotionDivLeftToRight>
-                  <div className="text-black font-bold leading-[44px] tablet1:leading-[60px] desktop1:leading-[74px] text-center desktop1:text-left text-title3 phone1:text-title5 phone3:text-title6 tablet1:text-title7 desktop1:text-[66px]">
+                  <div className="text-white font-bold leading-[44px] tablet1:leading-[60px] desktop1:leading-[74px] text-center text-title3 phone1:text-title5 phone3:text-title6 tablet1:text-title7 desktop1:text-[66px]">
                     <h1 className="pb-[16px]">{content.texts.hero.title}</h1>
                   </div>
                 </MotionDivLeftToRight>
                 <MotionDivLeftToRight>
-                  <div className="text-center desktop1:text-left phone1:w-full font-secondFont phone1:text-title1">
-                    <p className="text-quaternary pb-[54px]">
+                  <div className="text-center phone1:w-full font-secondFont phone1:text-title1">
+                    <p className="text-white pb-[54px]">
                       {content.texts.hero.subtitle}
                     </p>
                   </div>
                 </MotionDivLeftToRight>
                 <div className="w-full phone2:w-full tablet2:w-auto">
                   <MotionDivLeftToRight>
-                    <div className="flex justify-center w-full desktop1:justify-start">
+                    <div className="flex justify-center w-full">
                       <a
                         href={whatsappContactLink}
                         target="_blank"
@@ -61,16 +54,6 @@ export default function HeroSection() {
                   </MotionDivLeftToRight>
                 </div>
               </div>
-              <MotionDivDownToUp className="phone1: w-[100%] desktop1:w-[50%] desktop2:w-[60%] phone1:mb-[40%] tablet1:mb-[64%] desktop1:mb-[30%]">
-                {/* <img src={HeroImg} alt="Veículos" className=""></img> */}
-                <ImagesGallerySlides
-                  slide1={HeroImg1}
-                  slide2={HeroImg2}
-                  slide3={HeroImg3}
-                  slide4={HeroImg4}
-                  slide5={HeroImg5}
-                />
-              </MotionDivDownToUp>
             </div>
           </div>
         </div>

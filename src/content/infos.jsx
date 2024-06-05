@@ -1,8 +1,8 @@
 const infos = {
-  name: "URM Corretora de Seguros",
-  slogan: "A sua corretora de seguros em São Gonçalo - RJ",
-  phone: "(21) 3026-2665",
-  mail: "adm@urmseguros.com.br",
+  name: "Paper Street",
+  slogan: "Sites, Marketing Digital e Sistemas para Internet",
+  phone: "(11) 99026-0977",
+  mail: "contato@paperstreet.com.br",
   footerInfos: {
     year: 2024,
     footerText:

@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#0376A0", // Com primária (clara)
-        secondary: "#00131B", // Cor primária (escura)
+        primary: "#095e8f", // Com primária (clara)
+        secondary: "#000000", // Cor primária (escura)
         tertiary: "#0189BB", // Links
         quaternary: "#636363", // Cinza neutro -> Parágrafos
-        quinary: "#F6F6F6 ", // Com primária bem clara ou cinza -> Bg de seções
+        quinary: "#090516 ", // Com primária bem clara ou cinza -> Bg de seções
         verylighter: "#21A202",
         paragraphLight: "#636363", // Cinza neutro -> Parágrafos
       },

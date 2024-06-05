@@ -21,19 +21,23 @@ const content = {
         alt: "Logo URM Corretora de Seguros",
       },
       menuItems: ["Início", "Sobre Nós", "Serviços", "Perguntas Frequentes"],
-      ctaButtonText: "Simule agora seu seguro",
-      ctaButtonTextResponsive: "Contato",
+      ctaButtonText: "Fale Conosco",
+      ctaButtonTextResponsive: "Fale Conosco",
     },
     hero: {
       title: (
         <div>
-          Proteja o que <br />
-          <span className="text-primary">mais</span> importa
+          Ele seu negócio a <br />
+          <span className="text-primary">um novo</span> patamar
         </div>
       ),
-      subtitle:
-        "Protegendo o seu veículo, para que cada viagem seja uma experiência tranquila e segura.",
-      ctaButtonText: "Fazer simulação",
+      subtitle: (
+        <p>
+          Satisfazer os clientes não é mais o suficiente: é preciso encantá-los.
+          <br />- Philip Kotler
+        </p>
+      ),
+      ctaButtonText: "Entre em contato",
       images: {
         background: {},
         static: {

@@ -16,12 +16,12 @@ export default function Index() {
     <div>
       <NavbarSection />
       <HeroSection />
-      <TrustedBy />
-      <Numbers />
+
       <About />
       <Features />
       <Services />
       <CtaWhatsapp />
+      <TrustedBy />
       <Faq />
       <Footer />
       <FloatingWhatsappButton />
