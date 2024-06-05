@@ -2,19 +2,15 @@ import FeatureImgOnBgCard from "../cards/FeatureImgOnBgCard";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionHeader from "../sectionElements/SectionHeader";
 import SectionWrapper from "../sectionElements/SectionWrapper";
-import imgCardBackground1 from "../../assets/imgs/features/cardBackground1.webp";
-import imgCardBackground2 from "../../assets/imgs/features/cardBackground2.webp";
-import imgCardBackground3 from "../../assets/imgs/features/cardBackground3.webp";
-import imgCardBackground4 from "../../assets/imgs/features/cardBackground4.webp";
-import content from "../../abstractions/content";
+import content from "../../content/content";
 
 export default function Features() {
   return (
     <SectionArea className="bg-quinary desktop1:pb-[0px]">
       <SectionHeader
         className="text-center"
-        sectionHeaderTitle={content.texts.actuation.title}
-        sectionHeaderSubtitle={content.texts.actuation.subtitle}
+        sectionHeaderTitle={content.texts.features.title}
+        sectionHeaderSubtitle={content.texts.features.subtitle}
       />
       <SectionWrapper>
         <div
@@ -22,24 +18,24 @@ export default function Features() {
           id="service"
         >
           <FeatureImgOnBgCard
-            bgImg={imgCardBackground1}
-            title={content.texts.actuation.card1Title}
-            description={content.texts.actuation.card1Description}
+            bgImg={content.texts.features.card1.img}
+            title={content.texts.features.card1.title}
+            description={content.texts.features.card1.subtitle}
           />
           <FeatureImgOnBgCard
-            bgImg={imgCardBackground2}
-            title={content.texts.actuation.card2Title}
-            description={content.texts.actuation.card2Description}
+            bgImg={content.texts.features.card2.img}
+            title={content.texts.features.card2.title}
+            description={content.texts.features.card2.subtitle}
           />
           <FeatureImgOnBgCard
-            bgImg={imgCardBackground3}
-            title={content.texts.actuation.card3Title}
-            description={content.texts.actuation.card3Description}
+            bgImg={content.texts.features.card3.img}
+            title={content.texts.features.card3.title}
+            description={content.texts.features.card3.subtitle}
           />
           <FeatureImgOnBgCard
-            bgImg={imgCardBackground4}
-            title={content.texts.actuation.card4Title}
-            description={content.texts.actuation.card4Description}
+            bgImg={content.texts.features.card4.img}
+            title={content.texts.features.card4.title}
+            description={content.texts.features.card4.subtitle}
           />
         </div>
       </SectionWrapper>

@@ -1,11 +1,10 @@
-import links from "../../abstractions/links";
-import content from "../../abstractions/content";
+import links from "../../content/links";
+import content from "../../content/content";
 import imgCta from "../../assets/imgs/cta/person.png";
 import ButtonWithIcon from "../interactives/ButtonWithIcon";
 import SectionContent from "../sectionElements/SectionContent";
 import MotionDivUpToDown from "../animation/MotionDivUpToDown";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import imgBackground from "../../assets/imgs/paralaxe/bgOffice.webp";
 
 const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
@@ -14,7 +13,7 @@ export default function CtaWhatsapp() {
     <div
       className="bg-center bg-cover"
       style={{
-        backgroundImage: `url(${imgBackground})`,
+        backgroundImage: `url(${content.texts.cta.backgroundImg})`,
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
         backgroundColor: "",

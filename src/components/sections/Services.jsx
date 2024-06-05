@@ -1,19 +1,18 @@
 import React, { useState } from "react";
+import { Dialog } from "primereact/dialog";
+import ServicesModal from "./ServicesModal";
+import FeatureCard from "../cards/FeatureCard";
+import services from "../../content/services";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionHeader from "../sectionElements/SectionHeader";
 import SectionWrapper from "../sectionElements/SectionWrapper";
-import FeatureCard from "../cards/FeatureCard";
-import imgCard1 from "../../assets/imgs/features/card1.webp";
-import imgCard2 from "../../assets/imgs/features/card2.webp";
-import imgCard3 from "../../assets/imgs/features/card3.webp";
-import { Dialog } from "primereact/dialog";
-import "primereact/resources/themes/saga-blue/theme.css";
-import "primereact/resources/primereact.min.css";
-import "primeicons/primeicons.css";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import ServicesModal from "./ServicesModal";
 
-export default function Featuresv2() {
+import "primeicons/primeicons.css";
+import "primereact/resources/primereact.min.css";
+import "primereact/resources/themes/saga-blue/theme.css";
+
+export default function Services() {
   const [visible, setVisible] = useState(false);
   const [modalContent, setModalContent] = useState("");
   const [modalTitle, setModalTitle] = useState("");
@@ -34,34 +33,33 @@ export default function Featuresv2() {
       <SectionWrapper>
         <div className="flex flex-wrap justify-between w-full gap-[36px] tablet1:gap-[24px] desktop1:flex-row">
           <FeatureCard
-            img={imgCard1}
+            img={services.main.card1.img}
             title="Seguro Automóvel"
             description="Proteção completa para seu veículo, com assistência 24 horas e serviços personalizados."
           />
-
           <FeatureCard
-            img={imgCard2}
+            img={services.main.card2.img}
             title="Seguro Residencial e Condomínios"
             description="Coberturas abrangentes para sua casa ou apartamento, incluindo danos estruturais e responsabilidade civil."
           />
           <FeatureCard
-            img={imgCard3}
+            img={services.main.card3.img}
             title="Seguro de Vida e Acidentes"
             description="Segurança financeira para sua família em casos de imprevistos, com coberturas adaptadas às suas necessidades."
           />
           <FeatureCard
-            img={imgCard3}
+            img={services.main.card4.img}
             title="Seguro Empresarial"
             description="Segurança financeira para sua família em casos de imprevistos, com coberturas adaptadas às suas necessidades."
           />
           <FeatureCard
-            img={imgCard3}
+            img={services.main.card5.img}
             title="Planos de Saúde"
             description="Segurança financeira para sua família em casos de imprevistos, com coberturas adaptadas às suas necessidades."
           />
           <MotionDivDownToUp className="bg-white p-[36px] rounded-2xl desktop1:w-[30%] flex flex-col tablet1:flex-row gap-[36px] desktop1:flex-col w-full h-full">
             <img
-              src={imgCard3}
+              src={services.main.card6.img}
               alt=""
               className=" tablet1:w-[50%] desktop1:w-full rounded-2xl"
             />

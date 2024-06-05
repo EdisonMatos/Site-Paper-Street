@@ -3,16 +3,14 @@ import Paragraphs from "../sectionElements/Paragraphs";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionTitles from "../sectionElements/SectionTitles";
 import SectionWrapper from "../sectionElements/SectionWrapper";
-import imgAboutPerson from "../../assets/imgs/about/aboutPerson.webp";
-import ButtonWithIcon from "../interactives/ButtonWithIcon";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import { Dialog } from "primereact/dialog";
 import "primereact/resources/themes/saga-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
-import content from "../../abstractions/content";
+import content from "../../content/content";
 
-export default function AboutImgLeft() {
+export default function About() {
   const [visible, setVisible] = useState(false);
   const [modalContent, setModalContent] = useState("");
   const [modalTitle, setModalTitle] = useState("");
@@ -59,7 +57,11 @@ export default function AboutImgLeft() {
     <SectionArea className="">
       <SectionWrapper className="flex flex-col desktop1:flex-row gap-[40px] desktop1:gap-0 desktop1:justify-between">
         <MotionDivDownToUp className="w-[100%] desktop1:w-[415px] desktop2:w-[485px]">
-          <img src={imgAboutPerson} alt="Foto de pessoa" className="w-full" />
+          <img
+            src={content.texts.about.imagem.img}
+            alt={content.texts.about.imagem.alt}
+            className="w-full"
+          />
         </MotionDivDownToUp>
 
         <div className="desktop1:w-[450px] desktop2:w-[570px]" id="about">

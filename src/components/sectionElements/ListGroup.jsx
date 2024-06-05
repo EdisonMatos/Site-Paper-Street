@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import ButtonWithIconNavbar from "../interactives/ButtonWithIconNavbar";
-import links from "../../abstractions/links";
-import content from "../../abstractions/content";
+import links from "../../content/links";
+import content from "../../content/content";
 
 const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 

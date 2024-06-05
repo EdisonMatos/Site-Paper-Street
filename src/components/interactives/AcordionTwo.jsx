@@ -4,7 +4,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import content from "../../abstractions/content";
+import content from "../../content/content";
 
 export default function AccordionExpandDefault() {
   const [expanded, setExpanded] = useState("panel1");

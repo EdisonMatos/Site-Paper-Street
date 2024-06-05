@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Sidebar } from "primereact/sidebar";
 import { Button } from "primereact/button";
-import { Avatar } from "primereact/avatar";
 import { Ripple } from "primereact/ripple";
 import "primeicons/primeicons.css";
 import {
@@ -12,9 +11,7 @@ import {
   AlignJustify,
 } from "lucide-react";
 import { Link } from "react-scroll";
-import Logo from "../../assets/imgs/logo/logo.png";
-import imgAboutPerson from "../../assets/imgs/about/aboutPerson.webp";
-import content from "../../abstractions/content";
+import content from "../../content/content";
 
 export default function HeadlessDemo() {
   const [visible, setVisible] = useState(false);
@@ -74,8 +71,8 @@ export default function HeadlessDemo() {
                 <div className="flex items-center justify-between flex-shrink-0 px-4 pt-4">
                   <span className="inline-flex items-center gap-2">
                     <img
-                      src={Logo}
-                      alt="Logo Rita Almeida Corretora"
+                      src={content.texts.navbar.logo.img}
+                      alt={content.texts.navbar.logo.alt}
                       className="w-[200px] h-auto p-[5px]"
                     />
                   </span>
@@ -185,8 +182,8 @@ export default function HeadlessDemo() {
                       className="bottom-0 left-0 flex items-center justify-center gap-2 p-3 m-3 transition-colors cursor-pointer phone2:absolute border-round text-700 hover:surface-100 transition-duration-150 p-ripple"
                     >
                       <img
-                        src={imgAboutPerson}
-                        alt="Foto de pessoa"
+                        src={content.texts.about.imagem.img}
+                        alt={content.texts.about.imagem.alt}
                         className="w-[100%]"
                       />
                     </a>

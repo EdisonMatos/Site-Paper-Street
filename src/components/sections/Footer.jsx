@@ -1,9 +1,9 @@
 import { Link } from "react-scroll";
 import { Phone, Mail } from "lucide-react";
-import links from "../../abstractions/links";
+import links from "../../content/links";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import infos from "../../abstractions/infos.jsx";
-import content from "../../abstractions/content";
+import infos from "../../content/infos.jsx";
+import content from "../../content/content";
 
 const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
@@ -15,8 +15,8 @@ function Footer() {
           <div className="flex flex-col gap-y-[16px] desktop1:w-[290px]">
             <div className="h-[115px] flex items-center">
               <img
-                alt="Logo"
-                src={infos.logo.logo}
+                src={content.texts.navbar.logo.img}
+                alt={content.texts.navbar.logo.alt}
                 className="w-auto h-[70px]"
               ></img>
             </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import WhatsAppIcon from "../../assets/importAssets/WhatsAppIcon.webp";
 import { CiUser, CiPhone, CiMail, CiChat1 } from "react-icons/ci";
-import links from "../../abstractions/links";
+import links from "../../content/links";
 
 const WhatsappForm = () => {
   const [name, setName] = useState("");

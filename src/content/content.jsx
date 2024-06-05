@@ -1,9 +1,25 @@
 import logo from "../assets/imgs/logo/logo.png";
+import aboutImg1 from "../assets/imgs/about/aboutImg.webp";
+import trustedByImg1 from "../assets/imgs/trustedBy/item1.webp";
+import trustedByImg2 from "../assets/imgs/trustedBy/item2.webp";
+import trustedByImg3 from "../assets/imgs/trustedBy/item3.webp";
+import trustedByImg4 from "../assets/imgs/trustedBy/item4.webp";
+import trustedByImg5 from "../assets/imgs/trustedBy/item5.webp";
+import trustedByImg6 from "../assets/imgs/trustedBy/item6.webp";
+import numbersImgBg from "../assets/imgs/paralaxe/bgParalaxe1.webp";
+import featuresImg1 from "../assets/imgs/features/featuresImg1.webp";
+import featuresImg2 from "../assets/imgs/features/featuresImg2.webp";
+import featuresImg3 from "../assets/imgs/features/featuresImg3.webp";
+import featuresImg4 from "../assets/imgs/features/featuresImg4.webp";
+import ctaWhatsappImgBg from "../assets/imgs/paralaxe/bgParalaxe2.webp";
 
 const content = {
   texts: {
     navbar: {
-      logo: { logo },
+      logo: {
+        img: logo,
+        alt: "Logo URM Corretora de Seguros",
+      },
       menuItems: ["Início", "Sobre Nós", "Serviços", "Perguntas Frequentes"],
       ctaButtonText: "Simule agora seu seguro",
       ctaButtonTextResponsive: "Contato",
@@ -18,12 +34,58 @@ const content = {
       subtitle:
         "Protegendo o seu veículo, para que cada viagem seja uma experiência tranquila e segura.",
       ctaButtonText: "Fazer simulação",
+      images: {
+        background: {},
+        static: {
+          img: {},
+          alt: "",
+        },
+        slide1: {
+          img: {},
+          alt: "",
+        },
+        slide2: {
+          img: {},
+          alt: "",
+        },
+        slide3: {
+          img: {},
+          alt: "",
+        },
+      },
     },
     trustedBy: {
       title: "Parceria com as maiores seguradoras",
       subtitle: "Confiabilidade e excelência em proteção",
+      images: {
+        img1: {
+          img: { trustedByImg1 },
+          alt: "Seguradora Porto Seguro",
+        },
+        img2: {
+          img: { trustedByImg2 },
+          alt: "Seguradora Bradesco",
+        },
+        img3: {
+          img: { trustedByImg3 },
+          alt: "Seguradora Liberty",
+        },
+        img4: {
+          img: { trustedByImg4 },
+          alt: "Seguradora Allianz",
+        },
+        img5: {
+          img: { trustedByImg5 },
+          alt: "Seguradora SulAmérica",
+        },
+        img6: {
+          img: { trustedByImg6 },
+          alt: "Seguradora Tokio Marine",
+        },
+      },
     },
     numbers: {
+      backgroundImg: numbersImgBg,
       number1: 30,
       number1Description: "Anos no mercado",
       number2: 650,
@@ -32,6 +94,10 @@ const content = {
       number3Description: "De índice de renovação",
     },
     about: {
+      imagem: {
+        img: aboutImg1,
+        alt: "Pessoas em negociação",
+      },
       title: "Sobre nós 👋",
       paragraph: (
         <div>
@@ -50,19 +116,32 @@ const content = {
         </div>
       ),
     },
-    actuation: {
+    features: {
+      card1: {
+        title: "Cotação de Seguros",
+        subtitle: "Melhores cotações para suas necessidades",
+        img: featuresImg1,
+      },
+      card2: {
+        title: "Gestão de Apólices",
+        subtitle: "Administração completa das suas apólices",
+        img: featuresImg2,
+      },
+      card3: {
+        title: "Apoio em Sinistros",
+        subtitle: "Assistência eficiente na resolução de sinistros",
+        img: featuresImg3,
+      },
+      card4: {
+        title: "Análise de Risco",
+        subtitle: "Avaliação detalhada dos riscos para proteção ideal",
+        img: featuresImg4,
+      },
       title: "Nossas especialidades",
       subtitle: "Serviços personalizados para sua tranquilidade",
-      card1Title: "Cotação de Seguros",
-      card1Description: "Melhores cotações para suas necessidades",
-      card2Title: "Gestão de Apólices",
-      card2Description: "Administração completa das suas apólices",
-      card3Title: "Apoio em Sinistros",
-      card3Description: "Assistência eficiente na resolução de sinistros",
-      card4Title: "Análise de Risco",
-      card4Description: "Avaliação detalhada dos riscos para proteção ideal",
     },
     cta: {
+      backgroundImg: ctaWhatsappImgBg,
       title: (
         <p className="">
           Simule e contrate agora mesmo
