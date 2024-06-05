@@ -1,0 +1,10 @@
+.image-gallery-slide-wrapper {
+    position: Absolute;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+  }
+  
+  .image-gallery-slide-wrapper.current {
+    opacity: 1;
+  }
+  
