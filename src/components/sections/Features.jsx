@@ -6,7 +6,7 @@ import content from "../../content/content";
 
 export default function Features() {
   return (
-    <SectionArea className="bg-quinary desktop1:pb-[0px]">
+    <SectionArea className="desktop1:pb-[0px] bg-quinary">
       <SectionHeader
         className="text-center"
         sectionHeaderTitle={content.texts.features.title}

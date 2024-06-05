@@ -16,10 +16,9 @@ export default function Index() {
     <div>
       <NavbarSection />
       <HeroSection />
-
-      <About />
       <Features />
       <Services />
+      <About />
       <CtaWhatsapp />
       <TrustedBy />
       <Faq />

@@ -1,5 +1,5 @@
 import logo from "../assets/imgs/logo/logo.png";
-import aboutImg1 from "../assets/imgs/about/aboutImg.webp";
+import aboutImg1 from "../assets/imgs/about/aboutImg.jpg";
 import trustedByImg1 from "../assets/imgs/trustedBy/item1.webp";
 import trustedByImg2 from "../assets/imgs/trustedBy/item2.webp";
 import trustedByImg3 from "../assets/imgs/trustedBy/item3.webp";
@@ -7,7 +7,7 @@ import trustedByImg4 from "../assets/imgs/trustedBy/item4.webp";
 import trustedByImg5 from "../assets/imgs/trustedBy/item5.webp";
 import trustedByImg6 from "../assets/imgs/trustedBy/item6.webp";
 import numbersImgBg from "../assets/imgs/paralaxe/bgParalaxe1.webp";
-import featuresImg1 from "../assets/imgs/features/featuresImg1.webp";
+import featuresImg1 from "../assets/imgs/features/featuresImg1.jpg";
 import featuresImg2 from "../assets/imgs/features/featuresImg2.webp";
 import featuresImg3 from "../assets/imgs/features/featuresImg3.webp";
 import featuresImg4 from "../assets/imgs/features/featuresImg4.webp";
@@ -123,22 +123,22 @@ const content = {
     },
     features: {
       card1: {
-        title: "Cotação de Seguros",
+        title: "Páginas para Web",
         subtitle: "Melhores cotações para suas necessidades",
         img: featuresImg1,
       },
       card2: {
-        title: "Gestão de Apólices",
+        title: "Marketing Digital",
         subtitle: "Administração completa das suas apólices",
         img: featuresImg2,
       },
       card3: {
-        title: "Apoio em Sinistros",
+        title: "Identidade Digital",
         subtitle: "Assistência eficiente na resolução de sinistros",
         img: featuresImg3,
       },
       card4: {
-        title: "Análise de Risco",
+        title: "Sistemas em nuvem",
         subtitle: "Avaliação detalhada dos riscos para proteção ideal",
         img: featuresImg4,
       },
