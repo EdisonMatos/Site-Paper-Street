@@ -26,10 +26,11 @@ const content = {
     },
     hero: {
       title: (
-        <div>
-          Ele seu negócio a <br />
-          <span className="text-primary">um novo</span> patamar
-        </div>
+        <h1>
+          Traga o seu negócio
+          <br />
+          para o <span className="text-yellow-200">mundo digital</span>
+        </h1>
       ),
       subtitle: (
         <p>
@@ -37,7 +38,7 @@ const content = {
           <br />- Philip Kotler
         </p>
       ),
-      ctaButtonText: "Entre em contato",
+      ctaButtonText: "Fale conosco",
       images: {
         background: {},
         static: {
