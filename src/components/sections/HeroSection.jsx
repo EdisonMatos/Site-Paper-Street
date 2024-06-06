@@ -16,6 +16,7 @@ export default function HeroSection() {
         autoPlay
         loop
         muted
+        playsInline
         className="absolute top-0 left-0 object-cover w-full h-full"
       >
         <source src={bgHeroVideo} type="video/mp4" />
