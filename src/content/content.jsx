@@ -8,8 +8,8 @@ import trustedByImg5 from "../assets/imgs/trustedBy/item5.webp";
 import trustedByImg6 from "../assets/imgs/trustedBy/item6.webp";
 import numbersImgBg from "../assets/imgs/paralaxe/bgParalaxe1.webp";
 import featuresImg1 from "../assets/imgs/features/featuresImg1.jpg";
-import featuresImg2 from "../assets/imgs/features/featuresImg2.webp";
-import featuresImg3 from "../assets/imgs/features/featuresImg3.webp";
+import featuresImg2 from "../assets/imgs/features/featuresImg2.jpg";
+import featuresImg3 from "../assets/imgs/features/featuresImg3.jpg";
 import featuresImg4 from "../assets/imgs/features/featuresImg4.webp";
 import ctaWhatsappImgBg from "../assets/imgs/paralaxe/bgParalaxe2.webp";
 
@@ -111,11 +111,6 @@ const content = {
           Uellinton Rodrigues de Matos fundou a URM Seguros.
           <br />
           <br />
-          Com mais de 30 anos de história, a URM Seguros se consolidou como
-          referência no mercado de seguros, compreendendo profundamente o que é
-          necessário para garantir a sua proteção.
-          <br />
-          <br />
           Nosso compromisso é oferecer segurança e tranquilidade para você, sua
           família e seus bens mais preciosos.
         </div>
@@ -124,14 +119,13 @@ const content = {
     features: {
       card1: {
         title: "Sites e Landing Pages",
-        subtitle:
-          "Coloque seu negócio na internet através de um site e lucre mais",
+        subtitle: "A melhor forma do seu cliente te encontrar na internet",
         img: featuresImg1,
       },
       card2: {
         title: "Marketing Digital",
         subtitle:
-          "A forma mais rápida e moderna dos clientes chegarem até você",
+          "Diversas estratégias digitais eficientes pra alavancar seus resultados",
         img: featuresImg2,
       },
       card3: {
