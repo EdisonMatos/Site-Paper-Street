@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "KeepCalm";
+  font-family: "Keep Calm";
   src: url("./assets/fonts/KeepCalm-Medium.ttf") format("opentype");
   font-style: normal;
   font-display: swap;
