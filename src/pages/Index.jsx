@@ -2,7 +2,6 @@ import Faq from "../components/sections/Faq";
 import About from "../components/sections/About";
 import Footer from "../components/sections/Footer";
 import Features from "../components/sections/Features";
-import AboutSocial from "../components/sections/AboutSocial";
 import CtaWhatsapp from "../components/sections/CtaWhatsapp";
 import HeroSection from "../components/sections/HeroSection";
 import NavbarSection from "../components/sections/NavbarSection";
@@ -16,7 +15,6 @@ export default function Index() {
       <HeroSection />
       <Features />
       <About />
-      <AboutSocial />
       <CtaWhatsapp />
       <Faq />
       <Footer />
