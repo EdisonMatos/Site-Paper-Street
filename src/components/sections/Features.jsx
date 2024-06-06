@@ -6,7 +6,7 @@ import content from "../../content/content";
 
 export default function Features() {
   return (
-    <SectionArea className="desktop1:pb-[0px] bg-quinary">
+    <SectionArea className="py-[40px] tablet1:py-[64px] desktop1:py-[96px]esktop1:pb-[0px] bg-quinary">
       <SectionHeader
         className="text-center"
         sectionHeaderTitle={content.texts.features.title}
@@ -31,11 +31,6 @@ export default function Features() {
             bgImg={content.texts.features.card3.img}
             title={content.texts.features.card3.title}
             description={content.texts.features.card3.subtitle}
-          />
-          <FeatureImgOnBgCard
-            bgImg={content.texts.features.card4.img}
-            title={content.texts.features.card4.title}
-            description={content.texts.features.card4.subtitle}
           />
         </div>
       </SectionWrapper>

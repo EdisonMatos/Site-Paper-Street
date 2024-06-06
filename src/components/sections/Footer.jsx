@@ -127,16 +127,6 @@ function Footer() {
         <p className="w-full">
           {`${infos.footerInfos.year} - ${infos.name} - Todos os direitos reservados`}
         </p>
-        <p>
-          <a
-            className="transition hover:underline"
-            target="_blank"
-            href="https://www.paperstreet.com.br"
-          >
-            {" "}
-            Gostaria de ter um site como este? Clique aqui
-          </a>
-        </p>
       </div>
     </footer>
   );

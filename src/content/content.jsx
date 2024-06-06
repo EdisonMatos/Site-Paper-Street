@@ -1,5 +1,6 @@
 import logo from "../assets/imgs/logo/logo.png";
 import aboutImg1 from "../assets/imgs/about/aboutImg.jpg";
+import aboutImgMobile1 from "../assets/imgs/about/aboutImgMobile.jpg";
 import trustedByImg1 from "../assets/imgs/trustedBy/item1.webp";
 import trustedByImg2 from "../assets/imgs/trustedBy/item2.webp";
 import trustedByImg3 from "../assets/imgs/trustedBy/item3.webp";
@@ -8,8 +9,8 @@ import trustedByImg5 from "../assets/imgs/trustedBy/item5.webp";
 import trustedByImg6 from "../assets/imgs/trustedBy/item6.webp";
 import numbersImgBg from "../assets/imgs/paralaxe/bgParalaxe1.webp";
 import featuresImg1 from "../assets/imgs/features/featuresImg1.jpg";
-import featuresImg2 from "../assets/imgs/features/featuresImg2.webp";
-import featuresImg3 from "../assets/imgs/features/featuresImg3.webp";
+import featuresImg2 from "../assets/imgs/features/featuresImg2.jpg";
+import featuresImg3 from "../assets/imgs/features/featuresImg3.jpg";
 import featuresImg4 from "../assets/imgs/features/featuresImg4.webp";
 import ctaWhatsappImgBg from "../assets/imgs/paralaxe/bgParalaxe2.webp";
 
@@ -103,17 +104,16 @@ const content = {
         img: aboutImg1,
         alt: "Pessoas em negociação",
       },
+      imagemMobile: {
+        img: aboutImgMobile1,
+        alt: "Pessoas em negociação",
+      },
       title: "Sobre nós 👋",
       paragraph: (
         <div>
           Após 15 anos de dedicação em diversas corretoras e acumulando valiosas
           experiências na solução dos problemas de seus clientes, o Sr.
           Uellinton Rodrigues de Matos fundou a URM Seguros.
-          <br />
-          <br />
-          Com mais de 30 anos de história, a URM Seguros se consolidou como
-          referência no mercado de seguros, compreendendo profundamente o que é
-          necessário para garantir a sua proteção.
           <br />
           <br />
           Nosso compromisso é oferecer segurança e tranquilidade para você, sua
@@ -123,18 +123,20 @@ const content = {
     },
     features: {
       card1: {
-        title: "Páginas para Web",
-        subtitle: "Melhores cotações para suas necessidades",
+        title: "Sites e Landing Pages",
+        subtitle: "A melhor forma do seu cliente te encontrar na internet",
         img: featuresImg1,
       },
       card2: {
         title: "Marketing Digital",
-        subtitle: "Administração completa das suas apólices",
+        subtitle:
+          "Diversas estratégias digitais eficientes pra alavancar seus resultados",
         img: featuresImg2,
       },
       card3: {
         title: "Identidade Digital",
-        subtitle: "Assistência eficiente na resolução de sinistros",
+        subtitle:
+          "Ter uma imagem do seu negócio atualizada é crucial nos dias de hoje",
         img: featuresImg3,
       },
       card4: {

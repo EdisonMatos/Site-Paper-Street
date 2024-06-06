@@ -34,7 +34,7 @@ const images = [
 
 export default function TrustedBy() {
   return (
-    <SectionArea className="bg-quinary">
+    <SectionArea className="">
       <SectionHeader
         className="text-center"
         sectionHeaderTitle={content.texts.trustedBy.title}
