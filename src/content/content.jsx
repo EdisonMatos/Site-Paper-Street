@@ -22,7 +22,7 @@ const content = {
         alt: "Logo URM Corretora de Seguros",
       },
       menuItems: ["Início", "Sobre Nós", "Serviços", "Perguntas Frequentes"],
-      ctaButtonText: "Fale Conosco",
+      ctaButtonText: "Contato",
       ctaButtonTextResponsive: "Fale Conosco",
     },
     hero: {
@@ -39,7 +39,7 @@ const content = {
           <br />- Philip Kotler
         </p>
       ),
-      ctaButtonText: "Fale conosco",
+      ctaButtonText: "Faça seu site com a gente",
       images: {
         background: {},
         static: {
