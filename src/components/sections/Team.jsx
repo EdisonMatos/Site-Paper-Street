@@ -10,7 +10,7 @@ const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
 export default function Team() {
   return (
-    <SectionArea className="pt-[0px]">
+    <SectionArea className="bg-quinary">
       <SectionHeader
         className="text-center"
         sectionHeaderTitle={content.texts.team.title}
