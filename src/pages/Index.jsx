@@ -1,4 +1,5 @@
 import Faq from "../components/sections/Faq";
+import Team from "../components/sections/Team";
 import About from "../components/sections/About";
 import Footer from "../components/sections/Footer";
 import Features from "../components/sections/Features";
@@ -15,6 +16,7 @@ export default function Index() {
       <HeroSection />
       <Features />
       <About />
+      <Team />
       <CtaWhatsapp />
       <Faq />
       <Footer />

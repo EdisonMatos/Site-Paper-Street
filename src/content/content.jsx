@@ -121,6 +121,25 @@ const content = {
         </div>
       ),
     },
+    team: {
+      title: "Nossa Equipe",
+      subtitle: "Texto sobre a equipe",
+      members: {
+        member1: {
+          img: {
+            img: "",
+            alt: "",
+          },
+          name: "",
+          role: "",
+          socialMedia: {
+            link1: "",
+            link2: "",
+            link3: "",
+          },
+        },
+      },
+    },
     features: {
       card1: {
         title: "Sites e Landing Pages",
