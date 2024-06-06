@@ -61,7 +61,12 @@ export default function About() {
           <img
             src={content.texts.about.imagem.img}
             alt={content.texts.about.imagem.alt}
-            className="w-full rounded-lg"
+            className="hidden w-full rounded-lg desktop1:flex"
+          />
+          <img
+            src={content.texts.about.imagemMobile.img}
+            alt={content.texts.about.imagemMobile.alt}
+            className="w-full rounded-lg desktop1:hidden"
           />
         </MotionDivDownToUp>
 
