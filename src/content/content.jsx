@@ -12,7 +12,7 @@ import featuresImg1 from "../assets/imgs/features/featuresImg1.jpg";
 import featuresImg2 from "../assets/imgs/features/featuresImg2.jpg";
 import featuresImg3 from "../assets/imgs/features/featuresImg3.jpg";
 import featuresImg4 from "../assets/imgs/features/featuresImg4.webp";
-import ctaWhatsappImgBg from "../assets/imgs/paralaxe/bgParalaxe2.webp";
+import ctaWhatsappImgBg from "../assets/imgs/paralaxe/bgParalaxe2.jpg";
 
 const content = {
   texts: {
@@ -30,7 +30,7 @@ const content = {
         <h1>
           Traga o seu negócio
           <br />
-          para o <span className="text-yellow-200">mundo digital</span>
+          para o <span className="text-yellow-400">mundo digital</span>
         </h1>
       ),
       subtitle: (
@@ -151,12 +151,13 @@ const content = {
       backgroundImg: ctaWhatsappImgBg,
       title: (
         <p className="">
-          Simule e contrate agora mesmo
-          <br />o seu <strong>seguro</strong>
+          Deixa a gente cuidar da vida digital
+          <br />
+          do seu negócio
         </p>
       ),
       subtitle: "#",
-      ctaButtonText: "Fazer simulação",
+      ctaButtonText: "Fale com um atendente agora mesmo",
     },
     faq: {
       title: "Perguntas Frequentes",

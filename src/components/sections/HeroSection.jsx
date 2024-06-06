@@ -20,13 +20,13 @@ export default function HeroSection() {
       >
         <source src={bgHeroVideo} type="video/mp4" />
       </video>
-      <div className="relative z-10 flex items-center w-full h-full bg-black bg-opacity-60">
+      <div className="relative z-10 flex items-center w-full h-full bg-black bg-opacity-70">
         <div className="w-full text-white justify-evenly pb-[30px]">
           <div className="h-[120px] phone2:h-[132px] tablet1:h-[145px] desktop3:h-[190px]" />
           <div className="flex phone1:flex-col desktop1:flex-row mx-auto mb-[38px] phone3:mb-[52px] w-[90%] max-w-[1215px] items-center gap-[20px] tablet2:gap-14 desktop3:gap-20">
             <div className="flex flex-col w-full pt-[120px] pb-[120px]">
               <MotionDivLeftToRight>
-                <div className="text-white font-bold leading-[44px] tablet1:leading-[60px] desktop1:leading-[96px] text-center text-title3 phone1:text-title5 phone3:text-title6 tablet1:text-title7 desktop1:text-[86px]">
+                <div className="text-white font-bold leading-[44px] tablet1:leading-[60px] desktop1:leading-[110px] text-center text-title3 phone1:text-title5 phone3:text-title6 tablet1:text-title7 desktop1:text-[86px]">
                   <h1 className="pb-[16px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
                     {content.texts.hero.title}
                   </h1>
