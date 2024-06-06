@@ -123,18 +123,21 @@ const content = {
     },
     features: {
       card1: {
-        title: "Páginas para Web",
-        subtitle: "Melhores cotações para suas necessidades",
+        title: "Sites e Landing Pages",
+        subtitle:
+          "Coloque seu negócio na internet através de um site e lucre mais",
         img: featuresImg1,
       },
       card2: {
         title: "Marketing Digital",
-        subtitle: "Administração completa das suas apólices",
+        subtitle:
+          "A forma mais rápida e moderna dos clientes chegarem até você",
         img: featuresImg2,
       },
       card3: {
         title: "Identidade Digital",
-        subtitle: "Assistência eficiente na resolução de sinistros",
+        subtitle:
+          "Ter uma imagem do seu negócio atualizada é crucial nos dias de hoje",
         img: featuresImg3,
       },
       card4: {
