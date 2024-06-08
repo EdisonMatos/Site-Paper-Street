@@ -202,7 +202,7 @@ const content = {
             alt: "Gabriel Adans",
           },
           name: "Gabriel Adans",
-          role: "Marketing Outsourcing Outsourcing",
+          role: "Marketing Outsourcing",
           socialMedia: {
             icon1: (
               <svg
@@ -269,7 +269,7 @@ const content = {
             alt: "Gabriel Souza",
           },
           name: "Gabriel Adans",
-          role: "Marketing Outsourcing Outsourcing ",
+          role: "Desenvolvedor Frontend",
           socialMedia: {
             icon1: (
               <svg
@@ -336,7 +336,7 @@ const content = {
             alt: "Luiz Felipe",
           },
           name: "Luiz Felipe",
-          role: "Marketing Outsourcing Outsourcing ",
+          role: "Designer Ourtsourcing",
           socialMedia: {
             icon1: (
               <svg
