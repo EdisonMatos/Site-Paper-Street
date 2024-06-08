@@ -17,10 +17,10 @@ function Footer() {
               <img
                 src={content.texts.navbar.logo.img}
                 alt={content.texts.navbar.logo.alt}
-                className="w-auto tablet1:w-[50%] desktop1:w-[80%]"
+                className="w-[80%] tablet1:w-[50%] desktop1:w-[80%]"
               ></img>
             </div>
-            <div className="flex full gap-x-[8px] items-center">
+            <div className="flex full gap-x-[8px] items-center opacity-70">
               <Phone
                 size={24}
                 aria-label="Ícone de Telefone"
@@ -35,7 +35,7 @@ function Footer() {
                 {infos.phone}
               </a>
             </div>
-            <div className="flex full gap-x-[8px] items-center">
+            <div className="flex full gap-x-[8px] items-center opacity-70">
               <Mail
                 size={24}
                 aria-label="Ícone de Carta"
@@ -51,7 +51,7 @@ function Footer() {
             <h1 className="font-medium font-mainFont text-title2 desktop1:text-title5 desktop1:h-[115px] flex items-center">
               ATÉ MAIS!
             </h1>
-            <p>{infos.footerInfos.footerText}</p>
+            <p className="opacity-70">{infos.footerInfos.footerText}</p>
           </div>
         </MotionDivDownToUp>
         <MotionDivDownToUp>
@@ -59,7 +59,7 @@ function Footer() {
             <h1 className="font-medium font-mainFont text-title2 desktop1:text-title5 desktop1:h-[115px] flex items-center">
               NAVEGAÇÃO
             </h1>
-            <div className="flex justify-between full">
+            <div className="flex justify-between full opacity-70">
               <div className="w-[46%] flex flex-col gap-y-[16px] font-semibold ">
                 <div className="h-[36px] ">
                   <Link

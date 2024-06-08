@@ -10,26 +10,30 @@ export default function TeamMember(props) {
         className="w-[215px] h-[215px] desktop1:w-full desktop1:h-full mb-[24px] bg-black rounded-full"
       ></img>
       <h3 className="mb-[8px] text-title1 font-bold">{name}</h3>
-      <p className="mb-[20px] text-center text-paragraphLight">{role}</p>
-      <div className="flex gap-[16px]">
+      <div className="desktop2:h-[48px] desktop2:mb-[20px]">
+        <p className="text-center text-paragraphLight desktop2:mb-[20px]">
+          {role}
+        </p>
+      </div>
+      <div className="flex gap-[16px] mt-[12px] desktop2:mt-[0px]">
         <a
           href={link1}
           target="_blank"
-          className="hover:border-solid border-[1px] border-white hover:border-[1px] hover:border-black p-[6px] rounded-full transition hover:text-white"
+          className="hover:border-solid border-[1px] border-quinary hover:border-[1px] hover:border-black p-[6px] rounded-full transition hover:text-white"
         >
           {icon1}
         </a>
         <a
           href={link2}
           target="_blank"
-          className="hover:border-solid border-[1px] border-white hover:border-[1px] hover:border-black p-[6px] rounded-full transition hover:text-white"
+          className="hover:border-solid border-[1px] border-quinary hover:border-[1px] hover:border-black p-[6px] rounded-full transition hover:text-white"
         >
           {icon2}
         </a>
         <a
           href={link3}
           target="_blank"
-          className="hover:border-solid border-[1px] border-white hover:border-[1px] hover:border-black p-[6px] rounded-full transition hover:text-white"
+          className="hover:border-solid border-[1px] border-quinary hover:border-[1px] hover:border-black p-[6px] rounded-full transition hover:text-white"
         >
           {icon3}
         </a>
