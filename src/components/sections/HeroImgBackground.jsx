@@ -2,7 +2,7 @@ import links from "../../content/links";
 import ButtonWithIcon from "../interactives/ButtonWithIcon";
 import MotionDivLeftToRight from "../animation/MotionDivLeftToRight";
 import content from "../../content/content";
-import bgHeroImg from "../../assets/imgs/hero/bgHero.jpeg";
+import bgHeroImg from "../../assets/imgs/hero/bgHero.jpg";
 
 const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
