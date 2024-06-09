@@ -34,7 +34,7 @@ const content = {
     hero: {
       title: (
         <h1>
-          Empresas quem possuem
+          Empresas que possuem
           <br />
           sites lucram <span className="text-yellow-400">muito mais</span>
         </h1>
