@@ -3,6 +3,7 @@ import ButtonWithIcon from "../interactives/ButtonWithIcon";
 import MotionDivLeftToRight from "../animation/MotionDivLeftToRight";
 import content from "../../content/content";
 import bgHeroImg from "../../assets/imgs/hero/bgHero.jpg";
+import ButtonCTAWithIcon from "../interactives/ButtonCTAWithIcon";
 
 const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
@@ -40,7 +41,7 @@ export default function HeroImgBackground() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <ButtonWithIcon
+                      <ButtonCTAWithIcon
                         label={content.texts.hero.ctaButtonText}
                         icon={
                           <svg
