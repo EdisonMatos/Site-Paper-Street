@@ -32,15 +32,17 @@ const content = {
     hero: {
       title: (
         <h1>
-          Traga o seu negócio
+          Empresas quem possuem
           <br />
-          para o <span className="text-yellow-400">mundo digital</span>
+          sites lucram <span className="text-yellow-400">muito mais</span>
         </h1>
       ),
       subtitle: (
         <p>
-          Satisfazer os clientes não é mais o suficiente: é preciso encantá-los.
-          <br />- Philip Kotler
+          Enquanto você lê estas palavras, um cliente está buscando pelo seu
+          serviço ou produto na internet.
+          <br />
+          Se você não tem um site ainda, como ele vai te encontrar?
         </p>
       ),
       ctaButtonText: "Faça seu site com a gente",
