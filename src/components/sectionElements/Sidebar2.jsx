@@ -53,7 +53,7 @@ export default function HeadlessDemo() {
       <div className="flex justify-center card">
         <AlignJustify
           className={`p-button-rounded p-button-outlined lg:hidden ${
-            scrolled ? "text-primary" : "text-primary"
+            scrolled ? "text-white" : "text-white"
           } w-[40px] h-[40px]`}
           onClick={() => setVisible(true)}
         />

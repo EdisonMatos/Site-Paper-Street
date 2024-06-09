@@ -17,6 +17,8 @@ import teamMemberImg1 from "../assets/imgs/team/team1.jpg";
 import teamMemberImg2 from "../assets/imgs/team/team2.jpg";
 import teamMemberImg3 from "../assets/imgs/team/team3.jpg";
 import teamMemberImg4 from "../assets/imgs/team/team4.jpg";
+import MotionDivDownToUp from "../components/animation/MotionDivDownToUp";
+import ButtonWithIconLight from "../components/interactives/ButtonWithIconLight";
 
 const content = {
   texts: {
@@ -32,15 +34,17 @@ const content = {
     hero: {
       title: (
         <h1>
-          Traga o seu negócio
+          Empresas quem possuem
           <br />
-          para o <span className="text-yellow-400">mundo digital</span>
+          sites lucram <span className="text-yellow-400">muito mais</span>
         </h1>
       ),
       subtitle: (
         <p>
-          Satisfazer os clientes não é mais o suficiente: é preciso encantá-los.
-          <br />- Philip Kotler
+          Enquanto você lê estas palavras, um cliente está buscando pelo seu
+          serviço ou produto na internet.
+          <br />
+          Se você não tem um site ainda, como ele vai te encontrar?
         </p>
       ),
       ctaButtonText: "Faça seu site com a gente",
@@ -115,13 +119,96 @@ const content = {
       title: "Sobre nós 👋",
       paragraph: (
         <div>
-          Após 15 anos de dedicação em diversas corretoras e acumulando valiosas
-          experiências na solução dos problemas de seus clientes, o Sr.
-          Uellinton Rodrigues de Matos fundou a URM Seguros.
+          Somos a <strong>Paper Street</strong> e desenvolvemos ferramentas
+          digitais para você e seu negócio.
           <br />
           <br />
-          Nosso compromisso é oferecer segurança e tranquilidade para você, sua
-          família e seus bens mais preciosos.
+          Nosso objetivo é usar a tecnologia para alavancar o seu negócio,
+          selecionando os produtos que mais se encaixam pra você.
+          <br />
+          <br />
+          Quer saber mais sobre a gente?
+          <br />
+          <br />
+          <div className=" flex flex-col gap-[16px] w-[100%] tablet1:w-[60%] desktop1:w-[80%] desktop2:w-[60%]">
+            <MotionDivDownToUp>
+              <a
+                href="https://www.instagram.com/ritaalmeida_corretora/"
+                target="_blank"
+              >
+                <ButtonWithIconLight
+                  label="Siga a gente no Instagram"
+                  icon={
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-instagram"
+                    >
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                  }
+                />
+              </a>
+            </MotionDivDownToUp>
+            <MotionDivDownToUp>
+              <a href="https://twitter.com/rcsalmeida2" target="_blank">
+                <ButtonWithIconLight
+                  label="Siga a gente no Facebook"
+                  icon={
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-twitter"
+                    >
+                      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                    </svg>
+                  }
+                />
+              </a>
+            </MotionDivDownToUp>
+            <MotionDivDownToUp>
+              <a
+                href="https://www.facebook.com/ritadecassiasobreiradealmeida.almeida/"
+                target="_blank"
+              >
+                <ButtonWithIconLight
+                  label="Conheça nosso Linkedin"
+                  icon={
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-facebook"
+                    >
+                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                  }
+                />
+              </a>
+            </MotionDivDownToUp>
+          </div>
         </div>
       ),
     },
@@ -401,20 +488,21 @@ const content = {
     },
     features: {
       card1: {
-        title: "Sites e Landing Pages",
-        subtitle: "A melhor forma do seu cliente te encontrar na internet",
+        title: "Sites para você ou sua empresa",
+        subtitle:
+          "A melhor forma do seu cliente te encontrar na internet e fazer ele confiar no seu negócio",
         img: featuresImg1,
       },
       card2: {
-        title: "Marketing Digital",
+        title: "Landing pages para seu produto ou serviço",
         subtitle:
-          "Diversas estratégias digitais eficientes pra alavancar seus resultados",
+          "Um tipo de site feito pra convencer sobre um produto ou serviço em específico, levando o cliente a fechar com você",
         img: featuresImg2,
       },
       card3: {
-        title: "Identidade Digital",
+        title: "Cartões de Visita digitais",
         subtitle:
-          "Ter uma imagem do seu negócio atualizada é crucial nos dias de hoje",
+          "Uma forma moderna de substituir o antigo cartão de visita físico por uma página contendo todos seus dados de contato",
         img: featuresImg3,
       },
       card4: {
@@ -423,7 +511,8 @@ const content = {
         img: featuresImg4,
       },
       title: "Nossas especialidades",
-      subtitle: "Serviços personalizados para sua tranquilidade",
+      subtitle:
+        "Se você quer trazer o seu negócio pro mundo digital, nós temos várias soluções pra você",
     },
     cta: {
       backgroundImg: ctaWhatsappImgBg,

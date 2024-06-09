@@ -81,7 +81,7 @@ export default function About() {
               {content.texts.about.paragraph}
             </Paragraphs>
           </MotionDivDownToUp>
-          <MotionDivDownToUp>
+          {/* <MotionDivDownToUp>
             <ButtonWithIcon
               label="Leia mais"
               onClick={onClick}
@@ -103,7 +103,7 @@ export default function About() {
                 </svg>
               }
             />
-          </MotionDivDownToUp>
+          </MotionDivDownToUp> */}
         </div>
       </SectionWrapper>
       <Dialog
