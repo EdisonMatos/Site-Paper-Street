@@ -20,6 +20,7 @@ import teamMemberImg3 from "../assets/imgs/team/team3.jpg";
 import teamMemberImg4 from "../assets/imgs/team/team4.jpg";
 import MotionDivDownToUp from "../components/animation/MotionDivDownToUp";
 import ButtonWithIconLight from "../components/interactives/ButtonWithIconLight";
+import links from "./links";
 
 const content = {
   texts: {
@@ -137,10 +138,7 @@ const content = {
           <br />
           <div className=" flex flex-col gap-[16px] w-[100%] tablet1:w-[60%] desktop1:w-[80%] desktop2:w-[60%]">
             <MotionDivDownToUp>
-              <a
-                href="https://www.instagram.com/ritaalmeida_corretora/"
-                target="_blank"
-              >
+              <a href={links.socialMedia.instagram} target="_blank">
                 <ButtonWithIconLight
                   label="Siga a gente no Instagram"
                   icon={
@@ -165,7 +163,7 @@ const content = {
               </a>
             </MotionDivDownToUp>
             <MotionDivDownToUp>
-              <a href="https://twitter.com/rcsalmeida2" target="_blank">
+              <a href={links.socialMedia.facebook} target="_blank">
                 <ButtonWithIconLight
                   label="Siga a gente no Facebook"
                   icon={
@@ -188,10 +186,7 @@ const content = {
               </a>
             </MotionDivDownToUp>
             <MotionDivDownToUp>
-              <a
-                href="https://www.facebook.com/ritadecassiasobreiradealmeida.almeida/"
-                target="_blank"
-              >
+              <a href={links.socialMedia.linkedin} target="_blank">
                 <ButtonWithIconLight
                   label="Conheça nosso Linkedin"
                   icon={
