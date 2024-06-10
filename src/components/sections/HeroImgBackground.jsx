@@ -1,9 +1,9 @@
 import links from "../../content/links";
-import ButtonWithIcon from "../interactives/ButtonWithIcon";
 import MotionDivLeftToRight from "../animation/MotionDivLeftToRight";
 import content from "../../content/content";
 import bgHeroImg from "../../assets/imgs/hero/bgHero.jpg";
 import ButtonCTAWithIcon from "../interactives/ButtonCTAWithIcon";
+import ScrollDownIndicator from "../sectionElements/ScrollDownIndicator";
 
 const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
@@ -35,7 +35,7 @@ export default function HeroImgBackground() {
               </MotionDivLeftToRight>
               <div className="w-full phone2:w-full tablet2:w-auto">
                 <MotionDivLeftToRight>
-                  <div className="flex justify-center w-full">
+                  <div className="flex justify-center w-full mb-[36px]">
                     <a
                       href={whatsappContactLink}
                       target="_blank"
@@ -59,6 +59,7 @@ export default function HeroImgBackground() {
                     </a>
                   </div>
                 </MotionDivLeftToRight>
+                <ScrollDownIndicator />
               </div>
             </div>
           </div>
