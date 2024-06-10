@@ -40,7 +40,7 @@ const content = {
     hero: {
       title: (
         <h1>
-          Transformamos ideias em <br />
+          Transformamos ideias em
           <span className="text-yellow-400"> sites incríveis</span>
         </h1>
       ),
