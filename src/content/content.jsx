@@ -1,4 +1,5 @@
 import logo from "../assets/imgs/logo/logo.png";
+import logoDark from "../assets/imgs/logo/logoDark.png";
 import aboutImg1 from "../assets/imgs/about/aboutImg.jpg";
 import aboutImgMobile1 from "../assets/imgs/about/aboutImgMobile.jpg";
 import trustedByImg1 from "../assets/imgs/trustedBy/item1.webp";
@@ -25,11 +26,15 @@ const content = {
     navbar: {
       logo: {
         img: logo,
-        alt: "Logo URM Corretora de Seguros",
+        alt: "Logo",
+      },
+      logoDark: {
+        img: logoDark,
+        alt: "Logo",
       },
       menuItems: ["Início", "Sobre Nós", "Serviços", "Perguntas Frequentes"],
       ctaButtonText: "Contato",
-      ctaButtonTextResponsive: "Fale Conosco",
+      ctaButtonTextResponsive: "Contato",
     },
     hero: {
       title: (
@@ -353,7 +358,7 @@ const content = {
             img: teamMemberImg3,
             alt: "Gabriel Souza",
           },
-          name: "Gabriel Adans",
+          name: "Gabriel Souza",
           role: "Desenvolvedor Frontend",
           socialMedia: {
             icon1: (
@@ -497,9 +502,9 @@ const content = {
         img: featuresImg2,
       },
       card3: {
-        title: "Cartões de Visita digitais",
+        title: "Páginas web em geral",
         subtitle:
-          "Uma forma moderna de substituir o antigo cartão de visita físico por uma página contendo todos seus dados de contato",
+          "Criamos diversos outros tipos de sites, como portais de notícia, blogs, cartões de visita digitais, portfólio pages e mais ",
         img: featuresImg3,
       },
       card4: {

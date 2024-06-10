@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import Navbar from "../sectionElements/Navbar";
-import Logo from "../../assets/imgs/logo/logo.png";
 import ListGroup from "../sectionElements/ListGroup";
 import { Link as ScrollLink } from "react-scroll";
 import HeadlessDemo from "../sectionElements/Sidebar2";
