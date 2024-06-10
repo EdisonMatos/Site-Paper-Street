@@ -40,20 +40,19 @@ const content = {
     hero: {
       title: (
         <h1>
-          Empresas que têm
+          Transformamos ideias
           <br />
-          sites lucram <span className="text-yellow-400">muito mais</span>
+          em <span className="text-yellow-400"> sites incríveis</span>
         </h1>
       ),
       subtitle: (
         <p>
-          Enquanto você lê estas palavras, um cliente está buscando pelo seu
-          serviço ou produto na internet.
+          Somos especialistas em desenvolver sites que fazem seu negócio crescer
+          muito mais
           <br />
-          Se você não tem um site ainda, como ele vai te encontrar?
         </p>
       ),
-      ctaButtonText: "Faça seu site com a gente",
+      ctaButtonText: "Fale com nossa equipe",
       images: {
         background: {},
         static: {
