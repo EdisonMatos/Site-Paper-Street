@@ -10,25 +10,25 @@ const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 export default function HeroImgBackground() {
   return (
     <div
-      className=" w-full h-[100vh] font-mainFont bg-cover bg-no-repeat bg-center"
+      className="w-full bg-center bg-no-repeat bg-cover font-mainFont"
       style={{ backgroundImage: `url(${bgHeroImg})` }}
       id="home"
     >
-      <div className="relative z-10 flex items-center w-full h-full bg-black bg-opacity-55">
-        <div className="w-full text-white justify-evenly pb-[30px]">
-          <div className="h-[120px] phone2:h-[132px] tablet1:h-[145px] desktop3:h-[190px]" />
+      <div className="relative z-10 flex items-center w-full bg-black bg-opacity-50">
+        <div className="w-full text-white justify-evenly">
+          <div className="h-[125px] desktop3:h-[140px]" />
           <div className="flex phone1:flex-col desktop1:flex-row mx-auto mb-[38px] phone3:mb-[52px] w-[90%] max-w-[1215px] items-center gap-[20px] tablet2:gap-14 desktop3:gap-20">
-            <div className="flex flex-col w-full pt-[120px] pb-[120px]">
+            <div className="flex flex-col w-full pt-[20px] pb-[0px] tablet1:pt-[80px] tablet1:pb-[20px]">
               <MotionDivLeftToRight>
-                <div className="text-white font-bold leading-[46px] phone3:leading-[50px] tablet1:leading-[60px] desktop1:leading-[110px] text-center text-title3 phone2:text-title4 phone3:text-title5 tablet1:text-title7 desktop1:text-[86px]">
+                <div className="text-white font-bold leading-[46px] phone3:leading-[50px] tablet1:leading-[60px] desktop1:leading-[110px] text-center text-title4 phone2:text-title4 phone3:text-title5 tablet1:text-title7 desktop1:text-[86px]">
                   <h1 className="pb-[16px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
                     {content.texts.hero.title}
                   </h1>
                 </div>
               </MotionDivLeftToRight>
               <MotionDivLeftToRight>
-                <div className="text-center phone1:w-full font-secondFont phone1:text-title1">
-                  <p className="text-white pb-[54px] [text-shadow:_1.8px_1.8px_2px_rgb(0_0_0_/_150%)]">
+                <div className="flex justify-center text-center phone1:w-full font-secondFont text-paragraph4 phone3:text-paragraph5">
+                  <p className="text-white pb-[54px] tablet1:w-[70%] [text-shadow:_1.8px_1.8px_2px_rgb(0_0_0_/_150%)]">
                     {content.texts.hero.subtitle}
                   </p>
                 </div>

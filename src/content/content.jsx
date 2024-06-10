@@ -40,14 +40,14 @@ const content = {
     hero: {
       title: (
         <h1>
-          Transformamos ideias
-          <br />
-          em <span className="text-yellow-400"> sites incríveis</span>
+          Transformamos ideias em
+          <span className="text-yellow-400"> sites incríveis</span>
         </h1>
       ),
       subtitle: (
         <p>
-          Somos especialistas em desenvolver sites que fazem seu negócio crescer
+          Somos especialistas em desenvolver sites atraentes, que aparecem nas
+          buscas no Google e funcionam bem em todos os tamanhos de tela
         </p>
       ),
       ctaButtonText: "Fale com um atendente",
