@@ -53,7 +53,7 @@ export default function HeadlessDemo() {
       <div className="flex justify-center card">
         <AlignJustify
           className={`p-button-rounded p-button-outlined lg:hidden ${
-            scrolled ? "text-white" : "text-white"
+            scrolled ? "text-black" : "text-white"
           } w-[40px] h-[40px]`}
           onClick={() => setVisible(true)}
         />
@@ -71,8 +71,8 @@ export default function HeadlessDemo() {
                 <div className="flex items-center justify-between flex-shrink-0 px-4 pt-4">
                   <span className="inline-flex items-center gap-2">
                     <img
-                      src={content.texts.navbar.logo.img}
-                      alt={content.texts.navbar.logo.alt}
+                      src={content.texts.navbar.logoDark.img}
+                      alt={content.texts.navbar.logoDark.alt}
                       className="w-[200px] h-auto p-[5px]"
                     />
                   </span>
@@ -177,7 +177,7 @@ export default function HeadlessDemo() {
                       )}
                     </li>
                     <hr className="mx-3 mb-3 border-top-1 surface-border" />
-                    <a
+                    {/* <a
                       v-ripple
                       className="bottom-0 left-0 flex items-center justify-center gap-2 p-3 m-3 transition-colors cursor-pointer phone2:absolute border-round text-700 hover:surface-100 transition-duration-150 p-ripple"
                     >
@@ -186,7 +186,7 @@ export default function HeadlessDemo() {
                         alt={content.texts.about.imagem.alt}
                         className="w-[100%]"
                       />
-                    </a>
+                    </a> */}
                   </ul>
                 </div>
               </div>

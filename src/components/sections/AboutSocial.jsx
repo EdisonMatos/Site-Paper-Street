@@ -119,7 +119,6 @@ export default function AboutSocial() {
             </MotionDivDownToUp>
           </div>
         </div>
-
         <MotionDivDownToUp className="w-[100%] desktop1:w-[360px] desktop2:w-[300px]">
           <img
             onClick={handleClick}

@@ -1,4 +1,5 @@
 import logo from "../assets/imgs/logo/logo.png";
+import logoDark from "../assets/imgs/logo/logoDark.png";
 import aboutImg1 from "../assets/imgs/about/aboutImg.jpg";
 import aboutImgMobile1 from "../assets/imgs/about/aboutImgMobile.jpg";
 import trustedByImg1 from "../assets/imgs/trustedBy/item1.webp";
@@ -19,17 +20,22 @@ import teamMemberImg3 from "../assets/imgs/team/team3.jpg";
 import teamMemberImg4 from "../assets/imgs/team/team4.jpg";
 import MotionDivDownToUp from "../components/animation/MotionDivDownToUp";
 import ButtonWithIconLight from "../components/interactives/ButtonWithIconLight";
+import links from "./links";
 
 const content = {
   texts: {
     navbar: {
       logo: {
         img: logo,
-        alt: "Logo URM Corretora de Seguros",
+        alt: "Logo",
+      },
+      logoDark: {
+        img: logoDark,
+        alt: "Logo",
       },
       menuItems: ["Início", "Sobre Nós", "Serviços", "Perguntas Frequentes"],
       ctaButtonText: "Contato",
-      ctaButtonTextResponsive: "Fale Conosco",
+      ctaButtonTextResponsive: "Contato",
     },
     hero: {
       title: (
@@ -132,10 +138,7 @@ const content = {
           <br />
           <div className=" flex flex-col gap-[16px] w-[100%] tablet1:w-[60%] desktop1:w-[80%] desktop2:w-[60%]">
             <MotionDivDownToUp>
-              <a
-                href="https://www.instagram.com/ritaalmeida_corretora/"
-                target="_blank"
-              >
+              <a href={links.socialMedia.instagram} target="_blank">
                 <ButtonWithIconLight
                   label="Siga a gente no Instagram"
                   icon={
@@ -160,7 +163,7 @@ const content = {
               </a>
             </MotionDivDownToUp>
             <MotionDivDownToUp>
-              <a href="https://twitter.com/rcsalmeida2" target="_blank">
+              <a href={links.socialMedia.facebook} target="_blank">
                 <ButtonWithIconLight
                   label="Siga a gente no Facebook"
                   icon={
@@ -183,10 +186,7 @@ const content = {
               </a>
             </MotionDivDownToUp>
             <MotionDivDownToUp>
-              <a
-                href="https://www.facebook.com/ritadecassiasobreiradealmeida.almeida/"
-                target="_blank"
-              >
+              <a href={links.socialMedia.linkedin} target="_blank">
                 <ButtonWithIconLight
                   label="Conheça nosso Linkedin"
                   icon={
@@ -242,7 +242,7 @@ const content = {
                 <circle cx="4" cy="4" r="2" />
               </svg>
             ),
-            link1: "link1",
+            link1: "https://www.linkedin.com/in/edison-matoss/",
             icon2: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -254,14 +254,13 @@ const content = {
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="lucide lucide-instagram"
+                class="lucide lucide-github"
               >
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
               </svg>
             ),
-            link2: "link2",
+            link2: "https://github.com/EdisonMatos",
             icon3: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -280,7 +279,7 @@ const content = {
                 <path d="M2 12h20" />
               </svg>
             ),
-            link3: "link3",
+            link3: "https://edisonmatos.github.io/",
           },
         },
         member2: {
@@ -309,8 +308,26 @@ const content = {
                 <circle cx="4" cy="4" r="2" />
               </svg>
             ),
-            link1: "link1",
+            link1: "https://www.linkedin.com/in/gabriel-adans-2bb029227/",
             icon2: (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-github"
+              >
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+            ),
+            link2: "https://github.com/GabrielAdans",
+            icon3: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -328,26 +345,7 @@ const content = {
                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
               </svg>
             ),
-            link2: "link2",
-            icon3: (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#000000"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-globe"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
-                <path d="M2 12h20" />
-              </svg>
-            ),
-            link3: "link3",
+            link3: "https://www.instagram.com/adansgabriel/",
           },
         },
         member3: {
@@ -355,7 +353,7 @@ const content = {
             img: teamMemberImg3,
             alt: "Gabriel Souza",
           },
-          name: "Gabriel Adans",
+          name: "Gabriel Souza",
           role: "Desenvolvedor Frontend",
           socialMedia: {
             icon1: (
@@ -376,8 +374,26 @@ const content = {
                 <circle cx="4" cy="4" r="2" />
               </svg>
             ),
-            link1: "link1",
+            link1: " https://www.linkedin.com/in/gabriel-souza-b9945929a",
             icon2: (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-github"
+              >
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+            ),
+            link2: "https://github.com/BiellSouza",
+            icon3: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -395,26 +411,7 @@ const content = {
                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
               </svg>
             ),
-            link2: "link2",
-            icon3: (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#000000"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-globe"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
-                <path d="M2 12h20" />
-              </svg>
-            ),
-            link3: "link3",
+            link3: " https://www.instagram.com/biel.souza.904",
           },
         },
         member4: {
@@ -500,9 +497,9 @@ const content = {
         img: featuresImg2,
       },
       card3: {
-        title: "Cartões de Visita digitais",
+        title: "Páginas web em geral",
         subtitle:
-          "Uma forma moderna de substituir o antigo cartão de visita físico por uma página contendo todos seus dados de contato",
+          "Criamos diversos outros tipos de sites, como portais de notícia, blogs, cartões de visita digitais, portfólio pages e mais ",
         img: featuresImg3,
       },
       card4: {
