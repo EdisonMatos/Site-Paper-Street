@@ -27,8 +27,8 @@ export default function HeroImgBackground() {
                 </div>
               </MotionDivLeftToRight>
               <MotionDivLeftToRight>
-                <div className="text-center phone1:w-full font-secondFont phone1:text-title1">
-                  <p className="text-white pb-[54px] [text-shadow:_1.8px_1.8px_2px_rgb(0_0_0_/_150%)]">
+                <div className="flex justify-center text-center phone1:w-full font-secondFont phone1:text-title1">
+                  <p className="text-white pb-[54px] tablet1:w-[70%] [text-shadow:_1.8px_1.8px_2px_rgb(0_0_0_/_150%)]">
                     {content.texts.hero.subtitle}
                   </p>
                 </div>

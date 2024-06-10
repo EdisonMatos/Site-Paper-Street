@@ -46,7 +46,8 @@ const content = {
       ),
       subtitle: (
         <p>
-          Somos especialistas em desenvolver sites que fazem seu negócio crescer
+          Somos especialistas em desenvolver sites atraentes, que aparecem nas
+          buscas no Google e funcionam bem em todos os tamanhos de tela
         </p>
       ),
       ctaButtonText: "Fale com um atendente",
