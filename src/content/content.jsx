@@ -52,7 +52,7 @@ const content = {
           <br />
         </p>
       ),
-      ctaButtonText: "Fale com nossa equipe",
+      ctaButtonText: "Fale com um atendente",
       images: {
         background: {},
         static: {
@@ -520,7 +520,8 @@ const content = {
         </p>
       ),
       subtitle: "#",
-      ctaButtonText: "Fale com um atendente agora mesmo",
+      ctaButtonText: "Fale com um atendente",
+      link: "",
     },
     faq: {
       title: "Perguntas Frequentes",
