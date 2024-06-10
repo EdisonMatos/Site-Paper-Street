@@ -3,6 +3,7 @@ import ButtonWithIcon from "../interactives/ButtonWithIcon";
 import MotionDivLeftToRight from "../animation/MotionDivLeftToRight";
 import content from "../../content/content";
 import bgHeroImg from "../../assets/imgs/hero/bgHero.jpg";
+import ButtonCTAWithIcon from "../interactives/ButtonCTAWithIcon";
 
 const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
@@ -13,7 +14,7 @@ export default function HeroImgBackground() {
       style={{ backgroundImage: `url(${bgHeroImg})` }}
       id="home"
     >
-      <div className="relative z-10 flex items-center w-full h-full bg-black bg-opacity-70">
+      <div className="relative z-10 flex items-center w-full h-full bg-black bg-opacity-55">
         <div className="w-full text-white justify-evenly pb-[30px]">
           <div className="h-[120px] phone2:h-[132px] tablet1:h-[145px] desktop3:h-[190px]" />
           <div className="flex phone1:flex-col desktop1:flex-row mx-auto mb-[38px] phone3:mb-[52px] w-[90%] max-w-[1215px] items-center gap-[20px] tablet2:gap-14 desktop3:gap-20">
@@ -40,7 +41,7 @@ export default function HeroImgBackground() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <ButtonWithIcon
+                      <ButtonCTAWithIcon
                         label={content.texts.hero.ctaButtonText}
                         icon={
                           <svg

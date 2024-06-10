@@ -5,13 +5,14 @@ import ButtonWithIcon from "../interactives/ButtonWithIcon";
 import SectionContent from "../sectionElements/SectionContent";
 import MotionDivUpToDown from "../animation/MotionDivUpToDown";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import ButtonCTAWithIcon from "../interactives/ButtonCTAWithIcon";
 
 const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
 export default function CtaWhatsapp() {
   return (
     <div
-      className="bg-center bg-cover bg-left desktop1:bg-fixed"
+      className="bg-center bg-left bg-cover desktop1:bg-fixed"
       style={{
         backgroundImage: `url(${content.texts.cta.backgroundImg})`,
       }}
@@ -28,7 +29,7 @@ export default function CtaWhatsapp() {
               </h1>
               <MotionDivDownToUp className="flex justify-center">
                 <div className="w-[70%] tablet1:w-full">
-                  <ButtonWithIcon
+                  <ButtonCTAWithIcon
                     label={content.texts.cta.ctaButtonText}
                     icon={
                       <svg
