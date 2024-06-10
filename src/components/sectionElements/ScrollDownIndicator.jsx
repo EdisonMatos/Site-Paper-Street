@@ -4,7 +4,7 @@ export default function ScrollDownIndicator() {
   return (
     <div className="flex justify-center">
       <div className="flex flex-col items-center">
-        <p className="mb-[22px] opacity-80 font-secondFont">
+        <p className="mb-[22px] mt-[40px] desktop1:mt-[20px]  opacity-80 font-secondFont">
           Deslize para baixo
         </p>
         <div className="scrollDown">
