@@ -48,8 +48,6 @@ const content = {
       subtitle: (
         <p>
           Somos especialistas em desenvolver sites que fazem seu negócio crescer
-          muito mais
-          <br />
         </p>
       ),
       ctaButtonText: "Fale com um atendente",
