@@ -4,7 +4,7 @@ import ListGroup from "../sectionElements/ListGroup";
 import { Link as ScrollLink } from "react-scroll";
 import HeadlessDemo from "../sectionElements/Sidebar2";
 import { px } from "framer-motion";
-import ButtonWithIconNavbar from "../interactives/ButtonWithIconNavbar";
+import ButtonCtaNavbar from "../interactives/ButtonCtaNavbar";
 import content from "../../content/content";
 
 export default function NavbarSection() {
@@ -112,7 +112,7 @@ export default function NavbarSection() {
           </ScrollLink>
           <div className="flex items-center justify-between gap-[16px]">
             <div className="hidden tablet1:flex desktop1:hidden">
-              <ButtonWithIconNavbar
+              <ButtonCtaNavbar
                 label={content.texts.navbar.ctaButtonTextResponsive}
                 icon={
                   <svg

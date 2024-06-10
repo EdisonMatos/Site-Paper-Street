@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import links from "../../content/links";
 import content from "../../content/content";
 import { useState, useEffect } from "react";
-import ButtonWithIconNavbar from "../interactives/ButtonWithIconNavbar";
+import ButtonCtaNavbar from "../interactives/ButtonCtaNavbar";
 import IconButton from "../interactives/IconButton";
 
 const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
@@ -33,7 +33,7 @@ export default function ListGroup() {
   return (
     <ul
       className={`h-14 hidden desktop1:flex my-auto items-center justify-end tablet1:items-center desktop1:gap-8 desktop2:gap-8 w-full font-normal text-paragraph3 font-secondFont ${
-        scrolling ? "" : "text-black transition-color duration-1000"
+        scrolling ? "" : "text-white transition-color duration-1000"
       }`}
     >
       <li className="transition group">
@@ -47,13 +47,13 @@ export default function ListGroup() {
           href="#"
         >
           <span
-            className={scrolling ? "hover:text-primary" : "hover:text-primary"}
+            className={scrolling ? "hover:text-primary" : "hover:text-white"}
           >
             {content.texts.navbar.menuItems[0]}
           </span>
           <div
             className={`absolute -bottom-2 left-0 w-full h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
-              scrolling ? "bg-primary" : "bg-primary"
+              scrolling ? "bg-primary" : "bg-white"
             }`}
           ></div>
         </Link>
@@ -69,15 +69,13 @@ export default function ListGroup() {
           href="#"
         >
           <span
-            className={`whitespace-nowrap ${
-              scrolling ? "hover:text-primary" : "hover:text-primary"
-            }`}
+            className={scrolling ? "hover:text-primary" : "hover:text-white"}
           >
             {content.texts.navbar.menuItems[1]}
           </span>
           <div
             className={`absolute -bottom-2 left-0 w-full h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
-              scrolling ? "bg-primary" : "bg-primary"
+              scrolling ? "bg-primary" : "bg-white"
             }`}
           ></div>
         </Link>
@@ -93,13 +91,13 @@ export default function ListGroup() {
           href="#"
         >
           <span
-            className={scrolling ? "hover:text-primary" : "hover:text-primary"}
+            className={scrolling ? "hover:text-primary" : "hover:text-white"}
           >
             {content.texts.navbar.menuItems[2]}
           </span>
           <div
             className={`absolute -bottom-2 left-0 w-full h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
-              scrolling ? "bg-primary" : "bg-primary"
+              scrolling ? "bg-primary" : "bg-white"
             }`}
           ></div>
         </Link>
@@ -116,22 +114,20 @@ export default function ListGroup() {
           href="#"
         >
           <span
-            className={`whitespace-nowrap ${
-              scrolling ? "hover:text-primary" : "hover:text-primary"
-            }`}
+            className={scrolling ? "hover:text-primary" : "hover:text-white"}
           >
             {content.texts.navbar.menuItems[3]}
           </span>
           <div
             className={`absolute -bottom-2 left-0 w-full h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
-              scrolling ? "bg-primary" : "bg-primary"
+              scrolling ? "bg-primary" : "bg-white"
             }`}
           ></div>
         </Link>
       </li>
       <div className="flex gap-[10px] items-center">
         <a href={whatsappContactLink} target="_blank">
-          <ButtonWithIconNavbar
+          <ButtonCtaNavbar
             label={content.texts.navbar.ctaButtonText}
             icon={
               <svg
