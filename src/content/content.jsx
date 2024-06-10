@@ -490,7 +490,7 @@ const content = {
       card2: {
         title: "Landing pages para seu produto ou serviço",
         subtitle:
-          "Um tipo de site feito pra convencer sobre um produto ou serviço em específico, levando o cliente a fechar com você",
+          "Um tipo de site feito pra convencer sobre um produto ou serviço em específico",
         img: featuresImg2,
       },
       card3: {
