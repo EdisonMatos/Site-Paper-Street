@@ -18,15 +18,15 @@ export default function FeatureImgOnBgCard(props) {
         style={{ backgroundImage: `url(${bgImg})` }}
       >
         <MotionDivDownToUp className="w-full h-auto bg-white rounded-2xl p-[20px] gap-[18px] flex flex-col">
-          <h3 className="font-mainFont font-medium text-[24px] desktop1:text-paragraph5 desktop2:text-[24px]">
+          <h3 className="font-mainFont font-medium text-[18px] desktop1:text-paragraph5 desktop2:text-[20px]">
             {title}
           </h3>
-          <p className="font-secondFont text-paragraph4 text-quaternary">
+          <p className="font-secondFont text-paragraph3 text-quaternary">
             {description}
           </p>
           <div>
             <ButtonWithIconNavbar
-              label="Saiba mais"
+              label="Contratar"
               icon={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
