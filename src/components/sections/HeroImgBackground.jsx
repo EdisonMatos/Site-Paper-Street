@@ -18,10 +18,10 @@ export default function HeroImgBackground() {
         <div className="w-full text-white justify-evenly">
           <div className="h-[125px] desktop3:h-[140px]" />
           <div className="flex phone1:flex-col desktop1:flex-row mx-auto mb-[38px] phone3:mb-[52px] w-[90%] max-w-[1215px] items-center gap-[20px] tablet2:gap-14 desktop3:gap-20">
-            <div className="flex flex-col w-full pt-[20px] pb-[0px] tablet1:pt-[80px] tablet1:pb-[20px]">
+            <div className="flex flex-col w-full pt-[20px] pb-[0px] tablet1:pt-[80px] tablet1:pb-[20px] desktop1:pt-[40px]">
               <MotionDivLeftToRight>
-                <div className="text-white font-bold leading-[46px] phone3:leading-[50px] tablet1:leading-[60px] desktop1:leading-[110px] text-center text-title4 phone2:text-title4 phone3:text-title5 tablet1:text-title7 desktop1:text-[86px]">
-                  <h1 className="pb-[16px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
+                <div className="text-white flex justify-center font-bold leading-[46px] phone3:leading-[50px] tablet1:leading-[60px] desktop1:leading-[110px] text-center text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7 desktop1:text-[72px]">
+                  <h1 className="pb-[16px]  desktop1:w-[80%] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
                     {content.texts.hero.title}
                   </h1>
                 </div>
@@ -35,7 +35,7 @@ export default function HeroImgBackground() {
               </MotionDivLeftToRight>
               <div className="w-full phone2:w-full tablet2:w-auto">
                 <MotionDivLeftToRight>
-                  <div className="flex justify-center w-full mb-[36px]">
+                  <div className="flex justify-center w-full mb-[60px]">
                     <a
                       href={whatsappContactLink}
                       target="_blank"
