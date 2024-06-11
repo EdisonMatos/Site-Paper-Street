@@ -129,13 +129,13 @@ const content = {
         <div>
           Somos a Paper Street e somos especialistas em desenvolver páginas web.
           Os sites que fazemos passam por checagens super criteriosas em testes
-          de perfomance e temos orgulho em dizer que entregamos sites rápidos e
-          que atendem os objetivos de nossos clientes.
+          de performance e temos orgulho em dizer que entregamos sites rápidos e
+          que atendem aos objetivos de nossos clientes.
           <br />
           <br />
           Levamos a experiência do usuário muito a sério, focando sempre em
           desenvolver sites que sejam bonitos e fáceis de serem utilizados,
-          desde os mais jovens aos mais idosos, aplicando sempre os conceitos
+          desde os mais jovens até os mais idosos, aplicando sempre os conceitos
           mais modernos que existem no mercado no momento.
           <br />
           <br />
