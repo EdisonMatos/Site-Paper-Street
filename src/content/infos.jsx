@@ -6,7 +6,7 @@ const infos = {
   footerInfos: {
     year: 2024,
     footerText:
-      "Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos as proteções que oferecemos. 🛡️👋",
+      "Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos as proteções que oferecemos. 👋",
   },
 };
 
