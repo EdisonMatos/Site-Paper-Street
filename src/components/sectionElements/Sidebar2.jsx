@@ -124,7 +124,7 @@ export default function HeadlessDemo() {
                                     spy={true}
                                     smooth={true}
                                     duration={400}
-                                    offset={-220}
+                                    offset={-70}
                                     href="#"
                                   >
                                     {content.texts.navbar.menuItems[2]}
@@ -143,7 +143,7 @@ export default function HeadlessDemo() {
                                     spy={true}
                                     smooth={true}
                                     duration={500}
-                                    offset={-340}
+                                    offset={-70}
                                     href="#"
                                   >
                                     {content.texts.navbar.menuItems[1]}
@@ -162,7 +162,7 @@ export default function HeadlessDemo() {
                                     spy={true}
                                     smooth={true}
                                     duration={500}
-                                    offset={-60}
+                                    offset={-70}
                                     href="#"
                                   >
                                     {content.texts.navbar.menuItems[3]}
