@@ -21,16 +21,22 @@ export default function Features() {
             bgImg={content.texts.features.card1.img}
             title={content.texts.features.card1.title}
             description={content.texts.features.card1.subtitle}
+            buttonLabel={content.texts.features.card1.buttonLabel}
+            buttonLink={content.texts.features.card1.buttonLink}
           />
           <FeatureImgOnBgCard
             bgImg={content.texts.features.card2.img}
             title={content.texts.features.card2.title}
             description={content.texts.features.card2.subtitle}
+            buttonLabel={content.texts.features.card2.buttonLabel}
+            buttonLink={content.texts.features.card2.buttonLink}
           />
           <FeatureImgOnBgCard
             bgImg={content.texts.features.card3.img}
             title={content.texts.features.card3.title}
             description={content.texts.features.card3.subtitle}
+            buttonLabel={content.texts.features.card3.buttonLabel}
+            buttonLink={content.texts.features.card3.buttonLink}
           />
         </div>
       </SectionWrapper>

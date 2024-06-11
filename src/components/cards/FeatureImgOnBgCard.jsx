@@ -3,7 +3,7 @@ import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import ButtonWithIconNavbar from "../interactives/ButtonWithIconNavbar";
 
 export default function FeatureImgOnBgCard(props) {
-  const { bgImg, title, description } = props;
+  const { bgImg, title, description, buttonLabel, buttonLink } = props;
 
   FeatureImgOnBgCard.propTypes = {
     bgImg: PropTypes.any,
@@ -26,7 +26,8 @@ export default function FeatureImgOnBgCard(props) {
           </p>
           <div>
             <ButtonWithIconNavbar
-              label="Contratar"
+              link={buttonLink}
+              label={buttonLabel}
               icon={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

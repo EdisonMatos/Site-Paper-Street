@@ -491,23 +491,31 @@ const content = {
         subtitle:
           "A melhor forma do seu cliente te encontrar na internet e fazer ele confiar no seu negócio",
         img: featuresImg1,
+        buttonLabel: "Saiba mais",
+        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre sites.`,
       },
       card2: {
         title: "Landing pages para seu produto ou serviço",
         subtitle:
           "Um tipo de site feito pra convencer sobre um produto ou serviço em específico",
         img: featuresImg2,
+        buttonLabel: "Saiba mais",
+        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre landing pages.`,
       },
       card3: {
         title: "Páginas web em geral",
         subtitle:
           "Criamos diversos outros tipos de sites, como portais de notícia, blogs, cartões de visita digitais, portfólio pages e mais ",
         img: featuresImg3,
+        buttonLabel: "Saiba mais",
+        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre os serviços de vocês.`,
       },
       card4: {
         title: "Sistemas em nuvem",
         subtitle: "Avaliação detalhada dos riscos para proteção ideal",
         img: featuresImg4,
+        buttonLabel: "Saiba mais",
+        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre os sistemas de vocês.`,
       },
       title: "Nossas especialidades",
       subtitle:

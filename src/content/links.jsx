@@ -1,4 +1,5 @@
 const links = {
+  whatsapp: "https://wa.me/+5561992781077?text=",
   ctaWhatsapp:
     "+5561992781077?text=Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
   ctaLink: "#",
