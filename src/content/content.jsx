@@ -129,13 +129,13 @@ const content = {
         <div>
           Somos a Paper Street e somos especialistas em desenvolver páginas web.
           Os sites que fazemos passam por checagens super criteriosas em testes
-          de perfomance e temos orgulho em dizer que entregamos sites rápidos e
-          que atendem os objetivos de nossos clientes.
+          de performance e temos orgulho em dizer que entregamos sites rápidos e
+          que atendem aos objetivos de nossos clientes.
           <br />
           <br />
           Levamos a experiência do usuário muito a sério, focando sempre em
           desenvolver sites que sejam bonitos e fáceis de serem utilizados,
-          desde os mais jovens aos mais idosos, aplicando sempre os conceitos
+          desde os mais jovens até os mais idosos, aplicando sempre os conceitos
           mais modernos que existem no mercado no momento.
           <br />
           <br />
@@ -533,24 +533,37 @@ const content = {
         "Confira as perguntas abaixo para esclarecer suas dúvidas. Estamos aqui para ajudar!",
       questions: {
         question1: {
-          question: "Qual é o tipo de seguro mais adequado para mim?",
+          question:
+            "Gostaria de ter um site, mas não entendo sobre o assunto. O que devo fazer?",
           answer:
-            "A resposta a essa pergunta depende muito das suas necessidades específicas. Nossa equipe de corretores está aqui para ajudá-lo a entender suas opções e recomendar o tipo de seguro que melhor se adapta à sua situação. Isso pode incluir seguro de vida, seguro de saúde, seguro de automóvel, seguro residencial, entre outros. Entre em contato conosco para uma consulta personalizada.",
+            "Entre em contato conosco que iremos te guiar com bastante simplicidade no processo. Para se tornar um cliente nosso, não é necessário nenhum tipo de conhecimento sobre sites ou internet. Estamos aqui exatamente para que você não tenha preocupação nenhuma.",
         },
         question2: {
-          question: "Como posso economizar dinheiro no meu seguro?",
+          question: "Preciso pagar mensalmente para ter meu site?",
           answer:
-            "Existem várias maneiras de economizar dinheiro no seguro. Uma delas é agrupar várias apólices de seguro sob o mesmo provedor, o que geralmente resulta em descontos. Além disso, manter um bom histórico de condução, um histórico de saúde sólido ou instalar dispositivos de segurança em sua casa ou veículo pode diminuir os custos do seguro. Nossos corretores podem revisar suas opções e oferecer conselhos sobre como maximizar sua cobertura enquanto economiza dinheiro.",
+            "Não. Aqui na Paper Street não trabalhamos com aluguel. Após finalizarmos e entregarmos o serviço, o site passa a ser propriedade do cliente e ele não deve pagar nada mais por ele, para sempre.",
         },
         question3: {
-          question: "O que devo fazer em caso de sinistro?",
+          question:
+            "Gostaria de ter um site, mas não tenho fotos boas e não sei escrever bons textos. O que devo fazer?",
           answer:
-            "Em caso de sinistro, é importante nos contatar imediatamente para iniciar o processo de reivindicação. Nosso objetivo é tornar o processo o mais simples possível para você. Coletaremos todas as informações necessárias e orientaremos você em cada etapa do processo de reivindicação, garantindo que você receba a assistência de que precisa o mais rápido possível.",
+            "Não se preocupe, nós também temos a solução para você. Nossa equipe irá sugerir todo material audiovisual que você precisar para ter o seu site e você não precisa ter custo com isso!",
         },
         question4: {
-          question: "Como faço para entender minha apólice de seguro?",
+          question: "Já tenho um site, mas está antigo. Vocês o atualizam?",
           answer:
-            "Compreender os termos e condições de sua apólice de seguro pode parecer complicado, mas estamos aqui para ajudar. Nossos corretores estão à disposição para explicar todos os detalhes da sua apólice, incluindo cobertura, exclusões, limites e quaisquer outros aspectos importantes. Não hesite em nos contatar se tiver alguma dúvida sobre sua cobertura ou qualquer aspecto do seu seguro.",
+            "Sim, e esse é um caso muito comum. Como a internet evolui bastante, às vezes um site feito há muito tempo precisa de uma atualização. Basta falar com nossa equipe que iremos modernizar o seu site.",
+        },
+        question5: {
+          question:
+            "Quais são as formas de pagamento que a Paper Street aceita?",
+          answer:
+            "Aceitamos e parcelamos o seu site no cartão de crédito, assim como também trabalhamos com Pix e Boleto Bancário.",
+        },
+        question6: {
+          question: "A Paper Street emite nota fiscal?",
+          answer:
+            "Sim. Somos uma empresa devidamente regularizada e emitimos nota fiscal com nosso CNPJ, conforme a legislação vigente.",
         },
       },
     },

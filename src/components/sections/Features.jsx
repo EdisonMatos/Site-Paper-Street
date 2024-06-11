@@ -6,17 +6,17 @@ import content from "../../content/content";
 
 export default function Features() {
   return (
-    <SectionArea className="py-[40px] tablet1:py-[64px] desktop1:py-[96px]esktop1:pb-[0px] bg-quinary">
+    <SectionArea
+      id={"service"}
+      className="py-[40px] tablet1:py-[64px] desktop1:py-[96px]esktop1:pb-[0px] bg-quinary"
+    >
       <SectionHeader
         className="text-center"
         sectionHeaderTitle={content.texts.features.title}
         sectionHeaderSubtitle={content.texts.features.subtitle}
       />
       <SectionWrapper>
-        <div
-          className="flex flex-wrap justify-between w-full gap-[36px] tablet1:gap-[24px]"
-          id="service"
-        >
+        <div className="flex flex-wrap justify-between w-full gap-[36px] tablet1:gap-[24px]">
           <FeatureImgOnBgCard
             bgImg={content.texts.features.card1.img}
             title={content.texts.features.card1.title}

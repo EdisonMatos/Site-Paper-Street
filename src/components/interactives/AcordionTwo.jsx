@@ -35,7 +35,7 @@ export default function AccordionExpandDefault() {
         style={getPanelStyle("panel1")}
       >
         <AccordionSummary
-          className=" h-[76px]"
+          className=""
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"
           id="panel1-header"
@@ -63,7 +63,7 @@ export default function AccordionExpandDefault() {
         style={getPanelStyle("panel2")}
       >
         <AccordionSummary
-          className=" h-[76px]"
+          className=""
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2-content"
           id="panel2-header"
@@ -91,7 +91,7 @@ export default function AccordionExpandDefault() {
         style={getPanelStyle("panel3")}
       >
         <AccordionSummary
-          className=" h-[76px]"
+          className=""
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3-content"
           id="panel3-header"
@@ -119,7 +119,7 @@ export default function AccordionExpandDefault() {
         style={getPanelStyle("panel4")}
       >
         <AccordionSummary
-          className=" h-[76px]"
+          className=""
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel4-content"
           id="panel4-header"
@@ -134,6 +134,62 @@ export default function AccordionExpandDefault() {
           <Typography>
             <p className="font-secondFont text-paragraph4 text-paragraphLight ">
               {content.texts.faq.questions.question4.answer}
+            </p>
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      {/* Accordion 5 */}
+      <Accordion
+        className="mb-[3%]"
+        expanded={expanded === "panel5"}
+        onChange={handleChange("panel5")}
+        style={getPanelStyle("panel5")}
+      >
+        <AccordionSummary
+          className=""
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel5-content"
+          id="panel5-header"
+        >
+          <Typography>
+            <h1 className="font-bold font-secondFont">
+              {content.texts.faq.questions.question5.question}
+            </h1>
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            <p className="font-secondFont text-paragraph4 text-paragraphLight ">
+              {content.texts.faq.questions.question5.answer}
+            </p>
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      {/* Accordion 6 */}
+      <Accordion
+        className="mb-[3%]"
+        expanded={expanded === "panel6"}
+        onChange={handleChange("panel6")}
+        style={getPanelStyle("panel6")}
+      >
+        <AccordionSummary
+          className=""
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel6-content"
+          id="panel6-header"
+        >
+          <Typography>
+            <h1 className="font-bold font-secondFont">
+              {content.texts.faq.questions.question6.question}
+            </h1>
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            <p className="font-secondFont text-paragraph4 text-paragraphLight ">
+              {content.texts.faq.questions.question6.answer}
             </p>
           </Typography>
         </AccordionDetails>

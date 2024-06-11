@@ -58,6 +58,29 @@ export default function ListGroup() {
           ></div>
         </Link>
       </li>
+
+      <li className="transition group">
+        <Link
+          to="service"
+          className="relative font-semibold cursor-pointer"
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-50}
+          href="#"
+        >
+          <span
+            className={scrolling ? "hover:text-primary" : "hover:text-white"}
+          >
+            {content.texts.navbar.menuItems[2]}
+          </span>
+          <div
+            className={`absolute -bottom-2 left-0 w-full h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
+              scrolling ? "bg-primary" : "bg-white"
+            }`}
+          ></div>
+        </Link>
+      </li>
       <li className="transition group">
         <Link
           to="about"
@@ -65,7 +88,7 @@ export default function ListGroup() {
           spy={true}
           smooth={true}
           duration={500}
-          offset={-260}
+          offset={-20}
           href="#"
         >
           <span
@@ -82,35 +105,12 @@ export default function ListGroup() {
       </li>
       <li className="transition group">
         <Link
-          to="service"
-          className="relative font-semibold cursor-pointer"
-          spy={true}
-          smooth={true}
-          duration={500}
-          offset={-350}
-          href="#"
-        >
-          <span
-            className={scrolling ? "hover:text-primary" : "hover:text-white"}
-          >
-            {content.texts.navbar.menuItems[2]}
-          </span>
-          <div
-            className={`absolute -bottom-2 left-0 w-full h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
-              scrolling ? "bg-primary" : "bg-white"
-            }`}
-          ></div>
-        </Link>
-      </li>
-
-      <li className="transition group">
-        <Link
           to="faq"
           className="relative font-semibold cursor-pointer"
           spy={true}
           smooth={true}
           duration={500}
-          offset={-300}
+          offset={-50}
           href="#"
         >
           <span
