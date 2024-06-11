@@ -1,7 +1,7 @@
+import links from "./links";
 import logo from "../assets/imgs/logo/logo.png";
 import logoDark from "../assets/imgs/logo/logoDark.png";
 import aboutImg1 from "../assets/imgs/about/aboutImg.jpg";
-import aboutImgMobile1 from "../assets/imgs/about/aboutImgMobile.jpg";
 import trustedByImg1 from "../assets/imgs/trustedBy/item1.webp";
 import trustedByImg2 from "../assets/imgs/trustedBy/item2.webp";
 import trustedByImg3 from "../assets/imgs/trustedBy/item3.webp";
@@ -13,15 +13,15 @@ import featuresImg1 from "../assets/imgs/features/featuresImg1.jpg";
 import featuresImg2 from "../assets/imgs/features/featuresImg2.jpg";
 import featuresImg3 from "../assets/imgs/features/featuresImg3.jpg";
 import featuresImg4 from "../assets/imgs/features/featuresImg4.webp";
+import aboutImgMobile1 from "../assets/imgs/about/aboutImgMobile.jpg";
 import ctaWhatsappImgBg from "../assets/imgs/paralaxe/bgParalaxe2.jpg";
 import teamMemberImg1 from "../assets/imgs/team/team1.jpg";
 import teamMemberImg2 from "../assets/imgs/team/team2.jpg";
 import teamMemberImg3 from "../assets/imgs/team/team3.jpg";
 import teamMemberImg4 from "../assets/imgs/team/team4.jpg";
 import MotionDivDownToUp from "../components/animation/MotionDivDownToUp";
-import ButtonWithIconLight from "../components/interactives/ButtonWithIconLight";
-import links from "./links";
 import TypewriterComponent from "../components/animation/TypeWriter";
+import ButtonWithIconNavbar from "../components/interactives/ButtonWithIconNavbar";
 
 const content = {
   texts: {
@@ -127,12 +127,16 @@ const content = {
       title: "Sobre nós 👋",
       paragraph: (
         <div>
-          Somos a <strong>Paper Street</strong> e desenvolvemos ferramentas
-          digitais para você e seu negócio.
+          Somos a Paper Street e somos especialistas em desenvolver páginas web.
+          Os sites que fazemos passam por checagens super criteriosas em testes
+          de perfomance e temos orgulho em dizer que entregamos sites rápidos e
+          que atendem os objetivos de nossos clientes.
           <br />
           <br />
-          Nosso objetivo é usar a tecnologia para alavancar o seu negócio,
-          selecionando os produtos que mais se encaixam pra você.
+          Levamos a experiência do usuário muito a sério, focando sempre em
+          desenvolver sites que sejam bonitos e fáceis de serem utilizados,
+          desde os mais jovens aos mais idosos, aplicando sempre os conceitos
+          mais modernos que existem no mercado no momento.
           <br />
           <br />
           Quer saber mais sobre a gente?
@@ -140,75 +144,74 @@ const content = {
           <br />
           <div className=" flex flex-col gap-[16px] w-[100%] tablet1:w-[60%] desktop1:w-[80%] desktop2:w-[60%]">
             <MotionDivDownToUp>
-              <a href={links.socialMedia.instagram} target="_blank">
-                <ButtonWithIconLight
-                  label="Siga a gente no Instagram"
-                  icon={
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-instagram"
-                    >
-                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                    </svg>
-                  }
-                />
-              </a>
+              <ButtonWithIconNavbar
+                link={links.socialMedia.instagram}
+                label="Siga a gente no Instagram"
+                icon={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-instagram"
+                  >
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                  </svg>
+                }
+              />
             </MotionDivDownToUp>
             <MotionDivDownToUp>
-              <a href={links.socialMedia.facebook} target="_blank">
-                <ButtonWithIconLight
-                  label="Siga a gente no Facebook"
-                  icon={
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-twitter"
-                    >
-                      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-                    </svg>
-                  }
-                />
-              </a>
+              <ButtonWithIconNavbar
+                link={links.socialMedia.facebook}
+                label="Siga a gente no Facebook"
+                icon={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-facebook"
+                  >
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                  </svg>
+                }
+              />
             </MotionDivDownToUp>
             <MotionDivDownToUp>
-              <a href={links.socialMedia.linkedin} target="_blank">
-                <ButtonWithIconLight
-                  label="Conheça nosso Linkedin"
-                  icon={
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-facebook"
-                    >
-                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                    </svg>
-                  }
-                />
-              </a>
+              <ButtonWithIconNavbar
+                link={links.socialMedia.linkedin}
+                label="Siga a gente no Linkedin"
+                icon={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-linkedin"
+                  >
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect width="4" height="12" x="2" y="9" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                }
+              />
             </MotionDivDownToUp>
           </div>
         </div>
@@ -442,7 +445,7 @@ const content = {
                 <circle cx="4" cy="4" r="2" />
               </svg>
             ),
-            link1: "link1",
+            link1: "https://www.linkedin.com/in/luiz-felipe-leite-95a246192/",
             icon2: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -461,26 +464,20 @@ const content = {
                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
               </svg>
             ),
-            link2: "link2",
+            link2: "https://www.instagram.com/luizleitedesigner/",
             icon3: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#000000"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-globe"
+                height="18"
+                fill="#000000"
+                className=" bi bi-whatsapp"
+                viewBox="0 0 16 16"
               >
-                <circle cx="12" cy="12" r="10" />
-                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
-                <path d="M2 12h20" />
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
               </svg>
             ),
-            link3: "link3",
+            link3: "https://wa.me/+556596241854",
           },
         },
       },
