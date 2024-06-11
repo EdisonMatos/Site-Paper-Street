@@ -41,13 +41,12 @@ const content = {
     hero: {
       title: (
         <h1>
-          Transformamos ideias em
+          Transformamos <br className="hidden tablet1:flex desktop1:hidden" />{" "}
+          ideias em
           <TypewriterComponent
-          strings={["Sites incríveis um", "Sites incríveis dois", "Sites incríveis três"]}
-          className="my-typewriter"
-          style={{ fontSize: "65px", color: "yellow" }}
+            strings={["Sites", "Landing Pages", "Portais e blogs"]}
+            className="text-yellow-400 my-typewriter"
           />
-          {/* <span className="text-yellow-400"> sites incríveis</span> */}
         </h1>
       ),
       subtitle: (
