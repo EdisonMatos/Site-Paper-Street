@@ -21,6 +21,7 @@ import teamMemberImg4 from "../assets/imgs/team/team4.jpg";
 import MotionDivDownToUp from "../components/animation/MotionDivDownToUp";
 import ButtonWithIconLight from "../components/interactives/ButtonWithIconLight";
 import links from "./links";
+import TypewriterComponent from "../components/animation/TypeWriter";
 
 const content = {
   texts: {
@@ -41,7 +42,12 @@ const content = {
       title: (
         <h1>
           Transformamos ideias em
-          <span className="text-yellow-400"> sites incríveis</span>
+          <TypewriterComponent
+          strings={["Sites incríveis um", "Sites incríveis dois", "Sites incríveis três"]}
+          className="my-typewriter"
+          style={{ fontSize: "65px", color: "yellow" }}
+          />
+          {/* <span className="text-yellow-400"> sites incríveis</span> */}
         </h1>
       ),
       subtitle: (
