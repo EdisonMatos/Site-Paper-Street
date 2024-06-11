@@ -51,7 +51,7 @@ const content = {
       ),
       subtitle: (
         <p>
-          Somos especialistas em desenvolver sites atraentes, que aparecem nas
+          Somos especialistas em desenvolver sites modernos, que aparecem nas
           buscas no Google e funcionam bem em todos os tamanhos de tela
         </p>
       ),
