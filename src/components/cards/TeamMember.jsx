@@ -10,8 +10,8 @@ export default function TeamMember(props) {
         className="w-[215px] h-[215px] desktop1:w-full desktop1:h-full mb-[24px] bg-black rounded-full"
       ></img>
       <h3 className="mb-[8px] text-title1 font-bold">{name}</h3>
-      <div className="desktop2:h-[48px] desktop2:mb-[20px]">
-        <p className="text-center text-paragraphLight desktop2:mb-[20px]">
+      <div className="desktop2:h-[48px] desktop2:mb-[20px] flex justify-center">
+        <p className="text-center text-paragraphLight desktop2:mb-[20px] tablet1:w-[80%]">
           {role}
         </p>
       </div>

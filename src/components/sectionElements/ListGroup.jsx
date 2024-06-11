@@ -58,28 +58,7 @@ export default function ListGroup() {
           ></div>
         </Link>
       </li>
-      <li className="transition group">
-        <Link
-          to="about"
-          className="relative font-semibold cursor-pointer"
-          spy={true}
-          smooth={true}
-          duration={500}
-          offset={-260}
-          href="#"
-        >
-          <span
-            className={scrolling ? "hover:text-primary" : "hover:text-white"}
-          >
-            {content.texts.navbar.menuItems[1]}
-          </span>
-          <div
-            className={`absolute -bottom-2 left-0 w-full h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
-              scrolling ? "bg-primary" : "bg-white"
-            }`}
-          ></div>
-        </Link>
-      </li>
+
       <li className="transition group">
         <Link
           to="service"
@@ -87,7 +66,7 @@ export default function ListGroup() {
           spy={true}
           smooth={true}
           duration={500}
-          offset={-350}
+          offset={-300}
           href="#"
         >
           <span
@@ -102,7 +81,28 @@ export default function ListGroup() {
           ></div>
         </Link>
       </li>
-
+      <li className="transition group">
+        <Link
+          to="about"
+          className="relative font-semibold cursor-pointer"
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-150}
+          href="#"
+        >
+          <span
+            className={scrolling ? "hover:text-primary" : "hover:text-white"}
+          >
+            {content.texts.navbar.menuItems[1]}
+          </span>
+          <div
+            className={`absolute -bottom-2 left-0 w-full h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
+              scrolling ? "bg-primary" : "bg-white"
+            }`}
+          ></div>
+        </Link>
+      </li>
       <li className="transition group">
         <Link
           to="faq"
