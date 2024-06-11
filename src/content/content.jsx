@@ -521,11 +521,7 @@ const content = {
     cta: {
       backgroundImg: ctaWhatsappImgBg,
       title: (
-        <p className="">
-          Deixa a gente cuidar da vida digital
-          <br />
-          do seu negócio
-        </p>
+        <p className="">Deixa a gente cuidar da vida digital do seu negócio</p>
       ),
       subtitle: "#",
       ctaButtonText: "Fale com um atendente",

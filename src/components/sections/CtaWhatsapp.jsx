@@ -28,7 +28,7 @@ export default function CtaWhatsapp() {
                 </MotionDivUpToDown>
               </h1>
               <MotionDivDownToUp className="flex justify-center">
-                <div className="w-[70%] tablet1:w-full">
+                <div className="w-[80%] phone2:w-full tablet1:w-full">
                   <ButtonCTAWithIcon
                     label={content.texts.cta.ctaButtonText}
                     buttonLink={whatsappContactLink}
