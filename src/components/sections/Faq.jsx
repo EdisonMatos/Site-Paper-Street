@@ -11,7 +11,7 @@ const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
 export default function Faq() {
   return (
-    <SectionArea className="bg-quinary">
+    <SectionArea id={"faq"} className="bg-quinary">
       <SectionHeader
         className="text-center"
         sectionHeaderTitle={content.texts.faq.title}
@@ -21,8 +21,8 @@ export default function Faq() {
       <SectionWrapper className="flex justify-center">
         <MotionDivDownToUp className="flex justify-center w-full">
           <div
+            // id="faq"
             className="w-[90%] tablet1:w-[80%] desktop1:w-[80%] max-w-[860px] mb-[26px] tablet1:mb-[40px] desktop1:mb-[80px]"
-            id="faq"
           >
             <AccordionExpandDefault />
           </div>

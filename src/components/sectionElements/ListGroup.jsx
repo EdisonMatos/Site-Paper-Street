@@ -66,7 +66,7 @@ export default function ListGroup() {
           spy={true}
           smooth={true}
           duration={500}
-          offset={-300}
+          offset={-50}
           href="#"
         >
           <span
@@ -88,7 +88,7 @@ export default function ListGroup() {
           spy={true}
           smooth={true}
           duration={500}
-          offset={-150}
+          offset={-20}
           href="#"
         >
           <span
@@ -110,7 +110,7 @@ export default function ListGroup() {
           spy={true}
           smooth={true}
           duration={500}
-          offset={-300}
+          offset={-50}
           href="#"
         >
           <span

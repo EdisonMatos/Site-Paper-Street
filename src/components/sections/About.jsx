@@ -55,7 +55,7 @@ export default function About() {
   };
 
   return (
-    <SectionArea className="">
+    <SectionArea id={"about"} className="">
       <SectionWrapper className="flex flex-col desktop1:flex-row gap-[40px] desktop1:gap-0 desktop1:justify-between">
         <MotionDivDownToUp className="w-[100%] desktop1:w-[415px] desktop2:w-[485px]">
           <img
@@ -70,7 +70,7 @@ export default function About() {
           />
         </MotionDivDownToUp>
 
-        <div className="desktop1:w-[450px] desktop2:w-[570px]" id="about">
+        <div className="desktop1:w-[450px] desktop2:w-[570px]">
           <MotionDivDownToUp>
             <SectionTitles className="mb-[18px] desktop1:mb-[26px]">
               {content.texts.about.title}

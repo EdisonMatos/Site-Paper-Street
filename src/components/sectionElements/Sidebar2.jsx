@@ -68,7 +68,7 @@ export default function HeadlessDemo() {
               style={{ width: "280px" }}
             >
               <div className="flex flex-col h-full">
-                <div className="flex items-center justify-between flex-shrink-0 px-4 pt-4">
+                <div className="flex items-center justify-between flex-shrink-0 px-4 pt-6">
                   <span className="inline-flex items-center gap-2">
                     <img
                       src={content.texts.navbar.logoDark.img}
@@ -113,25 +113,6 @@ export default function HeadlessDemo() {
                               <Ripple />
                             </a>
                           </li>
-                          <li>
-                            <a className="flex items-center w-full p-3 transition-colors cursor-pointer p-ripple border-round text-700 hover:surface-100 transition-duration-150">
-                              <UserSearch />
-                              <span className="ml-[8px]">
-                                <Link
-                                  to="about"
-                                  className="cursor-pointer"
-                                  spy={true}
-                                  smooth={true}
-                                  duration={500}
-                                  offset={-1000}
-                                  href="#"
-                                >
-                                  {content.texts.navbar.menuItems[1]}
-                                </Link>
-                              </span>
-                              <Ripple />
-                            </a>
-                          </li>
                           <ul className="p-0 m-0 list-none">
                             <li>
                               <a className="flex items-center w-full p-3 transition-colors cursor-pointer p-ripple border-round text-700 hover:surface-100 transition-duration-150">
@@ -142,8 +123,8 @@ export default function HeadlessDemo() {
                                     className="cursor-pointer"
                                     spy={true}
                                     smooth={true}
-                                    duration={500}
-                                    offset={-300}
+                                    duration={400}
+                                    offset={-220}
                                     href="#"
                                   >
                                     {content.texts.navbar.menuItems[2]}
@@ -152,7 +133,25 @@ export default function HeadlessDemo() {
                                 <Ripple />
                               </a>
                             </li>
-
+                            <li>
+                              <a className="flex items-center w-full p-3 transition-colors cursor-pointer p-ripple border-round text-700 hover:surface-100 transition-duration-150">
+                                <UserSearch />
+                                <span className="ml-[8px]">
+                                  <Link
+                                    to="about"
+                                    className="cursor-pointer"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                    offset={-340}
+                                    href="#"
+                                  >
+                                    {content.texts.navbar.menuItems[1]}
+                                  </Link>
+                                </span>
+                                <Ripple />
+                              </a>
+                            </li>
                             <li>
                               <a className="flex items-center w-full p-3 transition-colors cursor-pointer p-ripple border-round text-700 hover:surface-100 transition-duration-150">
                                 <HelpCircle />
@@ -163,7 +162,7 @@ export default function HeadlessDemo() {
                                     spy={true}
                                     smooth={true}
                                     duration={500}
-                                    offset={-300}
+                                    offset={-60}
                                     href="#"
                                   >
                                     {content.texts.navbar.menuItems[3]}
@@ -176,7 +175,7 @@ export default function HeadlessDemo() {
                         </ul>
                       )}
                     </li>
-                    <hr className="mx-3 mb-3 border-top-1 surface-border" />
+                    {/* <hr className="mx-3 mb-3 border-top-1 surface-border" /> */}
                     {/* <a
                       v-ripple
                       className="bottom-0 left-0 flex items-center justify-center gap-2 p-3 m-3 transition-colors cursor-pointer phone2:absolute border-round text-700 hover:surface-100 transition-duration-150 p-ripple"
