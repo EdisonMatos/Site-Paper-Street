@@ -21,7 +21,7 @@ export default function FeatureImgOnBgCard(props) {
           <h3 className="font-mainFont font-medium text-[18px] desktop1:text-paragraph5 desktop2:text-[20px]">
             {title}
           </h3>
-          <p className="font-secondFont text-paragraph3 text-quaternary">
+          <p className="font-secondFont text-paragraph3 desktop1:text-paragraph4 text-quaternary">
             {description}
           </p>
           <div>

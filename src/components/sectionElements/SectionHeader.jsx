@@ -16,13 +16,15 @@ export default function SectionHeader(props) {
 
   return (
     <div
-      className={`w-[90%] tablet1:w-[80%] desktop1:w-[60%] max-w-[729px] ${className}`}
+      className={`w-[80%] tablet1:w-[80%] desktop1:w-[60%] max-w-[729px] ${className}`}
     >
       <SectionTitles>
         <MotionDivDownToUp>{sectionHeaderTitle}</MotionDivDownToUp>
       </SectionTitles>
       <SectionSubtitles>
-        <MotionDivDownToUp>{sectionHeaderSubtitle}</MotionDivDownToUp>
+        <MotionDivDownToUp className="flex justify-center">
+          <p className="w-[90%] desktop1:w-auto">{sectionHeaderSubtitle}</p>
+        </MotionDivDownToUp>
       </SectionSubtitles>
     </div>
   );

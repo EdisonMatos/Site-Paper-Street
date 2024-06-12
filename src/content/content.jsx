@@ -79,7 +79,7 @@ const content = {
     features: {
       title: "Nossas especialidades",
       subtitle:
-        "Se você quer trazer o seu negócio pro mundo digital, nós temos várias soluções pra você",
+        "Se você quer trazer o seu negócio pro mundo digital, nós te ajudamos",
       card1: {
         title: "Sites para você ou sua empresa",
         subtitle:
@@ -525,8 +525,7 @@ const content = {
     },
     faq: {
       title: "Perguntas Frequentes",
-      subtitle:
-        "Confira as perguntas abaixo para esclarecer suas dúvidas. Estamos aqui para ajudar!",
+      subtitle: "Confira as perguntas abaixo para esclarecer suas dúvidas",
       questions: {
         question0: {
           question: "Como escolher entre um site e uma landing page?",
