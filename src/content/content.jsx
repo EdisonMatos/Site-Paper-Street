@@ -486,6 +486,9 @@ const content = {
       },
     },
     features: {
+      title: "Nossas especialidades",
+      subtitle:
+        "Se você quer trazer o seu negócio pro mundo digital, nós temos várias soluções pra você",
       card1: {
         title: "Sites para você ou sua empresa",
         subtitle:
@@ -510,7 +513,6 @@ const content = {
         buttonLabel: "Saiba mais",
         buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre os serviços de vocês.`,
       },
-      
     },
     cta: {
       backgroundImg: ctaWhatsappImgBg,
