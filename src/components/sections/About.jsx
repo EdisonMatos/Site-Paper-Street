@@ -58,18 +58,13 @@ export default function About() {
     <SectionArea id={"about"} className="">
       <SectionWrapper className="flex flex-col desktop1:flex-row gap-[40px] desktop1:gap-0 desktop1:justify-between">
         <MotionDivDownToUp className="w-[100%] desktop1:w-[415px] desktop2:w-[485px]">
-          <img
-            src={content.texts.about.imagem.img}
-            alt={content.texts.about.imagem.alt}
-            className="hidden w-full rounded-lg desktop1:flex"
-          />
-          <img
-            src={content.texts.about.imagemMobile.img}
-            alt={content.texts.about.imagemMobile.alt}
-            className="w-full rounded-lg desktop1:hidden"
+          <div
+            style={{
+              backgroundImage: `url(${content.texts.about.imagem.img})`,
+            }}
+            className="bg-bottom bg-no-repeat bg-cover h-[290px] desktop1:h-[650px] rounded-2xl"
           />
         </MotionDivDownToUp>
-
         <div className="desktop1:w-[450px] desktop2:w-[570px]">
           <MotionDivDownToUp>
             <SectionTitles className="mb-[18px] desktop1:mb-[26px]">
