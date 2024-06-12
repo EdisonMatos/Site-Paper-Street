@@ -4,6 +4,7 @@ import content from "../../content/content";
 import { useState, useEffect } from "react";
 import ButtonCtaNavbar from "../interactives/ButtonCtaNavbar";
 import IconButton from "../interactives/IconButton";
+import ButtonWithIconNavbar from "../interactives/ButtonWithIconNavbar";
 
 const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
@@ -126,7 +127,11 @@ export default function ListGroup() {
         </Link>
       </li>
       <div className="flex gap-[10px] items-center">
-        <a href={whatsappContactLink} target="_blank">
+        <a
+          href={whatsappContactLink}
+          target="_blank"
+          className={scrolling ? "invert" : ""}
+        >
           <ButtonCtaNavbar
             label={content.texts.navbar.ctaButtonText}
             icon={
@@ -143,7 +148,11 @@ export default function ListGroup() {
             }
           />
         </a>
-        <a href={links.socialMedia.instagram} target="_blank">
+        <a
+          href={links.socialMedia.instagram}
+          target="_blank"
+          className={scrolling ? "invert" : ""}
+        >
           <IconButton
             icon={
               <svg
@@ -165,7 +174,11 @@ export default function ListGroup() {
             }
           />
         </a>
-        <a href={links.socialMedia.facebook} target="_blank">
+        <a
+          href={links.socialMedia.facebook}
+          target="_blank"
+          className={scrolling ? "invert" : ""}
+        >
           <IconButton
             icon={
               <svg
@@ -185,7 +198,11 @@ export default function ListGroup() {
             }
           />
         </a>
-        <a href={links.socialMedia.linkedin} target="_blank">
+        <a
+          href={links.socialMedia.linkedin}
+          target="_blank"
+          className={scrolling ? "invert" : ""}
+        >
           <IconButton
             icon={
               <svg
