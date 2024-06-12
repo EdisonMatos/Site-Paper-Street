@@ -59,9 +59,9 @@ function Footer() {
             <h1 className="font-medium font-mainFont text-title2 desktop1:text-title5 desktop1:h-[115px] flex items-center">
               NAVEGAÇÃO
             </h1>
-            <div className="flex justify-between full opacity-70">
+            <div className="flex justify-between full opacity-70 ">
               <div className="w-[46%] flex flex-col gap-y-[16px] font-semibold ">
-                <div className="h-[36px] ">
+                <div className="h-[36px] hover:underline">
                   <Link
                     to="home"
                     className="cursor-pointer"
@@ -74,7 +74,7 @@ function Footer() {
                     {content.texts.navbar.menuItems[0]}
                   </Link>
                 </div>
-                <div className="h-[36px] ">
+                <div className="h-[36px] hover:underline">
                   <Link
                     to="service"
                     className="cursor-pointer"
@@ -89,7 +89,7 @@ function Footer() {
                 </div>
               </div>
               <div className=" w-[46%] flex flex-col gap-y-[16px] font-semibold ">
-                <div className="h-[36px] ">
+                <div className="h-[36px] hover:underline">
                   <Link
                     to="about"
                     className="cursor-pointer"
@@ -102,7 +102,7 @@ function Footer() {
                     {content.texts.navbar.menuItems[1]}
                   </Link>
                 </div>
-                <div className="h-[36px] ">
+                <div className="h-[36px] hover:underline">
                   <Link
                     to="faq"
                     className="cursor-pointer"
