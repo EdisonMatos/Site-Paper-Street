@@ -1,5 +1,5 @@
 import links from "./links";
-import logo from "../assets/imgs/logo/logo.png";
+import logo from "../assets/imgs/logo/logo.webp";
 import logoDark from "../assets/imgs/logo/logoDark.png";
 import aboutImg1 from "../assets/imgs/about/aboutImg.jpg";
 import trustedByImg1 from "../assets/imgs/trustedBy/item1.webp";

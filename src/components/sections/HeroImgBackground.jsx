@@ -1,7 +1,7 @@
 import links from "../../content/links";
 import MotionDivLeftToRight from "../animation/MotionDivLeftToRight";
 import content from "../../content/content";
-import bgHeroImg from "../../assets/imgs/hero/bgHero.jpg";
+import bgHeroImg from "../../assets/imgs/hero/bgHero.webp";
 import ButtonCTAWithIcon from "../interactives/ButtonCTAWithIcon";
 import ScrollDownIndicator from "../sectionElements/ScrollDownIndicator";
 
