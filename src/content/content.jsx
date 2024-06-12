@@ -570,7 +570,7 @@ const content = {
         },
         question3: {
           question:
-            "Gostaria de ter um site, mas não tenho fotos boas e não sei escrever bons textos. O que devo fazer?",
+            "Quero de ter um site, mas não tenho fotos boas e não sei escrever bons textos. O que devo fazer?",
           answer:
             "Não se preocupe, nós também temos a solução para você. Nossa equipe irá sugerir todo material audiovisual que você precisar para ter o seu site e você não precisa ter custo com isso!",
         },
