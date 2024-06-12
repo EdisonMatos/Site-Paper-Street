@@ -145,6 +145,7 @@ const content = {
           <div className=" flex flex-col gap-[16px] w-[100%] tablet1:w-[60%] desktop1:w-[80%] desktop2:w-[60%]">
             <MotionDivDownToUp>
               <ButtonWithIconNavbar
+                className="w-[75%]"
                 link={links.socialMedia.instagram}
                 label="Siga a gente no Instagram"
                 icon={
@@ -169,6 +170,7 @@ const content = {
             </MotionDivDownToUp>
             <MotionDivDownToUp>
               <ButtonWithIconNavbar
+                className="w-[75%]"
                 link={links.socialMedia.facebook}
                 label="Siga a gente no Facebook"
                 icon={
@@ -191,6 +193,7 @@ const content = {
             </MotionDivDownToUp>
             <MotionDivDownToUp>
               <ButtonWithIconNavbar
+                className="w-[75%]"
                 link={links.socialMedia.linkedin}
                 label="Siga a gente no Linkedin"
                 icon={
@@ -533,12 +536,6 @@ const content = {
         "Confira as perguntas abaixo para esclarecer suas dúvidas. Estamos aqui para ajudar!",
       questions: {
         question0: {
-          question:
-            "Gostaria de ter um site, mas não entendo sobre o assunto. O que devo fazer?",
-          answer:
-            "Entre em contato conosco que iremos te guiar com bastante simplicidade no processo. Para se tornar um cliente nosso, não é necessário nenhum tipo de conhecimento sobre sites ou internet. Estamos aqui exatamente para que você não tenha preocupação nenhuma.",
-        },
-        question1: {
           question: "Como escolher entre um site e uma landing page?",
           answer: (
             <p>
@@ -563,6 +560,12 @@ const content = {
             </p>
           ),
         },
+        question1: {
+          question:
+            "Gostaria de ter um site, mas não entendo sobre o assunto. O que devo fazer?",
+          answer:
+            "Entre em contato conosco que iremos te guiar com bastante simplicidade no processo. Para se tornar um cliente nosso, não é necessário nenhum tipo de conhecimento sobre sites ou internet. Estamos aqui exatamente para que você não tenha preocupação nenhuma.",
+        },
         question2: {
           question: "Preciso pagar mensalmente para ter meu site?",
           answer:
@@ -570,7 +573,7 @@ const content = {
         },
         question3: {
           question:
-            "Gostaria de ter um site, mas não tenho fotos boas e não sei escrever bons textos. O que devo fazer?",
+            "Quero de ter um site, mas não tenho fotos boas e não sei escrever bons textos. O que devo fazer?",
           answer:
             "Não se preocupe, nós também temos a solução para você. Nossa equipe irá sugerir todo material audiovisual que você precisar para ter o seu site e você não precisa ter custo com isso!",
         },
