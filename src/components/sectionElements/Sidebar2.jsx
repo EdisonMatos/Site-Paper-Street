@@ -45,7 +45,7 @@ export default function HeadlessDemo() {
   }, []);
 
   return (
-    <div className="inset-0 z-10 flex ">
+    <div className="inset-0 z-10 flex">
       <div
         className={`${
           visible ? "block" : "hidden"
@@ -102,7 +102,7 @@ export default function HeadlessDemo() {
                               <span className="ml-[8px] ">
                                 <Link
                                   to="home"
-                                  className="cursor-pointer align-text-top"
+                                  className="align-text-top cursor-pointer"
                                   spy={true}
                                   smooth={true}
                                   duration={500}
@@ -122,7 +122,7 @@ export default function HeadlessDemo() {
                                 <span className="ml-[8px]">
                                   <Link
                                     to="service"
-                                    className="cursor-pointer align-text-top"
+                                    className="align-text-top cursor-pointer"
                                     spy={true}
                                     smooth={true}
                                     duration={400}
@@ -141,7 +141,7 @@ export default function HeadlessDemo() {
                                 <span className="ml-[8px]">
                                   <Link
                                     to="about"
-                                    className="cursor-pointer align-text-top"
+                                    className="align-text-top cursor-pointer"
                                     spy={true}
                                     smooth={true}
                                     duration={500}
@@ -160,7 +160,7 @@ export default function HeadlessDemo() {
                                 <span className="ml-[8px]">
                                   <Link
                                     to="faq"
-                                    className="cursor-pointer align-text-top"
+                                    className="align-text-top cursor-pointer"
                                     spy={true}
                                     smooth={true}
                                     duration={500}
@@ -177,8 +177,8 @@ export default function HeadlessDemo() {
                         </ul>
                       )}
                     </li>
-                    <hr className="m-5 mb-8 mx-3 border-top-1 surface-border" />
-                    <div className=" flex flex-col gap-[16px] w-[100%] tablet1:w-[60%] desktop1:w-[80%] desktop2:w-[60%]">
+                    <hr className="m-5 mx-3 mb-8 border-top-1 surface-border" />
+                    <div className=" flex flex-col gap-[16px] w-full px-[2px]">
                       <ButtonWithIconNavbar
                         className="w-full"
                         link={links.socialMedia.instagram}
