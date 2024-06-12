@@ -15,10 +15,10 @@ import featuresImg3 from "../assets/imgs/features/featuresImg3.webp";
 
 import aboutImgMobile1 from "../assets/imgs/about/aboutImgMobile.webp";
 import ctaWhatsappImgBg from "../assets/imgs/paralaxe/bgParalaxe2.jpg";
-import teamMemberImg1 from "../assets/imgs/team/team1.jpg";
-import teamMemberImg2 from "../assets/imgs/team/team2.jpg";
-import teamMemberImg3 from "../assets/imgs/team/team3.jpg";
-import teamMemberImg4 from "../assets/imgs/team/team4.jpg";
+import teamMemberImg1 from "../assets/imgs/team/team1.webp";
+import teamMemberImg2 from "../assets/imgs/team/team2.webp";
+import teamMemberImg3 from "../assets/imgs/team/team3.webp";
+import teamMemberImg4 from "../assets/imgs/team/team4.webp";
 import MotionDivDownToUp from "../components/animation/MotionDivDownToUp";
 import TypewriterComponent from "../components/animation/TypeWriter";
 import ButtonWithIconNavbar from "../components/interactives/ButtonWithIconNavbar";
