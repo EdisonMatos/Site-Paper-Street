@@ -76,34 +76,33 @@ const content = {
         },
       },
     },
-    trustedBy: {
-      title: "Parceria com as maiores seguradoras",
-      subtitle: "Confiabilidade e excelência em proteção",
-      images: {
-        img1: {
-          img: { trustedByImg1 },
-          alt: "Seguradora Porto Seguro",
-        },
-        img2: {
-          img: { trustedByImg2 },
-          alt: "Seguradora Bradesco",
-        },
-        img3: {
-          img: { trustedByImg3 },
-          alt: "Seguradora Liberty",
-        },
-        img4: {
-          img: { trustedByImg4 },
-          alt: "Seguradora Allianz",
-        },
-        img5: {
-          img: { trustedByImg5 },
-          alt: "Seguradora SulAmérica",
-        },
-        img6: {
-          img: { trustedByImg6 },
-          alt: "Seguradora Tokio Marine",
-        },
+    features: {
+      title: "Nossas especialidades",
+      subtitle:
+        "Se você quer trazer o seu negócio pro mundo digital, nós temos várias soluções pra você",
+      card1: {
+        title: "Sites para você ou sua empresa",
+        subtitle:
+          "A melhor forma do seu cliente te encontrar na internet e fazer ele confiar no seu negócio",
+        img: featuresImg1,
+        buttonLabel: "Saiba mais",
+        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre sites.`,
+      },
+      card2: {
+        title: "Landing pages para seu produto ou serviço",
+        subtitle:
+          "Um tipo de site feito pra convencer sobre um produto ou serviço em específico",
+        img: featuresImg2,
+        buttonLabel: "Saiba mais",
+        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre landing pages.`,
+      },
+      card3: {
+        title: "Páginas web em geral",
+        subtitle:
+          "Criamos diversos outros tipos de sites, como portais de notícia, blogs, cartões de visita digitais, portfólio pages e mais ",
+        img: featuresImg3,
+        buttonLabel: "Saiba mais",
+        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre os serviços de vocês.`,
       },
     },
     numbers: {
@@ -485,35 +484,6 @@ const content = {
         },
       },
     },
-    features: {
-      title: "Nossas especialidades",
-      subtitle:
-        "Se você quer trazer o seu negócio pro mundo digital, nós temos várias soluções pra você",
-      card1: {
-        title: "Sites para você ou sua empresa",
-        subtitle:
-          "A melhor forma do seu cliente te encontrar na internet e fazer ele confiar no seu negócio",
-        img: featuresImg1,
-        buttonLabel: "Saiba mais",
-        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre sites.`,
-      },
-      card2: {
-        title: "Landing pages para seu produto ou serviço",
-        subtitle:
-          "Um tipo de site feito pra convencer sobre um produto ou serviço em específico",
-        img: featuresImg2,
-        buttonLabel: "Saiba mais",
-        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre landing pages.`,
-      },
-      card3: {
-        title: "Páginas web em geral",
-        subtitle:
-          "Criamos diversos outros tipos de sites, como portais de notícia, blogs, cartões de visita digitais, portfólio pages e mais ",
-        img: featuresImg3,
-        buttonLabel: "Saiba mais",
-        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre os serviços de vocês.`,
-      },
-    },
     cta: {
       backgroundImg: ctaWhatsappImgBg,
       title: (
@@ -522,6 +492,36 @@ const content = {
       subtitle: "#",
       ctaButtonText: "Fale com um atendente",
       link: "",
+    },
+    trustedBy: {
+      title: "Parceria com as maiores seguradoras",
+      subtitle: "Confiabilidade e excelência em proteção",
+      images: {
+        img1: {
+          img: { trustedByImg1 },
+          alt: "Seguradora Porto Seguro",
+        },
+        img2: {
+          img: { trustedByImg2 },
+          alt: "Seguradora Bradesco",
+        },
+        img3: {
+          img: { trustedByImg3 },
+          alt: "Seguradora Liberty",
+        },
+        img4: {
+          img: { trustedByImg4 },
+          alt: "Seguradora Allianz",
+        },
+        img5: {
+          img: { trustedByImg5 },
+          alt: "Seguradora SulAmérica",
+        },
+        img6: {
+          img: { trustedByImg6 },
+          alt: "Seguradora Tokio Marine",
+        },
+      },
     },
     faq: {
       title: "Perguntas Frequentes",
