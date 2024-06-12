@@ -9,10 +9,10 @@ import trustedByImg4 from "../assets/imgs/trustedBy/item4.webp";
 import trustedByImg5 from "../assets/imgs/trustedBy/item5.webp";
 import trustedByImg6 from "../assets/imgs/trustedBy/item6.webp";
 import numbersImgBg from "../assets/imgs/paralaxe/bgParalaxe1.webp";
-import featuresImg1 from "../assets/imgs/features/featuresImg1.jpg";
-import featuresImg2 from "../assets/imgs/features/featuresImg2.jpg";
-import featuresImg3 from "../assets/imgs/features/featuresImg3.jpg";
-import featuresImg4 from "../assets/imgs/features/featuresImg4.webp";
+import featuresImg1 from "../assets/imgs/features/featuresImg1.webp";
+import featuresImg2 from "../assets/imgs/features/featuresImg2.webp";
+import featuresImg3 from "../assets/imgs/features/featuresImg3.webp";
+
 import aboutImgMobile1 from "../assets/imgs/about/aboutImgMobile.jpg";
 import ctaWhatsappImgBg from "../assets/imgs/paralaxe/bgParalaxe2.jpg";
 import teamMemberImg1 from "../assets/imgs/team/team1.jpg";
@@ -507,16 +507,7 @@ const content = {
         buttonLabel: "Saiba mais",
         buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre os serviços de vocês.`,
       },
-      card4: {
-        title: "Sistemas em nuvem",
-        subtitle: "Avaliação detalhada dos riscos para proteção ideal",
-        img: featuresImg4,
-        buttonLabel: "Saiba mais",
-        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre os sistemas de vocês.`,
-      },
-      title: "Nossas especialidades",
-      subtitle:
-        "Se você quer trazer o seu negócio pro mundo digital, nós temos várias soluções pra você",
+      
     },
     cta: {
       backgroundImg: ctaWhatsappImgBg,
