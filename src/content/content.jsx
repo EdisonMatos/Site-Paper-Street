@@ -145,6 +145,7 @@ const content = {
           <div className=" flex flex-col gap-[16px] w-[100%] tablet1:w-[60%] desktop1:w-[80%] desktop2:w-[60%]">
             <MotionDivDownToUp>
               <ButtonWithIconNavbar
+                className="w-[75%]"
                 link={links.socialMedia.instagram}
                 label="Siga a gente no Instagram"
                 icon={
@@ -169,6 +170,7 @@ const content = {
             </MotionDivDownToUp>
             <MotionDivDownToUp>
               <ButtonWithIconNavbar
+                className="w-[75%]"
                 link={links.socialMedia.facebook}
                 label="Siga a gente no Facebook"
                 icon={
@@ -191,6 +193,7 @@ const content = {
             </MotionDivDownToUp>
             <MotionDivDownToUp>
               <ButtonWithIconNavbar
+                className="w-[75%]"
                 link={links.socialMedia.linkedin}
                 label="Siga a gente no Linkedin"
                 icon={
