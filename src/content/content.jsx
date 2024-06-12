@@ -1,7 +1,7 @@
 import links from "./links";
-import logo from "../assets/imgs/logo/logo.png";
+import logo from "../assets/imgs/logo/logo.webp";
 import logoDark from "../assets/imgs/logo/logoDark.png";
-import aboutImg1 from "../assets/imgs/about/aboutImg.jpg";
+import aboutImg1 from "../assets/imgs/about/aboutImg.webp";
 import trustedByImg1 from "../assets/imgs/trustedBy/item1.webp";
 import trustedByImg2 from "../assets/imgs/trustedBy/item2.webp";
 import trustedByImg3 from "../assets/imgs/trustedBy/item3.webp";
@@ -9,16 +9,16 @@ import trustedByImg4 from "../assets/imgs/trustedBy/item4.webp";
 import trustedByImg5 from "../assets/imgs/trustedBy/item5.webp";
 import trustedByImg6 from "../assets/imgs/trustedBy/item6.webp";
 import numbersImgBg from "../assets/imgs/paralaxe/bgParalaxe1.webp";
-import featuresImg1 from "../assets/imgs/features/featuresImg1.jpg";
-import featuresImg2 from "../assets/imgs/features/featuresImg2.jpg";
-import featuresImg3 from "../assets/imgs/features/featuresImg3.jpg";
-import featuresImg4 from "../assets/imgs/features/featuresImg4.webp";
-import aboutImgMobile1 from "../assets/imgs/about/aboutImgMobile.jpg";
+import featuresImg1 from "../assets/imgs/features/featuresImg1.webp";
+import featuresImg2 from "../assets/imgs/features/featuresImg2.webp";
+import featuresImg3 from "../assets/imgs/features/featuresImg3.webp";
+
+import aboutImgMobile1 from "../assets/imgs/about/aboutImgMobile.webp";
 import ctaWhatsappImgBg from "../assets/imgs/paralaxe/bgParalaxe2.jpg";
-import teamMemberImg1 from "../assets/imgs/team/team1.jpg";
-import teamMemberImg2 from "../assets/imgs/team/team2.jpg";
-import teamMemberImg3 from "../assets/imgs/team/team3.jpg";
-import teamMemberImg4 from "../assets/imgs/team/team4.jpg";
+import teamMemberImg1 from "../assets/imgs/team/team1.webp";
+import teamMemberImg2 from "../assets/imgs/team/team2.webp";
+import teamMemberImg3 from "../assets/imgs/team/team3.webp";
+import teamMemberImg4 from "../assets/imgs/team/team4.webp";
 import MotionDivDownToUp from "../components/animation/MotionDivDownToUp";
 import TypewriterComponent from "../components/animation/TypeWriter";
 import ButtonWithIconNavbar from "../components/interactives/ButtonWithIconNavbar";
@@ -510,16 +510,7 @@ const content = {
         buttonLabel: "Saiba mais",
         buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre os serviços de vocês.`,
       },
-      card4: {
-        title: "Sistemas em nuvem",
-        subtitle: "Avaliação detalhada dos riscos para proteção ideal",
-        img: featuresImg4,
-        buttonLabel: "Saiba mais",
-        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre os sistemas de vocês.`,
-      },
-      title: "Nossas especialidades",
-      subtitle:
-        "Se você quer trazer o seu negócio pro mundo digital, nós temos várias soluções pra você",
+      
     },
     cta: {
       backgroundImg: ctaWhatsappImgBg,
