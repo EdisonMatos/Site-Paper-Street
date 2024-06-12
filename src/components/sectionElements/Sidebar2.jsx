@@ -95,14 +95,14 @@ export default function HeadlessDemo() {
                   <ul className="p-3 m-0 list-none">
                     <li>
                       {submenuVisible && (
-                        <ul className="p-0 m-0 -mt-[16px] overflow-hidden font-medium text-gray-700 list-none text-paragraph3 font-mainFont">
+                        <ul className="p-0 m-0 -mt-[16px] overflow-hidden font-medium text-black list-none text-paragraph3 font-mainFont">
                           <li>
                             <a className="flex items-center w-full p-3 transition-colors cursor-pointer p-ripple border-round text-700 hover:surface-100 transition-duration-150">
                               <HomeIcon />
-                              <span className="ml-[8px]">
+                              <span className="ml-[8px] ">
                                 <Link
                                   to="home"
-                                  className="cursor-pointer"
+                                  className="cursor-pointer align-text-top"
                                   spy={true}
                                   smooth={true}
                                   duration={500}
@@ -122,7 +122,7 @@ export default function HeadlessDemo() {
                                 <span className="ml-[8px]">
                                   <Link
                                     to="service"
-                                    className="cursor-pointer"
+                                    className="cursor-pointer align-text-top"
                                     spy={true}
                                     smooth={true}
                                     duration={400}
@@ -141,7 +141,7 @@ export default function HeadlessDemo() {
                                 <span className="ml-[8px]">
                                   <Link
                                     to="about"
-                                    className="cursor-pointer"
+                                    className="cursor-pointer align-text-top"
                                     spy={true}
                                     smooth={true}
                                     duration={500}
@@ -160,7 +160,7 @@ export default function HeadlessDemo() {
                                 <span className="ml-[8px]">
                                   <Link
                                     to="faq"
-                                    className="cursor-pointer"
+                                    className="cursor-pointer align-text-top"
                                     spy={true}
                                     smooth={true}
                                     duration={500}
