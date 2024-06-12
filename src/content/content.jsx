@@ -533,12 +533,6 @@ const content = {
         "Confira as perguntas abaixo para esclarecer suas dúvidas. Estamos aqui para ajudar!",
       questions: {
         question0: {
-          question:
-            "Gostaria de ter um site, mas não entendo sobre o assunto. O que devo fazer?",
-          answer:
-            "Entre em contato conosco que iremos te guiar com bastante simplicidade no processo. Para se tornar um cliente nosso, não é necessário nenhum tipo de conhecimento sobre sites ou internet. Estamos aqui exatamente para que você não tenha preocupação nenhuma.",
-        },
-        question1: {
           question: "Como escolher entre um site e uma landing page?",
           answer: (
             <p>
@@ -562,6 +556,12 @@ const content = {
               vender.
             </p>
           ),
+        },
+        question1: {
+          question:
+            "Gostaria de ter um site, mas não entendo sobre o assunto. O que devo fazer?",
+          answer:
+            "Entre em contato conosco que iremos te guiar com bastante simplicidade no processo. Para se tornar um cliente nosso, não é necessário nenhum tipo de conhecimento sobre sites ou internet. Estamos aqui exatamente para que você não tenha preocupação nenhuma.",
         },
         question2: {
           question: "Preciso pagar mensalmente para ter meu site?",
