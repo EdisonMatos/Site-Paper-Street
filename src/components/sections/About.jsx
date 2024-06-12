@@ -77,7 +77,7 @@ export default function About() {
             </SectionTitles>
           </MotionDivDownToUp>
           <MotionDivDownToUp>
-            <Paragraphs className="mb-[60px]">
+            <Paragraphs className="mb-[0px] desktop1:mb-[0px]">
               {content.texts.about.paragraph}
             </Paragraphs>
           </MotionDivDownToUp>
