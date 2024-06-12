@@ -27,6 +27,34 @@ export default function AccordionExpandDefault() {
 
   return (
     <div>
+      {/* Accordion 0 */}
+      <Accordion
+        className="mb-[3%]"
+        expanded={expanded === "panel0"}
+        onChange={handleChange("panel0")}
+        style={getPanelStyle("panel0")}
+      >
+        <AccordionSummary
+          className=""
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel0-content"
+          id="panel0-header"
+        >
+          <Typography>
+            <h1 className="font-bold font-secondFont">
+              {content.texts.faq.questions.question0.question}
+            </h1>
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            <p className="font-secondFont text-paragraph4 text-paragraphLight ">
+              {content.texts.faq.questions.question0.answer}
+            </p>
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
       {/* Accordion 1 */}
       <Accordion
         className="mb-[3%]"

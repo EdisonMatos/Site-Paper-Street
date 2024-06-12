@@ -532,11 +532,36 @@ const content = {
       subtitle:
         "Confira as perguntas abaixo para esclarecer suas dúvidas. Estamos aqui para ajudar!",
       questions: {
-        question1: {
+        question0: {
           question:
             "Gostaria de ter um site, mas não entendo sobre o assunto. O que devo fazer?",
           answer:
             "Entre em contato conosco que iremos te guiar com bastante simplicidade no processo. Para se tornar um cliente nosso, não é necessário nenhum tipo de conhecimento sobre sites ou internet. Estamos aqui exatamente para que você não tenha preocupação nenhuma.",
+        },
+        question1: {
+          question: "Como escolher entre um site e uma landing page?",
+          answer: (
+            <p>
+              Aqui está o texto com a ortografia corrigida: Sites são mais
+              amplos, focam mais em mostrar você ou seu negócio. O objetivo do
+              site é mostrar que você é moderno e que sua empresa está na
+              internet também, assim como te dar autoridade, falar sobre você,
+              explicar o que você faz em geral e mostrar que você é confiável.
+              Hoje em dia, muitas pessoas só fecham negócios com empresas que
+              têm site, por exemplo.
+              <br />
+              <br />
+              Já uma Landing Page tem como foco ser uma ação de marketing mais
+              agressiva no convencimento sobre algum produto ou serviço que você
+              presta, tanto que o foco dela é fazer o visitante executar alguma
+              ação muito específica, como, por exemplo, comprar algo ou se
+              inscrever em um curso. A landing page não vai falar para o cliente
+              sobre informações da empresa em geral, pois esse é o papel do
+              site. A landing page vai fazer de tudo para que toda a atenção do
+              visitante seja direcionada para o produto ou serviço que você quer
+              vender.
+            </p>
+          ),
         },
         question2: {
           question: "Preciso pagar mensalmente para ter meu site?",
