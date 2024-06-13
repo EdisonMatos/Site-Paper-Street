@@ -36,7 +36,7 @@ export default function Faq() {
               className="transition text-tertiary hover:underline"
             >
               {" "}
-              clique aqui
+              fale com nossa equipe clicando aqui.
             </a>
           </Paragraphs>
         </MotionDivDownToUp>
