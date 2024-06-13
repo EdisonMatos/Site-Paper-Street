@@ -1,6 +1,6 @@
 import links from "./links";
 import logo from "../assets/imgs/logo/logo.webp";
-import logoDark from "../assets/imgs/logo/logoDark.png";
+import logoDark from "../assets/imgs/logo/logoDark.webp";
 import aboutImg1 from "../assets/imgs/about/aboutImg.webp";
 import trustedByImg1 from "../assets/imgs/trustedBy/item1.webp";
 import trustedByImg2 from "../assets/imgs/trustedBy/item2.webp";
@@ -14,7 +14,7 @@ import featuresImg2 from "../assets/imgs/features/featuresImg2.webp";
 import featuresImg3 from "../assets/imgs/features/featuresImg3.webp";
 
 import aboutImgMobile1 from "../assets/imgs/about/aboutImgMobile.webp";
-import ctaWhatsappImgBg from "../assets/imgs/paralaxe/bgParalaxe2.jpg";
+import ctaWhatsappImgBg from "../assets/imgs/paralaxe/bgParalaxe2.webp";
 import teamMemberImg1 from "../assets/imgs/team/team1.webp";
 import teamMemberImg2 from "../assets/imgs/team/team2.webp";
 import teamMemberImg3 from "../assets/imgs/team/team3.webp";
