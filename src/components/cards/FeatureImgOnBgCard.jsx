@@ -18,9 +18,9 @@ export default function FeatureImgOnBgCard(props) {
         style={{ backgroundImage: `url(${bgImg})` }}
       >
         <MotionDivDownToUp className="w-full h-auto bg-white rounded-2xl p-[20px] flex flex-col">
-          <h3 className="font-mainFont font-medium text-[18px] desktop1:text-paragraph5 desktop2:text-[20px] mb-[10px]">
+          <h1 className="font-mainFont font-medium text-[18px] desktop1:text-paragraph5 desktop2:text-[20px] mb-[10px]">
             {title}
-          </h3>
+          </h1>
           <p className="font-secondFont text-paragraph3 desktop1:text-paragraph4 text-quaternary mb-[28px]">
             {description}
           </p>
