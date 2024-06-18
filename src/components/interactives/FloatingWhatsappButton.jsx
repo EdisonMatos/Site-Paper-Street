@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import whatsappWebm from "../../assets/importAssets/whatsappGif.gif";
 import Modal from "../util/Modal";
+import links from "../../content/links";
+
+const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
 const FloatingWhatsappButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,17 +28,19 @@ const FloatingWhatsappButton = () => {
     <button
       className={`${
         isVisible ? "block animate-fade-in" : "hidden"
-      } fixed bottom-2 right-3 p-4 text-white z-20 rounded-full focus:outline-none transition`}
-      onClick={() => setOpenModal(!openModal)}
+      } fixed bottom-2 right-3 p-4 text-secondary z-20 rounded-full focus:outline-none transition`}
+      // onClick={() => setOpenModal(!openModal)}
     >
       {openModal ? null : (
-        <button>
-          <img
-          className="w-16"
-          src={whatsappWebm}
-          alt="Floating WhatsApp Button"
-        />
-        </button>
+        <a href={whatsappContactLink} target="_blank">
+          <button>
+            <img
+              className="w-16"
+              src={whatsappWebm}
+              alt="Floating WhatsApp Button"
+            />
+          </button>
+        </a>
       )}
       <Modal isOpen={openModal} setCloseModal={setOpenModal} />
     </button>
