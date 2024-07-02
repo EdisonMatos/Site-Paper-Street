@@ -28,7 +28,7 @@ export default function Faq() {
           </div>
         </MotionDivDownToUp>
         <MotionDivDownToUp>
-          <Paragraphs>
+          <Paragraphs className="text-center">
             Para demais dúvidas,{" "}
             <a
               href={whatsappContactLink}
