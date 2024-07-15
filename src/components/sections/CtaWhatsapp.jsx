@@ -1,7 +1,5 @@
 import links from "../../content/links";
 import content from "../../content/content";
-import imgCta from "../../assets/imgs/cta/person.png";
-import ButtonWithIcon from "../interactives/ButtonWithIcon";
 import SectionContent from "../sectionElements/SectionContent";
 import MotionDivUpToDown from "../animation/MotionDivUpToDown";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
@@ -12,7 +10,7 @@ const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 export default function CtaWhatsapp() {
   return (
     <div
-      className="bg-center bg-left bg-cover desktop1:bg-fixed"
+      className="bg-left bg-cover desktop1:bg-fixed desktop1:bg-left"
       style={{
         backgroundImage: `url(${content.texts.cta.backgroundImg})`,
       }}
@@ -48,11 +46,7 @@ export default function CtaWhatsapp() {
                 </div>
               </MotionDivDownToUp>
             </div>
-            <div className="hidden phone1:min-h-[197px] phone1:max-h-[229.39px] phone2:min-h-[229.40px] phone2:max-h-[261px] phone3:min-h-[262px] phone3:max-h-[334px] tablet1:min-h-[235px] tablet1:max-h-[292px] tablet2:min-h-[292px] tablet2:max-h-[335px] desktop1:min-h-[335px] desktop3:max-h-[335px] w-[90%] max-w-40 phone1:w-[100%] phone1:max-w-none phone3:max-w-60 tablet1:w-[45%]">
-              <MotionDivDownToUp>
-                <img alt="Foto Pessoa" src={imgCta} />
-              </MotionDivDownToUp>
-            </div>
+            <div className="hidden phone1:min-h-[197px] phone1:max-h-[229.39px] phone2:min-h-[229.40px] phone2:max-h-[261px] phone3:min-h-[262px] phone3:max-h-[334px] tablet1:min-h-[235px] tablet1:max-h-[292px] tablet2:min-h-[292px] tablet2:max-h-[335px] desktop1:min-h-[335px] desktop3:max-h-[335px] w-[90%] max-w-40 phone1:w-[100%] phone1:max-w-none phone3:max-w-60 tablet1:w-[45%]"></div>
           </div>
         </div>
       </SectionContent>

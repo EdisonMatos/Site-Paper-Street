@@ -6,6 +6,9 @@ import HeadlessDemo from "../sectionElements/Sidebar2";
 import { px } from "framer-motion";
 import ButtonCtaNavbar from "../interactives/ButtonCtaNavbar";
 import content from "../../content/content";
+import links from "../../content/links";
+
+const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
 export default function NavbarSection() {
   const [scrolling, setScrolling] = useState(false);
@@ -111,9 +114,14 @@ export default function NavbarSection() {
             />
           </ScrollLink>
           <div className="flex items-center justify-between gap-[16px]">
-            <div className="hidden tablet1:flex desktop1:hidden">
+            <div
+              className={`hidden tablet1:flex desktop1:hidden ${
+                scrolling ? "invert" : ""
+              }`}
+            >
               <ButtonCtaNavbar
                 label={content.texts.navbar.ctaButtonTextResponsive}
+                link={whatsappContactLink}
                 icon={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

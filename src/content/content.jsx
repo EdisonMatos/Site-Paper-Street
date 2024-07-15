@@ -1,7 +1,7 @@
 import links from "./links";
-import logo from "../assets/imgs/logo/logo.png";
-import logoDark from "../assets/imgs/logo/logoDark.png";
-import aboutImg1 from "../assets/imgs/about/aboutImg.jpg";
+import logo from "../assets/imgs/logo/logo.webp";
+import logoDark from "../assets/imgs/logo/logoDark.webp";
+import aboutImg1 from "../assets/imgs/about/aboutImg.webp";
 import trustedByImg1 from "../assets/imgs/trustedBy/item1.webp";
 import trustedByImg2 from "../assets/imgs/trustedBy/item2.webp";
 import trustedByImg3 from "../assets/imgs/trustedBy/item3.webp";
@@ -9,16 +9,16 @@ import trustedByImg4 from "../assets/imgs/trustedBy/item4.webp";
 import trustedByImg5 from "../assets/imgs/trustedBy/item5.webp";
 import trustedByImg6 from "../assets/imgs/trustedBy/item6.webp";
 import numbersImgBg from "../assets/imgs/paralaxe/bgParalaxe1.webp";
-import featuresImg1 from "../assets/imgs/features/featuresImg1.jpg";
-import featuresImg2 from "../assets/imgs/features/featuresImg2.jpg";
-import featuresImg3 from "../assets/imgs/features/featuresImg3.jpg";
-import featuresImg4 from "../assets/imgs/features/featuresImg4.webp";
-import aboutImgMobile1 from "../assets/imgs/about/aboutImgMobile.jpg";
-import ctaWhatsappImgBg from "../assets/imgs/paralaxe/bgParalaxe2.jpg";
-import teamMemberImg1 from "../assets/imgs/team/team1.jpg";
-import teamMemberImg2 from "../assets/imgs/team/team2.jpg";
-import teamMemberImg3 from "../assets/imgs/team/team3.jpg";
-import teamMemberImg4 from "../assets/imgs/team/team4.jpg";
+import featuresImg1 from "../assets/imgs/features/featuresImg1.webp";
+import featuresImg2 from "../assets/imgs/features/featuresImg2.webp";
+import featuresImg3 from "../assets/imgs/features/featuresImg3.webp";
+
+import aboutImgMobile1 from "../assets/imgs/about/aboutImgMobile.webp";
+import ctaWhatsappImgBg from "../assets/imgs/paralaxe/bgParalaxe2.webp";
+import teamMemberImg1 from "../assets/imgs/team/team1.webp";
+import teamMemberImg2 from "../assets/imgs/team/team2.webp";
+import teamMemberImg3 from "../assets/imgs/team/team3.webp";
+import teamMemberImg4 from "../assets/imgs/team/team4.webp";
 import MotionDivDownToUp from "../components/animation/MotionDivDownToUp";
 import TypewriterComponent from "../components/animation/TypeWriter";
 import ButtonWithIconNavbar from "../components/interactives/ButtonWithIconNavbar";
@@ -76,34 +76,33 @@ const content = {
         },
       },
     },
-    trustedBy: {
-      title: "Parceria com as maiores seguradoras",
-      subtitle: "Confiabilidade e excelência em proteção",
-      images: {
-        img1: {
-          img: { trustedByImg1 },
-          alt: "Seguradora Porto Seguro",
-        },
-        img2: {
-          img: { trustedByImg2 },
-          alt: "Seguradora Bradesco",
-        },
-        img3: {
-          img: { trustedByImg3 },
-          alt: "Seguradora Liberty",
-        },
-        img4: {
-          img: { trustedByImg4 },
-          alt: "Seguradora Allianz",
-        },
-        img5: {
-          img: { trustedByImg5 },
-          alt: "Seguradora SulAmérica",
-        },
-        img6: {
-          img: { trustedByImg6 },
-          alt: "Seguradora Tokio Marine",
-        },
+    features: {
+      title: "Nossas especialidades",
+      subtitle:
+        "Se você quer trazer o seu negócio pro mundo digital, nós te ajudamos",
+      card1: {
+        title: "Sites para você ou sua empresa",
+        subtitle:
+          "A melhor forma do seu cliente te encontrar na internet e fazer ele confiar no seu negócio",
+        img: featuresImg1,
+        buttonLabel: "Saiba mais",
+        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre sites.`,
+      },
+      card2: {
+        title: "Landing pages para seu produto ou serviço",
+        subtitle:
+          "Um tipo de site feito pra convencer sobre um produto ou serviço em específico",
+        img: featuresImg2,
+        buttonLabel: "Saiba mais",
+        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre landing pages.`,
+      },
+      card3: {
+        title: "Páginas web em geral",
+        subtitle:
+          "Criamos diversos outros tipos de sites, como portais de notícia, blogs, cartões de visita digitais, portfólio pages e mais ",
+        img: featuresImg3,
+        buttonLabel: "Saiba mais",
+        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre os serviços de vocês.`,
       },
     },
     numbers: {
@@ -145,6 +144,7 @@ const content = {
           <div className=" flex flex-col gap-[16px] w-[100%] tablet1:w-[60%] desktop1:w-[80%] desktop2:w-[60%]">
             <MotionDivDownToUp>
               <ButtonWithIconNavbar
+                className="w-[75%]"
                 link={links.socialMedia.instagram}
                 label="Siga a gente no Instagram"
                 icon={
@@ -169,6 +169,7 @@ const content = {
             </MotionDivDownToUp>
             <MotionDivDownToUp>
               <ButtonWithIconNavbar
+                className="w-[75%]"
                 link={links.socialMedia.facebook}
                 label="Siga a gente no Facebook"
                 icon={
@@ -191,6 +192,7 @@ const content = {
             </MotionDivDownToUp>
             <MotionDivDownToUp>
               <ButtonWithIconNavbar
+                className="w-[75%]"
                 link={links.socialMedia.linkedin}
                 label="Siga a gente no Linkedin"
                 icon={
@@ -485,42 +487,6 @@ const content = {
         },
       },
     },
-    features: {
-      card1: {
-        title: "Sites para você ou sua empresa",
-        subtitle:
-          "A melhor forma do seu cliente te encontrar na internet e fazer ele confiar no seu negócio",
-        img: featuresImg1,
-        buttonLabel: "Saiba mais",
-        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre sites.`,
-      },
-      card2: {
-        title: "Landing pages para seu produto ou serviço",
-        subtitle:
-          "Um tipo de site feito pra convencer sobre um produto ou serviço em específico",
-        img: featuresImg2,
-        buttonLabel: "Saiba mais",
-        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre landing pages.`,
-      },
-      card3: {
-        title: "Páginas web em geral",
-        subtitle:
-          "Criamos diversos outros tipos de sites, como portais de notícia, blogs, cartões de visita digitais, portfólio pages e mais ",
-        img: featuresImg3,
-        buttonLabel: "Saiba mais",
-        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre os serviços de vocês.`,
-      },
-      card4: {
-        title: "Sistemas em nuvem",
-        subtitle: "Avaliação detalhada dos riscos para proteção ideal",
-        img: featuresImg4,
-        buttonLabel: "Saiba mais",
-        buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre os sistemas de vocês.`,
-      },
-      title: "Nossas especialidades",
-      subtitle:
-        "Se você quer trazer o seu negócio pro mundo digital, nós temos várias soluções pra você",
-    },
     cta: {
       backgroundImg: ctaWhatsappImgBg,
       title: (
@@ -530,18 +496,41 @@ const content = {
       ctaButtonText: "Fale com um atendente",
       link: "",
     },
+    trustedBy: {
+      title: "Parceria com as maiores seguradoras",
+      subtitle: "Confiabilidade e excelência em proteção",
+      images: {
+        img1: {
+          img: { trustedByImg1 },
+          alt: "Seguradora Porto Seguro",
+        },
+        img2: {
+          img: { trustedByImg2 },
+          alt: "Seguradora Bradesco",
+        },
+        img3: {
+          img: { trustedByImg3 },
+          alt: "Seguradora Liberty",
+        },
+        img4: {
+          img: { trustedByImg4 },
+          alt: "Seguradora Allianz",
+        },
+        img5: {
+          img: { trustedByImg5 },
+          alt: "Seguradora SulAmérica",
+        },
+        img6: {
+          img: { trustedByImg6 },
+          alt: "Seguradora Tokio Marine",
+        },
+      },
+    },
     faq: {
       title: "Perguntas Frequentes",
-      subtitle:
-        "Confira as perguntas abaixo para esclarecer suas dúvidas. Estamos aqui para ajudar!",
+      subtitle: "Confira as perguntas abaixo para esclarecer suas dúvidas",
       questions: {
         question0: {
-          question:
-            "Gostaria de ter um site, mas não entendo sobre o assunto. O que devo fazer?",
-          answer:
-            "Entre em contato conosco que iremos te guiar com bastante simplicidade no processo. Para se tornar um cliente nosso, não é necessário nenhum tipo de conhecimento sobre sites ou internet. Estamos aqui exatamente para que você não tenha preocupação nenhuma.",
-        },
-        question1: {
           question: "Como escolher entre um site e uma landing page?",
           answer: (
             <p>
@@ -566,6 +555,12 @@ const content = {
             </p>
           ),
         },
+        question1: {
+          question:
+            "Gostaria de ter um site, mas não entendo sobre o assunto. O que devo fazer?",
+          answer:
+            "Entre em contato conosco que iremos te guiar com bastante simplicidade no processo. Para se tornar um cliente nosso, não é necessário nenhum tipo de conhecimento sobre sites ou internet. Estamos aqui exatamente para que você não tenha preocupação nenhuma.",
+        },
         question2: {
           question: "Preciso pagar mensalmente para ter meu site?",
           answer:
@@ -573,7 +568,7 @@ const content = {
         },
         question3: {
           question:
-            "Gostaria de ter um site, mas não tenho fotos boas e não sei escrever bons textos. O que devo fazer?",
+            "Quero de ter um site, mas não tenho fotos boas e não sei escrever bons textos. O que devo fazer?",
           answer:
             "Não se preocupe, nós também temos a solução para você. Nossa equipe irá sugerir todo material audiovisual que você precisar para ter o seu site e você não precisa ter custo com isso!",
         },
