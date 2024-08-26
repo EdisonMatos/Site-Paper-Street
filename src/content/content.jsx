@@ -531,13 +531,12 @@ const content = {
           question: "Como escolher entre um site e uma landing page?",
           answer: (
             <p>
-              Aqui está o texto com a ortografia corrigida: Sites são mais
-              amplos, focam mais em mostrar você ou seu negócio. O objetivo do
-              site é mostrar que você é moderno e que sua empresa está na
-              internet também, assim como te dar autoridade, falar sobre você,
-              explicar o que você faz em geral e mostrar que você é confiável.
-              Hoje em dia, muitas pessoas só fecham negócios com empresas que
-              têm site, por exemplo.
+              Sites são mais amplos, focam mais em mostrar você ou seu negócio.
+              O objetivo do site é mostrar que você é moderno e que sua empresa
+              está na internet também, assim como te dar autoridade, falar sobre
+              você, explicar o que você faz em geral e mostrar que você é
+              confiável. Hoje em dia, muitas pessoas só fecham negócios com
+              empresas que têm site, por exemplo.
               <br />
               <br />
               Já uma Landing Page tem como foco ser uma ação de marketing mais
