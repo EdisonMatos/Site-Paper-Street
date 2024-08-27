@@ -12,6 +12,7 @@ export default function Features() {
     >
       <SectionHeader
         className="text-center"
+        miniTitle={content.texts.features.miniTag}
         sectionHeaderTitle={content.texts.features.title}
         sectionHeaderSubtitle={content.texts.features.subtitle}
       />

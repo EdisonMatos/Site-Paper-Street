@@ -4,6 +4,7 @@ import SectionContent from "../sectionElements/SectionContent";
 import MotionDivUpToDown from "../animation/MotionDivUpToDown";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import ButtonCTAWithIcon from "../interactives/ButtonCTAWithIcon";
+import SectionHeader from "../sectionElements/SectionHeader";
 
 const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
@@ -19,14 +20,14 @@ export default function CtaWhatsapp() {
       <SectionContent>
         <div className="flex justify-center w-full  font-mainFont py-[40px] tablet1:py-[64px] desktop1:py-[96px]">
           <div className="w-full max-w-[1215px] flex flex-row items-end justify-center desktop2:justify-start">
-            <div className=" flex flex-col w-full desktop1:w-[90%] justify-evenly items-center desktop1:items-start gap-[32px]">
+            <div className=" flex flex-col w-full desktop1:w-full justify-evenly items-center desktop1:items-start gap-[32px]">
               <h1 className="w-full leading-[58px] text-white desktop1:w-[45%] text-center desktop1:text-left text-title4 font-poppins desktop1:text-title5 desktop2:text-title6 flex justify-center">
-                <MotionDivUpToDown className="w-[90%] desktop1:w-full [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
+                <MotionDivUpToDown className="w-full desktop1:w-full [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
                   {content.texts.cta.title}
                 </MotionDivUpToDown>
               </h1>
               <MotionDivDownToUp className="flex justify-center">
-                <div className="w-[80%] phone2:w-full tablet1:w-full">
+                <div className="w-[80%] phone2:w-full tablet1:w-full flex justify-center">
                   <ButtonCTAWithIcon
                     label={content.texts.cta.ctaButtonText}
                     buttonLink={whatsappContactLink}

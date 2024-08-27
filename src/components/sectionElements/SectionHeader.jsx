@@ -38,8 +38,8 @@ export default function SectionHeader({
     subtitleOrientation = "text-left";
     marginBottomOption = "mb-[26px] tablet1:mb-[40px] desktop1:mb-[32px]";
   } else {
-    usage = "w-[90%] tablet1:w-[80%] desktop1:w-[60%] max-w-[920px]";
-    marginBottomOption = "mb-[26px] tablet1:mb-[40px] desktop1:mb-[72px]";
+    usage = "w-[90%] tablet1:w-[80%] desktop1:w-full max-w-[920px]";
+    marginBottomOption = "mb-[26px] tablet1:mb-[40px] desktop1:mb-[75px]";
   }
 
   const Content = (

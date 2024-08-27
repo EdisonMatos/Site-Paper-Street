@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Paragraphs from "../sectionElements/Paragraphs";
+import SectionHeader from "../sectionElements/SectionHeader";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionTitles from "../sectionElements/SectionTitles";
 import SectionWrapper from "../sectionElements/SectionWrapper";

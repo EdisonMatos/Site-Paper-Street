@@ -13,6 +13,7 @@ export default function Team() {
     <SectionArea className="bg-quinary">
       <SectionHeader
         className="text-center"
+        miniTitle={content.texts.features.miniTag}
         sectionHeaderTitle={content.texts.team.title}
         sectionHeaderSubtitle={content.texts.team.subtitle}
       />

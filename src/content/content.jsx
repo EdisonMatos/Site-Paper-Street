@@ -82,6 +82,7 @@ const content = {
       },
     },
     features: {
+      miniTag: "0empty",
       title: "Nossas especialidades",
       subtitle:
         "Se você quer trazer o seu negócio pro mundo digital, nós te ajudamos",
@@ -128,6 +129,7 @@ const content = {
         img: aboutImgMobile1,
         alt: "Pessoas em negociação",
       },
+      miniTag: "0empty",
       title: "Sobre nós 👋",
       paragraph: (
         <div>
@@ -225,6 +227,7 @@ const content = {
       ),
     },
     team: {
+      miniTag: "0empty",
       title: "Nossa Equipe",
       subtitle: "Conheça as mentes brilhantes por trás do nosso sucesso",
       members: {
@@ -503,6 +506,7 @@ const content = {
     },
     cta: {
       backgroundImg: ctaWhatsappImgBg,
+      miniTag: "0empty",
       title: (
         <p className="">Deixa a gente cuidar da vida digital do seu negócio</p>
       ),
@@ -511,6 +515,7 @@ const content = {
       link: "",
     },
     trustedBy: {
+      miniTag: "0empty",
       title: "Parceria com as maiores seguradoras",
       subtitle: "Confiabilidade e excelência em proteção",
       images: {
@@ -564,6 +569,7 @@ const content = {
       },
     },
     faq: {
+      miniTag: "0empty",
       title: "Perguntas Frequentes",
       subtitle: "Confira as perguntas abaixo para esclarecer suas dúvidas",
       questions: {
