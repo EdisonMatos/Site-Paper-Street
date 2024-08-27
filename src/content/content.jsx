@@ -23,6 +23,12 @@ import MotionDivDownToUp from "../components/animation/MotionDivDownToUp";
 import TypewriterComponent from "../components/animation/TypeWriter";
 import ButtonWithIconNavbar from "../components/interactives/ButtonWithIconNavbar";
 
+import imgTestimonial1 from "../assets/imgs/testimonials/testimonial1.jpg";
+import imgTestimonial2 from "../assets/imgs/testimonials/testimonial2.jpg";
+import imgTestimonial3 from "../assets/imgs/testimonials/testimonial3.jpg";
+import imgTestimonial4 from "../assets/imgs/testimonials/testimonial4.jpg";
+
+
 const content = {
   texts: {
     navbar: {
@@ -523,6 +529,29 @@ const content = {
         img6: {
           img: { trustedByImg6 },
           alt: "Seguradora Tokio Marine",
+        },
+      },
+    },
+    testimonials: {
+      miniTag: "0empty",
+      title: "0empty",
+      subtitle: "0empty",
+      images: {
+        img1: {
+          img: imgTestimonial1,
+          alt: "Imagem de feedback",
+        },
+        img2: {
+          img: imgTestimonial2,
+          alt: "Imagem de feedback",
+        },
+        img3: {
+          img: imgTestimonial3,
+          alt: "Imagem de feedback",
+        },
+        img4: {
+          img: imgTestimonial4,
+          alt: "Imagem de feedback",
         },
       },
     },
