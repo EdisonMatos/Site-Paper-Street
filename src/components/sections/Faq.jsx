@@ -14,7 +14,7 @@ export default function Faq() {
     <SectionArea id={"faq"} className="bg-quinary">
       <SectionHeader
         className="text-center"
-        miniTitle={content.texts.features.miniTag}
+        miniTitle={content.texts.faq.miniTag}
         sectionHeaderTitle={content.texts.faq.title}
         sectionHeaderSubtitle={content.texts.faq.subtitle}
       />
