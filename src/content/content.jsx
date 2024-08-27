@@ -23,6 +23,11 @@ import MotionDivDownToUp from "../components/animation/MotionDivDownToUp";
 import TypewriterComponent from "../components/animation/TypeWriter";
 import ButtonWithIconNavbar from "../components/interactives/ButtonWithIconNavbar";
 
+import imgTestimonial1 from "../assets/imgs/testimonials/testimonial1.jpg";
+import imgTestimonial2 from "../assets/imgs/testimonials/testimonial2.jpg";
+import imgTestimonial3 from "../assets/imgs/testimonials/testimonial3.jpg";
+import imgTestimonial4 from "../assets/imgs/testimonials/testimonial4.jpg";
+
 const content = {
   texts: {
     navbar: {
@@ -250,6 +255,8 @@ const content = {
               </svg>
             ),
             link1: "https://www.linkedin.com/in/edison-matoss/",
+            arialabel1: "Link para LinkedIn",
+
             icon2: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -268,6 +275,7 @@ const content = {
               </svg>
             ),
             link2: "https://github.com/EdisonMatos",
+            arialabel2: "Link para GitHub",
             icon3: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -316,6 +324,7 @@ const content = {
               </svg>
             ),
             link1: "https://www.linkedin.com/in/gabriel-adans-2bb029227/",
+            arialabel1: "Link para LinkedIn",
             icon2: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -334,6 +343,7 @@ const content = {
               </svg>
             ),
             link2: "https://github.com/GabrielAdans",
+            arialabel2: "Link para GitHub",
             icon3: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -353,6 +363,7 @@ const content = {
               </svg>
             ),
             link3: "https://www.instagram.com/adansgabriel/",
+            arialabel3: "Link para Instagram",
           },
         },
         member3: {
@@ -382,6 +393,7 @@ const content = {
               </svg>
             ),
             link1: " https://www.linkedin.com/in/gabriel-souza-b9945929a",
+            arialabel1: "Link para LinkedIn",
             icon2: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -400,6 +412,7 @@ const content = {
               </svg>
             ),
             link2: "https://github.com/BiellSouza",
+            arialabel2: "Link para GitHub",
             icon3: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -419,6 +432,7 @@ const content = {
               </svg>
             ),
             link3: " https://www.instagram.com/biel.souza.904",
+            arialabel3: "Link para Instagram",
           },
         },
         member4: {
@@ -448,6 +462,7 @@ const content = {
               </svg>
             ),
             link1: "https://www.linkedin.com/in/luiz-felipe-leite-95a246192/",
+            arialabel1: "Link para LinkedIn",
             icon2: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -467,6 +482,7 @@ const content = {
               </svg>
             ),
             link2: "https://www.instagram.com/luizleitedesigner/",
+            arialabel2: "Link para Instagram",
             icon3: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -480,6 +496,7 @@ const content = {
               </svg>
             ),
             link3: "https://wa.me/+556596241854",
+            arialabel3: "Link para WhatsApp",
           },
         },
       },
@@ -523,6 +540,29 @@ const content = {
         },
       },
     },
+    testimonials: {
+      miniTag: "0empty",
+      title: "0empty",
+      subtitle: "0empty",
+      images: {
+        img1: {
+          img: imgTestimonial1,
+          alt: "Imagem de feedback",
+        },
+        img2: {
+          img: imgTestimonial2,
+          alt: "Imagem de feedback",
+        },
+        img3: {
+          img: imgTestimonial3,
+          alt: "Imagem de feedback",
+        },
+        img4: {
+          img: imgTestimonial4,
+          alt: "Imagem de feedback",
+        },
+      },
+    },
     faq: {
       title: "Perguntas Frequentes",
       subtitle: "Confira as perguntas abaixo para esclarecer suas dúvidas",
@@ -531,12 +571,13 @@ const content = {
           question: "Como escolher entre um site e uma landing page?",
           answer: (
             <p>
-              Sites são mais amplos, focam mais em mostrar você ou seu negócio.
-              O objetivo do site é mostrar que você é moderno e que sua empresa
-              está na internet também, assim como te dar autoridade, falar sobre
-              você, explicar o que você faz em geral e mostrar que você é
-              confiável. Hoje em dia, muitas pessoas só fecham negócios com
-              empresas que têm site, por exemplo.
+              Aqui está o texto com a ortografia corrigida: Sites são mais
+              amplos, focam mais em mostrar você ou seu negócio. O objetivo do
+              site é mostrar que você é moderno e que sua empresa está na
+              internet também, assim como te dar autoridade, falar sobre você,
+              explicar o que você faz em geral e mostrar que você é confiável.
+              Hoje em dia, muitas pessoas só fecham negócios com empresas que
+              têm site, por exemplo.
               <br />
               <br />
               Já uma Landing Page tem como foco ser uma ação de marketing mais
@@ -564,7 +605,7 @@ const content = {
         },
         question3: {
           question:
-            "Quero ter um site, mas não tenho fotos boas e não sei escrever bons textos. O que devo fazer?",
+            "Quero de ter um site, mas não tenho fotos boas e não sei escrever bons textos. O que devo fazer?",
           answer:
             "Não se preocupe, nós também temos a solução para você. Nossa equipe irá sugerir todo material audiovisual que você precisar para ter o seu site e você não precisa ter custo com isso!",
         },
