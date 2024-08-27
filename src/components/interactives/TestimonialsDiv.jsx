@@ -41,13 +41,13 @@ export default function TestimonialsDiv({ children }) {
         numVisible={1}
         numScroll={1}
         responsiveOptions={responsiveOptions}
-        className="text-white"
+        className="text-black"
         circular
         autoplayInterval={8000}
         itemTemplate={itemTemplate}
         showNavigators={true}
-        prevIcon={<span style={{ color: "white", fontSize: "200%" }}>❮</span>}
-        nextIcon={<span style={{ color: "white", fontSize: "200%" }}>❯</span>}
+        prevIcon={<span style={{ color: "black", fontSize: "200%" }}>❮</span>}
+        nextIcon={<span style={{ color: "black", fontSize: "200%" }}>❯</span>}
       />
     </div>
   );
