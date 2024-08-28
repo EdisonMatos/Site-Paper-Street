@@ -146,6 +146,7 @@ export default function ListGroup() {
             />
           </div>
           <a
+            aria-label="Link para Instagram"
             href={links.socialMedia.instagram}
             target="_blank"
             className={scrolling ? "invert" : ""}
@@ -173,6 +174,7 @@ export default function ListGroup() {
             />
           </a>
           <a
+            aria-label="Link para Facebook"
             href={links.socialMedia.facebook}
             target="_blank"
             className={scrolling ? "invert" : ""}
@@ -198,6 +200,7 @@ export default function ListGroup() {
             />
           </a>
           <a
+            aria-label="Link para Linkedin"
             href={links.socialMedia.linkedin}
             target="_blank"
             className={scrolling ? "invert" : ""}
