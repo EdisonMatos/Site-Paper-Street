@@ -9,6 +9,7 @@ import NavbarSection from "../components/sections/NavbarSection";
 import BackToTopButton from "../components/interactives/BackToTopButton";
 import FloatingWhatsappButton from "../components/interactives/FloatingWhatsappButton";
 import HeroImgBackground from "../components/sections/HeroImgBackground";
+import PagesSpeed from "../components/sections/PagesSpeed";
 export default function Index() {
   return (
     <div>
@@ -16,6 +17,7 @@ export default function Index() {
       <HeroImgBackground />
       <Features />
       <About />
+      <PagesSpeed />
       <Team />
       <CtaWhatsapp />
       <Faq />
