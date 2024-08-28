@@ -538,34 +538,31 @@ const content = {
     },
     steps: {
       miniTag: "PASSO A PASSO",
-      title: "0EMPTY",
-      subtitle: "0EMPTY",
+      title: "0EMPTY TÍTULO DA SESSÃO",
+      subtitle: "0EMPTY SUBTÍTULO DA SESSÃO",
       img: imgSteps,
       alt: "",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: "0EMPTY",
+          cardTitle: "0EMPTY TÍTULO DO CARD",
           cardDescription:
-            "0EMPTY",
+            "empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty",
         },
         card2: {
           stepNumber: 2,
-          cardTitle: "0EMPTY",
-          cardDescription:
-            "0EMPTY",
+          cardTitle: "0EMPTY TÍTULO DO CARD",
+          cardDescription: "empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty",
         },
         card3: {
           stepNumber: 3,
-          cardTitle: "0EMPTY",
-          cardDescription:
-            "0EMPTY",
+          cardTitle: "0EMPTY TÍTULO DO CARD",
+          cardDescription: "empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty",
         },
         card4: {
           stepNumber: 4,
-          cardTitle: "0EMPTY",
-          cardDescription:
-            "0EMPTY",
+          cardTitle: "0EMPTY TÍTULO DO CARD",
+          cardDescription: "empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty",
         },
       },
     },
