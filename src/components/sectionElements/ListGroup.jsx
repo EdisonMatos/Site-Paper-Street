@@ -47,7 +47,7 @@ export default function ListGroup() {
           href="#"
         >
           <span
-            className={scrolling ? "hover:text-primary" : "hover:text-white"}
+            className={`h-[24px] inline-block ${scrolling ? "hover:text-primary" : "hover:text-white"}`}
           >
             {content.texts.navbar.menuItems[0]}
           </span>
@@ -69,7 +69,7 @@ export default function ListGroup() {
           href="#"
         >
           <span
-            className={scrolling ? "hover:text-primary" : "hover:text-white"}
+            className={`h-[24px] inline-block ${scrolling ? "hover:text-primary" : "hover:text-white"}`}
           >
             {content.texts.navbar.menuItems[2]}
           </span>
@@ -91,7 +91,7 @@ export default function ListGroup() {
           href="#"
         >
           <span
-            className={scrolling ? "hover:text-primary" : "hover:text-white"}
+            className={`h-[24px] inline-block ${scrolling ? "hover:text-primary" : "hover:text-white"}`}
           >
             {content.texts.navbar.menuItems[1]}
           </span>
@@ -113,7 +113,7 @@ export default function ListGroup() {
           href="#"
         >
           <span
-            className={scrolling ? "hover:text-primary" : "hover:text-white"}
+            className={`h-[24px] inline-block ${scrolling ? "hover:text-primary" : "hover:text-white"}`}
           >
             {content.texts.navbar.menuItems[3]}
           </span>
