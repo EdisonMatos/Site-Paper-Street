@@ -6,7 +6,7 @@ import links from "../../content/links";
 import content from "../../content/content";
 import TeamMember from "../cards/TeamMember";
 
-const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
+// const whatsappContactLink = `https://wa.me/` + `${links.ctaWhat.teamsapp}`;
 
 export default function Team() {
   return (
@@ -32,6 +32,10 @@ export default function Team() {
               link2={content.texts.team.members.member1.socialMedia.link2}
               icon3={content.texts.team.members.member1.socialMedia.icon3}
               link3={content.texts.team.members.member1.socialMedia.link3}
+              arialabel1={content.texts.team.members.member1.socialMedia.arialabel1}
+              arialabel2={content.texts.team.members.member1.socialMedia.arialabel2}
+              arialabel3={content.texts.team.members.member1.socialMedia.arialabel3}
+
             />
             <TeamMember
               img={content.texts.team.members.member2.img.img}
@@ -44,6 +48,10 @@ export default function Team() {
               link2={content.texts.team.members.member2.socialMedia.link2}
               icon3={content.texts.team.members.member2.socialMedia.icon3}
               link3={content.texts.team.members.member2.socialMedia.link3}
+              arialabel1={content.texts.team.members.member2.socialMedia.arialabel1}
+              arialabel2={content.texts.team.members.member2.socialMedia.arialabel2}
+              arialabel3={content.texts.team.members.member2.socialMedia.arialabel3}
+              
             />
             <TeamMember
               img={content.texts.team.members.member3.img.img}
@@ -56,6 +64,10 @@ export default function Team() {
               link2={content.texts.team.members.member3.socialMedia.link2}
               icon3={content.texts.team.members.member3.socialMedia.icon3}
               link3={content.texts.team.members.member3.socialMedia.link3}
+              arialabel1={content.texts.team.members.member3.socialMedia.arialabel1}
+              arialabel2={content.texts.team.members.member3.socialMedia.arialabel2}
+              arialabel3={content.texts.team.members.member3.socialMedia.arialabel3}
+             
             />
             <TeamMember
               img={content.texts.team.members.member4.img.img}
@@ -68,6 +80,10 @@ export default function Team() {
               link2={content.texts.team.members.member4.socialMedia.link2}
               icon3={content.texts.team.members.member4.socialMedia.icon3}
               link3={content.texts.team.members.member4.socialMedia.link3}
+              arialabel1={content.texts.team.members.member4.socialMedia.arialabel1}
+              arialabel2={content.texts.team.members.member4.socialMedia.arialabel2}
+              arialabel3={content.texts.team.members.member4.socialMedia.arialabel3}
+              
             />
           </div>
         </MotionDivDownToUp>
