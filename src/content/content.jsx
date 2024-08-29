@@ -292,8 +292,8 @@ const content = {
                 <path d="M2 12h20" />
               </svg>
             ),
-            link3: "https://edisonmatos.github.io/",
-            arialabel3: "Link para github.io",
+            link3: "https://edisonmatos.github.io/", arialabel3:"Link para github.io",
+           
           },
         },
         member2: {
