@@ -13,6 +13,7 @@ export default function Faq() {
   return (
     <SectionArea id={"faq"} className="bg-quinary">
       <SectionHeader
+      miniTitle={content.texts.features.miniTag}
         className="text-center"
         sectionHeaderTitle={content.texts.faq.title}
         sectionHeaderSubtitle={content.texts.faq.subtitle}
