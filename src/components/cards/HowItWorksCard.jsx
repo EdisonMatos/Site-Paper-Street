@@ -8,7 +8,7 @@ export default function HowItWorksCard({
 }) {
   const Content = (
     <div className="flex flex-col items-center justify-center transition desktop1:items-start font-mainFont desktop1:hover:scale-110 h-auto">
-      <div className="bg-yellow-500 mb-[32px] p-[25px] flex justify-center items-center rounded-full h-[48px] w-[48px] text-primary  text-title1 font-semibold">
+      <div className="bg-yellow-400 mb-[32px] p-[25px] flex justify-center items-center rounded-full h-[48px] w-[48px] text-primary  text-title1 font-secondFont font-bold">
         {number}
       </div>
       <h1 className="text-[20px] text-lighte font-secondFont font-bold mb-[24px]">
@@ -22,7 +22,7 @@ export default function HowItWorksCard({
 
   const ContentStatic = (
     <div className="flex flex-col items-center justify-center tablet1:w-[45%] transition desktop1:items-start font-mainFont desktop1:hover:scale-110 h-auto">
-      <div className="bg-yellow-500 mb-[32px] p-[25px] flex justify-center items-center rounded-full h-[48px] w-[48px] text-primary text-title1 font-semibold">
+      <div className="bg-yellow-400 mb-[32px] p-[25px] flex justify-center items-center rounded-full h-[48px] w-[48px] text-primary text-title1 font-secondFont font-bold">
         {number}
       </div>
       <h1 className="text-[20px] text-lighter font-secondFont font-bold mb-[24px]">

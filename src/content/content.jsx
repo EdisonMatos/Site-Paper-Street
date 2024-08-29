@@ -539,7 +539,7 @@ const content = {
       miniTag: "Nosso Passo a Passo",
       title: "Como funciona?",
       subtitle:
-        "Forma resumida do nosso processo. Mas não se preocupe, nós estaremos auxiliando em cada etapa durante!",
+        "Nossos processos foram pensados para você não ter nenhuma preocupação durante o desenvolvimento do seu site",
       img: imgSteps,
       alt: "",
       cards: {
