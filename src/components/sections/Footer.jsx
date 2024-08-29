@@ -49,10 +49,11 @@ function Footer() {
             <div className="opacity-70 invert">
               {" "}
               <div className="flex gap-[10px] items-center">
-                <a href={links.socialMedia.instagram} target="_blank">
+                <a href={links.socialMedia.instagram} target="_blank" aria-label="Link para o Instagram">
                   <IconButton
                     icon={
                       <svg
+                        aria-label="Botão para o Instagram"
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
@@ -78,10 +79,11 @@ function Footer() {
                     }
                   />
                 </a>
-                <a href={links.socialMedia.facebook} target="_blank">
+                <a href={links.socialMedia.facebook} target="_blank" aria-label="Link para o Instagram">
                   <IconButton
                     icon={
                       <svg
+                        aria-label="Botão para o Facebook"
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
@@ -98,10 +100,11 @@ function Footer() {
                     }
                   />
                 </a>
-                <a href={links.socialMedia.linkedin} target="_blank">
+                <a href={links.socialMedia.linkedin} target="_blank" aria-label="Link para o Instagram">
                   <IconButton
                     icon={
                       <svg
+                        aria-label="Botão para o Linkedin"
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
