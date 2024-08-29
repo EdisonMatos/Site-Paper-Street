@@ -222,24 +222,41 @@ const content = {
       ),
     },
     pagesSpeed: {
-      miniTag: "A DEFINIR",
-      title: "Qualidade comprovada pela Google",
-      subtitle: " Algo a ser definido ainda",
+      miniTag: "Por que escolher a Paper?",
+      title: (
+        <p>
+          Nossa qualidade é aprovada pela{" "}
+          <span className="text-blue-500">G</span>
+          <span className="text-red-500">o</span>
+          <span className="text-yellow-500">o</span>
+          <span className="text-blue-500">g</span>
+          <span className="text-green-500">l</span>
+          <span className="text-blue-500">e</span>
+        </p>
+      ),
+      subtitle: "Sites feitos por nós, farão você economizar mais no futuro",
       paragraph: (
         <div>
           <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English.
+            Quanto mais bem feito o site for, mais fácil ele vai ser mostrado e
+            menos você vai precisar investir caso queira fazer campanhas no
+            futuro, pois o Google entregará ele com mais facilidade.
+            <br />
+            <br />O Google tem uma ferramenta que usamos para testar a qualidade
+            dos nossos sites, e ele dá notas de 0 a 100. Temos orgulho de
+            alcançarmos as melhores notas do mercado!
             <br />
             <br />
-            Many desktop publishing packages and web page editors now use Lorem
-            Ipsum as their default model text, and a search for 'lorem ipsum'
-            will uncover many web sites still in their infancy. Various versions
-            have evolved over the years, sometimes by accident, sometimes on
-            purpose (injected humour and the like).
+            Critérios que ele avalia: <br />
+            - Performance: Velocidade de carregamento do site. <br />
+            - Acessibilidade: Facilidade de uso para todos, seja celular, tablet
+            ou computador, inclusive pessoas com deficiência. <br />
+            - Práticas recomendadas: Conformidade com as normas de segurança e
+            de código bem estruturado. <br />
+            - SEO: Otimização do site para ser bem encontrado nas buscas feitas
+            na internet. <br /> <br /> A qualidade da construção do seu site vai
+            refletir diretamente no retorno que ele vai trazer para você. Aqui
+            na Paper entregamos o que tem de melhor.
           </p>
         </div>
       ),

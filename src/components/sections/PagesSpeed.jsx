@@ -5,13 +5,13 @@ import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import content from "../../content/content";
 import SectionHeader from "../sectionElements/SectionHeader";
 import ImagesGallery3Slides from "../interactives/ImagesGallery3Slides";
-import slide1 from "../../assets/imgs/pagesSpeed/slide1.jpg";
-import slide2 from "../../assets/imgs/pagesSpeed/slide2.jpg";
-import slide3 from "../../assets/imgs/pagesSpeed/slide3.jpg";
-import slide4 from "../../assets/imgs/pagesSpeed/slide4.jpg";
-import slide5 from "../../assets/imgs/pagesSpeed/slide5.webp";
-import slide6 from "../../assets/imgs/pagesSpeed/slide6.jpg";
-import slide7 from "../../assets/imgs/pagesSpeed/slide7.jpg";
+import slide1 from "../../assets/imgs/pagesSpeed/slide1.png";
+import slide2 from "../../assets/imgs/pagesSpeed/slide2.png";
+import slide3 from "../../assets/imgs/pagesSpeed/slide3.png";
+import slide4 from "../../assets/imgs/pagesSpeed/slide4.png";
+import slide5 from "../../assets/imgs/pagesSpeed/slide5.png";
+// import slide6 from "../../assets/imgs/pagesSpeed/slide6.jpg";
+// import slide7 from "../../assets/imgs/pagesSpeed/slide7.jpg";
 
 export default function PagesSpeed() {
   return (
@@ -24,8 +24,8 @@ export default function PagesSpeed() {
             slide3={slide3}
             slide4={slide4}
             slide5={slide5}
-            slide6={slide6}
-            slide7={slide7}
+            // slide6={slide6}
+            // slide7={slide7}
           />
         </MotionDivDownToUp>
 
