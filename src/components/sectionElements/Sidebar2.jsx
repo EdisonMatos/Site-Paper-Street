@@ -61,7 +61,7 @@ export default function HeadlessDemo() {
         />
         <Sidebar
           visible={visible}
-          className="w-[280px]"
+          className="w-[280px] bg-white"
           onHide={() => setVisible(false)}
           content={({ closeIconRef, hide }) => (
             <div
