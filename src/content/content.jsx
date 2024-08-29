@@ -22,7 +22,7 @@ import teamMemberImg4 from "../assets/imgs/team/team4.webp";
 import MotionDivDownToUp from "../components/animation/MotionDivDownToUp";
 import TypewriterComponent from "../components/animation/TypeWriter";
 import ButtonWithIconNavbar from "../components/interactives/ButtonWithIconNavbar";
-import imgSteps from "../assets/imgs/steps/imgSteps.avif";
+import imgSteps from "../assets/imgs/steps/imgSteps.png";
 
 const content = {
   texts: {
@@ -252,7 +252,6 @@ const content = {
             ),
             link1: "https://www.linkedin.com/in/edison-matoss/",
             arialabel1: "Link para LinkedIn",
-
             icon2: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -537,32 +536,36 @@ const content = {
       },
     },
     steps: {
-      miniTag: "PASSO A PASSO",
-      title: "0EMPTY TÍTULO DA SESSÃO",
-      subtitle: "0EMPTY SUBTÍTULO DA SESSÃO",
+      miniTag: "Nosso Passo a Passo",
+      title: "Como funciona?",
+      subtitle:
+        "Forma resumida do nosso processo. Mas não se preocupe, nós estaremos auxiliando em cada etapa durante!",
       img: imgSteps,
       alt: "",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: "0EMPTY TÍTULO DO CARD",
+          cardTitle: "Levantamento de material",
           cardDescription:
-            "empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty",
+            "Após contratação, um agente especializado da Paper irá entrar em contato e solicitar informações",
         },
         card2: {
           stepNumber: 2,
-          cardTitle: "0EMPTY TÍTULO DO CARD",
-          cardDescription: "empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty",
+          cardTitle: "Desenvolvimento do site",
+          cardDescription:
+            "Inicia-se a criação do site, e durante esse período, continuamos à disposição para tirar dúvidas.",
         },
         card3: {
           stepNumber: 3,
-          cardTitle: "0EMPTY TÍTULO DO CARD",
-          cardDescription: "empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty",
+          cardTitle: "Site no ar!",
+          cardDescription:
+            "Enviamos uma prévia para o cliente e, após aprovado, colocamos o site no ar.",
         },
         card4: {
           stepNumber: 4,
-          cardTitle: "0EMPTY TÍTULO DO CARD",
-          cardDescription: "empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty",
+          cardTitle: "Suporte e pós-venda",
+          cardDescription:
+            "De brinde, entregamos uma arte personalizada para o cliente postar em suas redes sociais, anunciando o site novo. Além disso, daremos dicas de como fazer melhor uso do seu site!",
         },
       },
     },
