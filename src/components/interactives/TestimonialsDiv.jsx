@@ -36,10 +36,6 @@ export default function TestimonialsDiv({ children }) {
     );
   };
 
-  const onPageChange = (e) => {
-    setActiveIndex(e.page);
-  };
-
   return (
     <div className="">
       <Carousel
@@ -51,22 +47,10 @@ export default function TestimonialsDiv({ children }) {
         circular={true}
         autoplayInterval={8000}
         itemTemplate={itemTemplate}
-        onPageChange={onPageChange}
         showNavigators={true}
         prevIcon={<span style={{ color: "black", fontSize: "200%" }}>❮</span>}
         nextIcon={<span style={{ color: "black", fontSize: "200%" }}>❯</span>}
       />
-      <div className="flex justify-center mt-3">
-        {children.map((_, index) => (
-          <span
-            key={index}
-            className={`mx-1 w-4 h-1 ${
-              index === activeIndex ? "bg-blue-500" : "bg-gray-300"
-            }`}
-            style={{ transition: "background-color 0.3s" }}
-          ></span>
-        ))}
-      </div>
     </div>
   );
 }
