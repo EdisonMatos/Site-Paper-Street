@@ -90,7 +90,7 @@ export default function ImagesGallery3Slides(props) {
   ];
 
   return (
-    <div className="w-[50%] phone2:w-[60%] phone3:w-[68%] tablet1:w-full">
+    <div className=" w-full">
       <ImageGallery
         items={images}
         showBullets={true}
