@@ -101,7 +101,7 @@ export default function About() {
           </MotionDivDownToUp> */}
         </div>
       </SectionWrapper>
-      <Dialog
+      {/* <Dialog
         className=" font-secondFont"
         header={modalTitle}
         visible={visible}
@@ -110,7 +110,7 @@ export default function About() {
         breakpoints={{ "960px": "75vw", "641px": "90vw" }}
       >
         <p className="m-0 ">{modalContent}</p>
-      </Dialog>
+      </Dialog> */}
     </SectionArea>
   );
 }
