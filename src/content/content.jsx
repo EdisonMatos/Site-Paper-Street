@@ -228,13 +228,13 @@ const content = {
       miniTag: "Por que escolher a Paper?",
       title: (
         <p>
-          Nossa qualidade é aprovada pela{" "}<p className="font-medium">
+          Nossa qualidade é aprovada pela{" "}<span className="font-medium">
           <span className="text-blue-500">G</span>
           <span className="text-red-500">o</span>
           <span className="text-yellow-500">o</span>
           <span className="text-blue-500">g</span>
           <span className="text-green-500">l</span>
-          <span className="text-red-500">e</span></p>
+          <span className="text-red-500">e</span></span>
         </p>
       ),
       subtitle: "Sites feitos por nós, farão você economizar mais no futuro",
