@@ -528,7 +528,7 @@ const content = {
       title: (
         <p className="">Deixa a gente cuidar da vida digital do seu negócio</p>
       ),
-      subtitle: "#",
+      subtitle: "0EMPTY",
       ctaButtonText: "Fale com um atendente",
       link: "",
     },
