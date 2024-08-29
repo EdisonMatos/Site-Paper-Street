@@ -547,7 +547,7 @@ const content = {
           stepNumber: 1,
           cardTitle: "Levantamento de material",
           cardDescription:
-            "Após contratação, um agente especializado da Paper irá entrar em contato e solicitar informações",
+            "Após contratação, um agente especializado da Paper irá entrar em contato e solicitar informações.",
         },
         card2: {
           stepNumber: 2,
