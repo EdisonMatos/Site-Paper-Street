@@ -212,6 +212,7 @@ export default function About() {
       </SectionWrapper>
       {/* <Dialog
         className="font-secondFont"
+       
         header={modalTitle}
         visible={visible}
         onHide={() => setVisible(false)}
