@@ -156,6 +156,7 @@ const content = {
                 label="Siga a gente no Instagram"
                 icon={
                   <svg
+                    aria-label="Botão para Instagram"
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -181,6 +182,7 @@ const content = {
                 label="Siga a gente no Facebook"
                 icon={
                   <svg
+                    aria-label="Botão para Facebook"
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -204,6 +206,7 @@ const content = {
                 label="Siga a gente no Linkedin"
                 icon={
                   <svg
+                    aria-label="Botão para Linkedin"
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -251,7 +254,6 @@ const content = {
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 class="lucide lucide-linkedin"
-                
               >
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                 <rect width="4" height="12" x="2" y="9" />
@@ -261,6 +263,7 @@ const content = {
 
             link1: "https://www.linkedin.com/in/edison-matoss/", arialabel1:"Link para LinkedIn",
             
+
             icon2: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -281,6 +284,7 @@ const content = {
 
             link2: "https://github.com/EdisonMatos", arialabel2:"Link para GitHub",
 
+
             icon3: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -300,6 +304,7 @@ const content = {
               </svg>
             ),
             link3: "https://edisonmatos.github.io/",
+            arialabel3: "Link para github.io",
           },
         },
         member2: {
@@ -331,6 +336,7 @@ const content = {
 
             link1: "https://www.linkedin.com/in/gabriel-adans-2bb029227/", arialabel1:"Link para LinkedIn",
 
+
             icon2: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -350,6 +356,7 @@ const content = {
             ),
 
             link2: "https://github.com/GabrielAdans", arialabel2:"Link para GitHub",
+
 
             icon3: (
               <svg
@@ -371,6 +378,7 @@ const content = {
             ),
 
             link3: "https://www.instagram.com/adansgabriel/", arialabel3:"Link para Instagram",
+
           },
         },
         member3: {
@@ -402,6 +410,7 @@ const content = {
 
             link1: " https://www.linkedin.com/in/gabriel-souza-b9945929a", arialabel1:"Link para LinkedIn",
 
+
             icon2: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -421,6 +430,7 @@ const content = {
             ),
 
             link2: "https://github.com/BiellSouza", arialabel2:"Link para GitHub",
+
 
             icon3: (
               <svg
@@ -442,6 +452,7 @@ const content = {
             ),
 
             link3: " https://www.instagram.com/biel.souza.904", arialabel3:"Link para Instagram",
+
 
 
           },
@@ -475,6 +486,7 @@ const content = {
 
             link1: "https://www.linkedin.com/in/luiz-felipe-leite-95a246192/",  arialabel1:"Link para LinkedIn",
 
+
             icon2: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -495,6 +507,7 @@ const content = {
             ),
 
             link2: "https://www.instagram.com/luizleitedesigner/", arialabel2:"Link para Instagram",
+
             icon3: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -509,6 +522,7 @@ const content = {
             ),
 
             link3: "https://wa.me/+556596241854", arialabel3:"Link para WhatsApp",
+
           },
         },
       },
