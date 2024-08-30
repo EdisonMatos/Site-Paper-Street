@@ -22,6 +22,7 @@ import teamMemberImg4 from "../assets/imgs/team/team4.webp";
 import MotionDivDownToUp from "../components/animation/MotionDivDownToUp";
 import TypewriterComponent from "../components/animation/TypeWriter";
 import ButtonWithIconNavbar from "../components/interactives/ButtonWithIconNavbar";
+import imgSteps from "../assets/imgs/steps/imgSteps.jpg";
 
 import imgTestimonial1 from "../assets/imgs/testimonials/testimonialsImg1.jpg";
 import imgTestimonial2 from "../assets/imgs/testimonials/testimonialsImg2.jpg";
@@ -311,8 +312,8 @@ const content = {
                 <path d="M2 12h20" />
               </svg>
             ),
-            link3: "https://edisonmatos.github.io/",
-            arialabel3: "Link para github.io",
+            link3: "https://edisonmatos.github.io/", arialabel3:"Link para github.io",
+           
           },
         },
         member2: {
@@ -627,6 +628,7 @@ const content = {
         img12: {
           img: imgTestimonial12,
           alt: "Imagem de feedback",
+
         },
       },
     },

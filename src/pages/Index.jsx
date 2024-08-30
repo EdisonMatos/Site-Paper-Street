@@ -11,6 +11,7 @@ import FloatingWhatsappButton from "../components/interactives/FloatingWhatsappB
 import HeroImgBackground from "../components/sections/HeroImgBackground";
 import Testimonials from "../components/sections/Deposition";
 
+
 export default function Index() {
   return (
     <div>
@@ -21,6 +22,7 @@ export default function Index() {
       <Testimonials />
       <Team />
       <CtaWhatsapp />
+      <HowItWorksImage />
       <Faq />
       <Footer />
       <FloatingWhatsappButton />
