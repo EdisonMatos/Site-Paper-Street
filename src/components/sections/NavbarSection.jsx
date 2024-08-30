@@ -4,7 +4,7 @@ import ListGroup from "../sectionElements/ListGroup";
 import { Link as ScrollLink } from "react-scroll";
 import HeadlessDemo from "../sectionElements/Sidebar2";
 import { px } from "framer-motion";
-import ButtonCtaNavbar from "../interactives/ButtonCtaNavbar";
+import Button from "../interactives/Button";
 import content from "../../content/content";
 import links from "../../content/links";
 
@@ -119,9 +119,12 @@ export default function NavbarSection() {
                 scrolling ? "invert" : ""
               }`}
             >
-              <ButtonCtaNavbar
+              <Button
+                aria-label={content.texts.hero.ctaButtonAriaLabel}
                 label={content.texts.navbar.ctaButtonTextResponsive}
-                link={whatsappContactLink}
+                buttonLink={whatsappContactLink}
+                className={`${scrolling ? "" : ""}`}
+                size="small"
                 icon={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
