@@ -27,7 +27,7 @@ export default function HowItWorksImage() {
             style={{
               backgroundImage: `url(${content.texts.steps.img})`,
             }}
-            className="relative desktop1:bg-center bg-no-repeat bg-cover h-[450px] w-full tablet1:h-[800px] desktop1:h-[467px] desktop2:h-[650px] rounded-2xl "
+            className="relative bg-center bg-no-repeat bg-cover h-[450px] w-full tablet1:h-[800px] desktop1:h-[467px] desktop2:h-[650px] rounded-2xl "
           >
             {/* <img
               alt="Imagem de efeito pontilhado"
@@ -55,7 +55,7 @@ export default function HowItWorksImage() {
             miniTitle={content.texts.steps.miniTag}
             sectionHeaderTitle={content.texts.steps.title}
             sectionHeaderSubtitle={content.texts.steps.subtitle}
-            color=""
+            color="dark"
             type=""
           />
 
