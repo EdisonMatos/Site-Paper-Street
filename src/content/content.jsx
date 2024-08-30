@@ -23,6 +23,7 @@ import MotionDivDownToUp from "../components/animation/MotionDivDownToUp";
 import TypewriterComponent from "../components/animation/TypeWriter";
 import ButtonWithIconNavbar from "../components/interactives/ButtonWithIconNavbar";
 import imgSteps from "../assets/imgs/steps/imgSteps.jpg";
+import Button from "../components/interactives/Button";
 
 const content = {
   texts: {

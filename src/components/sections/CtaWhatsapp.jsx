@@ -3,8 +3,7 @@ import content from "../../content/content";
 import SectionContent from "../sectionElements/SectionContent";
 import MotionDivUpToDown from "../animation/MotionDivUpToDown";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import ButtonCTAWithIcon from "../interactives/ButtonCTAWithIcon";
-
+import Button from "../interactives/Button";
 const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
 export default function CtaWhatsapp() {
@@ -27,9 +26,12 @@ export default function CtaWhatsapp() {
               </h1>
               <MotionDivDownToUp className="flex justify-center">
                 <div className="w-[80%] phone2:w-full tablet1:w-full">
-                  <ButtonCTAWithIcon
+                  <Button
+                    aria-label={content.texts.hero.ctaButtonAriaLabel}
                     label={content.texts.cta.ctaButtonText}
                     buttonLink={whatsappContactLink}
+                    animation
+                    color="bg-yellow-400 hover:bg-white text-black hover:text-bg-yellow-400 hover:border-bg-yellow-400 hover:border-solid border-[1px] border-yellow-400 hover:border-white"
                     icon={
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
