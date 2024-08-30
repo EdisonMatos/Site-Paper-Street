@@ -9,6 +9,8 @@ import NavbarSection from "../components/sections/NavbarSection";
 import BackToTopButton from "../components/interactives/BackToTopButton";
 import FloatingWhatsappButton from "../components/interactives/FloatingWhatsappButton";
 import HeroImgBackground from "../components/sections/HeroImgBackground";
+import HowItWorksImage from "../components/sections/HowItWorksImage";
+
 export default function Index() {
   return (
     <div>
@@ -18,6 +20,7 @@ export default function Index() {
       <About />
       <Team />
       <CtaWhatsapp />
+      <HowItWorksImage />
       <Faq />
       <Footer />
       <FloatingWhatsappButton />

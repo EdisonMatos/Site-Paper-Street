@@ -22,6 +22,7 @@ import teamMemberImg4 from "../assets/imgs/team/team4.webp";
 import MotionDivDownToUp from "../components/animation/MotionDivDownToUp";
 import TypewriterComponent from "../components/animation/TypeWriter";
 import ButtonWithIconNavbar from "../components/interactives/ButtonWithIconNavbar";
+import imgSteps from "../assets/imgs/steps/imgSteps.jpg";
 
 const content = {
   texts: {
@@ -536,6 +537,40 @@ const content = {
         img6: {
           img: { trustedByImg6 },
           alt: "Seguradora Tokio Marine",
+        },
+      },
+    },
+    steps: {
+      miniTag: "Nosso Passo a Passo",
+      title: "Como funciona?",
+      subtitle:
+        "Nossos processos foram pensados para você não ter nenhuma preocupação enquanto seu site é construido.",
+      img: imgSteps,
+      alt: "",
+      cards: {
+        card1: {
+          stepNumber: 1,
+          cardTitle: "Informações",
+          cardDescription:
+            "Após contratação, um agente especializado da Paper irá entrar em contato e solicitar informações. Temos imagens e textos profissionais para auxiliar caso o cliente não tenha.",
+        },
+        card2: {
+          stepNumber: 2,
+          cardTitle: "Desenvolvimento do site",
+          cardDescription:
+            "Iniciamos a criação do site, e durante esse período, continuamos à disposição para tirar dúvidas. O prazo vai variar de acordo com o que foi acordado durante a contratação.",
+        },
+        card3: {
+          stepNumber: 3,
+          cardTitle: "Site no ar!",
+          cardDescription:
+            "Enviamos uma prévia para o cliente e, após aprovado, explicamos o processo de escolha do nome do site, criamos os emails profissionais e colocamos no ar.",
+        },
+        card4: {
+          stepNumber: 4,
+          cardTitle: "Suporte e pós-venda",
+          cardDescription:
+            "De brinde, entregamos uma arte personalizada para o cliente postar em suas redes sociais, anunciando o site novo. Além disso, daremos dicas de como fazer melhor uso do seu site!",
         },
       },
     },
