@@ -22,7 +22,7 @@ import teamMemberImg4 from "../assets/imgs/team/team4.webp";
 import MotionDivDownToUp from "../components/animation/MotionDivDownToUp";
 import TypewriterComponent from "../components/animation/TypeWriter";
 import ButtonWithIconNavbar from "../components/interactives/ButtonWithIconNavbar";
-import imgSteps from "../assets/imgs/steps/imgSteps.png";
+import imgSteps from "../assets/imgs/steps/imgSteps.jpg";
 
 const content = {
   texts: {
