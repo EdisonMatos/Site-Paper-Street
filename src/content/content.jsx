@@ -24,6 +24,22 @@ import TypewriterComponent from "../components/animation/TypeWriter";
 import ButtonWithIconNavbar from "../components/interactives/ButtonWithIconNavbar";
 import imgSteps from "../assets/imgs/steps/imgSteps.jpg";
 
+import imgTestimonial1 from "../assets/imgs/testimonials/testimonialsImg1.jpg";
+import imgTestimonial2 from "../assets/imgs/testimonials/testimonialsImg2.jpg";
+import imgTestimonial3 from "../assets/imgs/testimonials/testimonialsImg3.jpg";
+import imgTestimonial4 from "../assets/imgs/testimonials/testimonialsImg4.jpg";
+import imgTestimonial5 from "../assets/imgs/testimonials/testimonialsImg5.jpg";
+import imgTestimonial6 from "../assets/imgs/testimonials/testimonialsImg6.jpg";
+import imgTestimonial7 from "../assets/imgs/testimonials/testimonialsImg7.jpg";
+import imgTestimonial8 from "../assets/imgs/testimonials/testimonialsImg8.jpg";
+import imgTestimonial9 from "../assets/imgs/testimonials/testimonialsImg9.jpg";
+import imgTestimonial10 from "../assets/imgs/testimonials/testimonialsImg10.jpg";
+import imgTestimonial11 from "../assets/imgs/testimonials/testimonialsImg11.jpg";
+import imgTestimonial12 from "../assets/imgs/testimonials/testimonialsImg12.jpg";
+import imgTestimonial13 from "../assets/imgs/testimonials/testimonialsImg13.jpg";
+import imgTestimonial14 from "../assets/imgs/testimonials/testimonialsImg14.jpg";
+import imgTestimonial15 from "../assets/imgs/testimonials/testimonialsImg15.jpg";
+
 const content = {
   texts: {
     navbar: {
@@ -293,8 +309,8 @@ const content = {
                 <path d="M2 12h20" />
               </svg>
             ),
-            link3: "https://edisonmatos.github.io/", arialabel3:"Link para github.io",
-           
+            link3: "https://edisonmatos.github.io/",
+            arialabel3: "Link para github.io",
           },
         },
         member2: {
@@ -537,6 +553,73 @@ const content = {
         img6: {
           img: { trustedByImg6 },
           alt: "Seguradora Tokio Marine",
+        },
+      },
+    },
+    testimonials: {
+      miniTag: "Sempre encantando clientes",
+      title: "Depoimentos",
+      subtitle: "A satisfação dos nossos clientes evidencia a nossa qualidade.",
+      images: {
+        img1: {
+          img: imgTestimonial1,
+          alt: "Imagem de feedback",
+        },
+        img2: {
+          img: imgTestimonial2,
+          alt: "Imagem de feedback",
+        },
+        img3: {
+          img: imgTestimonial3,
+          alt: "Imagem de feedback",
+        },
+        img4: {
+          img: imgTestimonial4,
+          alt: "Imagem de feedback",
+        },
+        img5: {
+          img: imgTestimonial5,
+          alt: "Imagem de feedback",
+        },
+        img6: {
+          img: imgTestimonial6,
+          alt: "Imagem de feedback",
+        },
+        img7: {
+          img: imgTestimonial7,
+          alt: "Imagem de feedback",
+        },
+        img8: {
+          img: imgTestimonial8,
+          alt: "Imagem de feedback",
+        },
+        img9: {
+          img: imgTestimonial9,
+          alt: "Imagem de feedback",
+        },
+        img10: {
+          img: imgTestimonial10,
+          alt: "Imagem de feedback",
+        },
+        img11: {
+          img: imgTestimonial11,
+          alt: "Imagem de feedback",
+        },
+        img12: {
+          img: imgTestimonial12,
+          alt: "Imagem de feedback",
+        },
+        img13: {
+          img: imgTestimonial13,
+          alt: "Imagem de feedback",
+        },
+        img14: {
+          img: imgTestimonial14,
+          alt: "Imagem de feedback",
+        },
+        img15: {
+          img: imgTestimonial15,
+          alt: "Imagem de feedback",
         },
       },
     },
