@@ -47,3 +47,35 @@
   visibility: visible;
   animation: fadeOut 1s ease-in-out;
 }
+
+.p-carousel-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+
+.p-carousel-container {
+  width: 70%;
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo internamente */
+  align-items: center;
+  margin: 0 ; /* Centraliza o contêiner em relação ao seu pai */
+}
+
+.p-carousel-indicators .p-carousel-indicator button {
+  background-color: black !important; /* Altera a cor dos indicadores */
+  
+}
+
+.p-carousel-indicators {
+  display: grid;
+  grid-template-columns: repeat(6, auto); /* Seis indicadores por linha */
+  gap: 10px; /* Ajuste o espaçamento entre os indicadores */
+  justify-content: center; /* Centraliza os indicadores */
+}
+
+.p-carousel-indicator {
+  margin: 0; /* Remove margens extras */
+}

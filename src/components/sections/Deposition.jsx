@@ -20,7 +20,7 @@ export default function Testimonials() {
 
         <SectionWrapper className="flex justify-center">
           <MotionDivDownToUp className="flex justify-center w-full">
-            <div className="desktop1:w-[80%]">
+            <div className=" desktop1:w-[80%]">
               <TestimonialsDiv>
                 <div className="flex items-center justify-center">
                   <div className="flex justify-center">
@@ -51,6 +51,70 @@ export default function Testimonials() {
                     <img
                       src={content.texts.testimonials.images.img4.img}
                       alt={content.texts.testimonials.images.img4.alt}
+                    />
+                  </div>
+                </div>
+                <div className="flex justify-center">
+                  <div>
+                    <img
+                      src={content.texts.testimonials.images.img5.img}
+                      alt={content.texts.testimonials.images.img5.alt}
+                    />
+                  </div>
+                </div>
+                <div className="flex justify-center">
+                  <div>
+                    <img
+                      src={content.texts.testimonials.images.img6.img}
+                      alt={content.texts.testimonials.images.img6.alt}
+                    />
+                  </div>
+                </div>
+                <div className="flex justify-center">
+                  <div>
+                    <img
+                      src={content.texts.testimonials.images.img7.img}
+                      alt={content.texts.testimonials.images.img7.alt}
+                    />
+                  </div>
+                </div>
+                <div className="flex justify-center">
+                  <div>
+                    <img
+                      src={content.texts.testimonials.images.img8.img}
+                      alt={content.texts.testimonials.images.img8.alt}
+                    />
+                  </div>
+                </div>
+                <div className="flex justify-center">
+                  <div>
+                    <img
+                      src={content.texts.testimonials.images.img9.img}
+                      alt={content.texts.testimonials.images.img9.alt}
+                    />
+                  </div>
+                </div>
+                <div className="flex justify-center">
+                  <div>
+                    <img
+                      src={content.texts.testimonials.images.img10.img}
+                      alt={content.texts.testimonials.images.img10.alt}
+                    />
+                  </div>
+                </div>
+                <div className="flex justify-center">
+                  <div>
+                    <img
+                      src={content.texts.testimonials.images.img11.img}
+                      alt={content.texts.testimonials.images.img11.alt}
+                    />
+                  </div>
+                </div>
+                <div className="flex justify-center">
+                  <div>
+                    <img
+                      src={content.texts.testimonials.images.img12.img}
+                      alt={content.texts.testimonials.images.img12.alt}
                     />
                   </div>
                 </div>

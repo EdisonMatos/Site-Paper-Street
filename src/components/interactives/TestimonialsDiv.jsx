@@ -8,8 +8,8 @@ export default function TestimonialsDiv({ children }) {
   const responsiveOptions = [
     {
       breakpoint: "2500px",
-      numVisible: 2,
-      numScroll: 2,
+      numVisible: 3,
+      numScroll: 3,
     },
     {
       breakpoint: "1199px",
@@ -37,12 +37,13 @@ export default function TestimonialsDiv({ children }) {
   };
 
   return (
-    <div className="">
+    <div className="flex justify-center items-center">
       <Carousel
         value={children}
         numVisible={1}
         numScroll={1}
         responsiveOptions={responsiveOptions}
+        showIndicators={false}
         className="text-black"
         circular={true}
         autoplayInterval={8000}

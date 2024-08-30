@@ -23,10 +23,18 @@ import MotionDivDownToUp from "../components/animation/MotionDivDownToUp";
 import TypewriterComponent from "../components/animation/TypeWriter";
 import ButtonWithIconNavbar from "../components/interactives/ButtonWithIconNavbar";
 
-import imgTestimonial1 from "../assets/imgs/testimonials/testimonial1.jpg";
-import imgTestimonial2 from "../assets/imgs/testimonials/testimonial2.jpg";
-import imgTestimonial3 from "../assets/imgs/testimonials/testimonial3.jpg";
-import imgTestimonial4 from "../assets/imgs/testimonials/testimonial4.jpg";
+import imgTestimonial1 from "../assets/imgs/testimonials/testimonialsImg1.jpg";
+import imgTestimonial2 from "../assets/imgs/testimonials/testimonialsImg2.jpg";
+import imgTestimonial3 from "../assets/imgs/testimonials/testimonialsImg3.jpg";
+import imgTestimonial4 from "../assets/imgs/testimonials/testimonialsImg4.jpg";
+import imgTestimonial5 from "../assets/imgs/testimonials/testimonialsImg5.jpg";
+import imgTestimonial6 from "../assets/imgs/testimonials/testimonialsImg6.jpg";
+import imgTestimonial7 from "../assets/imgs/testimonials/testimonialsImg7.jpg";
+import imgTestimonial8 from "../assets/imgs/testimonials/testimonialsImg8.jpg";
+import imgTestimonial9 from "../assets/imgs/testimonials/testimonialsImg9.jpg";
+import imgTestimonial10 from "../assets/imgs/testimonials/testimonialsImg10.jpg";
+import imgTestimonial11 from "../assets/imgs/testimonials/testimonialsImg11.jpg";
+import imgTestimonial12 from "../assets/imgs/testimonials/testimonialsImg12.jpg";
 
 const content = {
   texts: {
@@ -261,8 +269,8 @@ const content = {
               </svg>
             ),
 
-            link1: "https://www.linkedin.com/in/edison-matoss/", arialabel1:"Link para LinkedIn",
-            
+            link1: "https://www.linkedin.com/in/edison-matoss/",
+            arialabel1: "Link para LinkedIn",
 
             icon2: (
               <svg
@@ -282,8 +290,8 @@ const content = {
               </svg>
             ),
 
-            link2: "https://github.com/EdisonMatos", arialabel2:"Link para GitHub",
-
+            link2: "https://github.com/EdisonMatos",
+            arialabel2: "Link para GitHub",
 
             icon3: (
               <svg
@@ -334,8 +342,8 @@ const content = {
               </svg>
             ),
 
-            link1: "https://www.linkedin.com/in/gabriel-adans-2bb029227/", arialabel1:"Link para LinkedIn",
-
+            link1: "https://www.linkedin.com/in/gabriel-adans-2bb029227/",
+            arialabel1: "Link para LinkedIn",
 
             icon2: (
               <svg
@@ -355,8 +363,8 @@ const content = {
               </svg>
             ),
 
-            link2: "https://github.com/GabrielAdans", arialabel2:"Link para GitHub",
-
+            link2: "https://github.com/GabrielAdans",
+            arialabel2: "Link para GitHub",
 
             icon3: (
               <svg
@@ -377,8 +385,8 @@ const content = {
               </svg>
             ),
 
-            link3: "https://www.instagram.com/adansgabriel/", arialabel3:"Link para Instagram",
-
+            link3: "https://www.instagram.com/adansgabriel/",
+            arialabel3: "Link para Instagram",
           },
         },
         member3: {
@@ -408,8 +416,8 @@ const content = {
               </svg>
             ),
 
-            link1: " https://www.linkedin.com/in/gabriel-souza-b9945929a", arialabel1:"Link para LinkedIn",
-
+            link1: " https://www.linkedin.com/in/gabriel-souza-b9945929a",
+            arialabel1: "Link para LinkedIn",
 
             icon2: (
               <svg
@@ -429,8 +437,8 @@ const content = {
               </svg>
             ),
 
-            link2: "https://github.com/BiellSouza", arialabel2:"Link para GitHub",
-
+            link2: "https://github.com/BiellSouza",
+            arialabel2: "Link para GitHub",
 
             icon3: (
               <svg
@@ -451,10 +459,8 @@ const content = {
               </svg>
             ),
 
-            link3: " https://www.instagram.com/biel.souza.904", arialabel3:"Link para Instagram",
-
-
-
+            link3: " https://www.instagram.com/biel.souza.904",
+            arialabel3: "Link para Instagram",
           },
         },
         member4: {
@@ -484,8 +490,8 @@ const content = {
               </svg>
             ),
 
-            link1: "https://www.linkedin.com/in/luiz-felipe-leite-95a246192/",  arialabel1:"Link para LinkedIn",
-
+            link1: "https://www.linkedin.com/in/luiz-felipe-leite-95a246192/",
+            arialabel1: "Link para LinkedIn",
 
             icon2: (
               <svg
@@ -506,7 +512,8 @@ const content = {
               </svg>
             ),
 
-            link2: "https://www.instagram.com/luizleitedesigner/", arialabel2:"Link para Instagram",
+            link2: "https://www.instagram.com/luizleitedesigner/",
+            arialabel2: "Link para Instagram",
 
             icon3: (
               <svg
@@ -521,8 +528,8 @@ const content = {
               </svg>
             ),
 
-            link3: "https://wa.me/+556596241854", arialabel3:"Link para WhatsApp",
-
+            link3: "https://wa.me/+556596241854",
+            arialabel3: "Link para WhatsApp",
           },
         },
       },
@@ -569,9 +576,9 @@ const content = {
       },
     },
     testimonials: {
-      miniTag: "0empty",
-      title: "0empty",
-      subtitle: "0empty",
+      miniTag: "SEMPRE ENCANTANDO CLIENTES",
+      title: "Depoimentos",
+      subtitle: "A satisfação dos nossos clientes evidencia a nossa qualidade",
       images: {
         img1: {
           img: imgTestimonial1,
@@ -587,6 +594,38 @@ const content = {
         },
         img4: {
           img: imgTestimonial4,
+          alt: "Imagem de feedback",
+        },
+        img5: {
+          img: imgTestimonial5,
+          alt: "Imagem de feedback",
+        },
+        img6: {
+          img: imgTestimonial6,
+          alt: "Imagem de feedback",
+        },
+        img7: {
+          img: imgTestimonial7,
+          alt: "Imagem de feedback",
+        },
+        img8: {
+          img: imgTestimonial8,
+          alt: "Imagem de feedback",
+        },
+        img9: {
+          img: imgTestimonial9,
+          alt: "Imagem de feedback",
+        },
+        img10: {
+          img: imgTestimonial10,
+          alt: "Imagem de feedback",
+        },
+        img11: {
+          img: imgTestimonial11,
+          alt: "Imagem de feedback",
+        },
+        img12: {
+          img: imgTestimonial12,
           alt: "Imagem de feedback",
         },
       },
