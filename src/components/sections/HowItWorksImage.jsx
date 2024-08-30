@@ -11,7 +11,7 @@ import "primeicons/primeicons.css";
 import content from "../../content/content";
 import links from "../../content/links";
 import SectionHeader from "../sectionElements/SectionHeader";
-// import imgPoints from "../../assets/imgs/about/points.png";
+import imgPoints from "../../assets/imgs/about/points.png";
 import HowItWorksCard from "../cards/HowItWorksCard";
 
 export default function HowItWorksImage() {
@@ -29,11 +29,11 @@ export default function HowItWorksImage() {
             }}
             className="relative bg-center bg-no-repeat bg-cover h-[450px] w-full tablet1:h-[800px] desktop1:h-[467px] desktop2:h-[650px] rounded-2xl "
           >
-            {/* <img
+            <img
               alt="Imagem de efeito pontilhado"
               src={imgPoints}
-              className="absolute opacity-75 right-[-40px] top-[40px] phone1:right-[-10px] phone1:top-[20px] desktop1:right-[-40px] desktop1:top-[40px]"
-            ></img> */}
+              className="absolute opacity-75 right-[-40px] top-[40px] phone1:right-[-15px] phone1:top-[10px] desktop1:right-[-40px] desktop1:top-[40px]"
+            ></img>
           </div>
           {/* <img
             src={content.texts.steps.imgSteps}
