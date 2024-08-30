@@ -4,6 +4,7 @@ import content from "../../content/content";
 import bgHeroImg from "../../assets/imgs/hero/bgHero.webp";
 import ButtonCTAWithIcon from "../interactives/ButtonCTAWithIcon";
 import ScrollDownIndicator from "../sectionElements/ScrollDownIndicator";
+import Button from "../interactives/Button";
 
 const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
@@ -36,9 +37,13 @@ export default function HeroImgBackground() {
               <div className="w-full phone2:w-full tablet2:w-auto">
                 <MotionDivLeftToRight>
                   <div className="flex justify-center w-full mb-[60px]">
-                    <ButtonCTAWithIcon
+                    <Button
+                      aria-label={content.texts.hero.ctaButtonAriaLabel}
                       label={content.texts.hero.ctaButtonText}
                       buttonLink={whatsappContactLink}
+                      animation
+                      color="bg-yellow-400 hover:bg-white text-black hover:text-bg-yellow-400 hover:border-bg-yellow-400 hover:border-solid border-[1px] border-yellow-400 hover:border-white"
+                      className="w-[100%]"
                       icon={
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
