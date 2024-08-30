@@ -31,7 +31,7 @@ export default function CtaWhatsapp() {
                     label={content.texts.cta.ctaButtonText}
                     buttonLink={whatsappContactLink}
                     animation
-                    color="bg-yellow-400 hover:bg-white text-black hover:text-bg-yellow-400 hover:border-bg-yellow-400 hover:border-solid border-[1px] border-yellow-400 hover:border-white"
+                    color="bg-yellow-400 text-black border-yellow-400"
                     icon={
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

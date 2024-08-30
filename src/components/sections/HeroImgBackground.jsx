@@ -42,7 +42,7 @@ export default function HeroImgBackground() {
                       label={content.texts.hero.ctaButtonText}
                       buttonLink={whatsappContactLink}
                       animation
-                      color="bg-yellow-400 hover:bg-white text-black hover:text-bg-yellow-400 hover:border-bg-yellow-400 hover:border-solid border-[1px] border-yellow-400 hover:border-white"
+                      color="bg-yellow-400 border-yellow-400 text-black"
                       className="w-[100%]"
                       icon={
                         <svg
