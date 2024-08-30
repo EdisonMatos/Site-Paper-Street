@@ -150,6 +150,7 @@ const content = {
                 label="Siga a gente no Instagram"
                 icon={
                   <svg
+                    aria-label="Botão para Instagram"
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -175,6 +176,7 @@ const content = {
                 label="Siga a gente no Facebook"
                 icon={
                   <svg
+                    aria-label="Botão para Facebook"
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -198,6 +200,7 @@ const content = {
                 label="Siga a gente no Linkedin"
                 icon={
                   <svg
+                    aria-label="Botão para Linkedin"
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -252,6 +255,7 @@ const content = {
             ),
             link1: "https://www.linkedin.com/in/edison-matoss/",
             arialabel1: "Link para LinkedIn",
+
             icon2: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -290,6 +294,7 @@ const content = {
               </svg>
             ),
             link3: "https://edisonmatos.github.io/",
+            arialabel3: "Link para github.io",
           },
         },
         member2: {
