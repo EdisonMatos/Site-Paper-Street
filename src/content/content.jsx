@@ -544,7 +544,7 @@ const content = {
       miniTag: "Nosso Passo a Passo",
       title: "Como funciona?",
       subtitle:
-        "Nossos processos foram pensados para você não ter nenhuma preocupação durante o desenvolvimento do seu site",
+        "Nossos processos foram pensados para você não ter nenhuma preocupação enquanto seu site é construido.",
       img: imgSteps,
       alt: "",
       cards: {
@@ -552,19 +552,19 @@ const content = {
           stepNumber: 1,
           cardTitle: "Levantamento de material",
           cardDescription:
-            "Após contratação, um agente especializado da Paper irá entrar em contato e solicitar informações.",
+            "Após contratação, um agente especializado da Paper irá entrar em contato e solicitar informações. Temos imagens e textos profissionais para auxiliar, caso o cliente não tenha.",
         },
         card2: {
           stepNumber: 2,
           cardTitle: "Desenvolvimento do site",
           cardDescription:
-            "Inicia-se a criação do site, e durante esse período, continuamos à disposição para tirar dúvidas.",
+            "Iniciamos a criação do site, e durante esse período, continuamos à disposição para tirar dúvidas. O prazo vai variar de acordo com o que foi acordado durante a contratação.",
         },
         card3: {
           stepNumber: 3,
           cardTitle: "Site no ar!",
           cardDescription:
-            "Enviamos uma prévia para o cliente e, após aprovado, colocamos o site no ar.",
+            "Enviamos uma prévia para o cliente e, após aprovado, explicamos o processo de escolha do nome do site, criamos os emails profissionais e colocamos no ar.",
         },
         card4: {
           stepNumber: 4,
