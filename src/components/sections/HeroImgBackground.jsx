@@ -63,7 +63,7 @@ export default function Hero() {
                         />
                       </div>
                     </MotionDivLeftToRight>
-                    <div>
+                    <div className="pt-8">
                       <Testimonials />
                     </div>
                     <ScrollDownIndicator />
