@@ -24,6 +24,22 @@ import TypewriterComponent from "../components/animation/TypeWriter";
 import ButtonWithIconNavbar from "../components/interactives/ButtonWithIconNavbar";
 import imgSteps from "../assets/imgs/steps/imgSteps.jpg";
 
+import imgTestimonial1 from "../assets/imgs/testimonialsHero/imgTestimonial1.png";
+import imgTestimonial2 from "../assets/imgs/testimonialsHero/imgTestimonial2.jpg";
+import imgTestimonial3 from "../assets/imgs/testimonialsHero/imgTestimonial3.jpg";
+import imgTestimonial4 from "../assets/imgs/testimonialsHero/imgTestimonial4.jpg";
+import imgTestimonial5 from "../assets/imgs/testimonialsHero/imgTestimonial5.jpg";
+import imgTestimonial6 from "../assets/imgs/testimonialsHero/imgTestimonial6.jpg";
+import imgTestimonial7 from "../assets/imgs/testimonialsHero/imgTestimonial7.jpg";
+import imgTestimonial8 from "../assets/imgs/testimonialsHero/imgTestimonial8.jpg";
+import imgTestimonial9 from "../assets/imgs/testimonialsHero/imgTestimonial9.jpg";
+import imgTestimonial10 from "../assets/imgs/testimonialsHero/imgTestimonial10.jpg";
+import imgTestimonial11 from "../assets/imgs/testimonialsHero/imgTestimonial11.jpg";
+import imgTestimonial12 from "../assets/imgs/testimonialsHero/imgTestimonial12.jpg";
+import imgTestimonial13 from "../assets/imgs/testimonialsHero/imgTestimonial13.jpg";
+import imgTestimonial14 from "../assets/imgs/testimonialsHero/imgTestimonial14.jpg";
+import imgTestimonial15 from "../assets/imgs/testimonialsHero/imgTestimonial15.jpg";
+
 const content = {
   texts: {
     navbar: {
@@ -634,6 +650,70 @@ const content = {
           question: "A Paper Street emite nota fiscal?",
           answer:
             "Sim. Somos uma empresa devidamente regularizada e emitimos nota fiscal com nosso CNPJ, conforme a legislação vigente.",
+        },
+      },
+    },
+    testimonialsHero: {
+      images: {
+        img1: {
+          img: imgTestimonial1,
+          alt: "Imagem de feedback",
+        },
+        img2: {
+          img: imgTestimonial2,
+          alt: "Imagem de feedback",
+        },
+        img3: {
+          img: imgTestimonial3,
+          alt: "Imagem de feedback",
+        },
+        img4: {
+          img: imgTestimonial4,
+          alt: "Imagem de feedback",
+        },
+        img5: {
+          img: imgTestimonial5,
+          alt: "Imagem de feedback",
+        },
+        img6: {
+          img: imgTestimonial6,
+          alt: "Imagem de feedback",
+        },
+        img7: {
+          img: imgTestimonial7,
+          alt: "Imagem de feedback",
+        },
+        img8: {
+          img: imgTestimonial8,
+          alt: "Imagem de feedback",
+        },
+        img9: {
+          img: imgTestimonial9,
+          alt: "Imagem de feedback",
+        },
+        img10: {
+          img: imgTestimonial10,
+          alt: "Imagem de feedback",
+        },
+        img11: {
+          img: imgTestimonial11,
+          alt: "Imagem de feedback",
+        },
+        img12: {
+          img: imgTestimonial12,
+          alt: "Imagem de feedback",
+        },
+        img13: {
+          img: imgTestimonial13,
+          alt: "Imagem de feedback",
+        },
+        img14: {
+          img: imgTestimonial14,
+          alt: "Imagem de feedback",
+        },
+        img15: {
+          img: imgTestimonial15,
+          alt: "Imagem de feedback",
         },
       },
     },

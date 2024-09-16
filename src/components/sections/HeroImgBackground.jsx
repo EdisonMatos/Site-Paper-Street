@@ -6,6 +6,7 @@ import SectionArea from "../sectionElements/SectionArea";
 import SectionWrapper from "../sectionElements/SectionWrapper";
 import Button from "../interactives/Button";
 import ScrollDownIndicator from "../sectionElements/ScrollDownIndicator";
+import Testimonials from "./Testimonials";
 
 // import ButtonCTAWithIcon from "../interactives/ButtonCTAWithIcon";
 
@@ -19,7 +20,7 @@ export default function Hero() {
       id="home"
     >
       <div className="relative z-10 flex w-full bg-black bg-opacity-50 items-left desktop1:pl desktop3:pl-0">
-        <SectionArea pad >
+        <SectionArea pad>
           <SectionWrapper>
             <div className="w-full justify-evenly">
               <div className="h-[125px] desktop3:h-[45px]" />
@@ -62,6 +63,9 @@ export default function Hero() {
                         />
                       </div>
                     </MotionDivLeftToRight>
+                    <div>
+                      <Testimonials />
+                    </div>
                     <ScrollDownIndicator />
                   </div>
                 </div>
