@@ -23,7 +23,7 @@ export default function Hero() {
         <SectionArea pad>
           <SectionWrapper>
             <div className="w-full justify-evenly">
-              <div className="h-[125px] desktop3:h-[45px]" />
+              <div className="h-[60px] desktop3:h-[45px]" />
               <div className="flex phone1:flex-col">
                 <div className="flex flex-col w-full pt-[20px] pb-[0px] tablet1:pt-[80px] tablet1:pb-[20px] desktop1:pt-[40px]">
                   <MotionDivLeftToRight>
