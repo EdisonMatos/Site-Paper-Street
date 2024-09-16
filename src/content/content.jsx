@@ -42,8 +42,8 @@ const content = {
     hero: {
       title: (
         <h1>
-          Transformamos <br className="hidden tablet1:flex desktop1:hidden" />{" "}
-          ideias em
+          <span className="text-white">Transformamos <br className="hidden tablet1:flex desktop1:hidden" />{" "}
+          ideias em</span>
           <TypewriterComponent
             strings={["Sites", "Landing Pages", "Portais e blogs"]}
             className="text-yellow-400 my-typewriter"
