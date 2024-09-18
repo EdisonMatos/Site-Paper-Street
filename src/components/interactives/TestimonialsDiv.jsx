@@ -50,6 +50,7 @@ export default function TestimonialsDiv({ children }) {
         autoplayInterval={8000}
         itemTemplate={itemTemplate}
         showNavigators={true}
+        indicators={true}
         prevIcon={<span style={{ color: "white", fontSize: "200%" }}>❮</span>}
         nextIcon={<span style={{ color: "white", fontSize: "200%" }}>❯</span>}
       />

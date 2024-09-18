@@ -47,3 +47,11 @@
   visibility: visible;
   animation: fadeOut 1s ease-in-out;
 }
+
+.p-carousel-indicators .p-carousel-indicator {
+  background-color: white !important;
+}
+
+.p-carousel-indicators .p-carousel-indicator.p-highlight {
+  background-color: white !important;
+}
