@@ -9,7 +9,9 @@ export default function ScrollDownIndicator() {
           <p className="mb-[22px] text-white mt-[40%] desktop1:mt-[50%] opacity-80 font-secondFont">
             Deslize para baixo
           </p>
-          <div className="scrollDown"></div>
+          <div className="scrollDown">
+            <span></span>
+          </div>
         </div>
       </MotionDivRightToLeft>
     </div>
