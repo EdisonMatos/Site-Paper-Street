@@ -33,14 +33,18 @@ export default function Hero() {
                       </h1>
                     </div>
                   </MotionDivLeftToRight>
-                  <MotionDivLeftToRight>
-                    <div className="flex justify-center text-center phone1:w-full font-secondFont text-paragraph4 phone3:text-paragraph5 ">
-                      <p className="text-white pb-[54px] tablet1:w-[70%] [text-shadow:_1.8px_1.8px_2px_rgb(0_0_0_/_150%)]">
-                        {content.texts.hero.subtitle}
-                      </p>
-                    </div>
-                  </MotionDivLeftToRight>
+
                   <div className="w-full phone2:w-full tablet2:w-auto">
+                    <div className="pt-8">
+                      <Testimonials />
+                    </div>
+                    <MotionDivLeftToRight>
+                      <div className="flex justify-center text-center phone1:w-full font-secondFont text-paragraph4 phone3:text-paragraph5 ">
+                        <p className="text-white pb-[54px] tablet1:w-[70%] [text-shadow:_1.8px_1.8px_2px_rgb(0_0_0_/_150%)]">
+                          {content.texts.hero.subtitle}
+                        </p>
+                      </div>
+                    </MotionDivLeftToRight>
                     <MotionDivLeftToRight>
                       <div className="flex justify-center w-full desktop1:justify-center">
                         <Button
@@ -63,9 +67,6 @@ export default function Hero() {
                         />
                       </div>
                     </MotionDivLeftToRight>
-                    <div className="pt-8">
-                      <Testimonials />
-                    </div>
                     <ScrollDownIndicator />
                   </div>
                 </div>

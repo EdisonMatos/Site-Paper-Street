@@ -7,7 +7,7 @@ import TestimonialsDiv from "../interactives/TestimonialsDiv";
 export default function Testimonials() {
   return (
     <div className="relative bg-bgSectionDark">
-      <SectionArea className="" id="feedback" paddingTopAndBottom={false}>
+      <SectionArea className="" id="feedback" paddingtop={false}>
         <SectionWrapper className="">
           <MotionDivDownToUp className="flex justify-center w-[100%]">
             <div className=" w-full">
