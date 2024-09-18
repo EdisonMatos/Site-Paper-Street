@@ -108,30 +108,6 @@ export default function Testimonials() {
                     />
                   </div>
                 </div>
-                <div className="flex justify-center">
-                  <div>
-                    <img
-                      src={content.texts.testimonialsHero.images.img13.img}
-                      alt={content.texts.testimonialsHero.images.img13.alt}
-                    />
-                  </div>
-                </div>
-                <div className="flex justify-center">
-                  <div>
-                    <img
-                      src={content.texts.testimonialsHero.images.img14.img}
-                      alt={content.texts.testimonialsHero.images.img14.alt}
-                    />
-                  </div>
-                </div>
-                <div className="flex justify-center">
-                  <div>
-                    <img
-                      src={content.texts.testimonialsHero.images.img15.img}
-                      alt={content.texts.testimonialsHero.images.img15.alt}
-                    />
-                  </div>
-                </div>
               </TestimonialsDiv>
             </div>
           </MotionDivDownToUp>
