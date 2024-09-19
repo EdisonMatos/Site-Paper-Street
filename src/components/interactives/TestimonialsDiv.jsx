@@ -4,9 +4,12 @@ import { Carousel } from "primereact/carousel";
 import "../../index.css";
 
 export default function TestimonialsDiv({ children }) {
+
+
+  
   const responsiveOptions = [
     {
-      breakpoint: "2500px",
+      breakpoint: "3000px",
       numVisible: 3,
       numScroll: 3,
     },
@@ -46,7 +49,7 @@ export default function TestimonialsDiv({ children }) {
         numScroll={1}
         responsiveOptions={responsiveOptions}
         className="text-white"
-        circular
+        circular={false}
         autoplayInterval={8000}
         itemTemplate={itemTemplate}
         showNavigators={true}
