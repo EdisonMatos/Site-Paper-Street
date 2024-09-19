@@ -50,6 +50,8 @@
 
 .p-carousel-indicators .p-carousel-indicator {
   background-color: white !important;
+  width: 4%;
+  border-radius: 20%;
 }
 
 .p-carousel-indicators .p-carousel-indicator.p-highlight {
