@@ -7,6 +7,7 @@ import SectionWrapper from "../sectionElements/SectionWrapper";
 import Button from "../interactives/Button";
 import ScrollDownIndicator from "../sectionElements/ScrollDownIndicator";
 import Testimonials from "./Testimonials";
+import CarouselHero from "../interactives/CarouselHero";
 
 // import ButtonCTAWithIcon from "../interactives/ButtonCTAWithIcon";
 
@@ -35,8 +36,9 @@ export default function Hero() {
                   </MotionDivLeftToRight>
 
                   <div className="w-full phone2:w-full tablet2:w-auto">
-                    <div className="pt-8">
-                      <Testimonials />
+                    <div className="pt-8 pb-12">
+                      {/* <Testimonials /> */}
+                      <CarouselHero />
                     </div>
                     <MotionDivLeftToRight>
                       <div className="flex justify-center text-center phone1:w-full font-secondFont text-paragraph4 phone3:text-paragraph5 ">

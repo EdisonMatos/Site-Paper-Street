@@ -57,3 +57,33 @@
 .p-carousel-indicators .p-carousel-indicator.p-highlight {
   background-color: #facc15 !important;
 }
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.ant-carousel .slick-dots {
+  bottom: -20px; /* Controla a distância dos dots em relação ao conteúdo */
+}
+
+/* Estilizando os indicadores (dots) */
+.ant-carousel .slick-dots li button {
+  background: white !important; /* Indicadores brancos */
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+
+/* Para destacar o indicador ativo */
+.ant-carousel .slick-dots li.slick-active button {
+  background: #facc15 !important; /* Mantém o indicador ativo branco */
+}
