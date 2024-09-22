@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Carousel } from "antd";
 import "../../index.css";
 import imgTestimonial1 from "../../assets/imgs/testimonialsHero/imgTestimonial1.png";
@@ -15,77 +15,113 @@ import imgTestimonial11 from "../../assets/imgs/testimonialsHero/imgTestimonial1
 import imgTestimonial12 from "../../assets/imgs/testimonialsHero/imgTestimonial12.png";
 
 const CarouselHero = () => {
-  const responsiveOptions = [
-    {
-      breakpoint: 3000, // em pixels
-      settings: {
-        slidesToShow: 3, // Número de slides visíveis
-        slidesToScroll: 3, // Número de slides que rolam por vez
-      },
-    },
-    {
-      breakpoint: 1023,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      },
-    },
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      },
-    },
-    {
-      breakpoint: 575,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ];
+  const autoplaySpeed = 9000; // 9 segundos para a barra encher
+  const [progress, setProgress] = useState(0);
+  const carouselRef = useRef(null); // Referência para controlar o carrossel manualmente
+
+  
+//  Configurações responsivas
+ const responsiveOptions = [
+   {
+     breakpoint: 3000, 
+     settings: {
+       slidesToShow: 3,
+       slidesToScroll: 3,
+     },
+   },
+   {
+     breakpoint: 1023,
+     settings: {
+       slidesToShow: 2,
+       slidesToScroll: 2,
+     },
+   },
+   {
+     breakpoint: 767,
+     settings: {
+       slidesToShow: 2,
+       slidesToScroll: 2,
+     },
+   },
+   {
+     breakpoint: 575,
+     settings: {
+       slidesToShow: 1,
+       slidesToScroll: 1,
+     },
+   },
+ ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setProgress((prevProgress) =>
+        prevProgress >= 100 ? 100 : prevProgress + 100 / (autoplaySpeed / 100)
+      );
+    }, 100); // Atualiza a cada 100ms para suavidade
+
+    return () => clearInterval(interval);
+  }, [autoplaySpeed]);
+
+  // Quando a barra chega a 100%, muda para o próximo slide
+  useEffect(() => {
+    if (progress >= 100) {
+      carouselRef.current.next(); // Vai para o próximo slide
+      setProgress(0); // Reseta a barra de progresso
+    }
+  }, [progress]);
 
   return (
-    <Carousel autoplay={8000} arrows responsive={responsiveOptions}>
-      <div className="carousel-item">
-        <img src={imgTestimonial1} alt="Testimonial 1" />
+    <div className="carousel-container">
+      <Carousel ref={carouselRef} dots={true} arrows responsive={responsiveOptions}>
+        <div className="carousel-item">
+          <img src={imgTestimonial1} alt="Testimonial 1" />
+        </div>
+        <div className="carousel-item">
+          <img src={imgTestimonial2} alt="Testimonial 2" />
+        </div>
+        <div className="carousel-item">
+          <img src={imgTestimonial3} alt="Testimonial 3" />
+        </div>
+        <div className="carousel-item">
+          <img src={imgTestimonial4} alt="Testimonial 4" />
+        </div>
+        <div className="carousel-item">
+          <img src={imgTestimonial5} alt="Testimonial 5" />
+        </div>
+        <div className="carousel-item">
+          <img src={imgTestimonial6} alt="Testimonial 6" />
+        </div>
+        <div className="carousel-item">
+          <img src={imgTestimonial7} alt="Testimonial 7" />
+        </div>
+        <div className="carousel-item">
+          <img src={imgTestimonial8} alt="Testimonial 8" />
+        </div>
+        <div className="carousel-item">
+          <img src={imgTestimonial9} alt="Testimonial 9" />
+        </div>
+        <div className="carousel-item">
+          <img src={imgTestimonial10} alt="Testimonial 10" />
+        </div>
+        <div className="carousel-item">
+          <img src={imgTestimonial11} alt="Testimonial 11" />
+        </div>
+        <div className="carousel-item">
+          <img src={imgTestimonial12} alt="Testimonial 12" />
+        </div>
+      </Carousel>
+
+      {/* Barra de progresso */}
+      <div className="progress-bar-container">
+        <div className="progress-bar" style={{ width: `${progress}%` }} />
       </div>
-      <div className="carousel-item">
-        <img src={imgTestimonial2} alt="Testimonial 2" />
-      </div>
-      <div className="carousel-item">
-        <img src={imgTestimonial3} alt="Testimonial 3" />
-      </div>
-      <div className="carousel-item">
-        <img src={imgTestimonial4} alt="Testimonial 4" />
-      </div>
-      <div className="carousel-item">
-        <img src={imgTestimonial5} alt="Testimonial 5" />
-      </div>
-      <div className="carousel-item">
-        <img src={imgTestimonial6} alt="Testimonial 6" />
-      </div>
-      <div className="carousel-item">
-        <img src={imgTestimonial7} alt="Testimonial 7" />
-      </div>
-      <div className="carousel-item">
-        <img src={imgTestimonial8} alt="Testimonial 8" />
-      </div>
-      <div className="carousel-item">
-        <img src={imgTestimonial9} alt="Testimonial 9" />
-      </div>
-      <div className="carousel-item">
-        <img src={imgTestimonial10} alt="Testimonial 10" />
-      </div>
-      <div className="carousel-item">
-        <img src={imgTestimonial11} alt="Testimonial 11" />
-      </div>
-      <div className="carousel-item">
-        <img src={imgTestimonial12} alt="Testimonial 12" />
-      </div>
-    </Carousel>
+    </div>
   );
 };
 
 export default CarouselHero;
+
+
+
+
+

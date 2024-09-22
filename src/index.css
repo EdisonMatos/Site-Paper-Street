@@ -48,6 +48,8 @@
   animation: fadeOut 1s ease-in-out;
 }
 
+//CAROUSEL DA HERO
+
 .p-carousel-indicators .p-carousel-indicator {
   background-color: white !important;
   width: 4%;
@@ -62,18 +64,67 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 250px;
+  height: auto;
+}
+
+@media (max-width: 1121px) {
+  .carousel-item {
+    height: auto; /* Ajuste a altura para telas menores */
+  }
 }
 
 .carousel-item img {
   height: 100%;
-  width: 100%;
-  object-fit: contain;
+  width: 70%;
+  margin: auto;
+  object-fit: content;
 }
 
-.ant-carousel .slick-dots {
-  bottom: -20px; /* Controla a distância dos dots em relação ao conteúdo */
+@media (max-width: 374px) {
+  .carousel-item img {
+    width: 75%;
+  }
 }
+
+@media (max-width: 424px) {
+  .carousel-item img {
+    width: 65%;
+  }
+}
+
+@media (max-width: 639px) {
+  .carousel-item img {
+    width: 55%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .carousel-item img {
+    width: 70%;
+  }
+}
+
+/* bolinhas de estado do carousel da div */
+
+.ant-carousel .slick-dots {
+  bottom: -37px; /* Controla a distância dos dots em relação ao conteúdo */
+  position: relative;
+  justify-content: center; /* Centraliza os dots */
+  width: 100%;
+}
+
+/* @media (max-width: 374px) {
+  .ant-carousel .slick-dots {
+    width: 201px;
+    justify-content: center;
+    left: 10%;
+  }
+  .ant-carousel .slick-dots li {
+    margin: 4% 0%;
+  }
+} */
+
+
 
 /* Estilizando os indicadores (dots) */
 .ant-carousel .slick-dots li button {
@@ -86,4 +137,39 @@
 /* Para destacar o indicador ativo */
 .ant-carousel .slick-dots li.slick-active button {
   background: #facc15 !important; /* Mantém o indicador ativo branco */
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.progress-bar-container {
+  width: 50%;
+  height: 5px;
+  background-color: #ffffff;
+  position: relative;
+  top: 10px;
+  left: 25%;
+}
+
+@media (max-width: 639px) {
+  .progress-bar-container {
+    height: 4px; /* Altura menor em dispositivos móveis */
+    width: 50%;
+    left: 25%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .progress-bar-container {
+    height: 4px; /* Altura menor em dispositivos móveis */
+    width: 50%;
+    left: 25%;
+  }
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #facc15;
+  transition: width 0.1s ease-in-out;
 }
