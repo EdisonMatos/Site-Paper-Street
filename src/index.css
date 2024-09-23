@@ -104,72 +104,92 @@
   }
 }
 
-/* bolinhas de estado do carousel da div */
-
+/* dots de estado do carousel da div */
 .ant-carousel .slick-dots {
-  bottom: -37px; /* Controla a distância dos dots em relação ao conteúdo */
+  bottom: -37px;
   position: relative;
-  justify-content: center; /* Centraliza os dots */
+  justify-content: center;
   width: 100%;
 }
 
-/* @media (max-width: 374px) {
+@media (max-width: 374px) {
   .ant-carousel .slick-dots {
     width: 201px;
     justify-content: center;
-    left: 10%;
+    flex-wrap: wrap;
+    left: 15%;
+    gap: 15px;
   }
+
   .ant-carousel .slick-dots li {
-    margin: 4% 0%;
+    margin: 0% 0%;
+    width: 16px; 
+    height: 16px;
   }
-} */
+}
 
-
-
-/* Estilizando os indicadores (dots) */
+/* indicadores (dots) */
 .ant-carousel .slick-dots li button {
-  background: white !important; /* Indicadores brancos */
+  background: white !important;
   height: 15px;
   width: 15px;
   border-radius: 100%;
 }
 
-/* Para destacar o indicador ativo */
+/* indicador dots ativo */
 .ant-carousel .slick-dots li.slick-active button {
-  background: #facc15 !important; /* Mantém o indicador ativo branco */
+  background: #facc15 !important;
 }
 
+/* container com imagem do carousel hero */
 .carousel-container {
   position: relative;
 }
-
+/* container da barra */
 .progress-bar-container {
   width: 50%;
   height: 5px;
-  background-color: #ffffff;
+  background: #21201e;
   position: relative;
-  top: 10px;
-  left: 25%;
+  margin: 0 auto; 
 }
 
-@media (max-width: 639px) {
-  .progress-bar-container {
-    height: 4px; /* Altura menor em dispositivos móveis */
-    width: 50%;
-    left: 25%;
-  }
-}
-
-@media (max-width: 1023px) {
-  .progress-bar-container {
-    height: 4px; /* Altura menor em dispositivos móveis */
-    width: 50%;
-    left: 25%;
-  }
-}
-
+/* A barra de progresso interna */
 .progress-bar {
+  width: 70%; 
   height: 100%;
   background-color: #facc15;
-  transition: width 0.1s ease-in-out;
+  position: absolute; 
+  top: 0;
+  left: 0; 
+}
+
+
+@media (max-width: 374px) {
+  .progress-bar-container {
+    width: 70%; 
+    top: -30px; 
+  }
+}
+
+
+@media (min-width: 375px) and (max-width: 424px) {
+  .progress-bar-container {
+    width: 70%; 
+    top: 10px; 
+  }
+}
+
+@media (min-width: 425px) and (max-width: 1023px) {
+  .progress-bar-container {
+    width: 70%; 
+    top: 15px; 
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 3000px) {
+  .progress-bar-container {
+    width: 40%; 
+    top: 15px; 
+  }
 }
