@@ -15,49 +15,48 @@ import imgTestimonial11 from "../../assets/imgs/testimonialsHero/imgTestimonial1
 import imgTestimonial12 from "../../assets/imgs/testimonialsHero/imgTestimonial12.png";
 
 const CarouselHero = () => {
-  const autoplaySpeed = 9000; // 9 segundos para a barra encher
+  const autoplaySpeed = 25000; // 8 segundos para a barra encher
   const [progress, setProgress] = useState(0);
   const carouselRef = useRef(null); // Referência para controlar o carrossel manualmente
 
-  
-//  Configurações responsivas
- const responsiveOptions = [
-   {
-     breakpoint: 3000, 
-     settings: {
-       slidesToShow: 3,
-       slidesToScroll: 3,
-     },
-   },
-   {
-     breakpoint: 1023,
-     settings: {
-       slidesToShow: 2,
-       slidesToScroll: 2,
-     },
-   },
-   {
-     breakpoint: 767,
-     settings: {
-       slidesToShow: 2,
-       slidesToScroll: 2,
-     },
-   },
-   {
-     breakpoint: 575,
-     settings: {
-       slidesToShow: 1,
-       slidesToScroll: 1,
-     },
-   },
- ];
+  //  Configurações responsivas
+  const responsiveOptions = [
+    {
+      breakpoint: 3000,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      },
+    },
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress((prevProgress) =>
         prevProgress >= 100 ? 100 : prevProgress + 100 / (autoplaySpeed / 100)
       );
-    }, 100); // Atualiza a cada 100ms para suavidade
+    }, 20); // Atualiza a cada 100ms para suavidade
 
     return () => clearInterval(interval);
   }, [autoplaySpeed]);
@@ -72,7 +71,13 @@ const CarouselHero = () => {
 
   return (
     <div className="carousel-container">
-      <Carousel ref={carouselRef} dots={true} arrows responsive={responsiveOptions}>
+      <Carousel
+        ref={carouselRef}
+        dots={true}
+        arrows
+        responsive={responsiveOptions}
+        className="mb-[80px]"
+      >
         <div className="carousel-item">
           <img src={imgTestimonial1} alt="Testimonial 1" />
         </div>
@@ -120,8 +125,3 @@ const CarouselHero = () => {
 };
 
 export default CarouselHero;
-
-
-
-
-
