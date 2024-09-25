@@ -25,7 +25,7 @@ export default function SectionArea({
 
   const childrenArray = Children.toArray(children);
   const paddingTopp = paddingtop ? "pt-[64px] desktop1:pt-[96px]" : "";
-  const paddingBottom = paddingbot ? "pb-[64px] desktop1:pb-[96px]" : "";
+  const paddingBottom = paddingbot ? "pb-[64px] desktop1:pb-[44px]" : "";
 
   return (
     <div

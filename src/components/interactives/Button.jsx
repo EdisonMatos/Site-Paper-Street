@@ -1,5 +1,6 @@
 import React from "react";
 import CustomTag from "../util/CustomTag";
+
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 
 export default function Button({
@@ -15,6 +16,7 @@ export default function Button({
   removeTarget,
   removeAnchor,
   tagName,
+
   color = "bg-ctaCollor",
   animation = true,
 }) {
@@ -39,6 +41,7 @@ export default function Button({
       {...(removeAnchor ? {} : { href: buttonLink })}
       className=""
     >
+
       <Animation>
         <button
           onClick={onClick}

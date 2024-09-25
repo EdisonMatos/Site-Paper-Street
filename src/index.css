@@ -47,3 +47,168 @@
   visibility: visible;
   animation: fadeOut 1s ease-in-out;
 }
+
+//CAROUSEL DA HERO
+
+.p-carousel-indicators .p-carousel-indicator {
+  background-color: white !important;
+  width: 4%;
+  border-radius: 20%;
+}
+
+
+.p-carousel-indicators .p-carousel-indicator.p-highlight {
+  background-color: #facc15 !important;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+@media (max-width: 1121px) {
+  .carousel-item {
+    height: auto; /* Ajuste a altura para telas menores */
+  }
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 85%;
+  margin: auto;
+  object-fit: content;
+}
+
+@media (max-width: 374px) {
+  .carousel-item img {
+    width: 75%;
+  }
+}
+
+@media (max-width: 424px) {
+  .carousel-item img {
+    width: 65%;
+  }
+}
+
+@media (max-width: 639px) {
+  .carousel-item img {
+    width: 55%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .carousel-item img {
+    width: 80%;
+  }
+}
+
+.ant-carousel .slick-dots {
+  bottom: -37px;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 374px) {
+  .ant-carousel .slick-dots {
+    width: 201px;
+    justify-content: center;
+    flex-wrap: wrap;
+    left: 16%;
+    gap: 15px;
+  }
+
+  .ant-carousel .slick-dots li {
+    margin: 0% 0%;
+    width: 16px; 
+    height: 16px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+  .ant-carousel .slick-dots {
+    width: 250px;
+    justify-content: center;
+    flex-wrap: wrap;
+    left: 15%;
+    gap: 15px;
+  }
+
+  .ant-carousel .slick-dots li {
+    margin: 0% 0%;
+    width: 16px; 
+    height: 16px;
+  }
+}
+
+/* indicadores (dots) */
+.ant-carousel .slick-dots li button {
+  background: white !important;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+
+/* indicador dots ativo */
+.ant-carousel .slick-dots li.slick-active button {
+  background: #facc15 !important;
+}
+
+
+/* container com imagem do carousel hero */
+.carousel-container {
+  position: relative;
+}
+/* container da barra */
+.progress-bar-container {
+  width: 50%;
+  height: 5px;
+  background: #21201e;
+  position: relative;
+  margin: 0 auto; 
+}
+
+/* A barra de progresso interna */
+.progress-bar {
+  width: 70%; 
+  height: 100%;
+  background-color: #facc15;
+  position: absolute; 
+  top: 0;
+  left: 0; 
+}
+
+
+@media (max-width: 374px) {
+  .progress-bar-container {
+    width: 70%; 
+    top: -30px; 
+  }
+}
+
+
+@media (min-width: 375px) and (max-width: 424px) {
+  .progress-bar-container {
+    width: 70%; 
+    top: -30px; 
+  }
+}
+
+@media (min-width: 425px) and (max-width: 1023px) {
+  .progress-bar-container {
+    width: 70%; 
+    top: 15px; 
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 3000px) {
+  .progress-bar-container {
+    width: 40%; 
+    top: 15px; 
+  }
+}
+
+

@@ -24,6 +24,19 @@ import TypewriterComponent from "../components/animation/TypeWriter";
 import ButtonWithIconNavbar from "../components/interactives/ButtonWithIconNavbar";
 import imgSteps from "../assets/imgs/steps/imgSteps.jpg";
 
+import imgTestimonial1 from "../assets/imgs/testimonialsHero/imgTestimonial1.png";
+import imgTestimonial2 from "../assets/imgs/testimonialsHero/imgTestimonial2.png";
+import imgTestimonial3 from "../assets/imgs/testimonialsHero/imgTestimonial3.png";
+import imgTestimonial4 from "../assets/imgs/testimonialsHero/imgTestimonial4.png";
+import imgTestimonial5 from "../assets/imgs/testimonialsHero/imgTestimonial5.png";
+import imgTestimonial6 from "../assets/imgs/testimonialsHero/imgTestimonial6.png";
+import imgTestimonial7 from "../assets/imgs/testimonialsHero/imgTestimonial7.png";
+import imgTestimonial8 from "../assets/imgs/testimonialsHero/imgTestimonial8.png";
+import imgTestimonial9 from "../assets/imgs/testimonialsHero/imgTestimonial9.png";
+import imgTestimonial10 from "../assets/imgs/testimonialsHero/imgTestimonial10.png";
+import imgTestimonial11 from "../assets/imgs/testimonialsHero/imgTestimonial11.png";
+import imgTestimonial12 from "../assets/imgs/testimonialsHero/imgTestimonial12.png";
+
 const content = {
   texts: {
     navbar: {
@@ -42,8 +55,10 @@ const content = {
     hero: {
       title: (
         <h1>
-          Transformamos <br className="hidden tablet1:flex desktop1:hidden" />{" "}
-          ideias em
+          <span className="text-white">
+            Transformamos <br className="hidden tablet1:flex desktop1:hidden" />{" "}
+            ideias em
+          </span>
           <TypewriterComponent
             strings={["Sites", "Landing Pages", "Portais e blogs"]}
             className="text-yellow-400 my-typewriter"
@@ -293,8 +308,8 @@ const content = {
                 <path d="M2 12h20" />
               </svg>
             ),
-            link3: "https://edisonmatos.github.io/", arialabel3:"Link para github.io",
-           
+            link3: "https://edisonmatos.github.io/",
+            arialabel3: "Link para github.io",
           },
         },
         member2: {
@@ -634,6 +649,58 @@ const content = {
           question: "A Paper Street emite nota fiscal?",
           answer:
             "Sim. Somos uma empresa devidamente regularizada e emitimos nota fiscal com nosso CNPJ, conforme a legislação vigente.",
+        },
+      },
+    },
+    testimonialsHero: {
+      images: {
+        img1: {
+          img: imgTestimonial1,
+          alt: "Imagem de feedback",
+        },
+        img2: {
+          img: imgTestimonial2,
+          alt: "Imagem de feedback",
+        },
+        img3: {
+          img: imgTestimonial3,
+          alt: "Imagem de feedback",
+        },
+        img4: {
+          img: imgTestimonial4,
+          alt: "Imagem de feedback",
+        },
+        img5: {
+          img: imgTestimonial5,
+          alt: "Imagem de feedback",
+        },
+        img6: {
+          img: imgTestimonial6,
+          alt: "Imagem de feedback",
+        },
+        img7: {
+          img: imgTestimonial7,
+          alt: "Imagem de feedback",
+        },
+        img8: {
+          img: imgTestimonial8,
+          alt: "Imagem de feedback",
+        },
+        img9: {
+          img: imgTestimonial9,
+          alt: "Imagem de feedback",
+        },
+        img10: {
+          img: imgTestimonial10,
+          alt: "Imagem de feedback",
+        },
+        img11: {
+          img: imgTestimonial11,
+          alt: "Imagem de feedback",
+        },
+        img12: {
+          img: imgTestimonial12,
+          alt: "Imagem de feedback",
         },
       },
     },
