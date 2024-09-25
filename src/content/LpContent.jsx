@@ -119,17 +119,15 @@ const LpContent = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-frown"
+            class="lucide lucide-messages-square"
           >
-            <circle cx="12" cy="12" r="10" />
-            <path d="M16 16s-1.5-2-4-2-4 2-4 2" />
-            <line x1="9" x2="9.01" y1="9" y2="9" />
-            <line x1="15" x2="15.01" y1="9" y2="9" />
+            <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z" />
+            <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" />
           </svg>
         ),
         title: "Reduzir seu tempo de atendimento",
         description:
-          "Chega de ficar respondendo as mesmas perguntas de sempre, que apenas tomam seu tempo ou da sua equipe! O site é um funcionário que trabalha para você! Use seu site para explicar coisas básicas para diminuir o tempo respondendo curiosos, fazendo com que o cliente que entre em contato, seja mais objetivo.",
+          "Chega de ficar respondendo as mesmas perguntas de sempre, que apenas tomam seu tempo ou da sua equipe! O site é um funcionário que trabalha para você, 24h por dia. Use seu site para explicar coisas básicas para diminuir o tempo respondendo curiosos, fazendo com que o cliente que entre em contato, seja mais objetivo.",
       },
       card4: {
         icon: (
@@ -143,16 +141,19 @@ const LpContent = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-circle-dollar-sign"
+            class="lucide lucide-trophy"
           >
-            <circle cx="12" cy="12" r="10" />
-            <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
-            <path d="M12 18V6" />
+            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+            <path d="M4 22h16" />
+            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+            <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
           </svg>
         ),
         title: "Conquistar confiança do seu público",
         description:
-          "Hoje em dia muitas pessoas já não fecham negócio com empresas que não têm sites, pois não passam segurança. As pessoas querem saber um pouco mais sobre a empresa ou o profissional que estão analisando. Se em plano 2024 você não tem um site ainda, qual impressão você está passando para o seu público?",
+          "Hoje em dia muitas pessoas já não fecham negócio com empresas que não têm sites, pois não passam segurança. As pessoas querem saber um pouco mais sobre a empresa ou o profissional que estão analisando. Empresas com sites passam um ar de organização séria e bem estruturada. Enquanto empresas que não tem, passam uma ideia de algo pequeno, que ainda não está orgnaizado.",
       },
     },
   },
