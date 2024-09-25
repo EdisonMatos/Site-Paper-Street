@@ -76,7 +76,7 @@
 
 .carousel-item img {
   height: 100%;
-  width: 70%;
+  width: 85%;
   margin: auto;
   object-fit: content;
 }
@@ -101,7 +101,7 @@
 
 @media (max-width: 1023px) {
   .carousel-item img {
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -210,3 +210,5 @@
     top: 15px; 
   }
 }
+
+

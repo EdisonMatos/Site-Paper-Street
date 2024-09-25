@@ -15,9 +15,6 @@ import imgTestimonial11 from "../../assets/imgs/testimonialsHero/imgTestimonial1
 import imgTestimonial12 from "../../assets/imgs/testimonialsHero/imgTestimonial12.png";
 
 const CarouselHero = () => {
-  const autoplaySpeed = 25000;
-  const [progress, setProgress] = useState(0);
-  const carouselRef = useRef(null);
 
   const responsiveOptions = [
     {
@@ -50,6 +47,10 @@ const CarouselHero = () => {
     },
   ];
 
+  const autoplaySpeed = 25000;
+  const [progress, setProgress] = useState(0);
+  const carouselRef = useRef(null);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress((prevProgress) =>
@@ -70,52 +71,14 @@ const CarouselHero = () => {
     setProgress(0);
   };
 
-  // Setas personalizadas usando style inline
-  const CustomPrevArrow = ({ onClick }) => (
-    <div
-      onClick={onClick}
-      style={{
-        position: "absolute",
-        top: "50%",
-        left: "0px",
-        transform: "translateY(-50%)",
-        zIndex: 1,
-        cursor: "pointer",
-        color: "white",
-        borderRadius: "50%",
-      }}
-    >
-      {<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>}
-    </div>
-  );
-
-  const CustomNextArrow = ({ onClick }) => (
-    <div
-      onClick={onClick}
-      style={{
-        position: "absolute",
-        top: "50%",
-        right: "0px",
-        transform: "translateY(-50%)",
-        zIndex: 1,
-        cursor: "pointer",
-        color: "white",
-        borderRadius: "50%",
-      }}
-    >
-      {<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>}
-    </div>
-  );
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container" style={{ position: "relative" }}>
       <Carousel
         ref={carouselRef}
+        responsive={responsiveOptions}
         dots={true}
         arrows
-        prevArrow={<CustomPrevArrow />}
-        nextArrow={<CustomNextArrow />}
-        responsive={responsiveOptions}
         beforeChange={handleBeforeChange}
         className="mb-[80px]"
       >
@@ -156,6 +119,7 @@ const CarouselHero = () => {
           <img src={imgTestimonial12} alt="Testimonial 12" />
         </div>
       </Carousel>
+
 
       {/* Barra de progresso */}
       <div className="progress-bar-container">
