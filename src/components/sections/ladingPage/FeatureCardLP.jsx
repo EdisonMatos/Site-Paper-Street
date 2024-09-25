@@ -15,7 +15,7 @@ export default function FeatureCardLP({
         <div className="h-[64px] w-[64px] mb-[24px] bg-ctaCollor rounded-md flex justify-center items-center text-secondary">
           {icon}
         </div>
-        <h1 className="h-auto w-full leading-[28px] font-bold font-mainFont text-title3 text-center mb-[16px] text-secondary">
+        <h1 className="h-auto w-full leading-[28px] font-medium font-mainFont text-title3 text-center mb-[16px] text-secondary">
           {title}
         </h1>
         <p className="text-center font-secondFont text-black opacity-100  w-[90%]">
