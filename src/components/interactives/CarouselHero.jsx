@@ -19,7 +19,6 @@ const CarouselHero = () => {
   const [progress, setProgress] = useState(0);
   const carouselRef = useRef(null);
 
-  // Configurações responsivas
   const responsiveOptions = [
     {
       breakpoint: 3000,
@@ -57,22 +56,56 @@ const CarouselHero = () => {
         prevProgress >= 100 ? 100 : prevProgress + 100 / (autoplaySpeed / 100)
       );
     }, 20);
-
     return () => clearInterval(interval);
   }, [autoplaySpeed]);
 
-  // Quando a barra chega a 100%, muda para o próximo slide
   useEffect(() => {
     if (progress >= 100) {
       carouselRef.current.next();
-      setProgress(0); // Reinicia a barra de progresso
+      setProgress(0);
     }
   }, [progress]);
 
-  // Reinicia a barra de progresso quando o slide muda manualmente
   const handleBeforeChange = () => {
     setProgress(0);
   };
+
+  // Setas personalizadas usando style inline
+  const CustomPrevArrow = ({ onClick }) => (
+    <div
+      onClick={onClick}
+      style={{
+        position: "absolute",
+        top: "50%",
+        left: "0px",
+        transform: "translateY(-50%)",
+        zIndex: 1,
+        cursor: "pointer",
+        color: "white",
+        borderRadius: "50%",
+      }}
+    >
+      {<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>}
+    </div>
+  );
+
+  const CustomNextArrow = ({ onClick }) => (
+    <div
+      onClick={onClick}
+      style={{
+        position: "absolute",
+        top: "50%",
+        right: "0px",
+        transform: "translateY(-50%)",
+        zIndex: 1,
+        cursor: "pointer",
+        color: "white",
+        borderRadius: "50%",
+      }}
+    >
+      {<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>}
+    </div>
+  );
 
   return (
     <div className="carousel-container">
@@ -80,8 +113,10 @@ const CarouselHero = () => {
         ref={carouselRef}
         dots={true}
         arrows
+        prevArrow={<CustomPrevArrow />}
+        nextArrow={<CustomNextArrow />}
         responsive={responsiveOptions}
-        beforeChange={handleBeforeChange} // Listener para mudar o slide
+        beforeChange={handleBeforeChange}
         className="mb-[80px]"
       >
         <div className="carousel-item">
