@@ -12,8 +12,8 @@ const infos = {
     secondPart: "0977", // Apenas os 4 últimos números
   },
   email: "contato", // Email desejado pelo cliente
-  domain: "julianoaleixoadvocacia.com.br", // Sem "www"
-  instagramProfile: "adv.julianoaleixo", // Sem o @
+  domain: "paperstreet.com.br", // Sem "www"
+  instagramProfile: "paperstreetsoftwares", // Sem o @
   whatsappDefaultMessage:
     "Olá! Vim através da sua página sobre sites para advogado(a)s e gostaria de tirar umas dúvidas.",
 };
@@ -46,7 +46,7 @@ const LpContent = {
           dos seus concorrentes!
         </p>
       ),
-      buttonLabel: "Clique aqui para falar no WhatsApp",
+      buttonLabel: "Clique para falar com um especialista",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
@@ -164,29 +164,29 @@ const LpContent = {
       alt: "Imagem ilustrativa",
     },
     sectionHeader: {
-      miniTag: "TRADIÇÃO EM DIREITO TRABALHISTA",
-      title: "Comprometimento e agilidade",
+      miniTag: "ESPECIALISTAS EM SITES PARA ADVOGADOS",
+      title: "Quem somos?",
     },
     paragraph: (
       <p>
-        Na minha rotina diária, entendo que rapidez é fundamental para nossos
-        clientes, especialmente em questões trabalhistas. Por isso, atuo de
-        forma ágil e estratégica, sem comprometer a qualidade. Com foco em
-        garantir que seus direitos sejam resguardados com eficiência e
-        determinação.
+        Somos a Paper Street, uma empresa formada por profissionais altamente
+        capacitados e temos orgulho de atestar que já ajudamos diversos
+        advogados e escritórios a começarem sua jornada na internet, aumentando
+        muito sua capacidade de captar novos clientes e fazer novos negócios.
         <br />
-        <br /> Independentemente do seu problema trabalhista, estou pronto para
-        oferecer a melhor solução jurídica. Entre em contato com Juliano Aleixo
-        Advocacia e veja como podemos ser decisivos na defesa dos seus direitos.
+        <br /> Nossa missão é possibilitar que pessoas que não tenham
+        conhecimento nenhum de tecnologia, consigam colocar seu negócio na
+        internet, por um preço justo e sem ter dor de cabeça no processo. Somos
+        focados em simplicidade!
       </p>
     ),
-    buttonLabel: "Falar com um especialista",
+    buttonLabel: "Clique para falar com um especialista",
     ctaButtonAriaLabel: "Botão para chamada de ação para contato pelo whatsapp",
   },
   whyUs: {
     sectionHeader: {
       miniTag: "A MELHOR ESCOLHA",
-      title: "Por que nos escolher pra te defender?",
+      title: "Por que nos escolher pra criar seu site?",
     },
     cards: {
       card1: {
@@ -214,9 +214,9 @@ const LpContent = {
             <path d="M19.967 17.484A4 4 0 0 1 18 18" />
           </svg>
         ),
-        title: "Estratégia personalizada para garantir seus direitos",
+        title: "Nosso site irá fazer você economizar dinheiro",
         description:
-          "Oferecemos uma análise detalhada do seu caso trabalhista, criando a melhor estratégia visando a efetivação do seu direito.",
+          "Quanto mais bem estruturado um site for, menos você precisará gastar com campanhas futuras, pois ele será melhor entregue ao público com mais facilidade. Temos orgulho em ter nota máxima em várias análises feitas pos sistemas de verificação da Google.",
       },
       card2: {
         icon: (
@@ -239,9 +239,9 @@ const LpContent = {
             <path d="m17.5 15.5 2-2" />
           </svg>
         ),
-        title: "Soluções sob medida para o seu problema",
+        title: "Nossos preços são acessíveis até para quem está começando",
         description:
-          "Desenvolvemos um plano de ação específico, focado em resolver suas questões trabalhistas rapidamente e com resultados concretos. Cada decisão é tomada pensando no seu melhor interesse.",
+          "Nosso objetivo é que você atenda o seu objetivo gastando o mínimo possível.",
       },
       card3: {
         icon: (
@@ -264,9 +264,9 @@ const LpContent = {
             <path d="M3 4h8" />
           </svg>
         ),
-        title: "Compromisso total com sua causa",
+        title: "Nós pensamos em tudo",
         description:
-          "Nos dedicamos inteiramente à sua defesa, lutando pelos seus direitos em cada fase do processo.",
+          "Nossos sites rodam em todos os celulares, tablets e computadores! Além de serem projetados para serem acessados por pessoas com deficiências visuais ou de idade avançada.",
       },
       card4: {
         icon: (
@@ -288,19 +288,18 @@ const LpContent = {
             <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" />
           </svg>
         ),
-        title: "Experiência que traz tranquilidade",
+        title: "Entregamos em poucos dias",
         description:
-          "Com vasta experiência em casos trabalhistas, seu processo será conduzido com segurança e confiança. Estamos ao seu lado para assegurar que seus direitos sejam respeitados.",
+          "Nosso foco sempre foi simplificar as coisas, então nosso processo funciona de forma que você consiga ter seu site já no ar em pouquíssimos dias, sem dor de cabeça algumas. Deixe o trabalho todo conosco.",
       },
     },
   },
   cta: {
     bgImg: bgImg,
     sectionHeader: {
-      miniTag: "NÃO PERCA MAIS TEMPO",
-      title:
-        "Trabalhador: Busque ajuda de um advogado para garantir os seus direitos trabalhistas!",
-      subtitle: `O escritório Juliano Aleixo Advocacia está pronto para te auxiliar. Nossa equipe especializada em direito trabalhista pode orientá-lo no processo para garantir seu direito, seja por atraso salarial, assédio moral, adicionais devidos e não pagos, não pagamento de horas extras ou verbas rescisórias. Independente da violação de direito, não deixe que essas situações prejudiquem sua moral, sua vida profissional e financeira.`,
+      miniTag: "FAÇA SEU SITE CONOSCO",
+      title: "Adovago(a), não perca mais tempo!",
+      subtitle: `Clique no botão abaixo e iremos tirar todas as suas dúvidas sem custo algum. Chegou a hora de usar a internet e todo o poder que ela tem para conseguir mais clientes!`,
     },
     buttonLabel: "Quero falar com um especialista",
     ctaButtonAriaLabel: "Botão para chamada de ação para contato pelo whatsapp",
@@ -367,8 +366,8 @@ const LpContent = {
     },
   },
   footer: {
-    copyrightLine: `© ${currentYear} ${infos.name}. Todos os direitos reservados.`,
-    disclaimer: `Este site não é um produto Meta Platforms, Inc., Google LLC, tampouco oferece serviços públicos oficiais. ${infos.name} oferece serviços jurídicos privativos de advogado, de acordo com a legislação vigente e o Código de Ética e Disciplina da Ordem dos Advogados do Brasil.`,
+    copyrightLine: `${currentYear} ${infos.name}. Todos os direitos reservados.`,
+    disclaimer: `Este site não é um produto Meta Platforms, Inc., Google LLC, tampouco oferece serviços públicos oficiais. ${infos.name} oferece serviços de desenvolvimento de páginas para a internet, de acordo com a legislação vigente.`,
   },
   links: {
     instagram: `https://www.instagram.com/${infos.instagramProfile}/`,

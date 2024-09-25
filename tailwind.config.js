@@ -13,6 +13,7 @@ module.exports = {
         paragraphLight: "#636363", // Cinza neutro -> Parágrafos
         lighter: "#FFFFFF",
         ctaCollor: "#FACC15",
+        darker: "#000000",
       },
       fontFamily: {
         mainFont: ["Keep Calm", "sans-serif"],
