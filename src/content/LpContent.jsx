@@ -53,7 +53,7 @@ const LpContent = {
   },
   features: {
     sectionHeader: {
-      miniTag: "DIVERSAS VANTAGENS",
+      miniTag: "VANTAGENS",
       title:
         "Benefícios em ter um site de advogado(a) ou para o seu escritório",
     },
@@ -298,7 +298,7 @@ const LpContent = {
     bgImg: bgImg,
     sectionHeader: {
       miniTag: "FAÇA SEU SITE CONOSCO",
-      title: "Adovago(a), não perca mais tempo!",
+      title: "Advogado(a), não perca mais tempo!",
       subtitle: `Clique no botão abaixo e iremos tirar todas as suas dúvidas sem custo algum. Chegou a hora de usar a internet e todo o poder que ela tem para conseguir mais clientes!`,
     },
     buttonLabel: "Clique para falar com um especialista",
