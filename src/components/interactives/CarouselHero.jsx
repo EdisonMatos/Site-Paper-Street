@@ -15,37 +15,42 @@ import imgTestimonial11 from "../../assets/imgs/testimonialsHero/imgTestimonial1
 import imgTestimonial12 from "../../assets/imgs/testimonialsHero/imgTestimonial12.png";
 
 const CarouselHero = () => {
-
   const responsiveOptions = [
     {
-      breakpoint: 3000,
+      breakpoint: 3000, // Para telas de até 3000px
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
       },
     },
     {
-      breakpoint: 1023,
+      breakpoint: 1024, // Para telas entre 1024px e 3000px
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
       },
     },
     {
-      breakpoint: 767,
+      breakpoint: 768, // Para telas entre 768px e 1024px
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
       },
     },
     {
-      breakpoint: 575,
+      breakpoint: 576, // Para telas entre 576px e 768px
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
       },
     },
   ];
+  
+
+  const defaultSettings = {
+    slidesToShow: 3,
+    slidesToScroll: 3,
+  };
 
   const autoplaySpeed = 25000;
   const [progress, setProgress] = useState(0);
@@ -71,12 +76,17 @@ const CarouselHero = () => {
     setProgress(0);
   };
 
+  const currentSettings = () => {
+    const width = window.innerWidth;
+    if (width > 3000) return defaultSettings;
+    return responsiveOptions.find(option => width <= option.breakpoint)?.settings || defaultSettings;
+  };
 
   return (
     <div className="carousel-container" style={{ position: "relative" }}>
       <Carousel
         ref={carouselRef}
-        responsive={responsiveOptions}
+        {...currentSettings()}
         dots={true}
         arrows
         beforeChange={handleBeforeChange}
@@ -119,7 +129,6 @@ const CarouselHero = () => {
           <img src={imgTestimonial12} alt="Testimonial 12" />
         </div>
       </Carousel>
-
 
       {/* Barra de progresso */}
       <div className="progress-bar-container">
