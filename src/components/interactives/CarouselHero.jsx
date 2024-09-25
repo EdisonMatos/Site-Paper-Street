@@ -17,28 +17,28 @@ import imgTestimonial12 from "../../assets/imgs/testimonialsHero/imgTestimonial1
 const CarouselHero = () => {
   const responsiveOptions = [
     {
-      breakpoint: 3000, // Para telas de até 3000px
+      breakpoint: 3000, 
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
       },
     },
     {
-      breakpoint: 1024, // Para telas entre 1024px e 3000px
+      breakpoint: 1024, 
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      },
+    },
+    {
+      breakpoint: 768, 
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
       },
     },
     {
-      breakpoint: 768, // Para telas entre 768px e 1024px
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      },
-    },
-    {
-      breakpoint: 576, // Para telas entre 576px e 768px
+      breakpoint: 576, 
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -46,8 +46,9 @@ const CarouselHero = () => {
     },
   ];
   
-
+  
   const defaultSettings = {
+    
     slidesToShow: 3,
     slidesToScroll: 3,
   };
@@ -87,6 +88,7 @@ const CarouselHero = () => {
       <Carousel
         ref={carouselRef}
         {...currentSettings()}
+        responsive={responsiveOptions}
         dots={true}
         arrows
         beforeChange={handleBeforeChange}
