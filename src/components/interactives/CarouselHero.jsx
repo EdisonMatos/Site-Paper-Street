@@ -53,6 +53,7 @@ const CarouselHero = () => {
     slidesToScroll: 3,
   };
 
+  //função para as telas acima de 3000px
   const currentSettings = () => {
     const width = window.innerWidth;
     if (width > 3000) return defaultSettings;
@@ -86,7 +87,7 @@ const CarouselHero = () => {
     setProgress(0);
   };
 
-  // Funções para controle das setas
+  // Funções para controlar as setas
   const goToPrevSlide = () => {
     carouselRef.current.prev();
   };
@@ -97,7 +98,7 @@ const CarouselHero = () => {
 
   return (
     <div className="carousel-container" style={{ position: "relative" }}>
-      {/* Setas personalizadas */}
+      
       <div
         onClick={goToPrevSlide}
         style={{
