@@ -25,7 +25,7 @@ export default function AboutParalaxeLP() {
                     <img
                       src={LpContent.about.logo.logoImg}
                       alt={LpContent.about.logo.alt}
-                      className=" rounded-lg"
+                      className="rounded-lg "
                     />
                   </MotionDivDownToUp>
                   <div className="desktop1:w-[60%]">
@@ -37,7 +37,7 @@ export default function AboutParalaxeLP() {
                       type="article"
                     />
                     <MotionDivDownToUp>
-                      <p className="font-mainFont mb-[36px]">
+                      <p className="font-secondFont mb-[36px]">
                         {LpContent.about.paragraph}
                       </p>
                     </MotionDivDownToUp>

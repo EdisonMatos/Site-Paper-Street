@@ -18,7 +18,7 @@ export default function FeatureCardLP({
         <h1 className="h-auto w-full leading-[28px] font-bold font-mainFont text-title3 text-center mb-[16px] text-secondary">
           {title}
         </h1>
-        <p className="text-center text-black opacity-70 font-mainFont w-[90%]">
+        <p className="text-center font-secondFont text-black opacity-100  w-[90%]">
           {description}
         </p>
       </div>

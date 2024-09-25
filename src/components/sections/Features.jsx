@@ -14,6 +14,7 @@ export default function Features() {
         className="text-center"
         sectionHeaderTitle={content.texts.features.title}
         sectionHeaderSubtitle={content.texts.features.subtitle}
+        color="dark"
       />
       <SectionWrapper>
         <div className="flex flex-wrap justify-between w-full gap-[36px] tablet1:gap-[24px]">
