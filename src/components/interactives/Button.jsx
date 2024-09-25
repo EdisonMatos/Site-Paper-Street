@@ -15,7 +15,7 @@ export default function Button({
   removeTarget,
   removeAnchor,
   tagName,
-  color = "bg-primary",
+  color = "bg-ctaCollor",
   animation = true,
 }) {
   if (size === "small") {

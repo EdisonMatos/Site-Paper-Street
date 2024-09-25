@@ -8,25 +8,20 @@ import HeroLP from "../components/sections/ladingPage/HeroLP";
 import WhyUs from "../components/sections/ladingPage/WhyUs";
 import { Helmet } from "react-helmet";
 
-export default function LPTrabalhista() {
+export default function LPSitesAdvogados() {
   return (
     <div>
       <Helmet>
-        <title>Dr. Juliano Aleixo - Especialista em Direito Trabalhista</title>
+        <title>
+          Sites para advogados - Use a internet para captar clientes
+        </title>
         <meta
           name="description"
-          content="Dr. Juliano Aleixo é um especialista em direito trabalhista, oferecendo consultoria e assessoria para questões relacionadas a direitos dos trabalhadores, contratos de trabalho, e litígios trabalhistas."
+          content="A melhor forma de captar cliente é através da internet. Tenha um site que te proporcione isso."
         />
         <meta
           name="keywords"
-          content="Direito Trabalhista,
-          Consultoria Trabalhista,
-          Assessoria Jurídica Trabalhista,
-          Advogado Trabalhista Juliano Aleixo,
-          Direitos dos Trabalhadores,
-          Litígios Trabalhistas,
-          Contratos de Trabalho,
-          Defesa dos Direitos Trabalhistas"
+          content="sites, criação de sites, sites para advogados, sites para marketing digital, landing pages, landing pages de vendas, landing pages de alta conversão"
         />
       </Helmet>
       <HeroLP />

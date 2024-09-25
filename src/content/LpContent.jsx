@@ -5,48 +5,57 @@ import logo from "../assets/imgs/logo/logo.webp";
 const currentYear = new Date().getFullYear();
 
 const infos = {
-  name: "Juliano Aleixo Advocacia",
+  name: "Paper Street Softwares",
   phone: {
-    ddd: "69",
-    firstPart: "99980", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "7532", // Apenas os 4 últimos números
+    ddd: "11",
+    firstPart: "99026", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0977", // Apenas os 4 últimos números
   },
   email: "contato", // Email desejado pelo cliente
   domain: "julianoaleixoadvocacia.com.br", // Sem "www"
   instagramProfile: "adv.julianoaleixo", // Sem o @
   whatsappDefaultMessage:
-    "Olá! Vim através da sua página sobre direito trabalhista e gostaria de tirar umas dúvidas.",
+    "Olá! Vim através da sua página sobre sites para advogado(a)s e gostaria de tirar umas dúvidas.",
 };
 
 const LpContent = {
   infos: {
-    name: "Dr. Juliano Aleixo",
+    name: "Paper Street Softwares",
   },
   hero: {
     bgImg: bgImg,
     logo: {
       logoImg: logo,
-      alt: "Logomarca Dr Juliano Aleixo",
+      alt: "Logomarca Paper Street",
     },
     textArea: {
       title: (
         <h1>
-          Acabou de ser <span className="text-primary">demitido?</span> Não
-          recebeu suas
-          <span className="text-primary"> verbas rescisórias</span>?
+          Advogado(a), a melhor forma de{" "}
+          <span className="text-ctaCollor">captar clientes</span> em 2024, é
+          através da
+          <span className="text-ctaCollor"> internet</span>!
         </h1>
       ),
-      subtitle:
-        "Direitos trabalhistas não podem ser ignorados. Nós estamos prontos para agir rápido e buscar o que é seu por direito.",
-      buttonLabel: "Quero falar com um especialista",
+      subtitle: (
+        <p>
+          Os métodos antigos estão ultrapassados. <br />
+          Os advogados que mais estão captando clientes estão usando a internet!
+          <br />
+          Fale conosco que te explicaremos como usar um site para sair na frente
+          dos seus concorrentes!
+        </p>
+      ),
+      buttonLabel: "Clique aqui para falar no WhatsApp",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
   },
   features: {
     sectionHeader: {
-      miniTag: "DIREITO TRABALHISTA",
-      title: "Cenários onde garantimos sua defesa",
+      miniTag: "DIVERSAS VANTAGENS",
+      title:
+        "Benefícios em ter um site de advogado(a) ou para o seu escritório",
     },
     cards: {
       card1: {
@@ -61,16 +70,16 @@ const LpContent = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-history"
+            class="lucide lucide-search-check"
           >
-            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-            <path d="M3 3v5h5" />
-            <path d="M12 7v5l4 2" />
+            <path d="m8 11 2 2 4-4" />
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
           </svg>
         ),
-        title: "Hora extra e Verba rescisória",
+        title: "Ser encontrado no Google",
         description:
-          "Se você não recebeu pelas horas extras trabalhadas ou sua rescisão foi paga de forma incompleta, entraremos com ação para garantir o pagamento integral e corrigido de seus direitos.",
+          "Hoje, a primeira coisa que um cliente faz quando precisa de algo, é procurar no Google. Sem um site, você é invisível. Não adianta ter um escritório luxuoso, se ele não aparece na maior avenida do mundo (o Google). Porém, com um site bem feito, você aparece nas pesquisas, atrai clientes e cresce bastante. Tudo começa com você sendo encontrado!",
       },
       card2: {
         icon: (
@@ -84,16 +93,19 @@ const LpContent = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-triangle-alert"
+            class="lucide lucide-chart-no-axes-combined"
           >
-            <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
-            <path d="M12 9v4" />
-            <path d="M12 17h.01" />
+            <path d="M12 16v5" />
+            <path d="M16 14v7" />
+            <path d="M20 10v11" />
+            <path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15" />
+            <path d="M4 18v3" />
+            <path d="M8 14v7" />
           </svg>
         ),
-        title: "Insalubridade e Periculosidade",
+        title: "Fazer campanhas de Tráfego pago com Google Ads, Instagram, etc",
         description:
-          "Buscaremos na justiça o adicional de insalubridade ou periculosidade que a empresa deixou de pagar, cobrando tudo que é devido.",
+          "Com um site, suas campanhas de Google Ads, no Instagram e em outras plataformas ganham um poder incrível! Somos especialistas em desenvolver páginas perfeitas para essas estratégias. Várias pessoas estão fazendo e tendo retornos super expressivos. Chegou a sua vez!",
       },
       card3: {
         icon: (
@@ -115,9 +127,9 @@ const LpContent = {
             <line x1="15" x2="15.01" y1="9" y2="9" />
           </svg>
         ),
-        title: "Assédio Moral",
+        title: "Reduzir seu tempo de atendimento",
         description:
-          "Sofreu abusos no trabalho? Saiba que é possível buscar judicialmente a reparação pelos danos sofridos, garantindo justiça e dignidade nas relações de trabalho.",
+          "Chega de ficar respondendo as mesmas perguntas de sempre, que apenas tomam seu tempo ou da sua equipe! O site é um funcionário que trabalha para você! Use seu site para explicar coisas básicas para diminuir o tempo respondendo curiosos, fazendo com que o cliente que entre em contato, seja mais objetivo.",
       },
       card4: {
         icon: (
@@ -138,9 +150,9 @@ const LpContent = {
             <path d="M12 18V6" />
           </svg>
         ),
-        title: "Atraso Salarial",
+        title: "Conquistar confiança do seu público",
         description:
-          "Acionamos judicialmente a empresa para que os valores sejam pagos com correção, assegurando seu sustento sem mais demora.",
+          "Hoje em dia muitas pessoas já não fecham negócio com empresas que não têm sites, pois não passam segurança. As pessoas querem saber um pouco mais sobre a empresa ou o profissional que estão analisando. Se em plano 2024 você não tem um site ainda, qual impressão você está passando para o seu público?",
       },
     },
   },

@@ -12,7 +12,7 @@ export default function FeatureCardLP({
       <div
         className={`bg-neutral-100 rounded-xl w-full flex flex-col items-center desktop1:hover:scale-110 transition px-[18px] py-[32px] ${className}`}
       >
-        <div className="h-[64px] w-[64px] mb-[24px] bg-primary rounded-md flex justify-center items-center text-secondary">
+        <div className="h-[64px] w-[64px] mb-[24px] bg-ctaCollor rounded-md flex justify-center items-center text-secondary">
           {icon}
         </div>
         <h1 className="h-auto w-full leading-[28px] font-bold font-mainFont text-title3 text-center mb-[16px] text-secondary">

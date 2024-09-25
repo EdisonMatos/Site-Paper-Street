@@ -24,7 +24,7 @@ export default function HeroLP() {
                   <img
                     src={LpContent.hero.logo.logoImg}
                     alt={LpContent.hero.logo.alt}
-                    className="mb-[60px] max-w-[280px] phone2:max-w-[320px] phone3:max-w-[360px]"
+                    className="mb-[80px] max-w-[280px] phone2:max-w-[320px] phone3:max-w-[360px]"
                   />
                 </MotionDivDownToUp>
                 {/* <MotionDivDownToUp>
@@ -35,7 +35,7 @@ export default function HeroLP() {
                     </div>
                   </MotionDivDownToUp> */}
                 <MotionDivDownToUp>
-                  <div className="flex text-lighter justify-center desktop1:justify-start font-bold leading-[32px] phone3:leading-[40px] tablet1:leading-[60px] desktop1:leading-[55px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7 mb-[24px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
+                  <div className="flex text-lighter justify-center desktop1:justify-start font-medium leading-[42px] phone3:leading-[47px] tablet1:leading-[60px] desktop1:leading-[65px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7 mb-[24px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
                     {LpContent.hero.textArea.title}
                   </div>
                 </MotionDivDownToUp>
