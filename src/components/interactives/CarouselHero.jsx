@@ -15,11 +15,11 @@ import imgTestimonial11 from "../../assets/imgs/testimonialsHero/imgTestimonial1
 import imgTestimonial12 from "../../assets/imgs/testimonialsHero/imgTestimonial12.png";
 
 const CarouselHero = () => {
-  const autoplaySpeed = 25000; // 8 segundos para a barra encher
+  const autoplaySpeed = 25000;
   const [progress, setProgress] = useState(0);
-  const carouselRef = useRef(null); // Referência para controlar o carrossel manualmente
+  const carouselRef = useRef(null);
 
-  //  Configurações responsivas
+  // Configurações responsivas
   const responsiveOptions = [
     {
       breakpoint: 3000,
@@ -56,7 +56,7 @@ const CarouselHero = () => {
       setProgress((prevProgress) =>
         prevProgress >= 100 ? 100 : prevProgress + 100 / (autoplaySpeed / 100)
       );
-    }, 20); // Atualiza a cada 100ms para suavidade
+    }, 20);
 
     return () => clearInterval(interval);
   }, [autoplaySpeed]);
@@ -64,10 +64,15 @@ const CarouselHero = () => {
   // Quando a barra chega a 100%, muda para o próximo slide
   useEffect(() => {
     if (progress >= 100) {
-      carouselRef.current.next(); // Vai para o próximo slide
-      setProgress(0); // Reseta a barra de progresso
+      carouselRef.current.next();
+      setProgress(0); // Reinicia a barra de progresso
     }
   }, [progress]);
+
+  // Reinicia a barra de progresso quando o slide muda manualmente
+  const handleBeforeChange = () => {
+    setProgress(0);
+  };
 
   return (
     <div className="carousel-container">
@@ -76,6 +81,7 @@ const CarouselHero = () => {
         dots={true}
         arrows
         responsive={responsiveOptions}
+        beforeChange={handleBeforeChange} // Listener para mudar o slide
         className="mb-[80px]"
       >
         <div className="carousel-item">
