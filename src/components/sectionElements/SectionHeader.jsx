@@ -66,5 +66,11 @@ export default function SectionHeader({
     </div>
   );
 
-  return animation ? <MotionDivDownToUp className="w-full flex justify-center">{Content}</MotionDivDownToUp> : Content;
+  return animation ? (
+    <MotionDivDownToUp className="flex justify-center w-full">
+      {Content}
+    </MotionDivDownToUp>
+  ) : (
+    Content
+  );
 }

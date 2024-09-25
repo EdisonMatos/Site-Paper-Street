@@ -16,6 +16,7 @@ export default function Faq() {
         className="text-center"
         sectionHeaderTitle={content.texts.faq.title}
         sectionHeaderSubtitle={content.texts.faq.subtitle}
+        color="dark"
       />
 
       <SectionWrapper className="flex justify-center">
