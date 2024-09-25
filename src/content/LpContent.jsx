@@ -301,7 +301,7 @@ const LpContent = {
       title: "Adovago(a), não perca mais tempo!",
       subtitle: `Clique no botão abaixo e iremos tirar todas as suas dúvidas sem custo algum. Chegou a hora de usar a internet e todo o poder que ela tem para conseguir mais clientes!`,
     },
-    buttonLabel: "Quero falar com um especialista",
+    buttonLabel: "Clique para falar com um especialista",
     ctaButtonAriaLabel: "Botão para chamada de ação para contato pelo whatsapp",
   },
   contact: {
