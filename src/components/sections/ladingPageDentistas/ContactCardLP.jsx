@@ -14,7 +14,7 @@ export default function ContactCardLP({
             {icon}
           </div>
           <div className="flex flex-col justify-center text-darker">
-            <h1 className="font-semibold">{label}</h1>
+            <h1 className="font-medium">{label}</h1>
             <p className="opacity-80 font-secondFont text-[8px] phone2:text-[10px] phone3:text-[12px]">
               {description}
             </p>
@@ -30,7 +30,7 @@ export default function ContactCardLP({
             {icon}
           </div>
           <div className="flex flex-col justify-center text-darker">
-            <h1 className="font-semibold">{label}</h1>
+            <h1 className="font-medium">{label}</h1>
             <p className="opacity-80 font-secondFont text-[8px] phone2:text-[10px] phone3:text-[12px]">
               {description}
             </p>
