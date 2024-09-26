@@ -34,7 +34,6 @@ export default function Hero() {
                       </h1>
                     </div>
                   </MotionDivLeftToRight>
-
                   <div className="w-full phone2:w-full tablet2:w-auto">
                     <div className="pt-8 pb-[20%] tablet1:pb-[10%] desktop1:pb-[7%]">
                       {/* <Testimonials /> */}
