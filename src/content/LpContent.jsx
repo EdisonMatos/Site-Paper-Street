@@ -31,16 +31,16 @@ const LpContent = {
     textArea: {
       title: (
         <h1>
-          Advogado(a), a melhor forma de{" "}
-          <span className="text-ctaCollor">captar clientes</span> em 2024, é
-          através da
+          Advogado(a), tenha um site por apenas
+          <span className="text-ctaCollor"> R$ 89,00 </span>por mês e consiga
+          clientes através da
           <span className="text-ctaCollor"> internet</span>!
         </h1>
       ),
       subtitle: (
         <p>
-          Os métodos antigos estão ultrapassados. <br />
-          Os advogados que mais estão captando clientes estão usando a internet!
+          Os advogados que mais estão captando clientes aprenderam como usar a
+          internet!
           <br />
           Fale conosco que te explicaremos como usar um site para sair na frente
           dos seus concorrentes!
@@ -125,9 +125,9 @@ const LpContent = {
             <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" />
           </svg>
         ),
-        title: "Reduzir seu tempo de atendimento",
+        title: "Reduzir seu tempo em atendimento",
         description:
-          "Chega de ficar respondendo as mesmas perguntas de sempre, que apenas tomam seu tempo ou da sua equipe! O site é um funcionário que trabalha para você, 24h por dia. Use seu site para explicar coisas básicas para diminuir o tempo respondendo curiosos, fazendo com que o cliente que entre em contato, seja mais objetivo.",
+          "Chega de ficar respondendo as mesmas perguntas de sempre, que apenas tomam seu tempo ou da sua equipe! O site é um funcionário que trabalha para você, 24h por dia. Use seu site para esclarecer coisas básicas pros seus visitantes e foque no que você é bom!",
       },
       card4: {
         icon: (
