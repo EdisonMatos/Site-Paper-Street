@@ -4,6 +4,7 @@ import SectionArea from "../../sectionElements/SectionArea";
 import SectionHeader from "../../sectionElements/SectionHeader";
 import SectionWrapper from "../../sectionElements/SectionWrapper";
 import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
+import CarouselHero from "../../interactives/CarouselHero";
 
 export default function AboutParalaxeLP() {
   return (
@@ -65,6 +66,9 @@ export default function AboutParalaxeLP() {
                   </div>
                 </div>
               </MotionDivDownToUp>
+              <div className="w-[100%] pt-[14%] tablet1:pt-[7.2%] desktop1:pt-[7%] tablet1:pb-2 desktop1:pb-4">
+              <CarouselHero/>
+              </div>
             </SectionWrapper>
           </SectionArea>
         </div>
