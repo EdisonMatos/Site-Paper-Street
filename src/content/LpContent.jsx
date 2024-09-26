@@ -153,7 +153,7 @@ const LpContent = {
         ),
         title: "Conquistar confiança do seu público",
         description:
-          "Hoje em dia muitas pessoas já não fecham negócio com empresas que não têm sites, pois não passam segurança. As pessoas querem saber um pouco mais sobre a empresa ou o profissional que estão analisando. Empresas com sites passam um ar de organização séria e bem estruturada. Enquanto empresas que não tem, passam uma ideia de algo pequeno, que ainda não está orgnaizado.",
+          "Hoje em dia muitas pessoas já não fecham negócio com empresas que não têm sites, pois não passam segurança. As pessoas querem saber um pouco mais sobre a empresa ou o profissional que estão analisando. Empresas com sites passam um ar de organização séria e bem estruturada. Enquanto empresas que não tem, passam uma ideia de algo pequeno, que ainda não está organizado.",
       },
     },
   },
@@ -212,7 +212,7 @@ const LpContent = {
         ),
         title: "Nosso site irá fazer você economizar dinheiro",
         description:
-          "Quanto mais bem estruturado um site for, menos você precisará gastar com campanhas futuras, pois ele será melhor entregue ao público com mais facilidade. Temos orgulho em ter nota máxima em várias análises feitas pos sistemas de verificação da Google.",
+          "Quanto mais bem estruturado um site for, menos você precisará gastar com campanhas futuras, pois ele será melhor entregue ao público com mais facilidade. Temos orgulho em ter nota máxima em várias análises feitas por sistemas de verificação do Google.",
       },
       card2: {
         icon: (
@@ -290,7 +290,7 @@ const LpContent = {
         ),
         title: "Entregamos em poucos dias",
         description:
-          "Nosso foco sempre foi simplificar as coisas, então nosso processo funciona de forma que você consiga ter seu site já no ar em pouquíssimos dias, sem dor de cabeça algumas. Deixe o trabalho todo conosco.",
+          "Nosso foco sempre foi simplificar as coisas, então nosso processo funciona de forma que você consiga ter seu site já no ar em pouquíssimos dias, sem dor de cabeça alguma. Deixe o trabalho todo conosco.",
       },
     },
   },
@@ -299,7 +299,7 @@ const LpContent = {
     sectionHeader: {
       miniTag: "FAÇA SEU SITE CONOSCO",
       title: "Advogado(a), não perca mais tempo!",
-      subtitle: `Clique no botão abaixo e iremos tirar todas as suas dúvidas sem custo algum. Chegou a hora de usar a internet e todo o poder que ela tem para conseguir mais clientes!`,
+      subtitle: `Clique no botão abaixo e iremos tirar todas as suas dúvidas sem custo algum. Chegou a hora de usar a internet e todo o seu potencial para conquistar mais clientes!`,
     },
     buttonLabel: "Clique para falar com um especialista",
     ctaButtonAriaLabel: "Botão para chamada de ação para contato pelo whatsapp",
