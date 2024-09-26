@@ -14,7 +14,7 @@ export default function HeroLP() {
     >
       <SectionArea
         paddingTopAndBottom={false}
-        className="bg-black bg-opacity-60"
+        className="bg-black bg-opacity-80 desktop1:bg-opacity-60"
       >
         <SectionWrapper className="">
           <div className="flex w-full ">
@@ -24,7 +24,7 @@ export default function HeroLP() {
                   <img
                     src={LpContent.hero.logo.logoImg}
                     alt={LpContent.hero.logo.alt}
-                    className="mb-[80px] max-w-[280px] phone2:max-w-[320px] phone3:max-w-[360px]"
+                    className="mb-[80px] max-w-[250px]"
                   />
                 </MotionDivDownToUp>
                 {/* <MotionDivDownToUp>
