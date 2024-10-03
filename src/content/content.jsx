@@ -1,7 +1,7 @@
 import links from "./links";
 import logo from "../assets/imgs/logo/logo.webp";
 import logoDark from "../assets/imgs/logo/logoDark.webp";
-import aboutImg1 from "../assets/imgs/about/aboutImg.webp";
+import aboutImg1 from "../assets/imgs/about/aboutImgLp.webp";
 import trustedByImg1 from "../assets/imgs/trustedBy/item1.webp";
 import trustedByImg2 from "../assets/imgs/trustedBy/item2.webp";
 import trustedByImg3 from "../assets/imgs/trustedBy/item3.webp";
@@ -54,15 +54,18 @@ const content = {
     },
     hero: {
       title: (
-        <h1>
+        <h1 className="">
           <span className="text-white">
-            Transformamos <br className="hidden tablet1:flex desktop1:hidden" />{" "}
-            ideias em
+            Criamos <br className="hidden tablet1:flex desktop1:hidden" />{" "}
           </span>
           <TypewriterComponent
-            strings={["Sites", "Landing Pages", "Portais e blogs"]}
+            strings={["Sites", "Landing Pages", "Sites para Tráfego Pago"]}
             className="text-yellow-400 my-typewriter"
           />
+          <p className="mt-[16px] font-medium text-paragraph4 font-secondFont leading-[28px]">
+            A opinião dos nossos clientes são <br /> prova de nossa qualidade.
+            Confira! 👇
+          </p>
         </h1>
       ),
       subtitle: (

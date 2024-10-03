@@ -58,11 +58,9 @@ export default function About() {
     <SectionArea id={"about"} className="">
       <SectionWrapper className="flex flex-col desktop1:flex-row gap-[40px] desktop1:gap-0 desktop1:justify-between">
         <MotionDivDownToUp className="w-[100%] desktop1:w-[415px] desktop2:w-[485px]">
-          <div
-            style={{
-              backgroundImage: `url(${content.texts.about.imagem.img})`,
-            }}
-            className="bg-bottom bg-no-repeat bg-cover h-[290px] desktop1:h-[650px] rounded-2xl"
+          <img
+            src={content.texts.about.imagem.img}
+            alt="Instagram da Paper Street Criação de Sites"
           />
         </MotionDivDownToUp>
         <div className="desktop1:w-[450px] desktop2:w-[570px]">
