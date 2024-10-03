@@ -2,18 +2,18 @@ import React, { useState, useEffect, useRef } from "react";
 import { Carousel } from "antd";
 import "../../index.css";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-import imgTestimonial1 from "../../assets/imgs/testimonialsHero/imgTestimonial1.png";
-import imgTestimonial2 from "../../assets/imgs/testimonialsHero/imgTestimonial2.png";
-import imgTestimonial3 from "../../assets/imgs/testimonialsHero/imgTestimonial3.png";
-import imgTestimonial4 from "../../assets/imgs/testimonialsHero/imgTestimonial4.png";
-import imgTestimonial5 from "../../assets/imgs/testimonialsHero/imgTestimonial5.png";
-import imgTestimonial6 from "../../assets/imgs/testimonialsHero/imgTestimonial6.png";
-import imgTestimonial7 from "../../assets/imgs/testimonialsHero/imgTestimonial7.png";
-import imgTestimonial8 from "../../assets/imgs/testimonialsHero/imgTestimonial8.png";
-import imgTestimonial9 from "../../assets/imgs/testimonialsHero/imgTestimonial9.png";
-import imgTestimonial10 from "../../assets/imgs/testimonialsHero/imgTestimonial10.png";
-import imgTestimonial11 from "../../assets/imgs/testimonialsHero/imgTestimonial11.png";
-import imgTestimonial12 from "../../assets/imgs/testimonialsHero/imgTestimonial12.png";
+import imgTestimonial1 from "../../assets/imgs/testimonialsHero/imgTestimonial1.webp";
+import imgTestimonial2 from "../../assets/imgs/testimonialsHero/imgTestimonial2.webp";
+import imgTestimonial3 from "../../assets/imgs/testimonialsHero/imgTestimonial3.webp";
+import imgTestimonial4 from "../../assets/imgs/testimonialsHero/imgTestimonial4.webp";
+import imgTestimonial5 from "../../assets/imgs/testimonialsHero/imgTestimonial5.webp";
+import imgTestimonial6 from "../../assets/imgs/testimonialsHero/imgTestimonial6.webp";
+import imgTestimonial7 from "../../assets/imgs/testimonialsHero/imgTestimonial7.webp";
+import imgTestimonial8 from "../../assets/imgs/testimonialsHero/imgTestimonial8.webp";
+import imgTestimonial9 from "../../assets/imgs/testimonialsHero/imgTestimonial9.webp";
+import imgTestimonial10 from "../../assets/imgs/testimonialsHero/imgTestimonial10.webp";
+import imgTestimonial11 from "../../assets/imgs/testimonialsHero/imgTestimonial11.webp";
+import imgTestimonial12 from "../../assets/imgs/testimonialsHero/imgTestimonial12.webp";
 
 const CarouselHero = () => {
 
