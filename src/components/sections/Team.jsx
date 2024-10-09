@@ -15,6 +15,7 @@ export default function Team() {
         className="text-center"
         sectionHeaderTitle={content.texts.team.title}
         sectionHeaderSubtitle={content.texts.team.subtitle}
+        miniTitle={content.texts.team.miniTag}
         color="dark"
       />
 

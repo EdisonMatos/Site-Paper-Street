@@ -96,6 +96,7 @@ const content = {
       },
     },
     features: {
+      miniTag: "Serviços",
       title: "Nossas especialidades",
       subtitle:
         "Se você quer trazer o seu negócio pro mundo digital, nós te ajudamos",
@@ -244,6 +245,7 @@ const content = {
     team: {
       title: "Nossa Equipe",
       subtitle: "Conheça as mentes brilhantes por trás do nosso sucesso",
+      miniTag: "Team",
       members: {
         member1: {
           img: {
@@ -595,6 +597,7 @@ const content = {
     faq: {
       title: "Perguntas Frequentes",
       subtitle: "Confira as perguntas abaixo para esclarecer suas dúvidas",
+      miniTag: "Perguntas Frequentes",
       questions: {
         question0: {
           question: "Como escolher entre um site e uma landing page?",

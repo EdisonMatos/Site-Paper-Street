@@ -14,6 +14,7 @@ export default function Features() {
         className="text-center"
         sectionHeaderTitle={content.texts.features.title}
         sectionHeaderSubtitle={content.texts.features.subtitle}
+        miniTitle={content.texts.features.miniTag}
         color="dark"
       />
       <SectionWrapper>
