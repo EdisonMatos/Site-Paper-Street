@@ -630,31 +630,30 @@ const content = {
             "Entre em contato conosco que iremos te guiar com bastante simplicidade no processo. Para se tornar um cliente nosso, não é necessário nenhum tipo de conhecimento sobre sites ou internet. Estamos aqui exatamente para que você não tenha preocupação nenhuma.",
         },
         question2: {
-          question: "Preciso pagar mensalmente para ter meu site?",
-          answer:
-            "Não. Aqui na Paper Street não trabalhamos com aluguel. Após finalizarmos e entregarmos o serviço, o site passa a ser propriedade do cliente e ele não deve pagar nada mais por ele, para sempre.",
-        },
-        question3: {
           question:
             "Quero ter um site, mas não tenho fotos boas e não sei escrever bons textos. O que devo fazer?",
           answer:
             "Não se preocupe, nós também temos a solução para você. Nossa equipe irá sugerir todo material audiovisual que você precisar para ter o seu site e você não precisa ter custo com isso!",
         },
-        question4: {
+        question3: {
           question: "Já tenho um site, mas está antigo. Vocês o atualizam?",
           answer:
             "Sim, e esse é um caso muito comum. Como a internet evolui bastante, às vezes um site feito há muito tempo precisa de uma atualização. Basta falar com nossa equipe que iremos modernizar o seu site.",
         },
-        question5: {
+        question4: {
           question:
             "Quais são as formas de pagamento que a Paper Street aceita?",
           answer:
             "Aceitamos e parcelamos o seu site no cartão de crédito, assim como também trabalhamos com Pix e Boleto Bancário.",
         },
-        question6: {
+        question5: {
           question: "A Paper Street emite nota fiscal?",
           answer:
             "Sim. Somos uma empresa devidamente regularizada e emitimos nota fiscal com nosso CNPJ, conforme a legislação vigente.",
+        },
+        question6: {
+          question: "A definir",
+          answer: "A definir",
         },
       },
     },

@@ -70,14 +70,14 @@ export default function AccordionExpandDefault() {
         >
           <Typography>
             <h1 className="font-bold font-secondFont">
-              {content.texts.faq.questions.question0.question}
+              {content.texts.faq.questions.question2.question}
             </h1>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
             <p className="font-secondFont text-paragraph4 text-paragraphLight ">
-              {content.texts.faq.questions.question0.answer}
+              {content.texts.faq.questions.question2.answer}
             </p>
           </Typography>
         </AccordionDetails>
@@ -170,7 +170,7 @@ export default function AccordionExpandDefault() {
       </Accordion>
 
       {/* Accordion 6 */}
-      <Accordion
+      {/* <Accordion
         className="mb-[3%]"
         expanded={expanded === "panel6"}
         onChange={handleChange("panel6")}
@@ -195,7 +195,7 @@ export default function AccordionExpandDefault() {
             </p>
           </Typography>
         </AccordionDetails>
-      </Accordion>
+      </Accordion> */}
     </div>
   );
 }
