@@ -109,17 +109,17 @@ const content = {
         buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre sites.`,
       },
       card2: {
-        title: "Landing pages para seu produto ou serviço",
+        title: "Landing Pages Institucionais",
         subtitle:
-          "Um tipo de site feito pra convencer sobre um produto ou serviço em específico",
+          "A forma mais moderna e objetiva de colocar seu negócio no Google e ganhar mais autoridade na internet",
         img: featuresImg2,
         buttonLabel: "Saiba mais",
         buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre landing pages.`,
       },
       card3: {
-        title: "Páginas web em geral",
+        title: "Landing Pages em Geral",
         subtitle:
-          "Criamos diversos outros tipos de sites, como portais de notícia, blogs, cartões de visita digitais, portfólio pages e mais ",
+          "Ofereça serviços, venda cursos, ebooks e mais, combinando estratégias de anúncios em redes sociais e tráfego pago",
         img: featuresImg3,
         buttonLabel: "Saiba mais",
         buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre os serviços de vocês.`,
