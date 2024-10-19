@@ -74,7 +74,8 @@ const content = {
           buscas no Google e funcionam bem em todos os tamanhos de tela
         </p>
       ),
-      ctaButtonText: "Fale com um atendente",
+      ctaButtonText: "Falar pelo WhatsApp",
+      ctaButtonInstagram: "Falar pelo Instagram",
       images: {
         background: {},
         static: {
