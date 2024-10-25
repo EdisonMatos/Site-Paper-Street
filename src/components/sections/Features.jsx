@@ -8,8 +8,9 @@ export default function Features() {
   return (
     <SectionArea
       id={"service"}
-      className="py-[40px] tablet1:py-[64px] desktop1:py-[96px]esktop1:pb-[0px] bg-quinary"
+      className=" bg-quinary " 
     >
+      
       <SectionHeader
         className="text-center"
         sectionHeaderTitle={content.texts.features.title}
@@ -17,6 +18,7 @@ export default function Features() {
         miniTitle={content.texts.features.miniTag}
         color="dark"
       />
+
       <SectionWrapper>
         <div className="flex flex-wrap justify-between w-full gap-[36px] tablet1:gap-[24px]">
           <FeatureImgOnBgCard

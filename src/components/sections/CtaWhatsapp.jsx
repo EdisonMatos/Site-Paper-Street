@@ -19,6 +19,7 @@ export default function CtaWhatsapp() {
       id="contact"
     >
       <SectionArea paddingTopAndBottom={false}>
+        
         <SectionWrapper>
           <div className="flex justify-center w-full font-mainFont py-[40px] tablet1:py-[64px] desktop1:py-[96px]">
             <div className="w-full max-w-[1215px] flex flex-row items-end justify-center desktop2:justify-start">

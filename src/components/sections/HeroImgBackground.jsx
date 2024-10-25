@@ -21,7 +21,7 @@ export default function Hero() {
       id="home"
     >
       <div className="relative z-10 flex w-full bg-black bg-opacity-50 items-left desktop1:pl desktop3:pl-0">
-        <SectionArea pad>
+        <SectionArea>
           <SectionWrapper>
             <div className="w-full justify-evenly">
               <div className="h-[60px] desktop3:h-[45px]" />
@@ -110,7 +110,7 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="hidden desktop1:flex desktop3:w-[1200px] desktop3:relative desktop3:left-[5%]"></div>
-              </div>
+              </div>{" "}
             </div>{" "}
           </SectionWrapper>
         </SectionArea>
