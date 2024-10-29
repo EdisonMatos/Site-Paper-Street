@@ -12,13 +12,13 @@ import SectionShapeDiv from "../../components/sectionElements/SectionShapeDiv";
 
 export default function Team() {
   return (
-    <SectionArea className="bg-quinary" paddingtop={false}>
-      <SectionShapeDiv
+    <SectionArea className="bg-quinary" paddingtop={true}>
+      {/* <SectionShapeDiv
         paddingbot
         shapeDivWaves={true}
         shapeColor="text-white"
         className=""
-      />
+      /> */}
       <SectionHeader
         className="text-center"
         sectionHeaderTitle={content.texts.team.title}

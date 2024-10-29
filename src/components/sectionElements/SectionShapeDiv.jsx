@@ -19,6 +19,7 @@ SectionShapeDiv.propTypes = {
   shapeDivArrow: PropTypes.bool,
   shapeDivSplit: PropTypes.bool,
   shapeDivBook: PropTypes.bool,
+  shapeDivtrianguleInvert: PropTypes.bool,
   paddingtop: PropTypes.bool,
   paddingbot: PropTypes.bool,
   rotateShape: PropTypes.bool,
@@ -42,6 +43,7 @@ export default function SectionShapeDiv({
   shapeDivArrow,
   shapeDivSplit,
   shapeDivBook,
+  shapeDivtrianguleInvert,
   shapeColor,
   paddingtop = false,
   paddingbot = false,
@@ -139,12 +141,13 @@ export default function SectionShapeDiv({
         )}
 
         {shapeDivtriangule && (
-          <div className={`${shapes.shape1}`}>
+          <div className={`${shapes.shape1} absolute top-0 left-0 w-full`}>
             <svg
               data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1200 120"
               preserveAspectRatio="none"
+              className="w-full h-auto "
             >
               <path
                 d="M1200 0L0 0 598.97 114.72 1200 0z"
@@ -234,6 +237,22 @@ export default function SectionShapeDiv({
             >
               <path
                 d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+                className={`fill-current ${shapeColor}`}
+              ></path>
+            </svg>
+          </div>
+        )}
+
+        {shapeDivtrianguleInvert && (
+          <div className={`${shapes.shape1}`}>
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z"
                 className={`fill-current ${shapeColor}`}
               ></path>
             </svg>

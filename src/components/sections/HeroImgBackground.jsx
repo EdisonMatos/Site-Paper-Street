@@ -8,6 +8,7 @@ import Button from "../interactives/Button";
 import ScrollDownIndicator from "../sectionElements/ScrollDownIndicator";
 import Testimonials from "./Testimonials";
 import CarouselHero from "../interactives/CarouselHero";
+import SectionShapeDiv from "../sectionElements/SectionShapeDiv";
 
 // import ButtonCTAWithIcon from "../interactives/ButtonCTAWithIcon";
 
@@ -21,7 +22,7 @@ export default function Hero() {
       id="home"
     >
       <div className="relative z-10 flex w-full bg-black bg-opacity-50 items-left desktop1:pl desktop3:pl-0">
-        <SectionArea>
+        <SectionArea paddingbot={false}>
           <SectionWrapper>
             <div className="w-full justify-evenly">
               <div className="h-[60px] desktop3:h-[45px]" />
@@ -113,6 +114,7 @@ export default function Hero() {
               </div>{" "}
             </div>{" "}
           </SectionWrapper>
+          <SectionShapeDiv shapeDivtrianguleInvert shapeColor="text-quinary" />
         </SectionArea>
       </div>
     </div>

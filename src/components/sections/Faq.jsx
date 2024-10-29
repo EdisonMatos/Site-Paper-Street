@@ -13,13 +13,13 @@ const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
 export default function Faq() {
   return (
-    <SectionArea id={"faq"} className="bg-quinary" paddingtop={false}>
-      <SectionShapeDiv
+    <SectionArea id={"faq"} className="bg-quinary" paddingtop={true}>
+      {/* <SectionShapeDiv
         paddingbot
         shapeDivWaves={true}
         shapeColor="text-white"
         className=""
-      />
+      /> */}
       <SectionHeader
         className="text-center"
         sectionHeaderTitle={content.texts.faq.title}

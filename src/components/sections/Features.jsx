@@ -6,11 +6,7 @@ import content from "../../content/content";
 
 export default function Features() {
   return (
-    <SectionArea
-      id={"service"}
-      className=" bg-quinary " 
-    >
-      
+    <SectionArea id={"service"} className=" bg-quinary ">
       <SectionHeader
         className="text-center"
         sectionHeaderTitle={content.texts.features.title}

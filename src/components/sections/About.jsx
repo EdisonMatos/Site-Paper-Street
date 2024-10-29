@@ -56,13 +56,13 @@ export default function About() {
   };
 
   return (
-    <SectionArea id={"about"} paddingtop={false}>
-      <SectionShapeDiv
+    <SectionArea id={"about"} paddingtop={true}>
+      {/* <SectionShapeDiv
         paddingbot
         shapeDivWaves={true}
         shapeColor="text-quinary"
         className=""
-      />
+      /> */}
       <SectionWrapper className="flex flex-col desktop1:flex-row gap-[40px] desktop1:gap-0 desktop1:justify-between">
         <MotionDivDownToUp className="w-[100%] desktop1:w-[415px] desktop2:w-[485px]">
           <img
