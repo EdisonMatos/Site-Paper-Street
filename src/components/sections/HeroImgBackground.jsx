@@ -22,7 +22,7 @@ export default function Hero() {
       id="home"
     >
       <div className="relative z-10 flex w-full bg-black bg-opacity-50 items-left desktop1:pl desktop3:pl-0">
-        <SectionArea paddingbot={false}>
+        <SectionArea>
           <SectionWrapper>
             <div className="w-full justify-evenly">
               <div className="h-[60px] desktop3:h-[45px]" />
@@ -114,7 +114,7 @@ export default function Hero() {
               </div>{" "}
             </div>{" "}
           </SectionWrapper>
-          <SectionShapeDiv shapeDivtrianguleInvert shapeColor="text-quinary" />
+          {/* <SectionShapeDiv shapeDivtrianguleInvert shapeColor="text-quinary" /> */}
         </SectionArea>
       </div>
     </div>
