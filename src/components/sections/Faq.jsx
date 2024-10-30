@@ -6,12 +6,20 @@ import SectionWrapper from "../sectionElements/SectionWrapper";
 import AccordionExpandDefault from "../interactives/AcordionTwo";
 import links from "../../content/links";
 import content from "../../content/content";
+import SectionShapeDiv from "../../components/sectionElements/SectionShapeDiv";
+
 
 const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
 export default function Faq() {
   return (
-    <SectionArea id={"faq"} className="bg-quinary">
+    <SectionArea id={"faq"} className="bg-quinary" paddingtop={true}>
+      {/* <SectionShapeDiv
+        paddingbot
+        shapeDivWaves={true}
+        shapeColor="text-white"
+        className=""
+      /> */}
       <SectionHeader
         className="text-center"
         sectionHeaderTitle={content.texts.faq.title}

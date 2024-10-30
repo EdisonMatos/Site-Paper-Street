@@ -10,6 +10,7 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import content from "../../content/content";
 import ButtonWithIcon from "../interactives/ButtonWithIcon";
+import SectionShapeDiv from "../../components/sectionElements/SectionShapeDiv";
 
 export default function About() {
   const [visible, setVisible] = useState(false);
@@ -55,7 +56,13 @@ export default function About() {
   };
 
   return (
-    <SectionArea id={"about"} className="">
+    <SectionArea id={"about"} paddingtop={true}>
+      {/* <SectionShapeDiv
+        paddingbot
+        shapeDivWaves={true}
+        shapeColor="text-quinary"
+        className=""
+      /> */}
       <SectionWrapper className="flex flex-col desktop1:flex-row gap-[40px] desktop1:gap-0 desktop1:justify-between">
         <MotionDivDownToUp className="w-[100%] desktop1:w-[415px] desktop2:w-[485px]">
           <img

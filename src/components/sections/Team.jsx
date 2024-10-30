@@ -5,12 +5,20 @@ import SectionWrapper from "../sectionElements/SectionWrapper";
 import links from "../../content/links";
 import content from "../../content/content";
 import TeamMember from "../cards/TeamMember";
+import SectionShapeDiv from "../../components/sectionElements/SectionShapeDiv";
+
 
 // const whatsappContactLink = `https://wa.me/` + `${links.ctaWhat.teamsapp}`;
 
 export default function Team() {
   return (
-    <SectionArea className="bg-quinary">
+    <SectionArea className="bg-quinary" paddingtop={true}>
+      {/* <SectionShapeDiv
+        paddingbot
+        shapeDivWaves={true}
+        shapeColor="text-white"
+        className=""
+      /> */}
       <SectionHeader
         className="text-center"
         sectionHeaderTitle={content.texts.team.title}
