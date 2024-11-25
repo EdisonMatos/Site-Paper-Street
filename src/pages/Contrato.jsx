@@ -59,19 +59,18 @@ IP do Cliente: ${clientIp}`);
           <p className="mb-[20px]">
             Leia o contrato até o final para poder aceitar
           </p>
-          <div className="flex flex-col items-center w-full max-w-md space-y-4">
+          <div className="flex flex-col items-center w-full space-y-4">
             {/* Caixa de Termos */}
             <div
               ref={termosRef}
               onScroll={handleScroll}
-              className="w-full h-64 p-4 overflow-y-auto bg-gray-100 border border-gray-300 rounded-md"
+              className="w-full h-[350px] p-4 overflow-y-auto bg-gray-100 border border-gray-300 rounded-md"
             >
               {/* Conteúdo dos Termos */}
-              <h2 class="text-2xl font-bold text-left mb-6">
+              <h2 className="mb-6 text-2xl font-bold text-left">
                 CONTRATO DE DESENVOLVIMENTO E MANUTENÇÃO DE WEBSITE POR
                 ASSINATURA PROMOCIONAL
               </h2>
-
               <p class="mb-4">
                 Pelo presente instrumento particular, as partes:
               </p>
@@ -305,55 +304,57 @@ IP do Cliente: ${clientIp}`);
             </div>
 
             {/* Formulário */}
-            <form
-              onSubmit={handleSubmit}
-              className="w-full p-4 space-y-4 bg-white border border-gray-300 rounded-md"
-            >
-              <div>
-                <label className="block text-gray-700">Nome:</label>
-                <input
-                  type="text"
-                  name="nome"
-                  value={formData.nome}
-                  onChange={handleChange}
-                  required
-                  className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-              <div>
-                <label className="block text-gray-700">CPF:</label>
-                <input
-                  type="text"
-                  name="cpf"
-                  value={formData.cpf}
-                  onChange={handleChange}
-                  required
-                  className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-              <div>
-                <label className="block text-gray-700">Email:</label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-              <button
-                type="submit"
-                disabled={!isAccepted}
-                className={`w-full p-2 rounded-md text-white font-semibold transition-all ${
-                  isAccepted
-                    ? "bg-blue-500 hover:bg-blue-600 cursor-pointer"
-                    : "bg-gray-300 cursor-not-allowed"
-                }`}
+            {isAccepted && (
+              <form
+                onSubmit={handleSubmit}
+                className="w-full max-w-md p-4 space-y-4 bg-white border border-gray-300 rounded-md"
               >
-                Enviar
-              </button>
-            </form>
+                <div>
+                  <label className="block text-gray-700">Nome:</label>
+                  <input
+                    type="text"
+                    name="nome"
+                    value={formData.nome}
+                    onChange={handleChange}
+                    required
+                    className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-gray-700">CPF:</label>
+                  <input
+                    type="text"
+                    name="cpf"
+                    value={formData.cpf}
+                    onChange={handleChange}
+                    required
+                    className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-gray-700">Email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  disabled={!isAccepted}
+                  className={`w-full p-2 rounded-md text-white font-semibold transition-all ${
+                    isAccepted
+                      ? "bg-blue-500 hover:bg-blue-600 cursor-pointer"
+                      : "bg-gray-300 cursor-not-allowed"
+                  }`}
+                >
+                  Enviar
+                </button>
+              </form>
+            )}
           </div>
         </SectionWrapper>
       </SectionArea>
