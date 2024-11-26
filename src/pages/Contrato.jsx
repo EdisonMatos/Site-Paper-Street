@@ -69,9 +69,11 @@ IP do Cliente: ${clientIp}`);
       <SectionArea>
         <SectionWrapper>
           <p className="mb-[20px] text-center">
-            <strong> CONTRATO DE SERVIÇO DIGITAL </strong>
+            <strong> CONTRATO DE SERVIÇO DIGITAL</strong>
             <br />
-            Leia os termos até o final para poder aceitar o contrato.
+            Visualize o texto até o final para poder aceitá-los.
+            <br />
+            Versão 1.0.2 - Última modificação: 26/11/2024, 10:54h.
           </p>
           <div className="flex flex-col items-center w-full space-y-4">
             {/* Caixa de Termos */}
