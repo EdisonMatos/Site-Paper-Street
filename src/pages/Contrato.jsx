@@ -71,7 +71,7 @@ IP do Cliente: ${clientIp}`);
           <p className="mb-[20px] text-center">
             <strong> CONTRATO DE SERVIÇO DIGITAL</strong>
             <br />
-            Visualize o texto até o final para poder aceitá-los.
+            Visualize os termos até o final para poder aceitá-los.
             <br />
             Versão 1.0.2 - Última modificação: 26/11/2024, 10:54h.
           </p>
