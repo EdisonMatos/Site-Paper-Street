@@ -68,8 +68,10 @@ IP do Cliente: ${clientIp}`);
     <div className="flex items-center justify-center h-screen bg-gray-50">
       <SectionArea>
         <SectionWrapper>
-          <p className="mb-[20px]">
-            Leia o contrato até o final para poder aceitar
+          <p className="mb-[20px] text-center">
+            <strong> CONTRATO DE SERVIÇO DIGITAL </strong>
+            <br />
+            Leia os termos até o final para poder aceitar o contrato.
           </p>
           <div className="flex flex-col items-center w-full space-y-4">
             {/* Caixa de Termos */}
@@ -90,7 +92,7 @@ IP do Cliente: ${clientIp}`);
                   !isScrolledToEnd ? "opacity-50" : ""
                 }`}
               >
-                Eu aceito os termos
+                Li e aceito os termos.
               </label>
             </div>
 
