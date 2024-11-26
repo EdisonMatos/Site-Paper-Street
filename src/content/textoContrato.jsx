@@ -61,8 +61,8 @@ const textoContrato = (
         <strong>Forma:</strong> Assinatura mensal
       </li>
       <li>
-        <strong>Vencimento:</strong> Todo dia 25 de cada mês (de acordo com a
-        data de assinatura)
+        <strong>Vencimento:</strong> (De acordo com a data de aceite do contrato
+        ou outra data acordada)
       </li>
       <li>
         <strong>Layout:</strong> Baseado em modelo previamente apresentado
