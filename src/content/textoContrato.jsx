@@ -1,5 +1,5 @@
 const textoContrato = (
-  <>
+  <div>
     <h1>
       <strong>
         CONTRATO DE DESENVOLVIMENTO E MANUTENÇÃO DE WEBSITE POR ASSINATURA
@@ -291,6 +291,6 @@ const textoContrato = (
         partes.
       </li>
     </ol>
-  </>
+  </div>
 );
 export default textoContrato;

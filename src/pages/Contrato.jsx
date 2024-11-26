@@ -2,6 +2,8 @@ import { useState, useRef } from "react";
 import SectionArea from "../components/sectionElements/SectionArea";
 import SectionWrapper from "../components/sectionElements/SectionWrapper";
 import textoContrato from "../content/textoContrato";
+import emailjs from "@emailjs/browser";
+import ReactDOMServer from "react-dom/server";
 
 export default function Contrato() {
   const [isScrolledToEnd, setIsScrolledToEnd] = useState(false);
@@ -39,19 +41,55 @@ export default function Contrato() {
       const response = await fetch("https://api64.ipify.org?format=json");
       const data = await response.json();
       clientIp = data.ip;
-      console.log(data);
+      console.log("IP do cliente:", clientIp);
     } catch (error) {
       console.error("Erro ao obter o IP:", error);
     }
 
-    // Exibir dados
+    const contratoHtml = ReactDOMServer.renderToStaticMarkup(contratoTeste);
+
+    // Agora, remove as tags HTML para pegar apenas o texto
+    const contratoTextoSemTags = contratoHtml.replace(/<[^>]*>/g, ""); // Regex para remover tags HTML
+  
+    console.log("Contrato sem tags HTML:", contratoTextoSemTags);
+
+    // Definir os parâmetros para o envio do email
+    const templateParams = {
+      to_name: formData.nome, // Nome da pessoa que se cadastrou
+      nome: formData.nome, // Nome
+      cpf: formData.cpf, // CPF
+      email: formData.email, // E-mail
+      currentDateTime: currentDateTime, // Data e Hora
+      clientIp: clientIp, // IP do Cliente
+      contrato: contratoTextoSemTags,
+    };
+
+    // Enviar o e-mail usando o EmailJS
+    const response = await emailjs.send(
+      "service_fds980s", // ID do seu serviço
+      "template_3trlhum", // ID do seu template
+      templateParams,
+      "HkoWapgpzEJhNjsHU" // Sua chave pública
+    );
+    console.log(
+      "Mensagem enviada com sucesso:",
+      response.status,
+      response.text
+    );
+
+    // Exibir dados no console ou alert
     alert(`Dados do formulário:
-Nome: ${formData.nome}
-CPF: ${formData.cpf}
-Email: ${formData.email}
-Data e Hora: ${currentDateTime}
-IP do Cliente: ${clientIp}`);
+      Nome: ${formData.nome}
+      CPF: ${formData.cpf}
+      Email: ${formData.email}
+      Data e Hora: ${currentDateTime}
+      IP do Cliente: ${clientIp}
+      Texto: ${contratoTextoSemTags}`);
   };
+
+  const contratoTeste = textoContrato;
+
+ 
 
   const contrato = (
     <div
