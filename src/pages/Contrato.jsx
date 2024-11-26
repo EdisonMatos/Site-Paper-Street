@@ -50,7 +50,7 @@ export default function Contrato() {
 
     // Segundo, remove as tags HTML para pegar apenas o texto
     const contratoTextoSemTags = contratoHtml.replace(/<[^>]*>/g, ""); // Regex para remover tags HTML
-  
+
     console.log("Contrato sem tags HTML:", contratoTextoSemTags);
 
     // Definir os parâmetros para o envio do email
@@ -62,6 +62,7 @@ export default function Contrato() {
       currentDateTime: currentDateTime, // Data e Hora
       clientIp: clientIp, // IP do Cliente
       contrato: contratoTextoSemTags,
+      to_email: `${formData.email}, seuemail@exemplo.com`,
     };
 
     // Enviar o e-mail usando o EmailJS
@@ -88,8 +89,6 @@ export default function Contrato() {
   };
 
   const contratoTeste = textoContrato;
-
- 
 
   const contrato = (
     <div
