@@ -45,10 +45,10 @@ export default function Contrato() {
     } catch (error) {
       console.error("Erro ao obter o IP:", error);
     }
-
+    //Primeiro converte o jsx em string html
     const contratoHtml = ReactDOMServer.renderToStaticMarkup(contratoTeste);
 
-    // Agora, remove as tags HTML para pegar apenas o texto
+    // Segundo, remove as tags HTML para pegar apenas o texto
     const contratoTextoSemTags = contratoHtml.replace(/<[^>]*>/g, ""); // Regex para remover tags HTML
   
     console.log("Contrato sem tags HTML:", contratoTextoSemTags);
