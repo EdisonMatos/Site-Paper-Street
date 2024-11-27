@@ -5,6 +5,7 @@ const textoContrato = (
         CONTRATO DE DESENVOLVIMENTO E MANUTENÇÃO DE WEBSITE POR ASSINATURA
       </strong>
     </h1>
+    <img />
 
     <h2>
       <strong>PROMOCIONAL COM 1º ANO DE DOMÍNIO GRÁTIS</strong>

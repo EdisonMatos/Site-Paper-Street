@@ -49,28 +49,33 @@ export default function Contrato() {
     const contratoHtml = ReactDOMServer.renderToStaticMarkup(contratoTeste);
 
     // Segundo, remove as tags HTML para pegar apenas o texto
-    const contratoTextoSemTags = contratoHtml.replace(/<[^>]*>/g, ""); // Regex para remover tags HTML
+    const contratoTextoSemTags = contratoHtml
+      .replace(/<\/?h[1-6]>/g, "\n\n") // Quebras para títulos (h1, h2, etc.)
+      .replace(/<\/?p>/g, "\n") // Quebras para parágrafos (p)
+      .replace(/<br\s*\/?>/g, "\n") // Quebras para <br> tags
+      .replace(/<\/?strong>/g, "") // Remove <strong>, mas mantém o texto
+      .replace(/<[^>]+>/g, ""); // Remove qualquer outra tag restante
 
     console.log("Contrato sem tags HTML:", contratoTextoSemTags);
 
     // Definir os parâmetros para o envio do email
     const templateParams = {
-      to_name: formData.nome, // Nome da pessoa que se cadastrou
-      nome: formData.nome, // Nome
-      cpf: formData.cpf, // CPF
-      email: formData.email, // E-mail
-      currentDateTime: currentDateTime, // Data e Hora
-      clientIp: clientIp, // IP do Cliente
+      to_name: formData.nome,
+      nome: formData.nome,
+      cpf: formData.cpf,
+      email: formData.email,
+      currentDateTime: currentDateTime,
+      clientIp: clientIp,
       contrato: contratoTextoSemTags,
       to_email: `${formData.email}, seuemail@exemplo.com`,
     };
 
     // Enviar o e-mail usando o EmailJS
     const response = await emailjs.send(
-      "service_fds980s", // ID do seu serviço
-      "template_3trlhum", // ID do seu template
+      "service_uf0dao9", // ID do seu serviço
+      "template_qlytqdl", // ID do seu template
       templateParams,
-      "HkoWapgpzEJhNjsHU" // Sua chave pública
+      "EYzqc9Ig48Qet4LTh" // Sua chave pública
     );
     console.log(
       "Mensagem enviada com sucesso:",
@@ -79,13 +84,19 @@ export default function Contrato() {
     );
 
     // Exibir dados no console ou alert
-    alert(`Dados do formulário:
+    alert(`
+      Termos assinados com sucesso!
+      Resumo:
       Nome: ${formData.nome}
       CPF: ${formData.cpf}
       Email: ${formData.email}
       Data e Hora: ${currentDateTime}
       IP do Cliente: ${clientIp}
-      Texto: ${contratoTextoSemTags}`);
+      \n
+      Texto concordado: Será enviada uma cópia dos termos para o email preenchido.
+      \n
+      Seja bem vindo à Paper Street! 
+      Essa página já pode ser fechada.`);
   };
 
   const contratoTeste = textoContrato;
