@@ -2,6 +2,8 @@ import { useState, useRef } from "react";
 import SectionArea from "../components/sectionElements/SectionArea";
 import SectionWrapper from "../components/sectionElements/SectionWrapper";
 import textoContrato from "../content/textoContrato";
+import emailjs from "@emailjs/browser";
+import ReactDOMServer from "react-dom/server";
 
 export default function Contrato() {
   const [isScrolledToEnd, setIsScrolledToEnd] = useState(false);
@@ -39,19 +41,65 @@ export default function Contrato() {
       const response = await fetch("https://api64.ipify.org?format=json");
       const data = await response.json();
       clientIp = data.ip;
-      console.log(data);
+      console.log("IP do cliente:", clientIp);
     } catch (error) {
       console.error("Erro ao obter o IP:", error);
     }
+    //Primeiro converte o jsx em string html
+    const contratoHtml = ReactDOMServer.renderToStaticMarkup(contratoTeste);
 
-    // Exibir dados
-    alert(`Dados do formulário:
-Nome: ${formData.nome}
-CPF: ${formData.cpf}
-Email: ${formData.email}
-Data e Hora: ${currentDateTime}
-IP do Cliente: ${clientIp}`);
+    // Segundo, remove as tags HTML para pegar apenas o texto
+    const contratoTextoSemTags = contratoHtml
+      .replace(/<\/?h[1-6]>/g, "\n\n") // Quebras para títulos (h1, h2, etc.)
+      .replace(/<\/?p>/g, "\n") // Quebras para parágrafos (p)
+      .replace(/<br\s*\/?>/g, "\n") // Quebras para <br> tags
+      .replace(/<\/?strong>/g, "") // Remove <strong>, mas mantém o texto
+      .replace(/<[^>]+>/g, ""); // Remove qualquer outra tag restante
+
+    console.log("Contrato sem tags HTML:", contratoTextoSemTags);
+
+    // Definir os parâmetros para o envio do email
+    const templateParams = {
+      to_name: formData.nome,
+      nome: formData.nome,
+      cpf: formData.cpf,
+      email: formData.email,
+      currentDateTime: currentDateTime,
+      clientIp: clientIp,
+      contrato: contratoTextoSemTags,
+      to_email: `${formData.email}, seuemail@exemplo.com`,
+    };
+
+    // Enviar o e-mail usando o EmailJS
+    const response = await emailjs.send(
+      "service_uf0dao9", // ID do seu serviço
+      "template_qlytqdl", // ID do seu template
+      templateParams,
+      "EYzqc9Ig48Qet4LTh" // Sua chave pública
+    );
+    console.log(
+      "Mensagem enviada com sucesso:",
+      response.status,
+      response.text
+    );
+
+    // Exibir dados no console ou alert
+    alert(`
+      Termos assinados com sucesso!
+      Resumo:
+      Nome: ${formData.nome}
+      CPF: ${formData.cpf}
+      Email: ${formData.email}
+      Data e Hora: ${currentDateTime}
+      IP do Cliente: ${clientIp}
+      \n
+      Texto concordado: Será enviada uma cópia dos termos para o email preenchido.
+      \n
+      Seja bem vindo à Paper Street! 
+      Essa página já pode ser fechada.`);
   };
+
+  const contratoTeste = textoContrato;
 
   const contrato = (
     <div
