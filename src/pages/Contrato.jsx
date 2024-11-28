@@ -24,9 +24,48 @@ export default function Contrato() {
     }
   };
 
+  // Função para formatar CPF
+  // Função para formatar CPF
+  const formatCPF = (cpf) => {
+    cpf = cpf.replace(/\D/g, ''); // Remove tudo que não for número
+    if (cpf.length <= 3) return cpf;
+    if (cpf.length <= 6) return cpf.replace(/(\d{3})(\d{1,})/, '$1.$2');
+    if (cpf.length <= 9) return cpf.replace(/(\d{3})(\d{3})(\d{1,})/, '$1.$2.$3');
+    return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{1,})/, '$1.$2.$3-$4');
+  };
+
+  // Função para formatar CNPJ
+  const formatCNPJ = (cnpj) => {
+    cnpj = cnpj.replace(/\D/g, ''); // Remove tudo que não for número
+    if (cnpj.length <= 2) return cnpj;
+    if (cnpj.length <= 5) return cnpj.replace(/(\d{2})(\d{1,})/, '$1.$2');
+    if (cnpj.length <= 8) return cnpj.replace(/(\d{2})(\d{3})(\d{1,})/, '$1.$2.$3');
+    if (cnpj.length <= 12) return cnpj.replace(/(\d{2})(\d{3})(\d{3})(\d{1,})/, '$1.$2.$3/$4');
+    return cnpj.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{1,})/, '$1.$2.$3/$4-$5');
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+
+    if (name === "cpf") {
+      let formattedValue = value.replace(/\D/g, ""); // Remove caracteres não numéricos
+
+      // Se o número de dígitos for 11 (CPF), formate como CPF
+      if (formattedValue.length <= 11) {
+        formattedValue = formatCPF(formattedValue);
+      }
+      // Se o número de dígitos for 14 (CNPJ), formate como CNPJ
+      else if (formattedValue.length === 14) {
+        formattedValue = formatCNPJ(formattedValue);
+      }
+
+      setFormData((prevState) => ({
+        ...prevState,
+        cpf: formattedValue, // Atualiza o campo com o valor formatado
+      }));
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -97,6 +136,8 @@ export default function Contrato() {
       \n
       Seja bem vindo à Paper Street! 
       Essa página já pode ser fechada.`);
+
+    //lógica para campos do formulário
   };
 
   const contratoTeste = textoContrato;
@@ -148,12 +189,19 @@ export default function Contrato() {
                 className="w-full max-w-md p-4 space-y-4 bg-white border border-gray-300 rounded-md relative bottom-[-80%]"
               >
                 <div>
-                  <label className="block text-gray-700">Nome:</label>
+                  <label className="block text-gray-700">
+                    Nome ou Razão Social:
+                  </label>
                   <input
                     type="text"
                     name="nome"
                     value={formData.nome}
-                    onChange={handleChange}
+                    onChange={(e) => {
+                      const regex = /^[A-Za-zÀ-ÿ\s\-']*$/; // Expressão regular que permite letras, espaços, acentos, hífens e apóstrofos
+                      if (regex.test(e.target.value) || e.target.value === "") {
+                        handleChange(e); // Chama a função handleChange para atualizar o estado
+                      }
+                    }}
                     required
                     className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
@@ -165,6 +213,7 @@ export default function Contrato() {
                     name="cpf"
                     value={formData.cpf}
                     onChange={handleChange}
+                    maxLength={18}
                     required
                     className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
