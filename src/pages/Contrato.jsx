@@ -112,9 +112,9 @@ export default function Contrato() {
     </div>
   );
   return (
-    <div className="flex items-center justify-center h-[110vh] desktop2:h-[100vh] bg-gray-50">
+    <div className="flex items-center justify-center h-[100vh] bg-gray-50">
       <SectionArea>
-        <SectionWrapper className="absolute top-[10%] flex justify-center h-auto">
+        <SectionWrapper className="absolute top-[10%] flex justify-center h-auto pb-8">
           <p className="mb-[20px]">
             Leia o contrato até o final para poder aceitar
           </p>
