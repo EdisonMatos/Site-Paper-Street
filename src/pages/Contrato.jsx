@@ -207,7 +207,7 @@ export default function Contrato() {
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-700">CPF:</label>
+                  <label className="block text-gray-700">CPF ou CNPJ:</label>
                   <input
                     type="text"
                     name="cpf"
