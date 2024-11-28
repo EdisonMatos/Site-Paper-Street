@@ -121,7 +121,7 @@ export default function Contrato() {
             <br />
             Visualize os termos até o final para poder aceitá-los.
             <br />
-            Versão 1.0.2 - Última modificação: 26/11/2024, 10:54h.
+            Versão 1.0.3 - Última modificação: 26/11/2024, 10:54h.
           </p>
           <div className="flex flex-col items-center w-full space-y-4">
             {/* Caixa de Termos */}
