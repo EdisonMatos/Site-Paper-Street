@@ -3,36 +3,26 @@ const textoContrato = (
     <h1>
       <strong>
         CONTRATO DE DESENVOLVIMENTO E MANUTENÇÃO DE WEBSITE POR ASSINATURA
+        PROMOCIONAL COM 1º ANO DE DOMÍNIO GRÁTIS
       </strong>
     </h1>
-    <img />
-
-    <h2>
-      <strong>PROMOCIONAL COM 1º ANO DE DOMÍNIO GRÁTIS</strong>
-    </h2>
+    <br />
 
     <p>Pelo presente instrumento particular, as partes:</p>
 
-    <h3>
-      <strong>CONTRATANTE:</strong>
-    </h3>
     <p>
-      [NOME], [CPF/CNPJ], [EMAIL], doravante denominada como CONTRATANTE (NOME,
-      CPF/CNPJ e EMAIL serão considerados os que serão preenchidos pelo cliente
-      no momento da aceitação dos termos).
+      <strong>CONTRATANTE:</strong> [NOME], [CPF/CNPJ], [EMAIL], doravante
+      denominada como CONTRATANTE (considerar os dados informados no aceite dos
+      termos).
     </p>
-
-    <h3>
-      <strong>CONTRATADA:</strong>
-    </h3>
     <p>
-      PAPER STREET SOFTWARES E MARKETING DIGITAL LTDA ME, CNPJ:
-      54.143.106/0001-73,
-      <a href="mailto:contato@paperstreet.com.br">contato@paperstreet.com.br</a>
-      , situada no CAM 41, 18 - Hernani Sá - Ilhéus - BA, CEP 45656572, neste
-      ato representada por Edison Pinto de Matos, CPF: 032.868.825-85, doravante
+      <strong>CONTRATADA:</strong> PAPER STREET SOFTWARES E MARKETING DIGITAL
+      LTDA ME, CNPJ: 54.143.106/0001-73, contato@paperstreet.com.br, situada no
+      CAM 41, 18 - Hernani Sá - Ilhéus - BA, CEP 45656572, neste ato
+      representada por Edison Pinto de Matos, CPF: 032.868.825-85, doravante
       denominada CONTRATADA.
     </p>
+    <br />
 
     <p>
       Têm entre si justo e contratado o seguinte, com base nas cláusulas e
@@ -47,10 +37,29 @@ const textoContrato = (
       O presente contrato tem por objeto a prestação, pela CONTRATADA à
       CONTRATANTE, dos seguintes serviços:
     </p>
+    <br />
+
     <ul>
       <li>
-        <strong>Serviço:</strong> Desenvolvimento de página para internet
+        <strong>Informações gerais:</strong>
       </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>Serviços no pacote:</strong>
+      </li>
+      <ul>
+        <li>Processo de criação de página para a internet (site)</li>
+        <li>Hospedagem de site (manter no ar)</li>
+        <li>Manutenção de site (atualizar conteúdo)</li>
+        <li>Criação de emails profissionais</li>
+        <li>
+          <strong>Bônus da Promoção:</strong> Concessão de domínio no 1º ano
+          (nome do site)
+        </li>
+      </ul>
+      <br />
+
       <li>
         <strong>Quantidade:</strong> 1 Página Institucional de Advogado /
         Escritório de Advocacia
@@ -62,8 +71,8 @@ const textoContrato = (
         <strong>Forma:</strong> Assinatura mensal
       </li>
       <li>
-        <strong>Vencimento:</strong> (De acordo com a data de aceite do contrato
-        ou outra data acordada)
+        <strong>Vencimento:</strong> Na data de assinatura do contrato (ou data
+        de aceite dos termos)
       </li>
       <li>
         <strong>Layout:</strong> Baseado em modelo previamente apresentado
@@ -81,13 +90,12 @@ const textoContrato = (
     <h2>
       <strong>CLÁUSULA 2 - DAS OBRIGAÇÕES DAS PARTES</strong>
     </h2>
-    <ol>
+    <ul>
       <li>
-        <strong>Desenvolvimento de Website:</strong> A CONTRATADA desenvolverá
-        uma ou mais páginas para a internet (vide quantidade constante na
-        cláusula 1), que devem ser acessíveis por meio de um navegador de
-        internet, tanto em computadores como em dispositivos móveis como
-        celulares e tablets.
+        <strong>Criação de Website:</strong> A CONTRATADA desenvolverá uma ou
+        mais páginas para a internet (vide quantidade constante na cláusula 1),
+        que devem ser acessíveis por meio de um navegador de internet, tanto em
+        computadores como em dispositivos móveis como celulares e tablets.
       </li>
       <li>
         <strong>Promoção de domínio grátis pelo 1º ano:</strong> A CONTRATADA
@@ -99,12 +107,12 @@ const textoContrato = (
         Caso a CONTRATANTE deseje que a propriedade continue sendo da CONTRATADA
         após o primeiro ano, ela deverá arcar com os custos do registro que será
         informado pela CONTRATADA no momento de renovação.
-        <p>
-          <em>Parágrafo único:</em> Caso a CONTRATANTE deseje obter a
-          propriedade do domínio no período anterior ao primeiro ano, ou em caso
-          de rescisão deste contrato, deve solicitar orçamento à CONTRATADA para
-          tal aquisição.
-        </p>
+      </li>
+      <li>
+        <strong>Parágrafo único:</strong> Caso a CONTRATANTE deseje obter a
+        propriedade do domínio no período anterior ao primeiro ano, ou em caso
+        de rescisão deste contrato, deve solicitar orçamento à CONTRATADA para
+        tal aquisição.
       </li>
       <li>
         <strong>Emails Profissionais:</strong> A CONTRATADA criará e
@@ -125,7 +133,7 @@ const textoContrato = (
         textos e imagens) sem custo adicional, com prazo de entrega de até 3
         dias úteis. Mudanças que alterem a estrutura do site ou criação de
         seções novas ou novas funcionalidades serão avaliadas e poderão ser
-        cobradas separadamente, e o prazo será informado após análise da
+        cobradas separadamente e o prazo será informado após análise da
         complexidade.
       </li>
       <li>
@@ -133,16 +141,16 @@ const textoContrato = (
         todos os textos, imagens e demais materiais e informações solicitadas
         para o desenvolvimento do site e registro do domínio. Em caso de
         necessidade de edição ou manipulação de imagem ou de logomarca, será
-        necessário um orçamento separado, uma vez que este serviço não é da área
+        necessário um orçamento separado uma vez que este serviço não é da área
         de Desenvolvimento de Páginas para Internet. A CONTRATADA não se
         responsabiliza pelas informações apresentadas no site.
       </li>
-    </ol>
+    </ul>
     <br />
     <h2>
       <strong>CLÁUSULA 3 - DO PROCESSO DE ENTREGA DO SITE</strong>
     </h2>
-    <ol>
+    <ul>
       <li>
         <strong>Coleta de informações:</strong> Em até 2 dias úteis após a
         assinatura, a CONTRATADA entrará em contato para solicitar as
@@ -170,31 +178,40 @@ const textoContrato = (
         CONTRATANTE, configurando assim o serviço do desenvolvimento do site
         como entregue.
       </li>
-    </ol>
+    </ul>
     <br />
+
     <h2>
       <strong>CLÁUSULA 4 - DO PAGAMENTO E REAJUSTE</strong>
     </h2>
-    <ol>
+    <ul>
       <li>
-        <strong>Valor dos Serviços:</strong> A CONTRATANTE pagará à CONTRATADA o
-        valor descrito na cláusula 1, sendo este valor reajustado anualmente,
-        exclusivamente para correção da inflação, conforme índice IPCA.
+        <strong>Valor dos Serviços:</strong> A CONTRATANTE pagará mensalmente,
+        iniciando a partir da data de assinatura deste contrato (ou data de
+        aceite dos termos) à CONTRATADA o valor descrito na cláusula 1, sendo
+        este valor reajustado anualmente, exclusivamente para correção da
+        inflação, conforme índice IPCA.
       </li>
       <li>
-        <strong>Forma de Pagamento:</strong> O pagamento deverá ser realizado
-        até a data especificada como vencimento na cláusula 1, por meio de
-        boleto bancário, chave Pix <strong>54143106000173</strong> (CNPJ) em
-        nome da CONTRATADA, cartão de crédito ou outra forma de pagamento
-        acordada entre as partes.
+        <strong>Parágrafo único:</strong> Caso o contrato seja assinado fora de
+        horário de expediente comercial (segunda a sexta-feira, das 8h às 18h),
+        a data de pagamento inicial se estenderá para o próximo dia útil. Para o
+        segundo pagamento em diante será considerada a data de assinatura do
+        contrato para pagamento mensal.
       </li>
-    </ol>
+      <li>
+        <strong>Forma de Pagamento:</strong> Na data ou em até 1 dia útil da
+        assinatura deste contrato (ou data de aceite dos termos), será enviado
+        para o telefone (via SMS), whatsapp (via mensagem no aplicativo
+        whatsapp) e e-mail do CONTRATANTE, as instruções referente ao pagamento.
+      </li>
+    </ul>
     <br />
 
     <h2>
       <strong>CLÁUSULA 5 - DO MODELO E MODIFICAÇÕES</strong>
     </h2>
-    <ol>
+    <ul>
       <li>
         <strong>Aceite de modelo:</strong> O site será desenvolvido de acordo
         com modelo(s) previamente enviado e aprovado pela CONTRATANTE. Serão
@@ -203,18 +220,18 @@ const textoContrato = (
         modelo enviado como base para o desenvolvimento.
       </li>
       <li>
-        <strong>Modificações Estruturais:</strong> Caso seja solicitada a
-        criação de seção nova, diferente do que foi apresentado, será feita uma
+        <strong>Modificações Estruturais:</strong> Caso seja solicitado criação
+        de seção nova, diferente do que foi apresentado, será feita uma
         avaliação de viabilidade, e caso aceita, poderá ser executada sem custo,
         ou mediante orçamento apresentado à CONTRATANTE.
       </li>
-    </ol>
+    </ul>
     <br />
 
     <h2>
       <strong>CLÁUSULA 6 - LIMITAÇÕES DE RESPONSABILIDADE</strong>
     </h2>
-    <ol>
+    <ul>
       <li>
         <strong>Garantias e Limitações:</strong> A CONTRATADA garante o
         funcionamento adequado do website nos principais navegadores e
@@ -235,18 +252,18 @@ const textoContrato = (
         CONTRATADA não se responsabiliza por falhas ou modificações feitas por
         terceiros em ferramentas integradas ao site (exemplo: A empresa
         responsável pelo WhatsApp encerrar suas atividades e o link para o
-        WhatsApp parar de funcionar), plugins de terceiros ou plataformas
+        whatsapp parar de funcionar), plugins de terceiros ou plataformas
         externas. Nesses casos, usaremos o serviço de manutenção já incluído no
         pacote para executar qualquer eventual reparo causado por serviços de
         terceiros que deixaram de funcionar.
       </li>
-    </ol>
+    </ul>
     <br />
 
     <h2>
       <strong>CLÁUSULA 7 - PRAZO E CONDIÇÕES DE RESCISÃO</strong>
     </h2>
-    <ol>
+    <ul>
       <li>
         <strong>Vigência:</strong> O presente contrato entra em vigor na data de
         sua assinatura, tem duração por tempo indeterminado e pode ser
@@ -266,18 +283,18 @@ const textoContrato = (
       </li>
       <li>
         <strong>Conteúdo do site e emails:</strong> Em caso de rescisão de
-        contrato, a CONTRATANTE será notificada via email ou WhatsApp/rede
+        contrato, a CONTRATANTE será notificada via email ou whatsapp/rede
         social sobre o prazo de 15 dias corridos para realizar o backup das
         caixas de emails que serão removidas da nossa base de dados após esta
         data. Após esta data também será removido o conteúdo do site.
       </li>
-    </ol>
+    </ul>
     <br />
 
     <h2>
       <strong>CLÁUSULA 8 - FORO E DISPOSIÇÕES FINAIS</strong>
     </h2>
-    <ol>
+    <ul>
       <li>
         <strong>Foro:</strong> Fica eleito o foro da comarca de São Bernardo do
         Campo - SP, com renúncia expressa de qualquer outro, por mais
@@ -291,7 +308,8 @@ const textoContrato = (
         terão validade se forem celebrados por escrito e assinados por ambas as
         partes.
       </li>
-    </ol>
+    </ul>
+    <br />
   </div>
 );
 export default textoContrato;
