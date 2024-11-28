@@ -105,21 +105,20 @@ export default function Contrato() {
     <div
       ref={termosRef}
       onScroll={handleScroll}
-      className="w-full h-[350px] p-4 overflow-y-auto bg-gray-100 border border-gray-300 rounded-md"
+      className="w-full max-h-[350px] p-4 overflow-y-auto bg-gray-100 border border-gray-300 rounded-md"
     >
       {/* Conteúdo dos Termos */}
       {textoContrato}
     </div>
   );
-
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-50">
+    <div className="flex items-center justify-center h-[110vh] desktop2:h-[100vh] bg-gray-50">
       <SectionArea>
-        <SectionWrapper>
+        <SectionWrapper className="absolute top-[10%] flex justify-center h-auto">
           <p className="mb-[20px]">
             Leia o contrato até o final para poder aceitar
           </p>
-          <div className="flex flex-col items-center w-full space-y-4">
+          <div className="flex flex-col items-center w-full space-y-4 ">
             {/* Caixa de Termos */}
             {contrato}
             {/* Checkbox de Aceitação */}
@@ -130,7 +129,7 @@ export default function Contrato() {
                 disabled={!isScrolledToEnd}
                 checked={isAccepted}
                 onChange={(e) => setIsAccepted(e.target.checked)}
-                className="w-5 h-5 mr-2 text-blue-500 border-gray-300 rounded disabled:opacity-50"
+                className="w-5 h-5 mr-2 text-blue-500 border-gray-300 rounded disabled:opacity-50  cursor-pointer"
               />
               <label
                 htmlFor="accept"
@@ -146,7 +145,7 @@ export default function Contrato() {
             {isAccepted && (
               <form
                 onSubmit={handleSubmit}
-                className="w-full max-w-md p-4 space-y-4 bg-white border border-gray-300 rounded-md"
+                className="w-full max-w-md p-4 space-y-4 bg-white border border-gray-300 rounded-md relative bottom-[-80%]"
               >
                 <div>
                   <label className="block text-gray-700">Nome:</label>
