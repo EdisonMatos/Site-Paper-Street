@@ -25,23 +25,28 @@ export default function Contrato() {
   };
 
   // Função para formatar CPF
-  // Função para formatar CPF
   const formatCPF = (cpf) => {
-    cpf = cpf.replace(/\D/g, ''); // Remove tudo que não for número
+    cpf = cpf.replace(/\D/g, ""); // Remove tudo que não for número
     if (cpf.length <= 3) return cpf;
-    if (cpf.length <= 6) return cpf.replace(/(\d{3})(\d{1,})/, '$1.$2');
-    if (cpf.length <= 9) return cpf.replace(/(\d{3})(\d{3})(\d{1,})/, '$1.$2.$3');
-    return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{1,})/, '$1.$2.$3-$4');
+    if (cpf.length <= 6) return cpf.replace(/(\d{3})(\d{1,})/, "$1.$2");
+    if (cpf.length <= 9)
+      return cpf.replace(/(\d{3})(\d{3})(\d{1,})/, "$1.$2.$3");
+    return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{1,})/, "$1.$2.$3-$4");
   };
 
   // Função para formatar CNPJ
   const formatCNPJ = (cnpj) => {
-    cnpj = cnpj.replace(/\D/g, ''); // Remove tudo que não for número
+    cnpj = cnpj.replace(/\D/g, ""); // Remove tudo que não for número
     if (cnpj.length <= 2) return cnpj;
-    if (cnpj.length <= 5) return cnpj.replace(/(\d{2})(\d{1,})/, '$1.$2');
-    if (cnpj.length <= 8) return cnpj.replace(/(\d{2})(\d{3})(\d{1,})/, '$1.$2.$3');
-    if (cnpj.length <= 12) return cnpj.replace(/(\d{2})(\d{3})(\d{3})(\d{1,})/, '$1.$2.$3/$4');
-    return cnpj.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{1,})/, '$1.$2.$3/$4-$5');
+    if (cnpj.length <= 5) return cnpj.replace(/(\d{2})(\d{1,})/, "$1.$2");
+    if (cnpj.length <= 8)
+      return cnpj.replace(/(\d{2})(\d{3})(\d{1,})/, "$1.$2.$3");
+    if (cnpj.length <= 12)
+      return cnpj.replace(/(\d{2})(\d{3})(\d{3})(\d{1,})/, "$1.$2.$3/$4");
+    return cnpj.replace(
+      /(\d{2})(\d{3})(\d{3})(\d{4})(\d{1,})/,
+      "$1.$2.$3/$4-$5"
+    );
   };
 
   const handleChange = (e) => {
@@ -135,9 +140,8 @@ export default function Contrato() {
       Texto concordado: Será enviada uma cópia dos termos para o email preenchido.
       \n
       Seja bem vindo à Paper Street! 
-      Essa página já pode ser fechada.`);
-
-    //lógica para campos do formulário
+      Essa página já pode ser fechada.
+    `);
   };
 
   const contratoTeste = textoContrato;
@@ -199,7 +203,15 @@ export default function Contrato() {
                     onChange={(e) => {
                       const regex = /^[A-Za-zÀ-ÿ\s\-']*$/; // Expressão regular que permite letras, espaços, acentos, hífens e apóstrofos
                       if (regex.test(e.target.value) || e.target.value === "") {
-                        handleChange(e); // Chama a função handleChange para atualizar o estado
+                        const value = e.target.value;
+                        // Transformar a primeira letra em maiúscula
+                        const updatedValue =
+                          value.charAt(0).toUpperCase() +
+                          value.slice(1).toLowerCase();
+                        // Atualiza o estado com o valor modificado
+                        handleChange({
+                          target: { name: e.target.name, value: updatedValue },
+                        });
                       }
                     }}
                     required
