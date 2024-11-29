@@ -54,7 +54,7 @@ export default function Contrato() {
       "$1.$2.$3/$4-$5"
     );
   };
-
+  //Constante para validar cpf & cnpj
   const isValidCPF = (cpf) => {
     const cleanedCPF = cpf.replace(/\D/g, ""); // Remove caracteres não numéricos
     return cleanedCPF.length === 11;
@@ -195,7 +195,7 @@ export default function Contrato() {
     </div>
   );
   return (
-    <div className="flex items-center justify-center h-[100vh] bg-gray-50">
+    <div className="flex items-center justify-center h-[120vh] bg-gray-50">
       <SectionArea>
         <SectionWrapper className="absolute top-[10%] flex justify-center h-auto pb-8">
           <p className="mb-[20px] text-center">
@@ -241,6 +241,7 @@ export default function Contrato() {
                   <input
                     type="text"
                     name="nome"
+                    minLength={5}
                     value={formData.nome}
                     onChange={(e) => {
                       const regex = /^[A-Za-zÀ-ÿ\s\-']*$/; // Expressão regular que permite letras, espaços, acentos, hífens e apóstrofos
