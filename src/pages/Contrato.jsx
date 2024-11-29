@@ -195,7 +195,7 @@ export default function Contrato() {
     </div>
   );
   return (
-    <div className="flex items-center justify-center h-[120vh] bg-gray-50">
+    <div className="flex items-center justify-center h-[100vh] bg-gray-50">
       <SectionArea>
         <SectionWrapper className="absolute top-[10%] flex justify-center h-auto pb-8">
           <p className="mb-[20px] text-center">
@@ -216,7 +216,7 @@ export default function Contrato() {
                 disabled={!isScrolledToEnd}
                 checked={isAccepted}
                 onChange={(e) => setIsAccepted(e.target.checked)}
-                className="w-5 h-5 mr-2 text-blue-500 border-gray-300 rounded disabled:opacity-50  cursor-pointer"
+                className="w-5 h-5 mr-2 text-blue-500 border-gray-300 rounded cursor-pointer disabled:opacity-50"
               />
               <label
                 htmlFor="accept"
