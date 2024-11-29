@@ -37,17 +37,15 @@ export default function Contrato() {
   // Função para formatar CNPJ
   const formatCNPJ = (cnpj) => {
     cnpj = cnpj.replace(/\D/g, ""); // Remove tudo que não for número
-    if (cnpj.length <= 2) return cnpj;
-    if (cnpj.length <= 5) return cnpj.replace(/(\d{2})(\d{1,})/, "$1.$2");
-    if (cnpj.length <= 8)
-      return cnpj.replace(/(\d{2})(\d{3})(\d{1,})/, "$1.$2.$3");
-    if (cnpj.length <= 12)
-      return cnpj.replace(/(\d{2})(\d{3})(\d{3})(\d{1,})/, "$1.$2.$3/$4");
-    return cnpj.replace(
-      /(\d{2})(\d{3})(\d{3})(\d{4})(\d{1,})/,
-      "$1.$2.$3/$4-$5"
-    );
-  };
+     // Aplica a formatação gradativa conforme o comprimento
+  if (cnpj.length <= 2) return cnpj; // Até 2 dígitos: sem formatação
+  if (cnpj.length <= 5) return cnpj.replace(/(\d{2})(\d{1,})/, "$1.$2"); // 3-5 dígitos
+  if (cnpj.length <= 8) return cnpj.replace(/(\d{2})(\d{3})(\d{1,})/, "$1.$2.$3"); // 6-8 dígitos
+  if (cnpj.length <= 12) return cnpj.replace(/(\d{2})(\d{3})(\d{3})(\d{1,})/, "$1.$2.$3/$4"); // 9-12 dígitos
+  
+  // Formato completo após 12 dígitos
+  return cnpj.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{1,})/, "$1.$2.$3/$4-$5");
+};
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -57,10 +55,10 @@ export default function Contrato() {
 
       // Se o número de dígitos for 11 (CPF), formate como CPF
       if (formattedValue.length <= 11) {
+        // Se o número de dígitos for 11 ou menos, formate como CPF
         formattedValue = formatCPF(formattedValue);
-      }
-      // Se o número de dígitos for 14 (CNPJ), formate como CNPJ
-      else if (formattedValue.length === 14) {
+      } else {
+        // Se o número de dígitos for mais de 11, formate como CNPJ
         formattedValue = formatCNPJ(formattedValue);
       }
 
