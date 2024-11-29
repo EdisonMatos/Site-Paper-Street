@@ -149,6 +149,7 @@ export default function Contrato() {
       \n
       Seja bem vindo à Paper Street! 
       Essa página já pode ser fechada.
+      Você será redirecionado para o nosso site. Até mais!
     `);
     navigate("/"); //Redireciona novamente a página principal
   };
