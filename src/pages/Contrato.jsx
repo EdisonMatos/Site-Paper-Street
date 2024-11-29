@@ -55,6 +55,16 @@ export default function Contrato() {
     );
   };
 
+  const isValidCPF = (cpf) => {
+    const cleanedCPF = cpf.replace(/\D/g, ""); // Remove caracteres não numéricos
+    return cleanedCPF.length === 11;
+  };
+
+  const isValidCNPJ = (cnpj) => {
+    const cleanedCNPJ = cnpj.replace(/\D/g, ""); // Remove caracteres não numéricos
+    return cleanedCNPJ.length === 14;
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -81,6 +91,24 @@ export default function Contrato() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const cleanedCPF = formData.cpf.replace(/\D/g, ""); // Remove a formatação
+
+    // Validações específicas
+    if (cleanedCPF.length === 11) {
+      if (!isValidCPF(formData.cpf)) {
+        alert("CPF inválido!");
+        return;
+      }
+    } else if (cleanedCPF.length === 14) {
+      if (!isValidCNPJ(formData.cpf)) {
+        alert("CNPJ inválido!");
+        return;
+      }
+    } else {
+      alert("CPF ou CNPJ incompleto!");
+      return;
+    }
 
     // Obter data e hora atual
     const currentDateTime = new Date().toLocaleString();
@@ -241,7 +269,7 @@ export default function Contrato() {
                   <input
                     type="text"
                     name="cpf"
-                    value={formData.cpf}
+                    value={formData.cpf || ""}
                     onChange={handleChange}
                     maxLength={18}
                     required
