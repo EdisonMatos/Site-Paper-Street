@@ -4,6 +4,7 @@ import SectionWrapper from "../components/sectionElements/SectionWrapper";
 import textoContrato from "../content/textoContrato";
 import emailjs from "@emailjs/browser";
 import ReactDOMServer from "react-dom/server";
+import { useNavigate } from "react-router-dom";
 
 export default function Contrato() {
   const [isScrolledToEnd, setIsScrolledToEnd] = useState(false);
@@ -15,6 +16,7 @@ export default function Contrato() {
   });
   const termosRef = useRef(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate = useNavigate();
 
   const handleScroll = () => {
     if (termosRef.current) {
@@ -143,6 +145,7 @@ export default function Contrato() {
       Seja bem vindo à Paper Street! 
       Essa página já pode ser fechada.
     `);
+    navigate("/"); //Redireciona novamente a página principal
   };
 
   const contratoTeste = textoContrato;
