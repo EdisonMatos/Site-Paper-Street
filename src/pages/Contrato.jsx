@@ -204,11 +204,15 @@ export default function Contrato() {
                       const regex = /^[A-Za-zÀ-ÿ\s\-']*$/; // Expressão regular que permite letras, espaços, acentos, hífens e apóstrofos
                       if (regex.test(e.target.value) || e.target.value === "") {
                         const value = e.target.value;
-                        // Transformar a primeira letra em maiúscula
-                        const updatedValue =
-                          value.charAt(0).toUpperCase() +
-                          value.slice(1).toLowerCase();
-                        // Atualiza o estado com o valor modificado
+                        // Capitaliza a primeira letra de cada palavra
+                        const updatedValue = value
+                          .toLowerCase() // Converte todo o texto para minúsculas
+                          .split(" ") // Divide o texto em palavras
+                          .map(
+                            (word) =>
+                              word.charAt(0).toUpperCase() + word.slice(1)
+                          ) // Capitaliza a primeira letra de cada palavra
+                          .join(" "); // Junta as palavras de volta com espaços
                         handleChange({
                           target: { name: e.target.name, value: updatedValue },
                         });
