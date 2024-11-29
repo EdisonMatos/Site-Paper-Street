@@ -1,5 +1,6 @@
 const textoContrato = (
   <div>
+    {/*convertido em p para quebrar menor linha no e-mail */}
     <h1>
       <strong>
         CONTRATO DE DESENVOLVIMENTO E MANUTENÇÃO DE WEBSITE POR ASSINATURA
@@ -28,15 +29,16 @@ const textoContrato = (
       Têm entre si justo e contratado o seguinte, com base nas cláusulas e
       condições abaixo:
     </p>
-    <br />
 
     <h2>
       <strong>CLÁUSULA 1 - OBJETO DO CONTRATO</strong>
     </h2>
-    <p>
-      O presente contrato tem por objeto a prestação, pela CONTRATADA à
-      CONTRATANTE, dos seguintes serviços:
-    </p>
+    <ul>
+      <li>
+        O presente contrato tem por objeto a prestação, pela CONTRATADA à
+        CONTRATANTE, dos seguintes serviços:
+      </li>
+    </ul>
     <br />
 
     <ul>
