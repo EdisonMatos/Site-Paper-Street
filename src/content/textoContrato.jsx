@@ -1,12 +1,12 @@
 const textoContrato = (
   <div>
     {/*convertido em p para quebrar menor linha no e-mail */}
-    <p>
+    <h1>
       <strong>
         CONTRATO DE DESENVOLVIMENTO E MANUTENÇÃO DE WEBSITE POR ASSINATURA
         PROMOCIONAL COM 1º ANO DE DOMÍNIO GRÁTIS
       </strong>
-    </p>
+    </h1>
     <br />
 
     <p>Pelo presente instrumento particular, as partes:</p>

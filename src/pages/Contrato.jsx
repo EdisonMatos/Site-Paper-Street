@@ -40,15 +40,20 @@ export default function Contrato() {
   // Função para formatar CNPJ
   const formatCNPJ = (cnpj) => {
     cnpj = cnpj.replace(/\D/g, ""); // Remove tudo que não for número
-     // Aplica a formatação gradativa conforme o comprimento
-  if (cnpj.length <= 2) return cnpj; // Até 2 dígitos: sem formatação
-  if (cnpj.length <= 5) return cnpj.replace(/(\d{2})(\d{1,})/, "$1.$2"); // 3-5 dígitos
-  if (cnpj.length <= 8) return cnpj.replace(/(\d{2})(\d{3})(\d{1,})/, "$1.$2.$3"); // 6-8 dígitos
-  if (cnpj.length <= 12) return cnpj.replace(/(\d{2})(\d{3})(\d{3})(\d{1,})/, "$1.$2.$3/$4"); // 9-12 dígitos
-  
-  // Formato completo após 12 dígitos
-  return cnpj.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{1,})/, "$1.$2.$3/$4-$5");
-};
+    // Aplica a formatação gradativa conforme o comprimento
+    if (cnpj.length <= 2) return cnpj; // Até 2 dígitos: sem formatação
+    if (cnpj.length <= 5) return cnpj.replace(/(\d{2})(\d{1,})/, "$1.$2"); // 3-5 dígitos
+    if (cnpj.length <= 8)
+      return cnpj.replace(/(\d{2})(\d{3})(\d{1,})/, "$1.$2.$3"); // 6-8 dígitos
+    if (cnpj.length <= 12)
+      return cnpj.replace(/(\d{2})(\d{3})(\d{3})(\d{1,})/, "$1.$2.$3/$4"); // 9-12 dígitos
+
+    // Formato completo após 12 dígitos
+    return cnpj.replace(
+      /(\d{2})(\d{3})(\d{3})(\d{4})(\d{1,})/,
+      "$1.$2.$3/$4-$5"
+    );
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -99,7 +104,7 @@ export default function Contrato() {
     const contratoTextoSemTags = contratoHtml
       .replace(/<\/?h[1-6]>/g, "\n\n") // Quebras para títulos (h1, h2, etc.)
       .replace(/<\/?p>/g, "\n") // Quebras para parágrafos (p)
-      .replace(/<br\s*\/?>/g, "\n") // Quebras para <br> tags
+      .replace(/<br\s*\/?>/g, "") // Quebras para <br> tags
       .replace(/<\/?strong>/g, "") // Remove <strong>, mas mantém o texto
       .replace(/<[^>]+>/g, ""); // Remove qualquer outra tag restante
 
@@ -262,7 +267,7 @@ export default function Contrato() {
                       : "bg-gray-300 cursor-not-allowed"
                   }`}
                 >
-                 {isSubmitting ? "Enviando..." : "Enviar"}
+                  {isSubmitting ? "Enviando..." : "Enviar"}
                 </button>
               </form>
             )}
