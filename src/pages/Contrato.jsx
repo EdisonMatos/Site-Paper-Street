@@ -14,6 +14,7 @@ export default function Contrato() {
     email: "",
   });
   const termosRef = useRef(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleScroll = () => {
     if (termosRef.current) {
@@ -76,6 +77,8 @@ export default function Contrato() {
 
     // Obter data e hora atual
     const currentDateTime = new Date().toLocaleString();
+
+    setIsSubmitting(true); // Atualiza o estado para 'Enviando...'
 
     // Obter IP público do cliente
     let clientIp = "Não disponível";
@@ -249,14 +252,14 @@ export default function Contrato() {
                 </div>
                 <button
                   type="submit"
-                  disabled={!isAccepted}
+                  disabled={!isAccepted || isSubmitting}
                   className={`w-full p-2 rounded-md text-white font-semibold transition-all ${
                     isAccepted
                       ? "bg-blue-500 hover:bg-blue-600 cursor-pointer"
                       : "bg-gray-300 cursor-not-allowed"
                   }`}
                 >
-                  Enviar
+                 {isSubmitting ? "Enviando..." : "Enviar"}
                 </button>
               </form>
             )}
