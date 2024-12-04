@@ -4,17 +4,15 @@ const textoContrato = (
     <h1>
       <strong>
         CONTRATO DE DESENVOLVIMENTO E MANUTENÇÃO DE WEBSITE POR ASSINATURA
-        PROMOCIONAL COM 1º ANO DE DOMÍNIO GRÁTIS
       </strong>
     </h1>
-    <br />
 
     <p>Pelo presente instrumento particular, as partes:</p>
+    <br />
 
     <p>
       <strong>CONTRATANTE:</strong> [NOME], [CPF/CNPJ], [EMAIL], doravante
-      denominada como CONTRATANTE (considerar os dados informados no aceite dos
-      termos).
+      denominada como CONTRATANTE.
     </p>
     <p>
       <strong>CONTRATADA:</strong> PAPER STREET SOFTWARES E MARKETING DIGITAL
@@ -29,63 +27,54 @@ const textoContrato = (
       Têm entre si justo e contratado o seguinte, com base nas cláusulas e
       condições abaixo:
     </p>
+    <br />
 
     <h2>
       <strong>CLÁUSULA 1 - OBJETO DO CONTRATO</strong>
     </h2>
-    <ul>
-      <li>
-        O presente contrato tem por objeto a prestação, pela CONTRATADA à
-        CONTRATANTE, dos seguintes serviços:
-      </li>
-    </ul>
-    <br />
-
+    <p>
+      O presente contrato tem por objeto a prestação, pela CONTRATADA à
+      CONTRATANTE, dos seguintes serviços:
+    </p>
     <ul>
       <li>
         <strong>Informações gerais:</strong>
       </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Serviços no pacote:</strong>
-      </li>
       <ul>
-        <li>Processo de criação de página para a internet (site)</li>
-        <li>Hospedagem de site (manter no ar)</li>
-        <li>Manutenção de site (atualizar conteúdo)</li>
-        <li>Criação de emails profissionais</li>
         <li>
-          <strong>Bônus da Promoção:</strong> Concessão de domínio no 1º ano
-          (nome do site)
+          <strong>Serviços:</strong> Processo de criação de página para a
+          internet (site), hospedagem de site (manter no ar), manutenção de site
+          (atualizar conteúdo), criação de emails profissionais.
+        </li>
+        <li>
+          <strong>Bônus de Promoção:</strong> Concessão de domínio no 1º ano
+          (nome do site).
+        </li>
+        <li>
+          <strong>Quantidade:</strong> 1 Página Institucional de Advogado /
+          Escritório de Advocacia.
+        </li>
+        <li>
+          <strong>Valor:</strong> R$ 89,00 mensais.
+        </li>
+        <li>
+          <strong>Forma:</strong> Assinatura mensal.
+        </li>
+        <li>
+          <strong>Vencimento:</strong> Na data de assinatura do contrato (ou
+          data de aceite dos termos).
+        </li>
+        <li>
+          <strong>Layout:</strong> Baseado em modelo previamente apresentado.
+        </li>
+        <li>
+          <strong>Manutenção:</strong> Gratuita uma vez por mês, para
+          substituição de textos e fotos.
+        </li>
+        <li>
+          <strong>Domínio:</strong> Fornecido o 1º ano pela CONTRATADA.
         </li>
       </ul>
-      <br />
-
-      <li>
-        <strong>Quantidade:</strong> 1 Página Institucional de Advogado /
-        Escritório de Advocacia
-      </li>
-      <li>
-        <strong>Valor:</strong> R$ 89,00 mensais
-      </li>
-      <li>
-        <strong>Forma:</strong> Assinatura mensal
-      </li>
-      <li>
-        <strong>Vencimento:</strong> Na data de assinatura do contrato (ou data
-        de aceite dos termos)
-      </li>
-      <li>
-        <strong>Layout:</strong> Baseado em modelo previamente apresentado
-      </li>
-      <li>
-        <strong>Manutenção:</strong> Gratuita uma vez por mês, para substituição
-        de textos e fotos
-      </li>
-      <li>
-        <strong>Domínio:</strong> Fornecido o 1º ano pela CONTRATADA
-      </li>
     </ul>
     <br />
 
@@ -100,21 +89,27 @@ const textoContrato = (
         computadores como em dispositivos móveis como celulares e tablets.
       </li>
       <li>
-        <strong>Promoção de domínio grátis pelo 1º ano:</strong> A CONTRATADA
-        terá propriedade do domínio fornecido e concederá o uso para a
-        CONTRATANTE durante o primeiro ano, ou, enquanto o presente contrato
-        estiver vigente caso seja encerrado antes do primeiro ano. Findado o
-        primeiro ano, a posse do domínio será transferida para a CONTRATANTE,
-        que será a responsável pelo custo de registro deste ponto em diante.
-        Caso a CONTRATANTE deseje que a propriedade continue sendo da CONTRATADA
-        após o primeiro ano, ela deverá arcar com os custos do registro que será
-        informado pela CONTRATADA no momento de renovação.
-      </li>
-      <li>
-        <strong>Parágrafo único:</strong> Caso a CONTRATANTE deseje obter a
-        propriedade do domínio no período anterior ao primeiro ano, ou em caso
-        de rescisão deste contrato, deve solicitar orçamento à CONTRATADA para
-        tal aquisição.
+        <strong>Promoção de domínio grátis pelo 1º ano:</strong> Caso o domínio
+        seja fornecido pela CONTRATADA:
+        <ul>
+          <li>
+            A CONTRATADA terá propriedade do domínio fornecido e concederá o uso
+            para a CONTRATANTE durante o primeiro ano, ou, enquanto o presente
+            contrato estiver vigente caso seja encerrado antes do primeiro ano.
+            Findado o primeiro ano, a posse do domínio será transferida para a
+            CONTRATANTE, que será a responsável pelo custo de registro deste
+            ponto em diante. Caso a CONTRATANTE deseje que a propriedade
+            continue sendo da CONTRATADA após o primeiro ano, ela deverá arcar
+            com os custos do registro que será informado pela CONTRATADA no
+            momento de renovação.
+          </li>
+          <li>
+            <strong>Parágrafo único:</strong> Caso a CONTRATANTE deseje obter a
+            propriedade do domínio no período anterior ao primeiro ano ou em
+            caso de rescisão deste contrato, deve solicitar orçamento à
+            CONTRATADA para tal aquisição.
+          </li>
+        </ul>
       </li>
       <li>
         <strong>Emails Profissionais:</strong> A CONTRATADA criará e
@@ -133,10 +128,10 @@ const textoContrato = (
         <strong>Manutenção Mensal:</strong> Se solicitada, a CONTRATADA
         realizará, uma vez por mês, atualização no conteúdo do site (troca de
         textos e imagens) sem custo adicional, com prazo de entrega de até 3
-        dias úteis. Mudanças que alterem a estrutura do site ou criação de
-        seções novas ou novas funcionalidades serão avaliadas e poderão ser
-        cobradas separadamente e o prazo será informado após análise da
-        complexidade.
+        dias úteis. Um número maior de modificações ou mudanças que alterem a
+        estrutura do site ou criação de seções novas ou novas funcionalidades,
+        serão avaliadas e poderão ser cobradas separadamente e o prazo será
+        informado após análise da complexidade.
       </li>
       <li>
         <strong>Informações necessárias:</strong> A CONTRATANTE deve fornecer
@@ -154,29 +149,32 @@ const textoContrato = (
     </h2>
     <ul>
       <li>
-        <strong>Coleta de informações:</strong> Em até 2 dias úteis após a
-        assinatura, a CONTRATADA entrará em contato para solicitar as
+        <strong>Coleta de informações:</strong> Na data de assinatura do
+        contrato (ou no próximo dia útil, em caso de assinatura fora do horário
+        de expediente), a CONTRATADA entrará em contato para solicitar as
         informações da CONTRATANTE.
       </li>
       <li>
         <strong>Desenvolvimento e aprovação:</strong> Após a CONTRATANTE
-        fornecer todas as informações solicitadas, iniciará o prazo de 3 dias
+        fornecer todas as informações solicitadas, iniciará o prazo de 5 dias
         úteis para que a CONTRATADA apresente a prévia do site através de um
         link provisório que a CONTRATANTE conseguirá acessar. Se forem
         solicitadas alterações, um novo prazo será acordado, baseado nas
         alterações solicitadas.
       </li>
       <li>
-        <strong>Escolha do nome (domínio):</strong> Assim que a prévia for
-        aceita pela CONTRATANTE, a CONTRATADA irá solicitar o nome do domínio
-        desejado pela CONTRATANTE e buscará por disponibilidade no órgão de
-        registro.
+        <strong>Nome do site (domínio):</strong> Assim que a prévia for aceita
+        pela CONTRATANTE, a CONTRATADA irá solicitar o nome do domínio desejado
+        pela CONTRATANTE e buscará por disponibilidade no órgão de registro.
+        Caso a CONTRATANTE já possua domínio, nesta etapa ela deverá fornecer as
+        informações necessárias para que a CONTRATADA consiga gerenciar o
+        domínio, de forma a direcioná-lo para o novo site.
       </li>
       <li>
-        <strong>Entrega do site no ar:</strong> Após definido o domínio, a
-        CONTRATADA tem até 2 dias úteis para entregar o site no ar, através do
-        envio do link para acesso ao site já no domínio escolhido pelo cliente e
-        as credenciais para pelo menos uma conta de email criada para a
+        <strong>Entrega do site no ar:</strong> Após concluído o processo do
+        domínio, a CONTRATADA irá entregar o site no ar, através do envio do
+        link para acesso ao site já no domínio escolhido/fornecido pelo cliente
+        e as credenciais para pelo menos uma conta de email criada para a
         CONTRATANTE, configurando assim o serviço do desenvolvimento do site
         como entregue.
       </li>
@@ -193,8 +191,7 @@ const textoContrato = (
         aceite dos termos) à CONTRATADA o valor descrito na cláusula 1, sendo
         este valor reajustado anualmente, exclusivamente para correção da
         inflação, conforme índice IPCA.
-      </li>
-      <li>
+        <br />
         <strong>Parágrafo único:</strong> Caso o contrato seja assinado fora de
         horário de expediente comercial (segunda a sexta-feira, das 8h às 18h),
         a data de pagamento inicial se estenderá para o próximo dia útil. Para o
@@ -204,8 +201,9 @@ const textoContrato = (
       <li>
         <strong>Forma de Pagamento:</strong> Na data ou em até 1 dia útil da
         assinatura deste contrato (ou data de aceite dos termos), será enviado
-        para o telefone (via SMS), whatsapp (via mensagem no aplicativo
-        whatsapp) e e-mail do CONTRATANTE, as instruções referente ao pagamento.
+        para o telefone (via SMS), WhatsApp (via mensagem no aplicativo
+        WhatsApp) e e-mail do CONTRATANTE, as instruções referentes ao
+        pagamento.
       </li>
     </ul>
     <br />
@@ -254,10 +252,15 @@ const textoContrato = (
         CONTRATADA não se responsabiliza por falhas ou modificações feitas por
         terceiros em ferramentas integradas ao site (exemplo: A empresa
         responsável pelo WhatsApp encerrar suas atividades e o link para o
-        whatsapp parar de funcionar), plugins de terceiros ou plataformas
+        WhatsApp parar de funcionar), plugins de terceiros ou plataformas
         externas. Nesses casos, usaremos o serviço de manutenção já incluído no
         pacote para executar qualquer eventual reparo causado por serviços de
         terceiros que deixaram de funcionar.
+      </li>
+      <li>
+        <strong>Responsabilidade de conteúdo:</strong> A CONTRATADA não se
+        responsabiliza pelo conteúdo exibido no website. Todo o conteúdo é de
+        responsabilidade exclusiva da CONTRATANTE.
       </li>
     </ul>
     <br />
@@ -285,7 +288,7 @@ const textoContrato = (
       </li>
       <li>
         <strong>Conteúdo do site e emails:</strong> Em caso de rescisão de
-        contrato, a CONTRATANTE será notificada via email ou whatsapp/rede
+        contrato, a CONTRATANTE será notificada via email ou WhatsApp/rede
         social sobre o prazo de 15 dias corridos para realizar o backup das
         caixas de emails que serão removidas da nossa base de dados após esta
         data. Após esta data também será removido o conteúdo do site.
