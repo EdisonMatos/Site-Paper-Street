@@ -184,7 +184,7 @@ export default function Contrato() {
     navigate("/"); //Redireciona novamente a página principal
   };
 
-  const contratoTeste = textoContrato;
+  
 
   const contratoPadrao = (
     <div
@@ -232,6 +232,8 @@ export default function Contrato() {
         return contratoPadrao; // Valor padrão caso nenhuma rota corresponda
     }
   };
+
+  const contratoTeste = renderCaixaTermos();
 
   return (
     <div className="flex items-center justify-center h-[100vh] bg-gray-50">
