@@ -4,7 +4,9 @@ import SectionWrapper from "../components/sectionElements/SectionWrapper";
 import textoContrato from "../content/textoContrato";
 import emailjs from "@emailjs/browser";
 import ReactDOMServer from "react-dom/server";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import textoContrato15Dias from "../content/textoContrato15Dias";
+import textoDominioDoCliente from "../content/textoDominioDoCliente";
 
 export default function Contrato() {
   const [isScrolledToEnd, setIsScrolledToEnd] = useState(false);
@@ -184,16 +186,53 @@ export default function Contrato() {
 
   const contratoTeste = textoContrato;
 
-  const contrato = (
+  const contratoPadrao = (
     <div
       ref={termosRef}
       onScroll={handleScroll}
       className="w-full max-h-[350px] p-4 overflow-y-auto bg-gray-100 border border-gray-300 rounded-md"
     >
-      {/* Conteúdo dos Termos */}
       {textoContrato}
     </div>
   );
+
+  const contrato15Dias = (
+    <div
+      ref={termosRef}
+      onScroll={handleScroll}
+      className="w-full max-h-[350px] p-4 overflow-y-auto bg-gray-100 border border-gray-300 rounded-md"
+    >
+      {textoContrato15Dias}
+    </div>
+  );
+
+  const contratoClienteComDominio = (
+    <div
+      ref={termosRef}
+      onScroll={handleScroll}
+      className="w-full max-h-[350px] p-4 overflow-y-auto bg-gray-100 border border-gray-300 rounded-md"
+    >
+      {textoDominioDoCliente}
+    </div>
+  );
+
+  const renderCaixaTermos = () => {
+    const searchParams = new URLSearchParams(location.search);
+    const parametro = searchParams.get("tipo");
+
+    // Verifica o valor do parâmetro e retorna o contrato correspondente
+    switch (parametro) {
+      case "padrao":
+        return contratoPadrao;
+      case "15dias":
+        return contrato15Dias;
+      case "cliente":
+        return contratoClienteComDominio;
+      default:
+        return contratoPadrao; // Valor padrão caso nenhuma rota corresponda
+    }
+  };
+
   return (
     <div className="flex items-center justify-center h-[100vh] bg-gray-50">
       <SectionArea>
@@ -207,7 +246,7 @@ export default function Contrato() {
           </p>
           <div className="flex flex-col items-center w-full space-y-4 ">
             {/* Caixa de Termos */}
-            {contrato}
+            {renderCaixaTermos()}
             {/* Checkbox de Aceitação */}
             <div className="flex items-center w-full">
               <input

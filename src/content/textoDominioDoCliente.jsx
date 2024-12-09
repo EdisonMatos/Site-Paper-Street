@@ -1,9 +1,9 @@
-const textoContrato15Dias = (
+const textoDominioDoCliente = (
   <div>
     <h1>
       <strong>
-        CONTRATO DE DESENVOLVIMENTO E MANUTENÇÃO DE WEBSITE POR ASSINATURA -
-        CONDIÇÃO ESPECIAL 15 DIAS PARA 1º PAGAMENTO
+        CONTRATO DE DESENVOLVIMENTO E MANUTENÇÃO DE WEBSITE POR ASSINATURA COM
+        DOMÍNIO PRÉ EXISTENTE
       </strong>
     </h1>
 
@@ -61,9 +61,8 @@ const textoContrato15Dias = (
           <strong>Forma:</strong> Assinatura mensal.
         </li>
         <li>
-          <strong>Vencimento:</strong> 1º Pagamento: 15 dias após assinatura do
-          contrato (condição especial) | 2º Pagamento e seguintes: 30 dias após
-          a data de assinatura do contrato (ou data de aceite dos termos)
+          <strong>Vencimento:</strong> Na data de assinatura do contrato (ou
+          data de aceite dos termos).
         </li>
         <li>
           <strong>Layout:</strong> Baseado em modelo previamente apresentado.
@@ -73,7 +72,7 @@ const textoContrato15Dias = (
           substituição de textos e fotos.
         </li>
         <li>
-          <strong>Domínio:</strong> Fornecido o 1º ano pela CONTRATADA.
+          <strong>Domínio:</strong> Fornecido pela CONTRATANTE.
         </li>
       </ul>
     </ul>
@@ -88,29 +87,6 @@ const textoContrato15Dias = (
         mais páginas para a internet (vide quantidade constante na cláusula 1),
         que devem ser acessíveis por meio de um navegador de internet, tanto em
         computadores como em dispositivos móveis como celulares e tablets.
-      </li>
-      <li>
-        <strong>Promoção de domínio grátis pelo 1º ano:</strong> Caso o domínio
-        seja fornecido pela CONTRATADA:
-        <ul>
-          <li>
-            A CONTRATADA terá propriedade do domínio fornecido e concederá o uso
-            para a CONTRATANTE durante o primeiro ano, ou, enquanto o presente
-            contrato estiver vigente caso seja encerrado antes do primeiro ano.
-            Findado o primeiro ano, a posse do domínio será transferida para a
-            CONTRATANTE, que será a responsável pelo custo de registro deste
-            ponto em diante. Caso a CONTRATANTE deseje que a propriedade
-            continue sendo da CONTRATADA após o primeiro ano, ela deverá arcar
-            com os custos do registro que será informado pela CONTRATADA no
-            momento de renovação.
-          </li>
-          <li>
-            <strong>Parágrafo único:</strong> Caso a CONTRATANTE deseje obter a
-            propriedade do domínio no período anterior ao primeiro ano ou em
-            caso de rescisão deste contrato, deve solicitar orçamento à
-            CONTRATADA para tal aquisição.
-          </li>
-        </ul>
       </li>
       <li>
         <strong>Emails Profissionais:</strong> A CONTRATADA criará e
@@ -187,26 +163,26 @@ const textoContrato15Dias = (
     </h2>
     <ul>
       <li>
-        <strong>Primeiro pagamento - Condição especial de 15 dias:</strong> A
-        CONTRATANTE efetuará o primeiro pagamento 15 dias após a assinatura
-        deste contrato (ou data de aceite dos termos) à CONTRATADA, sendo o
-        valor conforme descrito na cláusula 1.
-      </li>
-      <li>
-        <strong>Demais pagamentos:</strong> A CONTRATANTE pagará mensalmente, 30
-        dias a partir da data de assinatura deste contrato (ou data de aceite
-        dos termos) à CONTRATADA o valor descrito na cláusula 1, sendo este
-        valor reajustado anualmente, exclusivamente para correção da inflação,
-        conforme índice IPCA.
+        <strong>Valor dos Serviços:</strong> A CONTRATANTE pagará mensalmente,
+        iniciando a partir da data de assinatura deste contrato (ou data de
+        aceite dos termos) à CONTRATADA o valor descrito na cláusula 1, sendo
+        este valor reajustado anualmente, exclusivamente para correção da
+        inflação, conforme índice IPCA.
+        <br />
+        <strong>Parágrafo único:</strong> Caso o contrato seja assinado fora de
+        horário de expediente comercial (segunda a sexta-feira, das 8h às 18h),
+        a data de pagamento inicial se estenderá para o próximo dia útil. Para o
+        segundo pagamento em diante será considerada a data de assinatura do
+        contrato para pagamento mensal.
       </li>
       <li>
         <strong>Forma de Pagamento:</strong> Na data ou em até 1 dia útil da
         assinatura deste contrato (ou data de aceite dos termos), será enviado
-        para o telefone (via SMS), whatsapp (via mensagem no aplicativo
-        whatsapp) e e-mail do CONTRATANTE, as instruções referente ao pagamento.
+        para o telefone (via SMS), WhatsApp (via mensagem no aplicativo
+        WhatsApp) e e-mail do CONTRATANTE, as instruções referentes ao
+        pagamento.
       </li>
     </ul>
-
     <br />
 
     <h2>
@@ -318,4 +294,4 @@ const textoContrato15Dias = (
     <br />
   </div>
 );
-export default textoContrato15Dias;
+export default textoDominioDoCliente;
