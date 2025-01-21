@@ -32,18 +32,18 @@ const LpContent = {
       title: (
         <h1>
           Advogado(a), tenha um site por apenas
-          <span className="text-ctaCollor"> R$ 89,00 </span>por mês e consiga
-          clientes através da
-          <span className="text-ctaCollor"> internet</span>
+          <span className="text-ctaCollor"> R$ 89,00 </span>por mês e
+          <span className="text-ctaCollor"> conquiste clientes </span> através
+          da internet
         </h1>
       ),
       subtitle: (
         <p>
-          Fale conosco que te explicaremos como usar um site para sair na frente
-          dos seus concorrentes
+          Fale conosco que vamos te ajudar a ter um site para sair na frente dos
+          seus concorrentes.
         </p>
       ),
-      buttonLabel: "Clique para falar com um especialista",
+      buttonLabel: "Clique aqui e tire suas dúvidas agora",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
@@ -52,7 +52,7 @@ const LpContent = {
     sectionHeader: {
       miniTag: "VANTAGENS",
       title:
-        "Benefícios em ter um site de advogado(a) ou para o seu escritório",
+        "Benefícios em ter um site de advogado(a) ou para o seu escritório:",
     },
     cards: {
       card1: {
@@ -76,7 +76,7 @@ const LpContent = {
         ),
         title: "Ser encontrado no Google",
         description:
-          "Hoje, a primeira coisa que um cliente faz quando precisa de algo, é procurar no Google. Sem um site, você é invisível. Não adianta ter um escritório luxuoso, se ele não aparece na maior avenida do mundo (o Google). Porém, com um site bem feito, você aparece nas pesquisas, atrai clientes e cresce bastante. Tudo começa com você sendo encontrado!",
+          "Hoje, a primeira coisa que um cliente faz quando precisa de algo, é procurar no Google. Sem um site, você é invisível. Não adianta ter um escritório luxuoso, se ele não aparece na maior avenida do mundo (o Google). Porém, com um site bem feito, você aparece nas pesquisas, atrai clientes e cresce bastante. Tudo começa com você sendo encontrado.",
       },
       card2: {
         icon: (
@@ -102,7 +102,7 @@ const LpContent = {
         ),
         title: "Fazer campanhas de Tráfego pago com Google Ads, Instagram, etc",
         description:
-          "Com um site, suas campanhas de Google Ads, no Instagram e em outras plataformas dão muito mais retorno. Somos especialistas em desenvolver páginas perfeitas para essas estratégias. Várias pessoas estão fazendo e tendo retornos super expressivos. Chegou a sua vez!",
+          "Com um site, suas campanhas de Google Ads, no Instagram e em outras plataformas dão muito mais retorno. Somos especialistas em desenvolver páginas perfeitas para essas estratégias. Várias pessoas estão fazendo e tendo retornos super expressivos. Chegou a sua vez.",
       },
       card3: {
         icon: (
@@ -223,7 +223,7 @@ const LpContent = {
         focados em simplicidade!
       </p>
     ),
-    buttonLabel: "Clique para falar com um especialista",
+    buttonLabel: "Clique aqui e tire suas dúvidas agora",
     ctaButtonAriaLabel: "Botão para chamada de ação para contato pelo whatsapp",
   },
   whyUs: {
@@ -390,7 +390,7 @@ const LpContent = {
       title: "Advogado(a), não perca mais tempo",
       subtitle: `Clique no botão abaixo e iremos tirar todas as suas dúvidas sem custo algum. Chegou a hora de usar a internet e todo o seu potencial para conquistar mais clientes`,
     },
-    buttonLabel: "Clique para falar com um especialista",
+    buttonLabel: "Clique aqui e tire suas dúvidas agora",
     ctaButtonAriaLabel: "Botão para chamada de ação para contato pelo whatsapp",
   },
   contact: {
