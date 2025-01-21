@@ -13,7 +13,8 @@ export default function LPSitesAdvogados() {
     <div>
       <Helmet>
         <title>
-          Sites para Advogados - Use a internet para captar clientes!
+          Sites e Landing Pages para Advogados e Escritórios de Advocacia - Use
+          a internet para captar clientes!
         </title>
         <meta
           name="description"
