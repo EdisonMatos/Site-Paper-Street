@@ -34,16 +34,13 @@ const LpContent = {
           Advogado(a), tenha um site por apenas
           <span className="text-ctaCollor"> R$ 89,00 </span>por mês e consiga
           clientes através da
-          <span className="text-ctaCollor"> internet</span>!
+          <span className="text-ctaCollor"> internet</span>
         </h1>
       ),
       subtitle: (
         <p>
-          Os advogados que mais estão captando clientes aprenderam como usar a
-          internet!
-          <br />
           Fale conosco que te explicaremos como usar um site para sair na frente
-          dos seus concorrentes!
+          dos seus concorrentes
         </p>
       ),
       buttonLabel: "Clique para falar com um especialista",
@@ -105,7 +102,7 @@ const LpContent = {
         ),
         title: "Fazer campanhas de Tráfego pago com Google Ads, Instagram, etc",
         description:
-          "Com um site, suas campanhas de Google Ads, no Instagram e em outras plataformas ganham um poder incrível! Somos especialistas em desenvolver páginas perfeitas para essas estratégias. Várias pessoas estão fazendo e tendo retornos super expressivos. Chegou a sua vez!",
+          "Com um site, suas campanhas de Google Ads, no Instagram e em outras plataformas dão muito mais retorno. Somos especialistas em desenvolver páginas perfeitas para essas estratégias. Várias pessoas estão fazendo e tendo retornos super expressivos. Chegou a sua vez!",
       },
       card3: {
         icon: (
@@ -127,7 +124,7 @@ const LpContent = {
         ),
         title: "Reduzir seu tempo em atendimento",
         description:
-          "Chega de ficar respondendo as mesmas perguntas de sempre, que apenas tomam seu tempo ou da sua equipe! O site é um funcionário que trabalha para você, 24h por dia. Use seu site para esclarecer coisas básicas pros seus visitantes e foque no que você é bom!",
+          "Chega de ficar respondendo as mesmas perguntas de sempre, que apenas tomam seu tempo ou da sua equipe. O site é um funcionário que trabalha para você, 24h por dia. Use seu site para esclarecer coisas básicas pros seus visitantes e foque no que você é bom!",
       },
       card4: {
         icon: (
@@ -154,6 +151,52 @@ const LpContent = {
         title: "Conquistar confiança do seu público",
         description:
           "Hoje em dia muitas pessoas já não fecham negócio com empresas que não têm sites, pois não passam segurança. As pessoas querem saber um pouco mais sobre a empresa ou o profissional que estão analisando. Empresas com sites passam um ar de organização séria e bem estruturada. Enquanto empresas que não tem, passam uma ideia de algo pequeno, que ainda não está organizado.",
+      },
+      card5: {
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-at-sign"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8" />
+          </svg>
+        ),
+        title: "Usar emails profissionais",
+        description:
+          "Use emails que têm o nome da sua empresa, ao invés de 'Hotmail', ou 'Gmail', e divida eles em setores como as grandes organizações fazem. Ex: contato@nomedoseusite.com.br, financeiro@nomedoseusite.com.br, contratos@nomedoseusite.com.br",
+      },
+      card6: {
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-hourglass"
+          >
+            <path d="M5 22h14" />
+            <path d="M5 2h14" />
+            <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" />
+            <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" />
+          </svg>
+        ),
+        title: "Alcance muito mais clientes e feche mais contratos",
+        description:
+          "Na internet o seu alcance é infinito. Um site permite você chegar até clientes que jamais chegariam até você nos modos convencionais, e tudo isso por um custo baixíssimo.",
       },
     },
   },
@@ -226,18 +269,15 @@ const LpContent = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-handshake"
+            class="lucide lucide-thumbs-up"
           >
-            <path d="m11 17 2 2a1 1 0 1 0 3-3" />
-            <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
-            <path d="m21 3 1 11h-2" />
-            <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
-            <path d="M3 4h8" />
+            <path d="M7 10v12" />
+            <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z" />
           </svg>
         ),
-        title: "Nossos preços são acessíveis até para quem está começando",
+        title: "Não se preocupe com nada",
         description:
-          "Nosso objetivo é que você atenda o seu objetivo gastando o mínimo possível.",
+          "Se você têm pesquisado sobre sites, já deve ter ouvido sobre taxas de domínio, hospedagem, manutenção, etc. Porém, tendo seu site conosco, esqueça tudo isso. Nós arcamos com todos os custos e toda burocracia. Foque no seu trabalho e deixa que cuidamos de todo o resto.",
       },
       card3: {
         icon: (
@@ -266,7 +306,7 @@ const LpContent = {
         ),
         title: "Nós pensamos em tudo",
         description:
-          "Nossos sites rodam em todos os celulares, tablets e computadores! Além de serem projetados para serem acessados por pessoas com deficiências visuais ou de idade avançada.",
+          "Nossos sites rodam em todos os celulares, tablets e computadores. Além de serem projetados para serem acessados por pessoas com deficiências visuais ou de idade avançada. Nós estudamos a fundo pra escolher exatamente a ordem que as informações aparecem, ou lugar para onde o visitante deve olhar, ou onde ele deve clicar, etc. Usamos a ciência em tudo!",
       },
       card4: {
         icon: (
@@ -280,17 +320,66 @@ const LpContent = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-hourglass"
+            class="lucide lucide-history"
           >
-            <path d="M5 22h14" />
-            <path d="M5 2h14" />
-            <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" />
-            <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" />
+            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+            <path d="M3 3v5h5" />
+            <path d="M12 7v5l4 2" />
           </svg>
         ),
-        title: "Entregamos em poucos dias",
+        title: "Entregamos em poucos dias, sem complicações",
         description:
           "Nosso foco sempre foi simplificar as coisas, então nosso processo funciona de forma que você consiga ter seu site já no ar em pouquíssimos dias, sem dor de cabeça alguma. Deixe o trabalho todo conosco.",
+      },
+      card5: {
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-scale"
+          >
+            <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+            <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+            <path d="M7 21h10" />
+            <path d="M12 3v18" />
+            <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
+          </svg>
+        ),
+        title: "Somos especialistas em sites para advogados",
+        description:
+          "Vários advogados e escritórios já aumentaram seus faturamentos através dos sites que criamos, e isso porque a experiência que temos alinhado com a técnica de toda nossa equipe, traz um resultado inquestionável. Uma vez que conhecemos bem as áreas do direito, conseguimos tornar a comunicação com o cliente muito mais simples e objetiva.",
+      },
+      card6: {
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-handshake"
+          >
+            <path d="m11 17 2 2a1 1 0 1 0 3-3" />
+            <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
+            <path d="m21 3 1 11h-2" />
+            <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
+            <path d="M3 4h8" />
+          </svg>
+        ),
+        title: "Temos toda uma equipe pra te atender",
+        description:
+          "Durante o processo, você lidará com profissionais diferentes, de áreas diferentes, garantindo que a cada momento você vai ter o que há de melhor em técnica pra que seu site atinja todos os objetivos que você precisa. Não tem textos? Nós ajudamos a criar. Não tem fotos? Nós providenciamos gratuitamente.",
       },
     },
   },
@@ -298,8 +387,8 @@ const LpContent = {
     bgImg: bgImg,
     sectionHeader: {
       miniTag: "FAÇA SEU SITE CONOSCO",
-      title: "Advogado(a), não perca mais tempo!",
-      subtitle: `Clique no botão abaixo e iremos tirar todas as suas dúvidas sem custo algum. Chegou a hora de usar a internet e todo o seu potencial para conquistar mais clientes!`,
+      title: "Advogado(a), não perca mais tempo",
+      subtitle: `Clique no botão abaixo e iremos tirar todas as suas dúvidas sem custo algum. Chegou a hora de usar a internet e todo o seu potencial para conquistar mais clientes`,
     },
     buttonLabel: "Clique para falar com um especialista",
     ctaButtonAriaLabel: "Botão para chamada de ação para contato pelo whatsapp",

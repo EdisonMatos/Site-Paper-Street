@@ -31,6 +31,17 @@ export default function WhyUs({}) {
               title={LpContent.whyUs.cards.card3.title}
               description={LpContent.whyUs.cards.card3.description}
             />
+
+            <FeatureCardLP
+              icon={LpContent.whyUs.cards.card5.icon}
+              title={LpContent.whyUs.cards.card5.title}
+              description={LpContent.whyUs.cards.card5.description}
+            />
+            <FeatureCardLP
+              icon={LpContent.whyUs.cards.card6.icon}
+              title={LpContent.whyUs.cards.card6.title}
+              description={LpContent.whyUs.cards.card6.description}
+            />
             <FeatureCardLP
               icon={LpContent.whyUs.cards.card4.icon}
               title={LpContent.whyUs.cards.card4.title}
