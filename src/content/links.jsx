@@ -4,7 +4,7 @@ const links = {
     "+5511990260977?text=Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
   ctaLink: "#",
   socialMedia: {
-    instagram: "https://www.instagram.com/paperstreetsoftwares/",
+    instagram: "https://www.instagram.com/paperstreet_sites/",
     ariaLabel: "Link para o perfil do Instagram da Paper Street Softwares",
     facebook:
       "https://www.facebook.com/people/Paper-Street-Softwares/61556114646068/",

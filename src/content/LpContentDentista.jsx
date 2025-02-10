@@ -13,7 +13,7 @@ const infos = {
   },
   email: "contato", // Email desejado pelo cliente
   domain: "paperstreet.com.br", // Sem "www"
-  instagramProfile: "paperstreetsoftwares", // Sem o @
+  instagramProfile: "paperstreet_sites", // Sem o @
   whatsappDefaultMessage:
     "Olá! Vim através da sua página sobre sites para dentistas e gostaria de tirar umas dúvidas.",
 };

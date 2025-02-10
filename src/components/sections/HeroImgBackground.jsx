@@ -76,7 +76,7 @@ export default function Hero() {
                             className=" bg-yellow-400 hover:bg-white text-black hover:text-bg-yellow-400 hover:border-bg-yellow-400 hover:border-solid border-[1px] border-yellow-400 hover:border-white"
                             aria-label={content.texts.hero.ctaButtonAriaLabel}
                             label={content.texts.hero.ctaButtonInstagram}
-                            buttonLink="https://ig.me/m/paperstreetsoftwares"
+                            buttonLink="https://ig.me/m/paperstreet_sites"
                             icon={
                               <svg
                                 aria-label="Botão de Instagram"
