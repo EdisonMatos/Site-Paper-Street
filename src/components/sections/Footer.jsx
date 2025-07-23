@@ -7,6 +7,10 @@ import content from "../../content/content";
 import IconButton from "../interactives/IconButton";
 
 const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
+const whatsappContactLinkComercial = `https://wa.me/` + `${links.ctaWhatsapp}`;
+const whatsappContactLinkSuporte = `https://wa.me/` + `${links.ctaWhatsapp}`;
+
+
 
 function Footer() {
   return (
@@ -33,7 +37,39 @@ function Footer() {
                 target="_blank"
                 className="hover:underline"
               >
-                {infos.phone}
+                {infos.phone} - Financeiro
+              </a>
+            </div>
+
+            <div className="flex full gap-x-[8px] items-center opacity-70">
+              <Phone
+                size={24}
+                aria-label="Ícone de Telefone"
+                strokeWidth={1}
+                className="text-white"
+              />
+              <a
+                href={whatsappContactLinkComercial}
+                target="_blank"
+                className="hover:underline"
+              >
+                {infos.phoneComercial} - Comercial
+              </a>
+            </div>
+
+            <div className="flex full gap-x-[8px] items-center opacity-70">
+              <Phone
+                size={24}
+                aria-label="Ícone de Telefone"
+                strokeWidth={1}
+                className="text-white"
+              />
+              <a
+                href={whatsappContactLinkSuporte}
+                target="_blank"
+                className="hover:underline"
+              >
+                {infos.phoneSuporte} - Suporte
               </a>
             </div>
             <div className="flex full gap-x-[8px] items-center opacity-70">

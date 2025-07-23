@@ -3,6 +3,12 @@ const links = {
   ctaWhatsapp:
     "+5511990260977?text=Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
   ctaLink: "#",
+   comercial:
+    "+5511988217850?text=Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
+  ctaLink: "#",
+   suporte:
+    "+5511990260977?text=Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
+  ctaLink: "#",
   socialMedia: {
     instagram: "https://www.instagram.com/paperstreet_sites/",
     ariaLabel: "Link para o perfil do Instagram da Paper Street Softwares",
