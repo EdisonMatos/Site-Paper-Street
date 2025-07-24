@@ -10,8 +10,6 @@ const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
 const whatsappContactLinkComercial = `https://wa.me/` + `${links.ctaWhatsapp}`;
 const whatsappContactLinkSuporte = `https://wa.me/` + `${links.ctaWhatsapp}`;
 
-
-
 function Footer() {
   return (
     <footer className="bg-secondary full gap-y-[42px]  text-white font-secondFont text-left text-paragraph4 flex flex-col py-[26px] phone3:py-[48px] justify-between items-center">
