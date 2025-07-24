@@ -7,7 +7,7 @@ export default function TeamMember(props) {
       <img
         alt={alt}
         src={img}
-        className="w-[215px] h-[215px] desktop1:w-full desktop1:h-full mb-[24px] bg-black rounded-full"
+        className="w-[215px] h-[215px] desktop1:w-[200px] desktop1:h-[200px] mb-[24px] bg-black object-cover rounded-full"
       ></img>
       <h1 className="mb-[8px] text-title1 font-bold">{name}</h1>
       <div className="desktop2:h-[48px] desktop2:mb-[20px] flex justify-center">
