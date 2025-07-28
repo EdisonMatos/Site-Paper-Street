@@ -254,7 +254,7 @@ const content = {
             alt: "Edison Matos",
           },
           name: "Edison Matos",
-          role: "CEO & Diretor de Desenvolvimento",
+          role: "CEO & Diretor Geral",
           socialMedia: {
             icon1: (
               <svg
@@ -324,7 +324,7 @@ const content = {
             alt: "Gabriel Adans",
           },
           name: "Gabriel Adans",
-          role: "Marketing Outsourcing",
+          role: "Suporte ao cliente",
           socialMedia: {
             icon1: (
               <svg
