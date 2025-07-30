@@ -8,8 +8,7 @@ import links from "../../content/links";
 import content from "../../content/content";
 import SectionShapeDiv from "../../components/sectionElements/SectionShapeDiv";
 
-
-const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
+const whatsappContactLink = `https://wa.me/` + `${links.comercial}`;
 
 export default function Faq() {
   return (

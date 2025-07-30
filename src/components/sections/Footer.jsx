@@ -7,8 +7,8 @@ import content from "../../content/content";
 import IconButton from "../interactives/IconButton";
 
 const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
-const whatsappContactLinkComercial = `https://wa.me/` + `${links.ctaWhatsapp}`;
-const whatsappContactLinkSuporte = `https://wa.me/` + `${links.ctaWhatsapp}`;
+const whatsappContactLinkComercial = `https://wa.me/` + `${links.comercial}`;
+const whatsappContactLinkSuporte = `https://wa.me/` + `${links.suporte}`;
 
 function Footer() {
   return (
