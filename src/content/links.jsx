@@ -1,13 +1,13 @@
 const links = {
-  whatsapp: "https://wa.me/+5511990260977?text=",
+  whatsapp: "https://wa.me/+5511988217850?text=",
   ctaWhatsapp:
     "+5511990260977?text=Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
   ctaLink: "#",
-   comercial:
+  comercial:
     "+5511988217850?text=Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
   ctaLink: "#",
-   suporte:
-    "+5511990260977?text=Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
+  suporte:
+    "+5511914043088?text=Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
   ctaLink: "#",
   socialMedia: {
     instagram: "https://www.instagram.com/paperstreet_sites/",

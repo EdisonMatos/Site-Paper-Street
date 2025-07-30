@@ -8,7 +8,7 @@ import ButtonCtaNavbar from "../interactives/ButtonCtaNavbar";
 import content from "../../content/content";
 import links from "../../content/links";
 
-const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
+const whatsappContactLinkComercial = `https://wa.me/` + `${links.comercial}`;
 
 export default function NavbarSection() {
   const [scrolling, setScrolling] = useState(false);
@@ -121,7 +121,7 @@ export default function NavbarSection() {
             >
               <ButtonCtaNavbar
                 label={content.texts.navbar.ctaButtonTextResponsive}
-                link={whatsappContactLink}
+                link={whatsappContactLinkComercial}
                 icon={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

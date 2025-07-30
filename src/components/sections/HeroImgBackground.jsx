@@ -12,7 +12,7 @@ import SectionShapeDiv from "../sectionElements/SectionShapeDiv";
 
 // import ButtonCTAWithIcon from "../interactives/ButtonCTAWithIcon";
 
-const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
+const whatsappContactLink = `https://wa.me/` + `${links.comercial}`;
 
 export default function Hero() {
   return (

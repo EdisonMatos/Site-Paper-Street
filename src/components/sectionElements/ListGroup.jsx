@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import ButtonCtaNavbar from "../interactives/ButtonCtaNavbar";
 import IconButton from "../interactives/IconButton";
 
-const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
+const whatsappContactLink = `https://wa.me/` + `${links.comercial}`;
 
 export default function ListGroup() {
   const [scrolling, setScrolling] = useState(false);

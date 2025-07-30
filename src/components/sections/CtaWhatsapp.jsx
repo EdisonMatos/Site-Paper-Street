@@ -7,7 +7,7 @@ import ButtonCTAWithIcon from "../interactives/ButtonCTAWithIcon";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionWrapper from "../sectionElements/SectionWrapper";
 
-const whatsappContactLink = `https://wa.me/` + `${links.ctaWhatsapp}`;
+const whatsappContactLink = `https://wa.me/` + `${links.comercial}`;
 
 export default function CtaWhatsapp() {
   return (
