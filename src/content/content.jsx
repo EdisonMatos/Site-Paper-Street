@@ -454,9 +454,9 @@ const content = {
         member4: {
           img: {
             img: teamMemberImg4,
-            alt: "Uillian Ferreira",
+            alt: "Esthéfane Sousa",
           },
-          name: "Uillian Ferreira",
+          name: "Esthéfane Sousa",
           role: "Comercial e Vendas",
           socialMedia: {
             icon1: (
@@ -477,7 +477,7 @@ const content = {
                 <circle cx="4" cy="4" r="2" />
               </svg>
             ),
-            link1: "https://www.linkedin.com/in/uillian-ferreira-720829191/",
+            link1: "http://www.linkedin.com/in/esthefane-sousa",
             arialabel1: "Link para LinkedIn",
             icon2: (
               <svg
@@ -497,7 +497,7 @@ const content = {
                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
               </svg>
             ),
-            link2: "https://www.instagram.com/uillferreira_/",
+            link2: "https://www.instagram.com/esthegloria/",
             arialabel2: "Link para Instagram",
             icon3: (
               <svg
