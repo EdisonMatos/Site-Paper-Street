@@ -212,4 +212,3 @@ function CartaoSocio() {
 
 export default CartaoSocio;
 
-// comentario
