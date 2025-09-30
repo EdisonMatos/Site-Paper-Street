@@ -39,6 +39,8 @@ import imgTestimonial10 from "../assets/imgs/testimonialsHero/imgTestimonial10.w
 import imgTestimonial11 from "../assets/imgs/testimonialsHero/imgTestimonial11.webp";
 import imgTestimonial12 from "../assets/imgs/testimonialsHero/imgTestimonial12.webp";
 
+import Socio1 from "../assets/imgs/team/Socios/socio1.webp";
+
 const content = {
   texts: {
     navbar: {
@@ -832,6 +834,58 @@ const content = {
         img12: {
           img: imgTestimonial12,
           alt: "Imagem de feedback",
+        },
+      },
+    },
+    socios: {
+      socio1: {
+        image: Socio1,
+        nome: "Edison",
+        rota: "Edison",
+        sobrenome: "Matos",
+        função: "Paper Street | CEO & Diretor Geral",
+        telefone: "11988217850",
+        whatsapp: "6192781077",
+        email: "edison@paperstreet.com.br",
+        social: {
+          instagram: "",
+          facebook: "",
+          linkedin: "edison-matoss/",
+          x: "",
+          tiktok: "",
+          whatsappSocial: "11988217850",
+          emailSocial: "edisonmatos6@gmail.com",
+          github: "edisonmatos.github.io/",
+        },
+      },
+      socio2: {
+        nome: "Biell",
+        rota: "Biell",
+        sobrenome: "Souza",
+        telefone: "00000000000",
+        whatsapp: "00000000000",
+        email: "",
+        social: {
+          instagram: "",
+          facebook: "",
+          linkedin: "",
+          x: "",
+          tiktok: "",
+        },
+      },
+      socio4: {
+        nome: "Cleiton",
+        rota: "Cleiton",
+        sobrenome: "",
+        telefone: "66666666666",
+        whatsapp: "66666666666",
+        email: "",
+        social: {
+          instagram: "",
+          facebook: "",
+          linkedin: "",
+          x: "",
+          tiktok: "",
         },
       },
     },
