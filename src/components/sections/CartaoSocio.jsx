@@ -119,11 +119,31 @@ function CartaoSocio() {
         className={`pt-6 w-full tablet1::max-w-[320px] m-auto font-mainFont ${textColor}`}
       >
         {/* Botões principais */}
-        <div className="flex justify-center gap-4">
+        <div className="flex justify-center gap-4 bg-quinary p-4 w-full phone3:max-w-[425px] m-auto">
           <SalvarContatoButton socio={socio} />
           <Button
             onClick={() => setVisible(true)}
             className="rounded-[3px] p-1"
+            icon={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-share2-icon lucide-share-2"
+              >
+                <circle cx="18" cy="5" r="3" />
+                <circle cx="6" cy="12" r="3" />
+                <circle cx="18" cy="19" r="3" />
+                <line x1="8.59" x2="15.42" y1="13.51" y2="17.49" />
+                <line x1="15.41" x2="8.59" y1="6.51" y2="10.49" />
+              </svg>
+            }
             label="Compartilhar"
             size="small"
           ></Button>
@@ -139,7 +159,7 @@ function CartaoSocio() {
             />
           </div>
 
-          <div className="pt-6 bg-quinary px-6 rounded-md">
+          <div className="pt-6 bg-quinary px-6 rounded-md w-full phone3:max-w-[425px] m-auto">
             {/* Imagem principal */}
             <div className="w-full tablet1:max-w-[248px] m-auto">
               <img src={socio.image} alt="" className="rounded-md" />
@@ -152,7 +172,7 @@ function CartaoSocio() {
 
             {/* Perfis profissionais */}
             <div className={`w-full tablet1:w-[205px] m-auto ${textColor}`}>
-              <h1 className=" font-secondFont font-bold text-center pb-8">
+              <h1 className=" font-secondFont font-semibold text-center pb-4">
                 Infos Profissionais:
               </h1>
               <h3 className="text-center font-secondFont text-paragraph5 mb-4">
@@ -176,7 +196,7 @@ function CartaoSocio() {
             <div
               className={`w-full tablet1:w-[205px] m-auto py-[32px] ${textColor}`}
             >
-              <h1 className=" text-[15px] font-bold text-center pb-[16px]">
+              <h1 className=" text-[16px] font-secondFont text-center pb-[16px]">
                 Infos Pessoais:
               </h1>
               <div className="flex flex-wrap gap-2 h-[48px]w-full tablet1:w-[205px] justify-center">

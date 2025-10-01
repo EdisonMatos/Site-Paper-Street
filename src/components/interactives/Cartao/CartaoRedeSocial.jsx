@@ -242,8 +242,41 @@ function CartaoRedeSocial({ tipo = "contato", socio }) {
     ([_, value]) => value && value.trim() !== ""
   );
 
+  function formatLabel(key, value) {
+    if (!value) return "";
+
+    switch (key) {
+      case "whatsapp":
+      case "whatsappSocial":
+      case "telefone": {
+        // Pega só números
+        const digits = value.replace(/\D/g, "");
+        // Formata se tiver 11 dígitos (Brasil)
+        if (digits.length === 11) {
+          return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(
+            7
+          )}`;
+        }
+        return value;
+      }
+      case "email":
+      case "emailSocial":
+        return value.toLowerCase();
+      case "instagram":
+        return value.startsWith("@") ? value : `@${value}`;
+      case "site":
+      case "github":
+      case "githubSocial":
+      case "linkedin":
+      case "facebook":
+        return value.replace(/^https?:\/\//, "").replace(/\/$/, "");
+      default:
+        return value;
+    }
+  }
+
   return (
-    <div className="flex flex-wrap gap-2 justify-center">
+    <div className="flex flex-col gap-2 justify-center">
       {linksToRender.map(([key, value]) => {
         let link = value;
         switch (key) {
@@ -291,7 +324,7 @@ function CartaoRedeSocial({ tipo = "contato", socio }) {
               aria-label={`Link para ${labels[key] || key}`}
             >
               <IconButtonCartao
-                label={labels[key] || key}
+                label={formatLabel(key, value)}
                 ariaLabel={`Botão para ${key}`}
                 icon={svg}
               />

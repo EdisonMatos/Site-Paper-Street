@@ -843,9 +843,13 @@ const content = {
         nome: "Edison",
         rota: "Edison",
         sobrenome: "Matos",
-        função: "Paper Street | CEO & Diretor Geral",
+        função: (
+          <p>
+            Paper Street <br /> CEO & Diretor Geral
+          </p>
+        ),
         telefone: "",
-        whatsapp: "6192781077",
+        whatsapp: "61992781077",
         email: "edison@paperstreet.com.br",
         github: "edisonmatos.github.io/",
         description:

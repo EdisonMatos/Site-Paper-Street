@@ -4,7 +4,7 @@ function IconButtonCartao({ icon, label, ariaLabel }) {
   return (
     <button
       aria-label={ariaLabel}
-      className="flex gap-2 w-[95px] items-center justify-center p-2 rounded-md  bg-primary hover:bg-white text-white hover:text-primary hover:border-primary hover:border-solid border-[1px] border-primary "
+      className="flex gap-2 w-full items-center justify-center p-2 rounded-md  bg-primary hover:bg-white text-white hover:text-primary hover:border-primary hover:border-solid border-[1px] border-primary "
     >
       {icon}
       {label && (
