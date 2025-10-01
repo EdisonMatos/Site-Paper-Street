@@ -28,7 +28,7 @@ export default function Team() {
 
       <SectionWrapper className="flex justify-center">
         <MotionDivDownToUp>
-          <div className="flex flex-col gap-[50px] tablet1:flex-row tablet1:flex-wrap tablet1:justify-between">
+          <div className="flex flex-col gap-[50px] tablet1:flex-row tablet1:flex-wrap tablet1:justify-evenly">
             <TeamMember
               img={content.texts.team.members.member1.img.img}
               alt={content.texts.team.members.member1.img.alt}
