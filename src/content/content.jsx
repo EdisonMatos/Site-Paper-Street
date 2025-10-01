@@ -844,18 +844,21 @@ const content = {
         rota: "Edison",
         sobrenome: "Matos",
         função: "Paper Street | CEO & Diretor Geral",
-        telefone: "11988217850",
+        telefone: "",
         whatsapp: "6192781077",
         email: "edison@paperstreet.com.br",
+        github: "edisonmatos.github.io/",
+        description:
+          "Executo a Direção Geral e Gestão Estratégica do negócio, com foco em processos que minimizam retrabalho e resultam numa maior percepção de valor por parte dos nossos clientes, encantando-os durante todo o período que lidam com a gente.",
         social: {
           instagram: "",
           facebook: "",
           linkedin: "edison-matoss/",
           x: "",
           tiktok: "",
+          githubSocial: "github.com/edisonmatos",
           whatsappSocial: "11988217850",
           emailSocial: "edisonmatos6@gmail.com",
-          github: "edisonmatos.github.io/",
         },
       },
       socio2: {

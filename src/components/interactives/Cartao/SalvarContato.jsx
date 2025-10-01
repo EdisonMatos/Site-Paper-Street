@@ -40,7 +40,7 @@ export default function SalvarContatoButton({ socio }) {
 
   return (
     <Button
-      className=" rounded-[3px] p-1"
+      className=" rounded-[3px] p-1 bg-yellow-400"
       onClick={handleSalvarContato}
       label=" Salvar Contato"
       size="small"

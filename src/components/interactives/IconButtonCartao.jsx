@@ -1,16 +1,17 @@
-export default function IconButtonCartao(props) {
-  const { icon, label, ariaLabel, className } = props;
+import React from "react";
 
+function IconButtonCartao({ icon, label, ariaLabel }) {
   return (
     <button
-      className={`${className} flex flex-row items-center justify-center transition bg-primary rounded-[4px] w-[36px] h-[36px]`}
       aria-label={ariaLabel}
+      className="flex gap-2 w-[95px] items-center justify-center p-2 rounded-md  bg-primary hover:bg-white text-white hover:text-primary hover:border-primary hover:border-solid border-[1px] border-primary "
     >
-      <div className="flex items-center text-center gap-[10px]">
-        <div className="flex flex-col text-iconButtons justify-end text-white">
-          {icon}
-        </div>
-      </div>
+      {icon}
+      {label && (
+        <span className="text-paragraph1 mt-1 text-center">{label}</span>
+      )}
     </button>
   );
 }
+
+export default IconButtonCartao;

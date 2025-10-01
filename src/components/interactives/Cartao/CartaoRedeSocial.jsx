@@ -54,8 +54,8 @@ const icons = {
   instagram: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="20"
+      width="16"
+      height="16"
       viewBox="0 0 24 24"
       fill="transparent"
       stroke="currentColor"
@@ -71,8 +71,8 @@ const icons = {
   facebook: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="20"
+      width="16"
+      height="16"
       viewBox="0 0 24 24"
       fill="transparent"
       stroke="currentColor"
@@ -86,8 +86,8 @@ const icons = {
   tiktok: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="20"
+      width="16"
+      height="16"
       viewBox="0 0 30 30"
       fill="black"
     >
@@ -95,15 +95,15 @@ const icons = {
     </svg>
   ),
   x: (
-    <svg viewBox="0 0 21.573 19.5" width="20" height="20" fill="black">
+    <svg viewBox="0 0 21.573 19.5" width="16" height="16" fill="black">
       <path d="m 16.998462,0 h 3.308 l -7.227,8.26 8.502,11.24 h -6.657 l -5.2139994,-6.817 -5.966,6.817 H 0.43446256 L 8.1644626,10.665 0.00846256,0 H 6.8344626 l 4.7129994,6.231 z m -1.161,17.52 h 1.833 L 5.8384626,1.876 h -1.967 z" />
     </svg>
   ),
   linkedin: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="20"
+      width="16"
+      height="16"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -118,6 +118,23 @@ const icons = {
     </svg>
   ),
   github: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="lucide lucide-github-icon lucide-github"
+    >
+      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+      <path d="M9 18c-4.51 2-5-2-7-2" />
+    </svg>
+  ),
+  githubSocial: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="16"
@@ -185,6 +202,7 @@ function CartaoRedeSocial({ tipo = "contato", socio }) {
   if (!socio) return null;
 
   const contatoLinks = {
+    github: socio.github || null,
     whatsapp: socio.whatsapp || null,
     telefone: socio.telefone || null,
     site: socio.site || null,
@@ -197,9 +215,25 @@ function CartaoRedeSocial({ tipo = "contato", socio }) {
     tiktok: socio.social?.tiktok || null,
     x: socio.social?.x || null,
     linkedin: socio.social?.linkedin || null,
-    github: socio.social?.github || null,
+    githubSocial: socio.social?.githubSocial || null,
     whatsappSocial: socio.social?.whatsappSocial || null,
     emailSocial: socio.social?.emailSocial || null,
+  };
+
+  const labels = {
+    github: "GitHub",
+    whatsapp: "WhatsApp",
+    telefone: "Telefone",
+    site: "Site",
+    email: "E-mail",
+    instagram: "Instagram",
+    facebook: "Facebook",
+    tiktok: "TikTok",
+    x: "X",
+    linkedin: "LinkedIn",
+    githubSocial: "GitHub",
+    whatsappSocial: "WhatsApp",
+    emailSocial: "E-mail",
   };
 
   const links = tipo === "contato" ? contatoLinks : redesLinks;
@@ -209,7 +243,7 @@ function CartaoRedeSocial({ tipo = "contato", socio }) {
   );
 
   return (
-    <div className="flex gap-2">
+    <div className="flex flex-wrap gap-2 justify-center">
       {linksToRender.map(([key, value]) => {
         let link = value;
         switch (key) {
@@ -234,6 +268,9 @@ function CartaoRedeSocial({ tipo = "contato", socio }) {
           case "github":
             link = `https://${value}`;
             break;
+          case "githubSocial":
+            link = `https://${value}`;
+            break;
           case "email":
             link = `mailto:${value}`;
             break;
@@ -251,9 +288,13 @@ function CartaoRedeSocial({ tipo = "contato", socio }) {
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`Link para ${key}`}
+              aria-label={`Link para ${labels[key] || key}`}
             >
-              <IconButtonCartao ariaLabel={`Botão para ${key}`} icon={svg} />
+              <IconButtonCartao
+                label={labels[key] || key}
+                ariaLabel={`Botão para ${key}`}
+                icon={svg}
+              />
             </a>
           </MotionDivDownToUp>
         );
