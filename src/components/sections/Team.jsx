@@ -28,7 +28,7 @@ export default function Team() {
 
       <SectionWrapper className="flex justify-center">
         <MotionDivDownToUp>
-          <div className="flex flex-col gap-[20px] tablet1:flex-row tablet1:flex-wrap tablet1:justify-between">
+          <div className="flex flex-col gap-[50px] tablet1:flex-row tablet1:flex-wrap tablet1:justify-between">
             <TeamMember
               img={content.texts.team.members.member1.img.img}
               alt={content.texts.team.members.member1.img.alt}
@@ -43,7 +43,7 @@ export default function Team() {
               arialabel1={
                 content.texts.team.members.member1.socialMedia.arialabel1
               }
-              arialabel2={
+              arialabel2={  
                 content.texts.team.members.member1.socialMedia.arialabel2
               }
               arialabel3={
@@ -112,6 +112,30 @@ export default function Team() {
               // arialabel3={
               //   content.texts.team.members.member4.socialMedia.arialabel3
               // }
+            />
+
+            <TeamMember
+              img={content.texts.team.members.member5.img.img}
+              alt={content.texts.team.members.member5.img.alt}
+              name={content.texts.team.members.member5.name}
+              role={content.texts.team.members.member5.role}
+              icon1={content.texts.team.members.member5.socialMedia.icon1}
+              link1={content.texts.team.members.member5.socialMedia.link1}
+              icon2={content.texts.team.members.member5.socialMedia.icon2}
+              link2={content.texts.team.members.member5.socialMedia.link2}
+           
+            />
+
+            <TeamMember
+              img={content.texts.team.members.member6.img.img}
+              alt={content.texts.team.members.member6.img.alt}
+              name={content.texts.team.members.member6.name}
+              role={content.texts.team.members.member6.role}
+              icon1={content.texts.team.members.member6.socialMedia.icon1}
+              link1={content.texts.team.members.member6.socialMedia.link1}
+              icon2={content.texts.team.members.member6.socialMedia.icon2}
+              link2={content.texts.team.members.member6.socialMedia.link2}
+            
             />
           </div>
         </MotionDivDownToUp>

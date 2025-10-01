@@ -19,6 +19,8 @@ import teamMemberImg1 from "../assets/imgs/team/team1.webp";
 import teamMemberImg2 from "../assets/imgs/team/team2.webp";
 import teamMemberImg3 from "../assets/imgs/team/team3.webp";
 import teamMemberImg4 from "../assets/imgs/team/team4.webp";
+import teamMemberImg5 from "../assets/imgs/team/team5.webp";
+import teamMemberImg6 from "../assets/imgs/team/team6.webp";
 import MotionDivDownToUp from "../components/animation/MotionDivDownToUp";
 import TypewriterComponent from "../components/animation/TypeWriter";
 import ButtonWithIconNavbar from "../components/interactives/ButtonWithIconNavbar";
@@ -36,6 +38,8 @@ import imgTestimonial9 from "../assets/imgs/testimonialsHero/imgTestimonial9.web
 import imgTestimonial10 from "../assets/imgs/testimonialsHero/imgTestimonial10.webp";
 import imgTestimonial11 from "../assets/imgs/testimonialsHero/imgTestimonial11.webp";
 import imgTestimonial12 from "../assets/imgs/testimonialsHero/imgTestimonial12.webp";
+
+import Socio1 from "../assets/imgs/team/Socios/socio1.webp";
 
 const content = {
   texts: {
@@ -515,6 +519,134 @@ const content = {
             arialabel3: "Link para WhatsApp",
           },
         },
+        member5: {
+          img: {
+            img: teamMemberImg6,
+            alt: "Mel Musumeci",
+          },
+          name: "Mel Musumeci",
+          role: "Marketing",
+          socialMedia: {
+            icon1: (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-linkedin"
+              >
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            ),
+            link1: "http://www.linkedin.com/in/melmusumeci",
+            arialabel1: "Link para LinkedIn",
+            icon2: (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-instagram"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+            ),
+            link2: "https://www.instagram.com/melmusumeci/",
+            arialabel2: "Link para Instagram",
+            icon3: (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="18"
+                fill="#000000"
+                className=" bi bi-whatsapp"
+                viewBox="0 0 16 16"
+              >
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+              </svg>
+            ),
+            link3: "https://wa.me/+553484339190",
+            arialabel3: "Link para WhatsApp",
+          },
+        },
+        member6: {
+          img: {
+            img: teamMemberImg5,
+            alt: "Uillian Ferreira",
+          },
+          name: "Uillian Ferreira",
+          role: "Recursos Humanos",
+          socialMedia: {
+            icon1: (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-linkedin"
+              >
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            ),
+            link1: "https://www.linkedin.com/in/uillian-ferreira-720829191",
+            arialabel1: "Link para LinkedIn",
+            icon2: (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-instagram"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+            ),
+            link2: "https://www.instagram.com/uillferreira_",
+            arialabel2: "Link para Instagram",
+            icon3: (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="18"
+                fill="#000000"
+                className=" bi bi-whatsapp"
+                viewBox="0 0 16 16"
+              >
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+              </svg>
+            ),
+            link3: "https://wa.me/+553484339190",
+            arialabel3: "Link para WhatsApp",
+          },
+        },
       },
     },
     cta: {
@@ -702,6 +834,61 @@ const content = {
         img12: {
           img: imgTestimonial12,
           alt: "Imagem de feedback",
+        },
+      },
+    },
+    socios: {
+      socio1: {
+        image: Socio1,
+        nome: "Edison",
+        rota: "Edison",
+        sobrenome: "Matos",
+        função: "Paper Street | CEO & Diretor Geral",
+        telefone: "",
+        whatsapp: "6192781077",
+        email: "edison@paperstreet.com.br",
+        github: "edisonmatos.github.io/",
+        description:
+          "Executo a Direção Geral e Gestão Estratégica do negócio, com foco em processos que minimizam retrabalho e resultam numa maior percepção de valor por parte dos nossos clientes, encantando-os durante todo o período que lidam com a gente.",
+        social: {
+          instagram: "",
+          facebook: "",
+          linkedin: "edison-matoss/",
+          x: "",
+          tiktok: "",
+          githubSocial: "github.com/edisonmatos",
+          whatsappSocial: "11988217850",
+          emailSocial: "edisonmatos6@gmail.com",
+        },
+      },
+      socio2: {
+        nome: "Biell",
+        rota: "Biell",
+        sobrenome: "Souza",
+        telefone: "00000000000",
+        whatsapp: "00000000000",
+        email: "",
+        social: {
+          instagram: "",
+          facebook: "",
+          linkedin: "",
+          x: "",
+          tiktok: "",
+        },
+      },
+      socio4: {
+        nome: "Cleiton",
+        rota: "Cleiton",
+        sobrenome: "",
+        telefone: "66666666666",
+        whatsapp: "66666666666",
+        email: "",
+        social: {
+          instagram: "",
+          facebook: "",
+          linkedin: "",
+          x: "",
+          tiktok: "",
         },
       },
     },
