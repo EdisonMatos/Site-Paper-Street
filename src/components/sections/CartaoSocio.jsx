@@ -186,7 +186,7 @@ function CartaoSocio() {
                 </div>
 
                 {/* Nome do Sócio */}
-                <div className="w-full tablet1:w-[200px] m-auto text-center leading-5 py-[32px] flex flex-col">
+                <div className="w-full m-auto text-center leading-5 py-[32px] flex flex-col">
                   <h1 className="text-paragraph5 font-bold font-mainFont">
                     {socio.nome} {socio.sobrenome}
                   </h1>
@@ -198,7 +198,7 @@ function CartaoSocio() {
                 <hr className="border-b-2 border-black/20 " />
 
                 {/* Função e texto */}
-                <div className="flex flex-col">
+                <div className="flex flex-col w-full">
                   <div className=" w-full m-auto mb-5">
                     <i>
                       <p
@@ -208,7 +208,7 @@ function CartaoSocio() {
                       </p>
                     </i>
                   </div>
-                  <div className="flex justify-around w-full tablet1:w-[205px]">
+                  <div className="flex">
                     <CartaoRedeSocial tipo="social" socio={socio} />
                   </div>
                 </div>
@@ -222,7 +222,7 @@ function CartaoSocio() {
               <h1 className=" text-[16px] font-secondFont text-center pb-[16px]">
                 Informações Pessoais:
               </h1>
-              <div className="flex flex-wrap gap-2 h-[48px]w-full tablet1:w-[205px] m-auto justify-center">
+              <div className="flex flex-wrap gap-2 w-full m-auto justify-center">
                 <CartaoRedeSocial tipo="contato" socio={socio} />
               </div>
             </div>

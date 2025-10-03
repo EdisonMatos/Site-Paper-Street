@@ -364,7 +364,7 @@ function CartaoRedeSocial({ tipo = "contato", socio }) {
                 }
                 ariaLabel={`Botão para ${key}`}
                 icon={svg}
-                width={tipo === "empresa" ? "w-auto" : "min-w-[250px] m-auto"}
+                width={tipo === "empresa" ? "w-auto" : "min-w-[200px] m-auto"}
               />
             </a>
           </MotionDivDownToUp>
