@@ -116,14 +116,14 @@ function CartaoSocio() {
   return (
     <div className={`${bgColor} min-h-screen`}>
       <div
-        className={`pt-6 w-full tablet1::max-w-[320px] m-auto font-mainFont ${textColor}`}
+        className={`w-full tablet1::max-w-[320px] m-auto font-mainFont ${textColor}`}
       >
         {/* Botões principais */}
-        <div className="flex justify-center gap-4 bg-quinary p-4 w-full phone3:max-w-[425px] m-auto">
+        <div className="flex justify-center gap-4 p-4 w-full phone3:max-w-[425px] m-auto">
           <SalvarContatoButton socio={socio} />
           <Button
             onClick={() => setVisible(true)}
-            className="rounded-[3px] p-1"
+            className="rounded-[3px] p-1 bg-yellow-400 hover:bg-black text-primary hover:text-white "
             icon={
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -146,67 +146,85 @@ function CartaoSocio() {
             }
             label="Compartilhar"
             size="small"
+            noScale={true}
           ></Button>
         </div>
 
         <div className="px-[24px] pb-[24px]">
-          {/* Logo e descrição */}
-          <div className="py-[32px]">
-            <img
-              src={content.texts.navbar.logo.img}
-              alt={content.texts.navbar.logo.alt}
-              className=" phone3:max-w-[248px] rounded-[5px] m-auto invert"
-            />
-          </div>
-
-          <div className="pt-6 bg-quinary px-6 rounded-md w-full phone3:max-w-[425px] m-auto">
-            {/* Imagem principal */}
-            <div className="w-full tablet1:max-w-[248px] m-auto">
-              <img src={socio.image} alt="" className="rounded-md" />
-            </div>
-            <div className="w-full tablet1:w-[200px] m-auto text-center leading-5 py-[32px] flex flex-col gap-2">
-              <h1 className="text-paragraph5 font-bold font-mainFont">
-                {socio.nome} {socio.sobrenome}
-              </h1>
-            </div>
+          <div className="p-6 bg-quinary rounded-xl w-full phone3:max-w-[425px] m-auto">
+            {/* <hr className="border-b-2 border-black/20 m-auto max-w-[313px] mb-4 " /> */}
 
             {/* Perfis profissionais */}
-            <div className={`w-full tablet1:w-[205px] m-auto ${textColor}`}>
-              {/* <h1 className=" font-secondFont font-semibold text-center pb-4">
-                Infos Profissionais:
-              </h1> */}
-              <h3 className="text-center font-secondFont text-paragraph5 mb-4">
-                {socio.função}
-              </h3>
-              <div className=" w-full m-auto mb-8">
-                <i>
-                  <p
-                    className={`m-auto text-paragraph3 text-center text-black/70 font-secondFont ${textSecondary}`}
-                  >
-                    {socio.description}
-                  </p>
-                </i>
-              </div>
-              <div className="flex justify-around w-full tablet1:w-[205px]">
-                <CartaoRedeSocial tipo="social" socio={socio} />
+            <div className={`w-full  rounded-mds`}>
+              <div
+                className={`w-full flex flex-col tablet1:w-[205px] m-auto gap-4 ${textColor}`}
+              >
+                {/* Empresa */}
+                <div className="flex flex-col rounded-md py-[32px]">
+                  {/* Logo e descrição */}
+                  <div className="">
+                    <img
+                      src={content.texts.navbar.logo.img}
+                      alt={content.texts.navbar.logo.alt}
+                      className=" phone3:max-w-[248px] rounded-[5px] m-auto invert mb-6"
+                    />
+                  </div>
+                  <h3 className="text-center font-secondFont font-bold text-paragraph5">
+                    {socio.empresa}
+                  </h3>
+                  <div className="flex flex-col font-medium text-center gap-2 w-full ">
+                    <p className="text-paragraph1 text-black font-medium font-secondFont">
+                      Conheça a Empresa:
+                    </p>
+                    <CartaoRedeSocial tipo="empresa" socio={socio} />
+                  </div>
+                </div>
+
+                {/* Imagem principal */}
+                <div className="w-full tablet1:max-w-[248px] m-auto">
+                  <img src={socio.image} alt="" className="rounded-xl" />
+                </div>
+
+                {/* Nome do Sócio */}
+                <div className="w-full tablet1:w-[200px] m-auto text-center leading-5 py-[32px] flex flex-col">
+                  <h1 className="text-paragraph5 font-bold font-mainFont">
+                    {socio.nome} {socio.sobrenome}
+                  </h1>
+                  <h3 className="text-center font-secondFont text-paragraph5 mt-2">
+                    {socio.função}
+                  </h3>
+                </div>
+
+                <hr className="border-b-2 border-black/20 " />
+
+                {/* Função e texto */}
+                <div className="flex flex-col">
+                  <div className=" w-full m-auto mb-5">
+                    <i>
+                      <p
+                        className={`m-auto text-paragraph3 text-center text-black/70 font-secondFont ${textSecondary}`}
+                      >
+                        {socio.description}
+                      </p>
+                    </i>
+                  </div>
+                  <div className="flex justify-around w-full tablet1:w-[205px]">
+                    <CartaoRedeSocial tipo="social" socio={socio} />
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
 
-            {/* Informações profissionais */}
-            <div
-              className={`w-full tablet1:w-[205px] m-auto py-[32px] ${textColor}`}
-            >
+          {/* Informações Pessoais */}
+          <div className={`w-full tablet1:w-[425px] m-auto pt-8  ${textColor}`}>
+            <div className="bg-quinary p-6 rounded-xl">
               <h1 className=" text-[16px] font-secondFont text-center pb-[16px]">
-                Infos Pessoais:
+                Informações Pessoais:
               </h1>
-              <div className="flex flex-wrap gap-2 h-[48px]w-full tablet1:w-[205px] justify-center">
+              <div className="flex flex-wrap gap-2 h-[48px]w-full tablet1:w-[205px] m-auto justify-center">
                 <CartaoRedeSocial tipo="contato" socio={socio} />
               </div>
-              {/* <div className="flex justify-center">
-              <button className="border-[1px] text-paragraph2 rounded-[3px] py-[3.2px] px-[9.6px]">
-                Ver como texto
-              </button>
-            </div> */}
             </div>
           </div>
         </div>

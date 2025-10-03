@@ -14,7 +14,7 @@ export default function TeamMember({
   arialabel3 = true,
 }) {
   return (
-    <div className="flex flex-col items-center justify-center p-[20px] w-full tablet1:w-[45%] desktop1:w-[22%]">
+    <div className="flex flex-col items-center justify-start p-[20px] w-full tablet1:w-[45%] desktop1:w-[22%]">
       <img
         alt={alt}
         src={img}

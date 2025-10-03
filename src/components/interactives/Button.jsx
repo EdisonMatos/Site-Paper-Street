@@ -19,6 +19,7 @@ export default function Button({
 
   color = "bg-ctaCollor",
   animation = true,
+  noScale = false,
 }) {
   if (size === "small") {
     sizeFeatures = "rounded-[4px] px-[18px] py-[10px]";
@@ -41,11 +42,12 @@ export default function Button({
       {...(removeAnchor ? {} : { href: buttonLink })}
       className=""
     >
-
       <Animation>
         <button
           onClick={onClick}
-          className={`flex ${className} ${sizeFeatures} flex-row items-center justify-around transition ${color} text-darker hover:scale-110`}
+          className={`flex ${className} ${sizeFeatures} flex-row items-center justify-around transition ${color} text-darker ${
+            noScale ? "" : "hover:scale-110"
+          }`}
         >
           <div className={`flex items-center text-center ${gap} min-h-[24px]`}>
             <div className="">{icon}</div>
