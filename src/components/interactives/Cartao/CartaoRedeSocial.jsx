@@ -128,10 +128,11 @@ const icons = {
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      class="lucide lucide-github-icon lucide-github"
+      class="lucide lucide-globe-icon lucide-globe"
     >
-      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-      <path d="M9 18c-4.51 2-5-2-7-2" />
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+      <path d="M2 12h20" />
     </svg>
   ),
   githubSocial: (
@@ -220,6 +221,15 @@ function CartaoRedeSocial({ tipo = "contato", socio }) {
     emailSocial: socio.social?.emailSocial || null,
   };
 
+  const empresaLinks = {
+    site: socio.empresaSocial?.site || null,
+    instagram: socio.empresaSocial?.instagram || null,
+    facebook: socio.empresaSocial?.facebook || null,
+    linkedin: socio.empresaSocial?.linkedin || null,
+    whatsappSocial: socio.empresaSocial?.whatsappSocial || null,
+    emailSocial: socio.empresaSocial?.emailSocial || null,
+  };
+
   const labels = {
     github: "GitHub",
     whatsapp: "WhatsApp",
@@ -236,14 +246,58 @@ function CartaoRedeSocial({ tipo = "contato", socio }) {
     emailSocial: "E-mail",
   };
 
-  const links = tipo === "contato" ? contatoLinks : redesLinks;
+  const links =
+    tipo === "contato"
+      ? contatoLinks
+      : tipo === "social"
+      ? redesLinks
+      : tipo === "empresa"
+      ? empresaLinks
+      : contatoLinks;
 
   const linksToRender = Object.entries(links).filter(
     ([_, value]) => value && value.trim() !== ""
   );
 
+  function formatLabel(key, value) {
+    if (!value) return "";
+
+    switch (key) {
+      case "whatsapp":
+      case "whatsappSocial":
+      case "telefone": {
+        // Pega só números
+        const digits = value.replace(/\D/g, "");
+        // Formata se tiver 11 dígitos (Brasil)
+        if (digits.length === 11) {
+          return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(
+            7
+          )}`;
+        }
+        return value;
+      }
+      case "email":
+      case "emailSocial":
+        return value.toLowerCase();
+      case "instagram":
+        return value.startsWith("@") ? value : `@${value}`;
+      case "site":
+      case "github":
+      case "githubSocial":
+      case "linkedin":
+      case "facebook":
+        return value.replace(/^https?:\/\//, "").replace(/\/$/, "");
+      default:
+        return value;
+    }
+  }
+
   return (
-    <div className="flex flex-wrap gap-2 justify-center">
+    <div
+      className={`flex gap-2 justify-center w-full ${
+        tipo === "empresa" ? "flex-wrap m-auto" : "flex-col"
+      }`}
+    >
       {linksToRender.map(([key, value]) => {
         let link = value;
         switch (key) {
@@ -260,7 +314,13 @@ function CartaoRedeSocial({ tipo = "contato", socio }) {
             link = `https://www.facebook.com/${value}`;
             break;
           case "linkedin":
-            link = `https://www.linkedin.com/in/${value}`;
+            if (value.startsWith("http")) {
+              // se já for link completo (empresa, perfil ou outro)
+              link = value;
+            } else {
+              // se for apenas o username, monta o /in/
+              link = `https://www.linkedin.com/in/${value}`;
+            }
             break;
           case "whatsappSocial":
             link = `https://wa.me/${value.replace(/\D/g, "")}`;
@@ -291,9 +351,20 @@ function CartaoRedeSocial({ tipo = "contato", socio }) {
               aria-label={`Link para ${labels[key] || key}`}
             >
               <IconButtonCartao
-                label={labels[key] || key}
+                label={
+                  tipo === "empresa"
+                    ? ""
+                    : key === "linkedin"
+                    ? "LinkedIn"
+                    : key === "githubSocial" || key === "github"
+                    ? key === "github"
+                      ? "Site Pessoal"
+                      : "GitHub"
+                    : formatLabel(key, value)
+                }
                 ariaLabel={`Botão para ${key}`}
                 icon={svg}
+                width={tipo === "empresa" ? "w-auto" : "min-w-[200px] m-auto"}
               />
             </a>
           </MotionDivDownToUp>
