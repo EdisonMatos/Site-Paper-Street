@@ -149,7 +149,7 @@ function CartaoSocio() {
           ></Button>
         </div>
 
-        <div className="p-[24px]">
+        <div className="px-[24px] pb-[24px]">
           {/* Logo e descrição */}
           <div className="py-[32px]">
             <img
@@ -172,9 +172,9 @@ function CartaoSocio() {
 
             {/* Perfis profissionais */}
             <div className={`w-full tablet1:w-[205px] m-auto ${textColor}`}>
-              <h1 className=" font-secondFont font-semibold text-center pb-4">
+              {/* <h1 className=" font-secondFont font-semibold text-center pb-4">
                 Infos Profissionais:
-              </h1>
+              </h1> */}
               <h3 className="text-center font-secondFont text-paragraph5 mb-4">
                 {socio.função}
               </h3>
