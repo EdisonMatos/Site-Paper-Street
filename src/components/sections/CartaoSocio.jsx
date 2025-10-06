@@ -157,7 +157,7 @@ function CartaoSocio() {
             {/* Perfis profissionais */}
             <div className={`w-full  rounded-mds`}>
               <div
-                className={`w-full flex flex-col tablet1:w-[377px] m-auto gap-4 ${textColor}`}
+                className={`w-full flex flex-col tablet1:w-[205px] desktop1:w-[377px] m-auto gap-4 ${textColor}`}
               >
                 {/* Empresa */}
                 <div className="flex flex-col rounded-md py-[32px]">
