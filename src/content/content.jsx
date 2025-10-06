@@ -864,7 +864,8 @@ const content = {
         empresaSocial: {
           instagram: "paperstreet_sites/",
           facebook: "61556114646068/",
-          linkedin: "https://www.linkedin.com/company/paper-street-sofwares/posts/?feedView=all",
+          linkedin:
+            "https://www.linkedin.com/company/paper-street-sofwares/posts/?feedView=all",
           site: "https://www.paperstreet.com.br/",
         },
       },
