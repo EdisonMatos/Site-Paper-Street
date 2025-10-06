@@ -162,11 +162,11 @@ function CartaoSocio() {
                 {/* Empresa */}
                 <div className="flex flex-col rounded-md py-[32px]">
                   {/* Logo e descrição */}
-                  <div className="">
+                  <div className="w-full">
                     <img
                       src={content.texts.navbar.logo.img}
                       alt={content.texts.navbar.logo.alt}
-                      className="  rounded-[5px] m-auto invert mb-6"
+                      className="tablet1:max-w-[245px] rounded-[5px] m-auto invert mb-6"
                     />
                   </div>
                   <h3 className="text-center font-secondFont font-bold text-paragraph5">
@@ -181,7 +181,7 @@ function CartaoSocio() {
                 </div>
 
                 {/* Imagem principal */}
-                <div className="w-full tablet1:max-w-[248px] m-auto">
+                <div className="w-full m-auto">
                   <img src={socio.image} alt="" className="rounded-xl" />
                 </div>
 
