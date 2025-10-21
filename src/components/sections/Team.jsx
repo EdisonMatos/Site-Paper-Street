@@ -92,27 +92,6 @@ export default function Team() {
                 content.texts.team.members.member3.socialMedia.arialabel3
               }
             />
-            <TeamMember
-              img={content.texts.team.members.member4.img.img}
-              alt={content.texts.team.members.member4.img.alt}
-              name={content.texts.team.members.member4.name}
-              role={content.texts.team.members.member4.role}
-              icon1={content.texts.team.members.member4.socialMedia.icon1}
-              link1={content.texts.team.members.member4.socialMedia.link1}
-              icon2={content.texts.team.members.member4.socialMedia.icon2}
-              link2={content.texts.team.members.member4.socialMedia.link2}
-              // icon3={content.texts.team.members.member4.socialMedia.icon3}
-              // link3={content.texts.team.members.member4.socialMedia.link3}
-              // arialabel1={
-              //   content.texts.team.members.member4.socialMedia.arialabel1
-              // }
-              // arialabel2={
-              //   content.texts.team.members.member4.socialMedia.arialabel2
-              // }
-              // arialabel3={
-              //   content.texts.team.members.member4.socialMedia.arialabel3
-              // }
-            />
 
             <TeamMember
               img={content.texts.team.members.member5.img.img}
