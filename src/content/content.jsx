@@ -458,10 +458,10 @@ const content = {
         member4: {
           img: {
             img: teamMemberImg4,
-            alt: "Esthéfane Sousa",
+            alt: "A_Definir",
           },
-          name: "Esthéfane Sousa",
-          role: "Comercial e Vendas",
+          name: "A_Definir",
+          role: "A_Definir",
           socialMedia: {
             icon1: (
               <svg
