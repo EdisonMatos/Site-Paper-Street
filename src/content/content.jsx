@@ -521,7 +521,7 @@ const content = {
         },
         member5: {
           img: {
-            img: teamMemberImg6,
+            img: teamMemberImg4,
             alt: "Mel Musumeci",
           },
           name: "Mel Musumeci",
