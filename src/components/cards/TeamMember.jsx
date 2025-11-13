@@ -18,7 +18,7 @@ export default function TeamMember({
       <img
         alt={alt}
         src={img}
-        className="w-[215px] h-[215px] desktop1:min-w-[200px] mb-[24px] bg-black object-cover rounded-full"
+        className="w-[215px] h-[215px] desktop1:min-w-[200px] mb-[24px] bg-black object-cover object-top rounded-full"
       />
 
       <h1 className="mb-[8px] text-title1 font-bold">{name}</h1>
