@@ -8,8 +8,8 @@ const infos = {
   name: "Paper Street Softwares",
   phone: {
     ddd: "11",
-    firstPart: "99026", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0977", // Apenas os 4 últimos números
+    firstPart: "98821", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "7850", // Apenas os 4 últimos números
   },
   email: "contato", // Email desejado pelo cliente
   domain: "paperstreet.com.br", // Sem "www"

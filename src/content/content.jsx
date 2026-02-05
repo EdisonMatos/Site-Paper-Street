@@ -1,75 +1,71 @@
-import links from './links'
-import logo from '../assets/imgs/logo/logo.webp'
-import logoDark from '../assets/imgs/logo/logoDark.webp'
-import aboutImg1 from '../assets/imgs/about/aboutSocial.webp'
-import trustedByImg1 from '../assets/imgs/trustedBy/item1.webp'
-import trustedByImg2 from '../assets/imgs/trustedBy/item2.webp'
-import trustedByImg3 from '../assets/imgs/trustedBy/item3.webp'
-import trustedByImg4 from '../assets/imgs/trustedBy/item4.webp'
-import trustedByImg5 from '../assets/imgs/trustedBy/item5.webp'
-import trustedByImg6 from '../assets/imgs/trustedBy/item6.webp'
-import numbersImgBg from '../assets/imgs/paralaxe/bgParalaxe1.webp'
-import featuresImg1 from '../assets/imgs/features/featuresImg1.webp'
-import featuresImg2 from '../assets/imgs/features/featuresImg2.webp'
-import featuresImg3 from '../assets/imgs/features/featuresImg3.webp'
+import links from "./links";
+import logo from "../assets/imgs/logo/logo.webp";
+import logoDark from "../assets/imgs/logo/logoDark.webp";
+import aboutImg1 from "../assets/imgs/about/aboutSocial.webp";
+import trustedByImg1 from "../assets/imgs/trustedBy/item1.webp";
+import trustedByImg2 from "../assets/imgs/trustedBy/item2.webp";
+import trustedByImg3 from "../assets/imgs/trustedBy/item3.webp";
+import trustedByImg4 from "../assets/imgs/trustedBy/item4.webp";
+import trustedByImg5 from "../assets/imgs/trustedBy/item5.webp";
+import trustedByImg6 from "../assets/imgs/trustedBy/item6.webp";
+import numbersImgBg from "../assets/imgs/paralaxe/bgParalaxe1.webp";
+import featuresImg1 from "../assets/imgs/features/featuresImg1.webp";
+import featuresImg2 from "../assets/imgs/features/featuresImg2.webp";
+import featuresImg3 from "../assets/imgs/features/featuresImg3.webp";
 
-import aboutImgMobile1 from '../assets/imgs/about/aboutImgMobile.webp'
-import ctaWhatsappImgBg from '../assets/imgs/paralaxe/bgParalaxe2.webp'
-import teamMemberImg1 from '../assets/imgs/team/team1.webp'
-import teamMemberImg2 from '../assets/imgs/team/team2.webp'
-import teamMemberImg3 from '../assets/imgs/team/team3.webp'
-import teamMemberImg4 from '../assets/imgs/team/team4.webp'
-import teamMemberImg5 from '../assets/imgs/team/team5.webp'
-import teamMemberImg6 from '../assets/imgs/team/team6.webp'
-import MotionDivDownToUp from '../components/animation/MotionDivDownToUp'
-import TypewriterComponent from '../components/animation/TypeWriter'
-import ButtonWithIconNavbar from '../components/interactives/ButtonWithIconNavbar'
-import imgSteps from '../assets/imgs/steps/imgSteps.webp'
+import aboutImgMobile1 from "../assets/imgs/about/aboutImgMobile.webp";
+import ctaWhatsappImgBg from "../assets/imgs/paralaxe/bgParalaxe2.webp";
+import teamMemberImg1 from "../assets/imgs/team/team1.webp";
+import teamMemberImg2 from "../assets/imgs/team/team2.webp";
+import teamMemberImg3 from "../assets/imgs/team/team3.webp";
+import teamMemberImg4 from "../assets/imgs/team/team4.webp";
+import teamMemberImg5 from "../assets/imgs/team/team5.webp";
+import teamMemberImg6 from "../assets/imgs/team/team6.webp";
+import MotionDivDownToUp from "../components/animation/MotionDivDownToUp";
+import TypewriterComponent from "../components/animation/TypeWriter";
+import ButtonWithIconNavbar from "../components/interactives/ButtonWithIconNavbar";
+import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 
-import imgTestimonial1 from '../assets/imgs/testimonialsHero/imgTestimonial1.webp'
-import imgTestimonial2 from '../assets/imgs/testimonialsHero/imgTestimonial2.webp'
-import imgTestimonial3 from '../assets/imgs/testimonialsHero/imgTestimonial3.webp'
-import imgTestimonial4 from '../assets/imgs/testimonialsHero/imgTestimonial4.webp'
-import imgTestimonial5 from '../assets/imgs/testimonialsHero/imgTestimonial5.webp'
-import imgTestimonial6 from '../assets/imgs/testimonialsHero/imgTestimonial6.webp'
-import imgTestimonial7 from '../assets/imgs/testimonialsHero/imgTestimonial7.webp'
-import imgTestimonial8 from '../assets/imgs/testimonialsHero/imgTestimonial8.webp'
-import imgTestimonial9 from '../assets/imgs/testimonialsHero/imgTestimonial9.webp'
-import imgTestimonial10 from '../assets/imgs/testimonialsHero/imgTestimonial10.webp'
-import imgTestimonial11 from '../assets/imgs/testimonialsHero/imgTestimonial11.webp'
-import imgTestimonial12 from '../assets/imgs/testimonialsHero/imgTestimonial12.webp'
+import imgTestimonial1 from "../assets/imgs/testimonialsHero/imgTestimonial1.webp";
+import imgTestimonial2 from "../assets/imgs/testimonialsHero/imgTestimonial2.webp";
+import imgTestimonial3 from "../assets/imgs/testimonialsHero/imgTestimonial3.webp";
+import imgTestimonial4 from "../assets/imgs/testimonialsHero/imgTestimonial4.webp";
+import imgTestimonial5 from "../assets/imgs/testimonialsHero/imgTestimonial5.webp";
+import imgTestimonial6 from "../assets/imgs/testimonialsHero/imgTestimonial6.webp";
+import imgTestimonial7 from "../assets/imgs/testimonialsHero/imgTestimonial7.webp";
+import imgTestimonial8 from "../assets/imgs/testimonialsHero/imgTestimonial8.webp";
+import imgTestimonial9 from "../assets/imgs/testimonialsHero/imgTestimonial9.webp";
+import imgTestimonial10 from "../assets/imgs/testimonialsHero/imgTestimonial10.webp";
+import imgTestimonial11 from "../assets/imgs/testimonialsHero/imgTestimonial11.webp";
+import imgTestimonial12 from "../assets/imgs/testimonialsHero/imgTestimonial12.webp";
 
-import Socio1 from '../assets/imgs/team/Socios/socio1.webp'
+import Socio1 from "../assets/imgs/team/Socios/socio1.webp";
 
 const content = {
   texts: {
     navbar: {
       logo: {
         img: logo,
-        alt: 'Logo',
+        alt: "Logo",
       },
       logoDark: {
         img: logoDark,
-        alt: 'Logo',
+        alt: "Logo",
       },
-      menuItems: ['Início', 'Sobre Nós', 'Serviços', 'Perguntas Frequentes'],
-      ctaButtonText: 'Contato',
-      ctaButtonTextResponsive: 'Contato',
+      menuItems: ["Início", "Sobre Nós", "Serviços", "Perguntas Frequentes"],
+      ctaButtonText: "Contato",
+      ctaButtonTextResponsive: "Contato",
     },
     hero: {
       title: (
         <h1 className="">
           <span className="text-white">
-            Criamos <br className="hidden tablet1:flex desktop1:hidden" />{' '}
+            Criamos <br className="hidden tablet1:flex desktop1:hidden" />{" "}
           </span>
           <TypewriterComponent
-            strings={['Sites', 'Landing Pages', 'Sites para Tráfego Pago']}
+            strings={["Anúncios online", "Sites Jurídicos", "Landing Pages", ,]}
             className="text-yellow-400 my-typewriter"
           />
-          <p className="mt-[16px] font-medium text-paragraph4 font-secondFont leading-[28px]">
-            A opinião dos nossos clientes são <br /> prova de nossa qualidade.
-            Confira! 👇
-          </p>
         </h1>
       ),
       subtitle: (
@@ -78,77 +74,77 @@ const content = {
           buscas no Google e funcionam bem em todos os tamanhos de tela
         </p>
       ),
-      ctaButtonText: 'Falar pelo WhatsApp',
-      ctaButtonInstagram: 'Falar pelo Instagram',
+      ctaButtonText: "Falar pelo WhatsApp",
+      ctaButtonInstagram: "Falar pelo Instagram",
       images: {
         background: {},
         static: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide1: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide2: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide3: {
           img: {},
-          alt: '',
+          alt: "",
         },
       },
     },
     features: {
-      miniTag: 'Serviços',
-      title: 'Nossas especialidades',
+      miniTag: "Serviços",
+      title: "Nossas especialidades",
       subtitle:
-        'Se você quer trazer o seu negócio pro mundo digital, nós te ajudamos',
+        "Se você quer trazer o seu negócio pro mundo digital, nós te ajudamos",
       card1: {
-        title: 'Sites para você ou sua empresa',
+        title: "Sites para você ou sua empresa",
         subtitle:
-          'A melhor forma do seu cliente te encontrar na internet e fazer ele confiar no seu negócio',
+          "A melhor forma do seu cliente te encontrar na internet e fazer ele confiar no seu negócio",
         img: featuresImg1,
-        buttonLabel: 'Saiba mais',
+        buttonLabel: "Saiba mais",
         buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre sites.`,
       },
       card2: {
-        title: 'Landing Pages Institucionais',
+        title: "Landing Pages Institucionais",
         subtitle:
-          'A forma mais moderna e objetiva de colocar seu negócio no Google e ganhar mais autoridade na internet',
+          "A forma mais moderna e objetiva de colocar seu negócio no Google e ganhar mais autoridade na internet",
         img: featuresImg2,
-        buttonLabel: 'Saiba mais',
+        buttonLabel: "Saiba mais",
         buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre landing pages.`,
       },
       card3: {
-        title: 'Landing Pages em Geral',
+        title: "Landing Pages em Geral",
         subtitle:
-          'Ofereça serviços, venda cursos, ebooks e mais, combinando estratégias de anúncios em redes sociais e tráfego pago',
+          "Ofereça serviços, venda cursos, ebooks e mais, combinando estratégias de anúncios em redes sociais e tráfego pago",
         img: featuresImg3,
-        buttonLabel: 'Saiba mais',
+        buttonLabel: "Saiba mais",
         buttonLink: `${links.whatsapp}Olá! Vim através do site e gostaria de saber sobre os serviços de vocês.`,
       },
     },
     numbers: {
       backgroundImg: numbersImgBg,
       number1: 30,
-      number1Description: 'Anos no mercado',
+      number1Description: "Anos no mercado",
       number2: 650,
-      number2Description: 'Apólices geridas anualmente',
+      number2Description: "Apólices geridas anualmente",
       number3: 96,
-      number3Description: 'De índice de renovação',
+      number3Description: "De índice de renovação",
     },
     about: {
       imagem: {
         img: aboutImg1,
-        alt: 'Pessoas em negociação',
+        alt: "Pessoas em negociação",
       },
       imagemMobile: {
         img: aboutImgMobile1,
-        alt: 'Pessoas em negociação',
+        alt: "Pessoas em negociação",
       },
-      title: 'Sobre nós 👋',
+      title: "Sobre nós 👋",
       paragraph: (
         <div>
           Somos a Paper Street e somos especialistas em desenvolver páginas web.
@@ -248,17 +244,17 @@ const content = {
       ),
     },
     team: {
-      title: 'Nossa Equipe',
-      subtitle: 'Conheça as mentes brilhantes por trás do nosso sucesso',
-      miniTag: 'Team',
+      title: "Nossa Equipe",
+      subtitle: "Conheça as mentes brilhantes por trás do nosso sucesso",
+      miniTag: "Team",
       members: {
         member1: {
           img: {
             img: teamMemberImg1,
-            alt: 'Edison Matos',
+            alt: "Edison Matos",
           },
-          name: 'Edison Matos',
-          role: 'CEO & Diretor Geral',
+          name: "Edison Matos",
+          role: "CEO & Diretor Geral",
           socialMedia: {
             icon1: (
               <svg
@@ -278,8 +274,8 @@ const content = {
                 <circle cx="4" cy="4" r="2" />
               </svg>
             ),
-            link1: 'https://www.linkedin.com/in/edison-matoss/',
-            arialabel1: 'Link para LinkedIn',
+            link1: "https://www.linkedin.com/in/edison-matoss/",
+            arialabel1: "Link para LinkedIn",
 
             icon2: (
               <svg
@@ -298,8 +294,8 @@ const content = {
                 <path d="M9 18c-4.51 2-5-2-7-2" />
               </svg>
             ),
-            link2: 'https://github.com/EdisonMatos',
-            arialabel2: 'Link para GitHub',
+            link2: "https://github.com/EdisonMatos",
+            arialabel2: "Link para GitHub",
             icon3: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -318,17 +314,17 @@ const content = {
                 <path d="M2 12h20" />
               </svg>
             ),
-            link3: 'https://edisonmatos.github.io/',
-            arialabel3: 'Link para github.io',
+            link3: "https://edisonmatos.github.io/",
+            arialabel3: "Link para github.io",
           },
         },
         member2: {
           img: {
             img: teamMemberImg2,
-            alt: 'Gabriel Adans',
+            alt: "Gabriel Adans",
           },
-          name: 'Gabriel Adans',
-          role: 'Suporte ao cliente',
+          name: "Gabriel Adans",
+          role: "Suporte ao cliente",
           socialMedia: {
             icon1: (
               <svg
@@ -348,8 +344,8 @@ const content = {
                 <circle cx="4" cy="4" r="2" />
               </svg>
             ),
-            link1: 'https://www.linkedin.com/in/gabriel-adans-2bb029227/',
-            arialabel1: 'Link para LinkedIn',
+            link1: "https://www.linkedin.com/in/gabriel-adans-2bb029227/",
+            arialabel1: "Link para LinkedIn",
             icon2: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -362,8 +358,8 @@ const content = {
                 <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
               </svg>
             ),
-            link2: 'https://wa.me/+557193064270',
-            arialabel2: 'Link para WhatsApp',
+            link2: "https://wa.me/+557193064270",
+            arialabel2: "Link para WhatsApp",
             icon3: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -382,17 +378,17 @@ const content = {
                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
               </svg>
             ),
-            link3: 'https://www.instagram.com/adansgabriel/',
-            arialabel3: 'Link para Instagram',
+            link3: "https://www.instagram.com/adansgabriel/",
+            arialabel3: "Link para Instagram",
           },
         },
         member3: {
           img: {
             img: teamMemberImg3,
-            alt: 'Gabriel Souza',
+            alt: "Gabriel Souza",
           },
-          name: 'Gabriel Souza',
-          role: 'Desenvolvedor Frontend',
+          name: "Gabriel Souza",
+          role: "Desenvolvedor Frontend",
           socialMedia: {
             icon1: (
               <svg
@@ -412,8 +408,8 @@ const content = {
                 <circle cx="4" cy="4" r="2" />
               </svg>
             ),
-            link1: ' https://www.linkedin.com/in/gabriel-souza-b9945929a',
-            arialabel1: 'Link para LinkedIn',
+            link1: " https://www.linkedin.com/in/gabriel-souza-b9945929a",
+            arialabel1: "Link para LinkedIn",
             icon2: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -431,8 +427,8 @@ const content = {
                 <path d="M9 18c-4.51 2-5-2-7-2" />
               </svg>
             ),
-            link2: 'https://github.com/BiellSouza',
-            arialabel2: 'Link para GitHub',
+            link2: "https://github.com/BiellSouza",
+            arialabel2: "Link para GitHub",
             icon3: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -451,17 +447,17 @@ const content = {
                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
               </svg>
             ),
-            link3: ' https://www.instagram.com/biel.souza.904',
-            arialabel3: 'Link para Instagram',
+            link3: " https://www.instagram.com/biel.souza.904",
+            arialabel3: "Link para Instagram",
           },
         },
         member4: {
           img: {
             img: teamMemberImg4,
-            alt: 'A_Definir',
+            alt: "A_Definir",
           },
-          name: 'A_Definir',
-          role: 'A_Definir',
+          name: "A_Definir",
+          role: "A_Definir",
           socialMedia: {
             icon1: (
               <svg
@@ -481,8 +477,8 @@ const content = {
                 <circle cx="4" cy="4" r="2" />
               </svg>
             ),
-            link1: 'http://www.linkedin.com/in/esthefane-sousa',
-            arialabel1: 'Link para LinkedIn',
+            link1: "http://www.linkedin.com/in/esthefane-sousa",
+            arialabel1: "Link para LinkedIn",
             icon2: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -501,8 +497,8 @@ const content = {
                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
               </svg>
             ),
-            link2: 'https://www.instagram.com/esthegloria/',
-            arialabel2: 'Link para Instagram',
+            link2: "https://www.instagram.com/esthegloria/",
+            arialabel2: "Link para Instagram",
             icon3: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -515,17 +511,17 @@ const content = {
                 <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
               </svg>
             ),
-            link3: 'https://wa.me/+553484339190',
-            arialabel3: 'Link para WhatsApp',
+            link3: "https://wa.me/+553484339190",
+            arialabel3: "Link para WhatsApp",
           },
         },
         member6: {
           img: {
             img: teamMemberImg5,
-            alt: 'Uillian Ferreira',
+            alt: "Uillian Ferreira",
           },
-          name: 'Uillian Ferreira',
-          role: 'Recursos Humanos',
+          name: "Uillian Ferreira",
+          role: "Recursos Humanos",
           socialMedia: {
             icon1: (
               <svg
@@ -545,8 +541,8 @@ const content = {
                 <circle cx="4" cy="4" r="2" />
               </svg>
             ),
-            link1: 'https://www.linkedin.com/in/uillian-ferreira-720829191',
-            arialabel1: 'Link para LinkedIn',
+            link1: "https://www.linkedin.com/in/uillian-ferreira-720829191",
+            arialabel1: "Link para LinkedIn",
             icon2: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -565,8 +561,8 @@ const content = {
                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
               </svg>
             ),
-            link2: 'https://www.instagram.com/uillferreira_',
-            arialabel2: 'Link para Instagram',
+            link2: "https://www.instagram.com/uillferreira_",
+            arialabel2: "Link para Instagram",
             icon3: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -579,8 +575,8 @@ const content = {
                 <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
               </svg>
             ),
-            link3: 'https://wa.me/+553484339190',
-            arialabel3: 'Link para WhatsApp',
+            link3: "https://wa.me/+553484339190",
+            arialabel3: "Link para WhatsApp",
           },
         },
       },
@@ -590,81 +586,81 @@ const content = {
       title: (
         <p className="">Deixa a gente cuidar da vida digital do seu negócio</p>
       ),
-      subtitle: '#',
-      ctaButtonText: 'Fale com um atendente',
-      link: '',
+      subtitle: "#",
+      ctaButtonText: "Fale com um atendente",
+      link: "",
     },
     trustedBy: {
-      title: 'Parceria com as maiores seguradoras',
-      subtitle: 'Confiabilidade e excelência em proteção',
+      title: "Parceria com as maiores seguradoras",
+      subtitle: "Confiabilidade e excelência em proteção",
       images: {
         img1: {
           img: { trustedByImg1 },
-          alt: 'Seguradora Porto Seguro',
+          alt: "Seguradora Porto Seguro",
         },
         img2: {
           img: { trustedByImg2 },
-          alt: 'Seguradora Bradesco',
+          alt: "Seguradora Bradesco",
         },
         img3: {
           img: { trustedByImg3 },
-          alt: 'Seguradora Liberty',
+          alt: "Seguradora Liberty",
         },
         img4: {
           img: { trustedByImg4 },
-          alt: 'Seguradora Allianz',
+          alt: "Seguradora Allianz",
         },
         img5: {
           img: { trustedByImg5 },
-          alt: 'Seguradora SulAmérica',
+          alt: "Seguradora SulAmérica",
         },
         img6: {
           img: { trustedByImg6 },
-          alt: 'Seguradora Tokio Marine',
+          alt: "Seguradora Tokio Marine",
         },
       },
     },
     steps: {
-      miniTag: 'Nosso Passo a Passo',
-      title: 'Como funciona?',
+      miniTag: "Nosso Passo a Passo",
+      title: "Como funciona?",
       subtitle:
-        'Nossos processos foram pensados para você não ter nenhuma preocupação enquanto seu site é construido.',
+        "Nossos processos foram pensados para você não ter nenhuma preocupação enquanto seu site é construido.",
       img: imgSteps,
-      alt: '',
+      alt: "",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Informações',
+          cardTitle: "Informações",
           cardDescription:
-            'Após contratação, um agente especializado da Paper irá entrar em contato e solicitar informações. Temos imagens e textos profissionais para auxiliar caso o cliente não tenha.',
+            "Após contratação, um agente especializado da Paper irá entrar em contato e solicitar informações. Temos imagens e textos profissionais para auxiliar caso o cliente não tenha.",
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Desenvolvimento do site',
+          cardTitle: "Desenvolvimento do site",
           cardDescription:
-            'Iniciamos a criação do site, e durante esse período, continuamos à disposição para tirar dúvidas. O prazo vai variar de acordo com o que foi acordado durante a contratação.',
+            "Iniciamos a criação do site, e durante esse período, continuamos à disposição para tirar dúvidas. O prazo vai variar de acordo com o que foi acordado durante a contratação.",
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Site no ar!',
+          cardTitle: "Site no ar!",
           cardDescription:
-            'Enviamos uma prévia para o cliente e, após aprovado, explicamos o processo de escolha do nome do site, criamos os emails profissionais e colocamos no ar.',
+            "Enviamos uma prévia para o cliente e, após aprovado, explicamos o processo de escolha do nome do site, criamos os emails profissionais e colocamos no ar.",
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Suporte e pós-venda',
+          cardTitle: "Suporte e pós-venda",
           cardDescription:
-            'De brinde, entregamos uma arte personalizada para o cliente postar em suas redes sociais, anunciando o site novo. Além disso, daremos dicas de como fazer melhor uso do seu site!',
+            "De brinde, entregamos uma arte personalizada para o cliente postar em suas redes sociais, anunciando o site novo. Além disso, daremos dicas de como fazer melhor uso do seu site!",
         },
       },
     },
     faq: {
-      title: 'Perguntas Frequentes',
-      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas',
-      miniTag: 'Perguntas Frequentes',
+      title: "Perguntas Frequentes",
+      subtitle: "Confira as perguntas abaixo para esclarecer suas dúvidas",
+      miniTag: "Perguntas Frequentes",
       questions: {
         question0: {
-          question: 'Como escolher entre um site e uma landing page?',
+          question: "Como escolher entre um site e uma landing page?",
           answer: (
             <p>
               Sites são mais amplos, focam mais em mostrar você ou seu negócio.
@@ -689,35 +685,35 @@ const content = {
         },
         question1: {
           question:
-            'Gostaria de ter um site, mas não entendo sobre o assunto. O que devo fazer?',
+            "Gostaria de ter um site, mas não entendo sobre o assunto. O que devo fazer?",
           answer:
-            'Entre em contato conosco que iremos te guiar com bastante simplicidade no processo. Para se tornar um cliente nosso, não é necessário nenhum tipo de conhecimento sobre sites ou internet. Estamos aqui exatamente para que você não tenha preocupação nenhuma.',
+            "Entre em contato conosco que iremos te guiar com bastante simplicidade no processo. Para se tornar um cliente nosso, não é necessário nenhum tipo de conhecimento sobre sites ou internet. Estamos aqui exatamente para que você não tenha preocupação nenhuma.",
         },
         question2: {
           question:
-            'Quero ter um site, mas não tenho fotos boas e não sei escrever bons textos. O que devo fazer?',
+            "Quero ter um site, mas não tenho fotos boas e não sei escrever bons textos. O que devo fazer?",
           answer:
-            'Não se preocupe, nós também temos a solução para você. Nossa equipe irá sugerir todo material audiovisual que você precisar para ter o seu site e você não precisa ter custo com isso!',
+            "Não se preocupe, nós também temos a solução para você. Nossa equipe irá sugerir todo material audiovisual que você precisar para ter o seu site e você não precisa ter custo com isso!",
         },
         question3: {
-          question: 'Já tenho um site, mas está antigo. Vocês o atualizam?',
+          question: "Já tenho um site, mas está antigo. Vocês o atualizam?",
           answer:
-            'Sim, e esse é um caso muito comum. Como a internet evolui bastante, às vezes um site feito há muito tempo precisa de uma atualização. Basta falar com nossa equipe que iremos modernizar o seu site.',
+            "Sim, e esse é um caso muito comum. Como a internet evolui bastante, às vezes um site feito há muito tempo precisa de uma atualização. Basta falar com nossa equipe que iremos modernizar o seu site.",
         },
         question4: {
           question:
-            'Quais são as formas de pagamento que a Paper Street aceita?',
+            "Quais são as formas de pagamento que a Paper Street aceita?",
           answer:
-            'Aceitamos e parcelamos o seu site no cartão de crédito, assim como também trabalhamos com Pix e Boleto Bancário.',
+            "Aceitamos e parcelamos o seu site no cartão de crédito, assim como também trabalhamos com Pix e Boleto Bancário.",
         },
         question5: {
-          question: 'A Paper Street emite nota fiscal?',
+          question: "A Paper Street emite nota fiscal?",
           answer:
-            'Sim. Somos uma empresa devidamente regularizada e emitimos nota fiscal com nosso CNPJ, conforme a legislação vigente.',
+            "Sim. Somos uma empresa devidamente regularizada e emitimos nota fiscal com nosso CNPJ, conforme a legislação vigente.",
         },
         question6: {
-          question: 'A definir',
-          answer: 'A definir',
+          question: "A definir",
+          answer: "A definir",
         },
       },
     },
@@ -725,118 +721,118 @@ const content = {
       images: {
         img1: {
           img: imgTestimonial1,
-          alt: 'Imagem de feedback',
+          alt: "Imagem de feedback",
         },
         img2: {
           img: imgTestimonial2,
-          alt: 'Imagem de feedback',
+          alt: "Imagem de feedback",
         },
         img3: {
           img: imgTestimonial3,
-          alt: 'Imagem de feedback',
+          alt: "Imagem de feedback",
         },
         img4: {
           img: imgTestimonial4,
-          alt: 'Imagem de feedback',
+          alt: "Imagem de feedback",
         },
         img5: {
           img: imgTestimonial5,
-          alt: 'Imagem de feedback',
+          alt: "Imagem de feedback",
         },
         img6: {
           img: imgTestimonial6,
-          alt: 'Imagem de feedback',
+          alt: "Imagem de feedback",
         },
         img7: {
           img: imgTestimonial7,
-          alt: 'Imagem de feedback',
+          alt: "Imagem de feedback",
         },
         img8: {
           img: imgTestimonial8,
-          alt: 'Imagem de feedback',
+          alt: "Imagem de feedback",
         },
         img9: {
           img: imgTestimonial9,
-          alt: 'Imagem de feedback',
+          alt: "Imagem de feedback",
         },
         img10: {
           img: imgTestimonial10,
-          alt: 'Imagem de feedback',
+          alt: "Imagem de feedback",
         },
         img11: {
           img: imgTestimonial11,
-          alt: 'Imagem de feedback',
+          alt: "Imagem de feedback",
         },
         img12: {
           img: imgTestimonial12,
-          alt: 'Imagem de feedback',
+          alt: "Imagem de feedback",
         },
       },
     },
     socios: {
       socio1: {
         image: Socio1,
-        nome: 'Edison',
-        rota: 'Edison',
-        sobrenome: 'Matos',
-        empresa: 'Paper Street Softwares',
-        função: 'CEO & Diretor Geral',
-        telefone: '',
-        whatsapp: '61992781077',
-        email: 'edisonmatos6@gmail.com',
-        github: 'edisonmatos.github.io/',
+        nome: "Edison",
+        rota: "Edison",
+        sobrenome: "Matos",
+        empresa: "Paper Street Softwares",
+        função: "CEO & Diretor Geral",
+        telefone: "",
+        whatsapp: "61992781077",
+        email: "edisonmatos6@gmail.com",
+        github: "edisonmatos.github.io/",
         description:
-          'Executo a Direção Geral e Gestão Estratégica do negócio, com foco em processos que minimizam retrabalho e resultam numa maior percepção de valor por parte dos nossos clientes, encantando-os durante todo o período que lidam com a gente.',
+          "Executo a Direção Geral e Gestão Estratégica do negócio, com foco em processos que minimizam retrabalho e resultam numa maior percepção de valor por parte dos nossos clientes, encantando-os durante todo o período que lidam com a gente.",
         social: {
-          instagram: '',
-          facebook: '',
-          linkedin: 'edison-matoss/',
-          x: '',
-          tiktok: '',
-          githubSocial: 'github.com/edisonmatos',
-          whatsappSocial: '11988217850',
-          emailSocial: 'edison@paperstreet.com.br',
+          instagram: "",
+          facebook: "",
+          linkedin: "edison-matoss/",
+          x: "",
+          tiktok: "",
+          githubSocial: "github.com/edisonmatos",
+          whatsappSocial: "11988217850",
+          emailSocial: "edison@paperstreet.com.br",
         },
         empresaSocial: {
-          instagram: 'paperstreet_sites/',
-          facebook: '61556114646068/',
+          instagram: "paperstreet_sites/",
+          facebook: "61556114646068/",
           linkedin:
-            'https://www.linkedin.com/company/paper-street-sofwares/posts/?feedView=all',
-          site: 'https://www.paperstreet.com.br/',
+            "https://www.linkedin.com/company/paper-street-sofwares/posts/?feedView=all",
+          site: "https://www.paperstreet.com.br/",
         },
       },
       socio2: {
-        nome: 'Biell',
-        rota: 'Biell',
-        sobrenome: 'Souza',
-        telefone: '00000000000',
-        whatsapp: '00000000000',
-        email: '',
+        nome: "Biell",
+        rota: "Biell",
+        sobrenome: "Souza",
+        telefone: "00000000000",
+        whatsapp: "00000000000",
+        email: "",
         social: {
-          instagram: '',
-          facebook: '',
-          linkedin: '',
-          x: '',
-          tiktok: '',
+          instagram: "",
+          facebook: "",
+          linkedin: "",
+          x: "",
+          tiktok: "",
         },
       },
       socio4: {
-        nome: 'Cleiton',
-        rota: 'Cleiton',
-        sobrenome: '',
-        telefone: '66666666666',
-        whatsapp: '66666666666',
-        email: '',
+        nome: "Cleiton",
+        rota: "Cleiton",
+        sobrenome: "",
+        telefone: "66666666666",
+        whatsapp: "66666666666",
+        email: "",
         social: {
-          instagram: '',
-          facebook: '',
-          linkedin: '',
-          x: '',
-          tiktok: '',
+          instagram: "",
+          facebook: "",
+          linkedin: "",
+          x: "",
+          tiktok: "",
         },
       },
     },
   },
-}
+};
 
-export default content
+export default content;

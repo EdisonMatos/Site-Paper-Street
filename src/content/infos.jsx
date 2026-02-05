@@ -1,8 +1,8 @@
 const infos = {
   name: "Paper Street",
   slogan: "Sites, Marketing Digital e Sistemas para Internet",
-  phone: "(11) 98821-7850",
-  phoneComercial: "(11) 99026-0977",
+  phone: "(11) 99026-7850",
+  phoneComercial: "(11) 98821-7850",
   phoneSuporte: "(11) 91404-3088",
   mail: "contato@paperstreet.com.br",
   footerInfos: {
